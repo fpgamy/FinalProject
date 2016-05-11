@@ -1,0 +1,49 @@
+module sequence_detect(clock, rst, stream_in, sequence_out);
+	input clock;
+	input rst;
+	input stream_in;
+	output reg sequence_out;
+
+	reg [1:0] state; //00 = nothing detected, 01 = first 1 detected, 10 = 100... detected, 11 = 1000....1 detected.
+	initial state = 0;
+
+	always @(posedge clk or posedge rst) 
+		begin
+			if (rst) 
+				begin
+					state = 0;		
+				end
+			else 
+				begin
+					if (state == 0)
+						begin
+							if (stream_in == 1)
+							begin
+								state = 2'd1;
+							end
+						end
+					else if (state == 1)
+						begin
+							if (stream_in == 0)
+								begin
+									state = 2'd2;
+								end
+						end
+					else if (state == 2)
+						begin
+							if (stream_in == 1)
+								begin
+									state = 2'd3						
+								end							
+						end
+					else if (state == 3)
+						begin
+							sequence_out = 1;
+							if (stream_in == 0)
+								begin
+									state = 2'd0;
+								end
+						end
+				end
+		end
+endmodule

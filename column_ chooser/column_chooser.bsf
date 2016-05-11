@@ -1,0 +1,267 @@
+/*
+WARNING: Do NOT edit the input and output ports in this file in a text
+editor if you plan to continue editing the block that represents it in
+the Block Editor! File corruption is VERY likely to occur.
+*/
+/*
+Copyright (C) 1991-2013 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+*/
+(header "symbol" (version "1.1"))
+(symbol
+	(rect 16 16 272 576)
+	(text "column_chooser" (rect 5 0 71 12)(font "Arial" ))
+	(text "inst" (rect 8 544 20 556)(font "Arial" ))
+	(port
+		(pt 0 32)
+		(input)
+		(text "first_red_pos_x[9..0]" (rect 0 0 84 12)(font "Arial" ))
+		(text "first_red_pos_x[9..0]" (rect 21 27 105 39)(font "Arial" ))
+		(line (pt 0 32)(pt 16 32)(line_width 3))
+	)
+	(port
+		(pt 0 48)
+		(input)
+		(text "sec_red_pos_x[9..0]" (rect 0 0 83 12)(font "Arial" ))
+		(text "sec_red_pos_x[9..0]" (rect 21 43 104 55)(font "Arial" ))
+		(line (pt 0 48)(pt 16 48)(line_width 3))
+	)
+	(port
+		(pt 256 32)
+		(output)
+		(text "top_grid_x0[9..0]" (rect 0 0 67 12)(font "Arial" ))
+		(text "top_grid_x0[9..0]" (rect 168 27 235 39)(font "Arial" ))
+		(line (pt 256 32)(pt 240 32)(line_width 3))
+	)
+	(port
+		(pt 256 48)
+		(output)
+		(text "top_grid_x1[9..0]" (rect 0 0 66 12)(font "Arial" ))
+		(text "top_grid_x1[9..0]" (rect 169 43 235 55)(font "Arial" ))
+		(line (pt 256 48)(pt 240 48)(line_width 3))
+	)
+	(port
+		(pt 256 64)
+		(output)
+		(text "top_grid_x2[9..0]" (rect 0 0 67 12)(font "Arial" ))
+		(text "top_grid_x2[9..0]" (rect 168 59 235 71)(font "Arial" ))
+		(line (pt 256 64)(pt 240 64)(line_width 3))
+	)
+	(port
+		(pt 256 80)
+		(output)
+		(text "top_grid_x3[9..0]" (rect 0 0 67 12)(font "Arial" ))
+		(text "top_grid_x3[9..0]" (rect 168 75 235 87)(font "Arial" ))
+		(line (pt 256 80)(pt 240 80)(line_width 3))
+	)
+	(port
+		(pt 256 96)
+		(output)
+		(text "top_grid_x4[9..0]" (rect 0 0 68 12)(font "Arial" ))
+		(text "top_grid_x4[9..0]" (rect 167 91 235 103)(font "Arial" ))
+		(line (pt 256 96)(pt 240 96)(line_width 3))
+	)
+	(port
+		(pt 256 112)
+		(output)
+		(text "top_grid_x5[9..0]" (rect 0 0 67 12)(font "Arial" ))
+		(text "top_grid_x5[9..0]" (rect 168 107 235 119)(font "Arial" ))
+		(line (pt 256 112)(pt 240 112)(line_width 3))
+	)
+	(port
+		(pt 256 128)
+		(output)
+		(text "top_grid_x6[9..0]" (rect 0 0 67 12)(font "Arial" ))
+		(text "top_grid_x6[9..0]" (rect 168 123 235 135)(font "Arial" ))
+		(line (pt 256 128)(pt 240 128)(line_width 3))
+	)
+	(port
+		(pt 256 144)
+		(output)
+		(text "top_grid_x7[9..0]" (rect 0 0 67 12)(font "Arial" ))
+		(text "top_grid_x7[9..0]" (rect 168 139 235 151)(font "Arial" ))
+		(line (pt 256 144)(pt 240 144)(line_width 3))
+	)
+	(port
+		(pt 256 160)
+		(output)
+		(text "top_grid_x8[9..0]" (rect 0 0 67 12)(font "Arial" ))
+		(text "top_grid_x8[9..0]" (rect 168 155 235 167)(font "Arial" ))
+		(line (pt 256 160)(pt 240 160)(line_width 3))
+	)
+	(port
+		(pt 256 176)
+		(output)
+		(text "top_grid_x9[9..0]" (rect 0 0 67 12)(font "Arial" ))
+		(text "top_grid_x9[9..0]" (rect 168 171 235 183)(font "Arial" ))
+		(line (pt 256 176)(pt 240 176)(line_width 3))
+	)
+	(port
+		(pt 256 192)
+		(output)
+		(text "top_grid_x10[9..0]" (rect 0 0 70 12)(font "Arial" ))
+		(text "top_grid_x10[9..0]" (rect 165 187 235 199)(font "Arial" ))
+		(line (pt 256 192)(pt 240 192)(line_width 3))
+	)
+	(port
+		(pt 256 208)
+		(output)
+		(text "top_grid_x11[9..0]" (rect 0 0 69 12)(font "Arial" ))
+		(text "top_grid_x11[9..0]" (rect 166 203 235 215)(font "Arial" ))
+		(line (pt 256 208)(pt 240 208)(line_width 3))
+	)
+	(port
+		(pt 256 224)
+		(output)
+		(text "top_grid_x12[9..0]" (rect 0 0 70 12)(font "Arial" ))
+		(text "top_grid_x12[9..0]" (rect 165 219 235 231)(font "Arial" ))
+		(line (pt 256 224)(pt 240 224)(line_width 3))
+	)
+	(port
+		(pt 256 240)
+		(output)
+		(text "top_grid_x13[9..0]" (rect 0 0 70 12)(font "Arial" ))
+		(text "top_grid_x13[9..0]" (rect 165 235 235 247)(font "Arial" ))
+		(line (pt 256 240)(pt 240 240)(line_width 3))
+	)
+	(port
+		(pt 256 256)
+		(output)
+		(text "top_grid_x14[9..0]" (rect 0 0 71 12)(font "Arial" ))
+		(text "top_grid_x14[9..0]" (rect 164 251 235 263)(font "Arial" ))
+		(line (pt 256 256)(pt 240 256)(line_width 3))
+	)
+	(port
+		(pt 256 272)
+		(output)
+		(text "top_grid_x15[9..0]" (rect 0 0 70 12)(font "Arial" ))
+		(text "top_grid_x15[9..0]" (rect 165 267 235 279)(font "Arial" ))
+		(line (pt 256 272)(pt 240 272)(line_width 3))
+	)
+	(port
+		(pt 256 288)
+		(output)
+		(text "top_grid_x16[9..0]" (rect 0 0 70 12)(font "Arial" ))
+		(text "top_grid_x16[9..0]" (rect 165 283 235 295)(font "Arial" ))
+		(line (pt 256 288)(pt 240 288)(line_width 3))
+	)
+	(port
+		(pt 256 304)
+		(output)
+		(text "top_grid_x17[9..0]" (rect 0 0 70 12)(font "Arial" ))
+		(text "top_grid_x17[9..0]" (rect 165 299 235 311)(font "Arial" ))
+		(line (pt 256 304)(pt 240 304)(line_width 3))
+	)
+	(port
+		(pt 256 320)
+		(output)
+		(text "top_grid_x18[9..0]" (rect 0 0 70 12)(font "Arial" ))
+		(text "top_grid_x18[9..0]" (rect 165 315 235 327)(font "Arial" ))
+		(line (pt 256 320)(pt 240 320)(line_width 3))
+	)
+	(port
+		(pt 256 336)
+		(output)
+		(text "top_grid_x19[9..0]" (rect 0 0 70 12)(font "Arial" ))
+		(text "top_grid_x19[9..0]" (rect 165 331 235 343)(font "Arial" ))
+		(line (pt 256 336)(pt 240 336)(line_width 3))
+	)
+	(port
+		(pt 256 352)
+		(output)
+		(text "top_grid_x20[9..0]" (rect 0 0 71 12)(font "Arial" ))
+		(text "top_grid_x20[9..0]" (rect 164 347 235 359)(font "Arial" ))
+		(line (pt 256 352)(pt 240 352)(line_width 3))
+	)
+	(port
+		(pt 256 368)
+		(output)
+		(text "top_grid_x21[9..0]" (rect 0 0 70 12)(font "Arial" ))
+		(text "top_grid_x21[9..0]" (rect 165 363 235 375)(font "Arial" ))
+		(line (pt 256 368)(pt 240 368)(line_width 3))
+	)
+	(port
+		(pt 256 384)
+		(output)
+		(text "top_grid_x22[9..0]" (rect 0 0 71 12)(font "Arial" ))
+		(text "top_grid_x22[9..0]" (rect 164 379 235 391)(font "Arial" ))
+		(line (pt 256 384)(pt 240 384)(line_width 3))
+	)
+	(port
+		(pt 256 400)
+		(output)
+		(text "top_grid_x23[9..0]" (rect 0 0 71 12)(font "Arial" ))
+		(text "top_grid_x23[9..0]" (rect 164 395 235 407)(font "Arial" ))
+		(line (pt 256 400)(pt 240 400)(line_width 3))
+	)
+	(port
+		(pt 256 416)
+		(output)
+		(text "top_grid_x24[9..0]" (rect 0 0 73 12)(font "Arial" ))
+		(text "top_grid_x24[9..0]" (rect 162 411 235 423)(font "Arial" ))
+		(line (pt 256 416)(pt 240 416)(line_width 3))
+	)
+	(port
+		(pt 256 432)
+		(output)
+		(text "top_grid_x25[9..0]" (rect 0 0 71 12)(font "Arial" ))
+		(text "top_grid_x25[9..0]" (rect 164 427 235 439)(font "Arial" ))
+		(line (pt 256 432)(pt 240 432)(line_width 3))
+	)
+	(port
+		(pt 256 448)
+		(output)
+		(text "top_grid_x26[9..0]" (rect 0 0 71 12)(font "Arial" ))
+		(text "top_grid_x26[9..0]" (rect 164 443 235 455)(font "Arial" ))
+		(line (pt 256 448)(pt 240 448)(line_width 3))
+	)
+	(port
+		(pt 256 464)
+		(output)
+		(text "top_grid_x27[9..0]" (rect 0 0 71 12)(font "Arial" ))
+		(text "top_grid_x27[9..0]" (rect 164 459 235 471)(font "Arial" ))
+		(line (pt 256 464)(pt 240 464)(line_width 3))
+	)
+	(port
+		(pt 256 480)
+		(output)
+		(text "top_grid_x28[9..0]" (rect 0 0 71 12)(font "Arial" ))
+		(text "top_grid_x28[9..0]" (rect 164 475 235 487)(font "Arial" ))
+		(line (pt 256 480)(pt 240 480)(line_width 3))
+	)
+	(port
+		(pt 256 496)
+		(output)
+		(text "top_grid_x29[9..0]" (rect 0 0 71 12)(font "Arial" ))
+		(text "top_grid_x29[9..0]" (rect 164 491 235 503)(font "Arial" ))
+		(line (pt 256 496)(pt 240 496)(line_width 3))
+	)
+	(port
+		(pt 256 512)
+		(output)
+		(text "top_grid_x30[9..0]" (rect 0 0 71 12)(font "Arial" ))
+		(text "top_grid_x30[9..0]" (rect 164 507 235 519)(font "Arial" ))
+		(line (pt 256 512)(pt 240 512)(line_width 3))
+	)
+	(port
+		(pt 256 528)
+		(output)
+		(text "top_grid_x31[9..0]" (rect 0 0 70 12)(font "Arial" ))
+		(text "top_grid_x31[9..0]" (rect 165 523 235 535)(font "Arial" ))
+		(line (pt 256 528)(pt 240 528)(line_width 3))
+	)
+	(drawing
+		(rectangle (rect 16 16 240 544)(line_width 1))
+	)
+)

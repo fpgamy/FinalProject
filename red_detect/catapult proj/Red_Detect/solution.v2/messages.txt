@@ -1,0 +1,11 @@
+
+# Messages from "go new"
+
+Creating project directory '\\icnas2.cc.ic.ac.uk\dm2515\FinalEIEProject\Red_Detect\Red_Detect'. (PRJ-1)
+Branching solution 'solution.v1' at state 'new' (PRJ-2)
+Branching solution 'solution.v2' at state 'new' (PRJ-2)
+Branching solution 'solution.v2' at state 'new' (PRJ-2)
+Branching solution 'solution.v2' at state 'new' (PRJ-2)
+Branching solution 'solution.v2' at state 'new' (PRJ-2)
+Branching solution 'solution.v2' at state 'new' (PRJ-2)
+Branching solution 'solution.v2' at state 'new' (PRJ-2)

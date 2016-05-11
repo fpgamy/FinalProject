@@ -1,0 +1,85 @@
+/*
+WARNING: Do NOT edit the input and output ports in this file in a text
+editor if you plan to continue editing the block that represents it in
+the Block Editor! File corruption is VERY likely to occur.
+*/
+/*
+Copyright (C) 1991-2013 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+*/
+(header "symbol" (version "1.1"))
+(symbol
+	(rect 16 16 216 160)
+	(text "row_detect" (rect 5 0 48 12)(font "Arial" ))
+	(text "inst" (rect 8 128 20 140)(font "Arial" ))
+	(port
+		(pt 0 32)
+		(input)
+		(text "start_y[9..0]" (rect 0 0 49 12)(font "Arial" ))
+		(text "start_y[9..0]" (rect 21 27 70 39)(font "Arial" ))
+		(line (pt 0 32)(pt 16 32)(line_width 3))
+	)
+	(port
+		(pt 0 48)
+		(input)
+		(text "height[9..0]" (rect 0 0 42 12)(font "Arial" ))
+		(text "height[9..0]" (rect 21 43 63 55)(font "Arial" ))
+		(line (pt 0 48)(pt 16 48)(line_width 3))
+	)
+	(port
+		(pt 200 32)
+		(output)
+		(text "starty0[9..0]" (rect 0 0 48 12)(font "Arial" ))
+		(text "starty0[9..0]" (rect 131 27 179 39)(font "Arial" ))
+		(line (pt 200 32)(pt 184 32)(line_width 3))
+	)
+	(port
+		(pt 200 48)
+		(output)
+		(text "starty1[9..0]" (rect 0 0 47 12)(font "Arial" ))
+		(text "starty1[9..0]" (rect 132 43 179 55)(font "Arial" ))
+		(line (pt 200 48)(pt 184 48)(line_width 3))
+	)
+	(port
+		(pt 200 64)
+		(output)
+		(text "starty2[9..0]" (rect 0 0 48 12)(font "Arial" ))
+		(text "starty2[9..0]" (rect 131 59 179 71)(font "Arial" ))
+		(line (pt 200 64)(pt 184 64)(line_width 3))
+	)
+	(port
+		(pt 200 80)
+		(output)
+		(text "starty3[9..0]" (rect 0 0 48 12)(font "Arial" ))
+		(text "starty3[9..0]" (rect 131 75 179 87)(font "Arial" ))
+		(line (pt 200 80)(pt 184 80)(line_width 3))
+	)
+	(port
+		(pt 200 96)
+		(output)
+		(text "starty4[9..0]" (rect 0 0 49 12)(font "Arial" ))
+		(text "starty4[9..0]" (rect 130 91 179 103)(font "Arial" ))
+		(line (pt 200 96)(pt 184 96)(line_width 3))
+	)
+	(port
+		(pt 200 112)
+		(output)
+		(text "height0[9..0]" (rect 0 0 47 12)(font "Arial" ))
+		(text "height0[9..0]" (rect 132 107 179 119)(font "Arial" ))
+		(line (pt 200 112)(pt 184 112)(line_width 3))
+	)
+	(drawing
+		(rectangle (rect 16 16 184 128)(line_width 1))
+	)
+)

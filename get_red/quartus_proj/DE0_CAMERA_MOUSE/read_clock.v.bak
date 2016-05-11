@@ -1,0 +1,22 @@
+module read_clock(clock_in, clock_out);
+	input clock_in;
+	output reg clock_out;
+	
+	initial start = 1'b0;
+	reg [12:0] ctr;
+	//1 hertz clock generator]
+	
+	always @ (posedge clock_in)
+		begin
+					if (ctr < 13'd2499)
+						begin
+							ctr <= ctr + 18'b1;
+						end
+					else
+						begin
+							ctr <= 18'b0;
+							clock_out <= ~clock_out;
+						end
+				end
+		end
+endmodule

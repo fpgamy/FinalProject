@@ -1,0 +1,113 @@
+------------------------------------------------------------
+TimeQuest Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Slow 1200mV 85C Model Setup 'tempotestblock:inst7|clock_out'
+Slack : -7.460
+TNS   : -687.438
+
+Type  : Slow 1200mV 85C Model Setup 'CLK'
+Slack : -2.973
+TNS   : -70.428
+
+Type  : Slow 1200mV 85C Model Hold 'tempotestblock:inst7|clock_out'
+Slack : -0.112
+TNS   : -0.313
+
+Type  : Slow 1200mV 85C Model Hold 'CLK'
+Slack : 0.376
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Recovery 'tempotestblock:inst7|clock_out'
+Slack : 0.291
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Removal 'tempotestblock:inst7|clock_out'
+Slack : -0.651
+TNS   : -87.377
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'CLK'
+Slack : -3.000
+TNS   : -30.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'Switch2'
+Slack : -3.000
+TNS   : -3.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'tempotestblock:inst7|clock_out'
+Slack : -1.000
+TNS   : -241.000
+
+Type  : Slow 1200mV 0C Model Setup 'tempotestblock:inst7|clock_out'
+Slack : -6.529
+TNS   : -596.301
+
+Type  : Slow 1200mV 0C Model Setup 'CLK'
+Slack : -2.530
+TNS   : -59.359
+
+Type  : Slow 1200mV 0C Model Hold 'tempotestblock:inst7|clock_out'
+Slack : -0.042
+TNS   : -0.061
+
+Type  : Slow 1200mV 0C Model Hold 'CLK'
+Slack : 0.334
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Recovery 'tempotestblock:inst7|clock_out'
+Slack : 0.276
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Removal 'tempotestblock:inst7|clock_out'
+Slack : -0.502
+TNS   : -65.696
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'CLK'
+Slack : -3.000
+TNS   : -30.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'Switch2'
+Slack : -3.000
+TNS   : -3.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'tempotestblock:inst7|clock_out'
+Slack : -1.000
+TNS   : -241.000
+
+Type  : Fast 1200mV 0C Model Setup 'tempotestblock:inst7|clock_out'
+Slack : -3.830
+TNS   : -329.836
+
+Type  : Fast 1200mV 0C Model Setup 'CLK'
+Slack : -1.256
+TNS   : -27.712
+
+Type  : Fast 1200mV 0C Model Hold 'tempotestblock:inst7|clock_out'
+Slack : -0.176
+TNS   : -0.833
+
+Type  : Fast 1200mV 0C Model Hold 'CLK'
+Slack : 0.116
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Recovery 'tempotestblock:inst7|clock_out'
+Slack : 0.019
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Removal 'tempotestblock:inst7|clock_out'
+Slack : -0.441
+TNS   : -60.245
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'CLK'
+Slack : -3.000
+TNS   : -32.001
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'Switch2'
+Slack : -3.000
+TNS   : -3.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'tempotestblock:inst7|clock_out'
+Slack : -1.000
+TNS   : -241.000
+
+------------------------------------------------------------

@@ -1,0 +1,12 @@
+module D_ff_with_asynch_reset_1(input D, input Clk, input clear, output reg Q);
+
+ always @(posedge Clk or posedge clear)
+	if (clear)
+		begin
+			Q <= 1'b0;
+		end 
+	else
+		begin
+			Q <= D;
+		end
+endmodule 

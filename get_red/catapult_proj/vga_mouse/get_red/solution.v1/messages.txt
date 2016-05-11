@@ -1,0 +1,6 @@
+
+# Messages from "go new"
+
+Creating project directory '\\icnas2.cc.ic.ac.uk\ymh15\final_project\get_red\catapult_proj\vga_mouse\get_red'. (PRJ-1)
+Branching solution 'solution.v1' at state 'new' (PRJ-2)
+Branching solution 'solution.v1' at state 'new' (PRJ-2)

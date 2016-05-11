@@ -1,0 +1,7 @@
+module get_wh (firstx, firsty, secondx, secondy, w, h);
+	input firstx, firsty, secondx, secondy;
+	output w, h;
+	
+	assign w = secondx - firstx;
+	assign h = ((secondx - firstx)*707106)/1000000;
+endmodule

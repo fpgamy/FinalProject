@@ -1,0 +1,626 @@
+
+# Program: Catapult University Version
+# Version: 2011a.126
+#    File: Nlview netlist
+
+module new "get_square_intensity:core" "orig"
+load port {clk} input -attr xrf 13015 -attr oid 1 -attr vt d -attr @path {/get_square_intensity/get_square_intensity:core/clk}
+load port {en} input -attr xrf 13016 -attr oid 2 -attr vt d -attr @path {/get_square_intensity/get_square_intensity:core/en}
+load port {arst_n} input -attr xrf 13017 -attr oid 3 -attr vt d -attr @path {/get_square_intensity/get_square_intensity:core/arst_n}
+load portBus {vga_xy:rsc:mgc_in_wire.d(19:0)} input 20 {vga_xy:rsc:mgc_in_wire.d(19)} {vga_xy:rsc:mgc_in_wire.d(18)} {vga_xy:rsc:mgc_in_wire.d(17)} {vga_xy:rsc:mgc_in_wire.d(16)} {vga_xy:rsc:mgc_in_wire.d(15)} {vga_xy:rsc:mgc_in_wire.d(14)} {vga_xy:rsc:mgc_in_wire.d(13)} {vga_xy:rsc:mgc_in_wire.d(12)} {vga_xy:rsc:mgc_in_wire.d(11)} {vga_xy:rsc:mgc_in_wire.d(10)} {vga_xy:rsc:mgc_in_wire.d(9)} {vga_xy:rsc:mgc_in_wire.d(8)} {vga_xy:rsc:mgc_in_wire.d(7)} {vga_xy:rsc:mgc_in_wire.d(6)} {vga_xy:rsc:mgc_in_wire.d(5)} {vga_xy:rsc:mgc_in_wire.d(4)} {vga_xy:rsc:mgc_in_wire.d(3)} {vga_xy:rsc:mgc_in_wire.d(2)} {vga_xy:rsc:mgc_in_wire.d(1)} {vga_xy:rsc:mgc_in_wire.d(0)} -attr xrf 13018 -attr oid 4 -attr vt d -attr @path {/get_square_intensity/get_square_intensity:core/vga_xy:rsc:mgc_in_wire.d}
+load portBus {y_top_left:rsc:mgc_in_wire.d(9:0)} input 10 {y_top_left:rsc:mgc_in_wire.d(9)} {y_top_left:rsc:mgc_in_wire.d(8)} {y_top_left:rsc:mgc_in_wire.d(7)} {y_top_left:rsc:mgc_in_wire.d(6)} {y_top_left:rsc:mgc_in_wire.d(5)} {y_top_left:rsc:mgc_in_wire.d(4)} {y_top_left:rsc:mgc_in_wire.d(3)} {y_top_left:rsc:mgc_in_wire.d(2)} {y_top_left:rsc:mgc_in_wire.d(1)} {y_top_left:rsc:mgc_in_wire.d(0)} -attr xrf 13019 -attr oid 5 -attr vt d -attr @path {/get_square_intensity/get_square_intensity:core/y_top_left:rsc:mgc_in_wire.d}
+load portBus {height:rsc:mgc_in_wire.d(9:0)} input 10 {height:rsc:mgc_in_wire.d(9)} {height:rsc:mgc_in_wire.d(8)} {height:rsc:mgc_in_wire.d(7)} {height:rsc:mgc_in_wire.d(6)} {height:rsc:mgc_in_wire.d(5)} {height:rsc:mgc_in_wire.d(4)} {height:rsc:mgc_in_wire.d(3)} {height:rsc:mgc_in_wire.d(2)} {height:rsc:mgc_in_wire.d(1)} {height:rsc:mgc_in_wire.d(0)} -attr xrf 13020 -attr oid 6 -attr vt d -attr @path {/get_square_intensity/get_square_intensity:core/height:rsc:mgc_in_wire.d}
+load port {last_pixel:rsc:mgc_out_stdreg.d} output -attr xrf 13021 -attr oid 7 -attr vt d -attr @path {/get_square_intensity/get_square_intensity:core/last_pixel:rsc:mgc_out_stdreg.d}
+load symbol "not(10)" "INTERFACE" INV boxcolor 0 \
+     portBus {A(9:0)} input 10 {A(9)} {A(8)} {A(7)} {A(6)} {A(5)} {A(4)} {A(3)} {A(2)} {A(1)} {A(0)} \
+     portBus {Z(9:0)} output 10 {Z(9)} {Z(8)} {Z(7)} {Z(6)} {Z(5)} {Z(4)} {Z(3)} {Z(2)} {Z(1)} {Z(0)} \
+
+load symbol "add(11,0,11,0,12)" "INTERFACE" RTL(+) boxcolor 0 \
+     portBus {A(10:0)} input 11 {A(10)} {A(9)} {A(8)} {A(7)} {A(6)} {A(5)} {A(4)} {A(3)} {A(2)} {A(1)} {A(0)} \
+     portBus {B(10:0)} input 11 {B(10)} {B(9)} {B(8)} {B(7)} {B(6)} {B(5)} {B(4)} {B(3)} {B(2)} {B(1)} {B(0)} \
+     portBus {Z(11:0)} output 12 {Z(11)} {Z(10)} {Z(9)} {Z(8)} {Z(7)} {Z(6)} {Z(5)} {Z(4)} {Z(3)} {Z(2)} {Z(1)} {Z(0)} \
+
+load symbol "add(11,0,11,1,12)" "INTERFACE" RTL(+) boxcolor 0 \
+     portBus {A(10:0)} input 11 {A(10)} {A(9)} {A(8)} {A(7)} {A(6)} {A(5)} {A(4)} {A(3)} {A(2)} {A(1)} {A(0)} \
+     portBus {B(10:0)} input 11 {B(10)} {B(9)} {B(8)} {B(7)} {B(6)} {B(5)} {B(4)} {B(3)} {B(2)} {B(1)} {B(0)} \
+     portBus {Z(11:0)} output 12 {Z(11)} {Z(10)} {Z(9)} {Z(8)} {Z(7)} {Z(6)} {Z(5)} {Z(4)} {Z(3)} {Z(2)} {Z(1)} {Z(0)} \
+
+load symbol "reg(1,1,1,-1,0)" "INTERFACE" GEN boxcolor 1 \
+     portBus {D(0:0)} input 1 {D(0)} \
+     portBus {DRa(0:0)} input 1 {DRa(0)} \
+     port {clk} input.clk \
+     portBus {en(0:0)} input 1 {en(0)} \
+     portBus {Ra(0:0)} input 1 {Ra(0)} \
+     portBus {Z(0:0)} output 1 {Z(0)} \
+
+load net {if#1:slc.itm(0)} -attr vt d
+load net {if#1:slc.itm(1)} -attr vt d
+load net {if#1:slc.itm(2)} -attr vt d
+load net {if#1:slc.itm(3)} -attr vt d
+load net {if#1:slc.itm(4)} -attr vt d
+load net {if#1:slc.itm(5)} -attr vt d
+load net {if#1:slc.itm(6)} -attr vt d
+load net {if#1:slc.itm(7)} -attr vt d
+load net {if#1:slc.itm(8)} -attr vt d
+load net {if#1:slc.itm(9)} -attr vt d
+load net {if#1:slc.itm(10)} -attr vt d
+load netBundle {if#1:slc.itm} 11 {if#1:slc.itm(0)} {if#1:slc.itm(1)} {if#1:slc.itm(2)} {if#1:slc.itm(3)} {if#1:slc.itm(4)} {if#1:slc.itm(5)} {if#1:slc.itm(6)} {if#1:slc.itm(7)} {if#1:slc.itm(8)} {if#1:slc.itm(9)} {if#1:slc.itm(10)} -attr xrf 13022 -attr oid 8 -attr vt d -attr @path {/get_square_intensity/get_square_intensity:core/if#1:slc.itm}
+load net {if#1:acc#1.itm(0)} -attr vt d
+load net {if#1:acc#1.itm(1)} -attr vt d
+load net {if#1:acc#1.itm(2)} -attr vt d
+load net {if#1:acc#1.itm(3)} -attr vt d
+load net {if#1:acc#1.itm(4)} -attr vt d
+load net {if#1:acc#1.itm(5)} -attr vt d
+load net {if#1:acc#1.itm(6)} -attr vt d
+load net {if#1:acc#1.itm(7)} -attr vt d
+load net {if#1:acc#1.itm(8)} -attr vt d
+load net {if#1:acc#1.itm(9)} -attr vt d
+load net {if#1:acc#1.itm(10)} -attr vt d
+load net {if#1:acc#1.itm(11)} -attr vt d
+load netBundle {if#1:acc#1.itm} 12 {if#1:acc#1.itm(0)} {if#1:acc#1.itm(1)} {if#1:acc#1.itm(2)} {if#1:acc#1.itm(3)} {if#1:acc#1.itm(4)} {if#1:acc#1.itm(5)} {if#1:acc#1.itm(6)} {if#1:acc#1.itm(7)} {if#1:acc#1.itm(8)} {if#1:acc#1.itm(9)} {if#1:acc#1.itm(10)} {if#1:acc#1.itm(11)} -attr xrf 13023 -attr oid 9 -attr vt d -attr @path {/get_square_intensity/get_square_intensity:core/if#1:acc#1.itm}
+load net {conc.itm(0)} -attr vt d
+load net {conc.itm(1)} -attr vt d
+load net {conc.itm(2)} -attr vt d
+load net {conc.itm(3)} -attr vt d
+load net {conc.itm(4)} -attr vt d
+load net {conc.itm(5)} -attr vt d
+load net {conc.itm(6)} -attr vt d
+load net {conc.itm(7)} -attr vt d
+load net {conc.itm(8)} -attr vt d
+load net {conc.itm(9)} -attr vt d
+load net {conc.itm(10)} -attr vt d
+load netBundle {conc.itm} 11 {conc.itm(0)} {conc.itm(1)} {conc.itm(2)} {conc.itm(3)} {conc.itm(4)} {conc.itm(5)} {conc.itm(6)} {conc.itm(7)} {conc.itm(8)} {conc.itm(9)} {conc.itm(10)} -attr xrf 13024 -attr oid 10 -attr vt d -attr @path {/get_square_intensity/get_square_intensity:core/conc.itm}
+load net {conc#1.itm(0)} -attr vt d
+load net {conc#1.itm(1)} -attr vt d
+load net {conc#1.itm(2)} -attr vt d
+load net {conc#1.itm(3)} -attr vt d
+load net {conc#1.itm(4)} -attr vt d
+load net {conc#1.itm(5)} -attr vt d
+load net {conc#1.itm(6)} -attr vt d
+load net {conc#1.itm(7)} -attr vt d
+load net {conc#1.itm(8)} -attr vt d
+load net {conc#1.itm(9)} -attr vt d
+load net {conc#1.itm(10)} -attr vt d
+load netBundle {conc#1.itm} 11 {conc#1.itm(0)} {conc#1.itm(1)} {conc#1.itm(2)} {conc#1.itm(3)} {conc#1.itm(4)} {conc#1.itm(5)} {conc#1.itm(6)} {conc#1.itm(7)} {conc#1.itm(8)} {conc#1.itm(9)} {conc#1.itm(10)} -attr xrf 13025 -attr oid 11 -attr vt d -attr @path {/get_square_intensity/get_square_intensity:core/conc#1.itm}
+load net {vga_y:not#1.itm(0)} -attr vt d
+load net {vga_y:not#1.itm(1)} -attr vt d
+load net {vga_y:not#1.itm(2)} -attr vt d
+load net {vga_y:not#1.itm(3)} -attr vt d
+load net {vga_y:not#1.itm(4)} -attr vt d
+load net {vga_y:not#1.itm(5)} -attr vt d
+load net {vga_y:not#1.itm(6)} -attr vt d
+load net {vga_y:not#1.itm(7)} -attr vt d
+load net {vga_y:not#1.itm(8)} -attr vt d
+load net {vga_y:not#1.itm(9)} -attr vt d
+load netBundle {vga_y:not#1.itm} 10 {vga_y:not#1.itm(0)} {vga_y:not#1.itm(1)} {vga_y:not#1.itm(2)} {vga_y:not#1.itm(3)} {vga_y:not#1.itm(4)} {vga_y:not#1.itm(5)} {vga_y:not#1.itm(6)} {vga_y:not#1.itm(7)} {vga_y:not#1.itm(8)} {vga_y:not#1.itm(9)} -attr xrf 13026 -attr oid 12 -attr vt d -attr @path {/get_square_intensity/get_square_intensity:core/vga_y:not#1.itm}
+load net {slc#3.itm(0)} -attr vt d
+load net {slc#3.itm(1)} -attr vt d
+load net {slc#3.itm(2)} -attr vt d
+load net {slc#3.itm(3)} -attr vt d
+load net {slc#3.itm(4)} -attr vt d
+load net {slc#3.itm(5)} -attr vt d
+load net {slc#3.itm(6)} -attr vt d
+load net {slc#3.itm(7)} -attr vt d
+load net {slc#3.itm(8)} -attr vt d
+load net {slc#3.itm(9)} -attr vt d
+load netBundle {slc#3.itm} 10 {slc#3.itm(0)} {slc#3.itm(1)} {slc#3.itm(2)} {slc#3.itm(3)} {slc#3.itm(4)} {slc#3.itm(5)} {slc#3.itm(6)} {slc#3.itm(7)} {slc#3.itm(8)} {slc#3.itm(9)} -attr xrf 13027 -attr oid 13 -attr vt d -attr @path {/get_square_intensity/get_square_intensity:core/slc#3.itm}
+load net {conc#2.itm(0)} -attr vt d
+load net {conc#2.itm(1)} -attr vt d
+load net {conc#2.itm(2)} -attr vt d
+load net {conc#2.itm(3)} -attr vt d
+load net {conc#2.itm(4)} -attr vt d
+load net {conc#2.itm(5)} -attr vt d
+load net {conc#2.itm(6)} -attr vt d
+load net {conc#2.itm(7)} -attr vt d
+load net {conc#2.itm(8)} -attr vt d
+load net {conc#2.itm(9)} -attr vt d
+load net {conc#2.itm(10)} -attr vt d
+load netBundle {conc#2.itm} 11 {conc#2.itm(0)} {conc#2.itm(1)} {conc#2.itm(2)} {conc#2.itm(3)} {conc#2.itm(4)} {conc#2.itm(5)} {conc#2.itm(6)} {conc#2.itm(7)} {conc#2.itm(8)} {conc#2.itm(9)} {conc#2.itm(10)} -attr xrf 13028 -attr oid 14 -attr vt d -attr @path {/get_square_intensity/get_square_intensity:core/conc#2.itm}
+load net {clk} -attr xrf 13029 -attr oid 15
+load net {clk} -port {clk} -attr xrf 13030 -attr oid 16
+load net {en} -attr xrf 13031 -attr oid 17
+load net {en} -port {en} -attr xrf 13032 -attr oid 18
+load net {arst_n} -attr xrf 13033 -attr oid 19
+load net {arst_n} -port {arst_n} -attr xrf 13034 -attr oid 20
+load net {vga_xy:rsc:mgc_in_wire.d(0)} -attr vt d
+load net {vga_xy:rsc:mgc_in_wire.d(1)} -attr vt d
+load net {vga_xy:rsc:mgc_in_wire.d(2)} -attr vt d
+load net {vga_xy:rsc:mgc_in_wire.d(3)} -attr vt d
+load net {vga_xy:rsc:mgc_in_wire.d(4)} -attr vt d
+load net {vga_xy:rsc:mgc_in_wire.d(5)} -attr vt d
+load net {vga_xy:rsc:mgc_in_wire.d(6)} -attr vt d
+load net {vga_xy:rsc:mgc_in_wire.d(7)} -attr vt d
+load net {vga_xy:rsc:mgc_in_wire.d(8)} -attr vt d
+load net {vga_xy:rsc:mgc_in_wire.d(9)} -attr vt d
+load net {vga_xy:rsc:mgc_in_wire.d(10)} -attr vt d
+load net {vga_xy:rsc:mgc_in_wire.d(11)} -attr vt d
+load net {vga_xy:rsc:mgc_in_wire.d(12)} -attr vt d
+load net {vga_xy:rsc:mgc_in_wire.d(13)} -attr vt d
+load net {vga_xy:rsc:mgc_in_wire.d(14)} -attr vt d
+load net {vga_xy:rsc:mgc_in_wire.d(15)} -attr vt d
+load net {vga_xy:rsc:mgc_in_wire.d(16)} -attr vt d
+load net {vga_xy:rsc:mgc_in_wire.d(17)} -attr vt d
+load net {vga_xy:rsc:mgc_in_wire.d(18)} -attr vt d
+load net {vga_xy:rsc:mgc_in_wire.d(19)} -attr vt d
+load netBundle {vga_xy:rsc:mgc_in_wire.d} 20 {vga_xy:rsc:mgc_in_wire.d(0)} {vga_xy:rsc:mgc_in_wire.d(1)} {vga_xy:rsc:mgc_in_wire.d(2)} {vga_xy:rsc:mgc_in_wire.d(3)} {vga_xy:rsc:mgc_in_wire.d(4)} {vga_xy:rsc:mgc_in_wire.d(5)} {vga_xy:rsc:mgc_in_wire.d(6)} {vga_xy:rsc:mgc_in_wire.d(7)} {vga_xy:rsc:mgc_in_wire.d(8)} {vga_xy:rsc:mgc_in_wire.d(9)} {vga_xy:rsc:mgc_in_wire.d(10)} {vga_xy:rsc:mgc_in_wire.d(11)} {vga_xy:rsc:mgc_in_wire.d(12)} {vga_xy:rsc:mgc_in_wire.d(13)} {vga_xy:rsc:mgc_in_wire.d(14)} {vga_xy:rsc:mgc_in_wire.d(15)} {vga_xy:rsc:mgc_in_wire.d(16)} {vga_xy:rsc:mgc_in_wire.d(17)} {vga_xy:rsc:mgc_in_wire.d(18)} {vga_xy:rsc:mgc_in_wire.d(19)} -attr xrf 13035 -attr oid 21 -attr vt d -attr @path {/get_square_intensity/get_square_intensity:core/vga_xy:rsc:mgc_in_wire.d}
+load net {vga_xy:rsc:mgc_in_wire.d(0)} -port {vga_xy:rsc:mgc_in_wire.d(0)} -attr vt d
+load net {vga_xy:rsc:mgc_in_wire.d(1)} -port {vga_xy:rsc:mgc_in_wire.d(1)} -attr vt d
+load net {vga_xy:rsc:mgc_in_wire.d(2)} -port {vga_xy:rsc:mgc_in_wire.d(2)} -attr vt d
+load net {vga_xy:rsc:mgc_in_wire.d(3)} -port {vga_xy:rsc:mgc_in_wire.d(3)} -attr vt d
+load net {vga_xy:rsc:mgc_in_wire.d(4)} -port {vga_xy:rsc:mgc_in_wire.d(4)} -attr vt d
+load net {vga_xy:rsc:mgc_in_wire.d(5)} -port {vga_xy:rsc:mgc_in_wire.d(5)} -attr vt d
+load net {vga_xy:rsc:mgc_in_wire.d(6)} -port {vga_xy:rsc:mgc_in_wire.d(6)} -attr vt d
+load net {vga_xy:rsc:mgc_in_wire.d(7)} -port {vga_xy:rsc:mgc_in_wire.d(7)} -attr vt d
+load net {vga_xy:rsc:mgc_in_wire.d(8)} -port {vga_xy:rsc:mgc_in_wire.d(8)} -attr vt d
+load net {vga_xy:rsc:mgc_in_wire.d(9)} -port {vga_xy:rsc:mgc_in_wire.d(9)} -attr vt d
+load net {vga_xy:rsc:mgc_in_wire.d(10)} -port {vga_xy:rsc:mgc_in_wire.d(10)} -attr vt d
+load net {vga_xy:rsc:mgc_in_wire.d(11)} -port {vga_xy:rsc:mgc_in_wire.d(11)} -attr vt d
+load net {vga_xy:rsc:mgc_in_wire.d(12)} -port {vga_xy:rsc:mgc_in_wire.d(12)} -attr vt d
+load net {vga_xy:rsc:mgc_in_wire.d(13)} -port {vga_xy:rsc:mgc_in_wire.d(13)} -attr vt d
+load net {vga_xy:rsc:mgc_in_wire.d(14)} -port {vga_xy:rsc:mgc_in_wire.d(14)} -attr vt d
+load net {vga_xy:rsc:mgc_in_wire.d(15)} -port {vga_xy:rsc:mgc_in_wire.d(15)} -attr vt d
+load net {vga_xy:rsc:mgc_in_wire.d(16)} -port {vga_xy:rsc:mgc_in_wire.d(16)} -attr vt d
+load net {vga_xy:rsc:mgc_in_wire.d(17)} -port {vga_xy:rsc:mgc_in_wire.d(17)} -attr vt d
+load net {vga_xy:rsc:mgc_in_wire.d(18)} -port {vga_xy:rsc:mgc_in_wire.d(18)} -attr vt d
+load net {vga_xy:rsc:mgc_in_wire.d(19)} -port {vga_xy:rsc:mgc_in_wire.d(19)} -attr vt d
+load netBundle {vga_xy:rsc:mgc_in_wire.d} 20 {vga_xy:rsc:mgc_in_wire.d(0)} {vga_xy:rsc:mgc_in_wire.d(1)} {vga_xy:rsc:mgc_in_wire.d(2)} {vga_xy:rsc:mgc_in_wire.d(3)} {vga_xy:rsc:mgc_in_wire.d(4)} {vga_xy:rsc:mgc_in_wire.d(5)} {vga_xy:rsc:mgc_in_wire.d(6)} {vga_xy:rsc:mgc_in_wire.d(7)} {vga_xy:rsc:mgc_in_wire.d(8)} {vga_xy:rsc:mgc_in_wire.d(9)} {vga_xy:rsc:mgc_in_wire.d(10)} {vga_xy:rsc:mgc_in_wire.d(11)} {vga_xy:rsc:mgc_in_wire.d(12)} {vga_xy:rsc:mgc_in_wire.d(13)} {vga_xy:rsc:mgc_in_wire.d(14)} {vga_xy:rsc:mgc_in_wire.d(15)} {vga_xy:rsc:mgc_in_wire.d(16)} {vga_xy:rsc:mgc_in_wire.d(17)} {vga_xy:rsc:mgc_in_wire.d(18)} {vga_xy:rsc:mgc_in_wire.d(19)} -attr xrf 13036 -attr oid 22 -attr vt d -attr @path {/get_square_intensity/get_square_intensity:core/vga_xy:rsc:mgc_in_wire.d}
+load net {y_top_left:rsc:mgc_in_wire.d(0)} -attr vt d
+load net {y_top_left:rsc:mgc_in_wire.d(1)} -attr vt d
+load net {y_top_left:rsc:mgc_in_wire.d(2)} -attr vt d
+load net {y_top_left:rsc:mgc_in_wire.d(3)} -attr vt d
+load net {y_top_left:rsc:mgc_in_wire.d(4)} -attr vt d
+load net {y_top_left:rsc:mgc_in_wire.d(5)} -attr vt d
+load net {y_top_left:rsc:mgc_in_wire.d(6)} -attr vt d
+load net {y_top_left:rsc:mgc_in_wire.d(7)} -attr vt d
+load net {y_top_left:rsc:mgc_in_wire.d(8)} -attr vt d
+load net {y_top_left:rsc:mgc_in_wire.d(9)} -attr vt d
+load netBundle {y_top_left:rsc:mgc_in_wire.d} 10 {y_top_left:rsc:mgc_in_wire.d(0)} {y_top_left:rsc:mgc_in_wire.d(1)} {y_top_left:rsc:mgc_in_wire.d(2)} {y_top_left:rsc:mgc_in_wire.d(3)} {y_top_left:rsc:mgc_in_wire.d(4)} {y_top_left:rsc:mgc_in_wire.d(5)} {y_top_left:rsc:mgc_in_wire.d(6)} {y_top_left:rsc:mgc_in_wire.d(7)} {y_top_left:rsc:mgc_in_wire.d(8)} {y_top_left:rsc:mgc_in_wire.d(9)} -attr xrf 13037 -attr oid 23 -attr vt d -attr @path {/get_square_intensity/get_square_intensity:core/y_top_left:rsc:mgc_in_wire.d}
+load net {y_top_left:rsc:mgc_in_wire.d(0)} -port {y_top_left:rsc:mgc_in_wire.d(0)} -attr vt d
+load net {y_top_left:rsc:mgc_in_wire.d(1)} -port {y_top_left:rsc:mgc_in_wire.d(1)} -attr vt d
+load net {y_top_left:rsc:mgc_in_wire.d(2)} -port {y_top_left:rsc:mgc_in_wire.d(2)} -attr vt d
+load net {y_top_left:rsc:mgc_in_wire.d(3)} -port {y_top_left:rsc:mgc_in_wire.d(3)} -attr vt d
+load net {y_top_left:rsc:mgc_in_wire.d(4)} -port {y_top_left:rsc:mgc_in_wire.d(4)} -attr vt d
+load net {y_top_left:rsc:mgc_in_wire.d(5)} -port {y_top_left:rsc:mgc_in_wire.d(5)} -attr vt d
+load net {y_top_left:rsc:mgc_in_wire.d(6)} -port {y_top_left:rsc:mgc_in_wire.d(6)} -attr vt d
+load net {y_top_left:rsc:mgc_in_wire.d(7)} -port {y_top_left:rsc:mgc_in_wire.d(7)} -attr vt d
+load net {y_top_left:rsc:mgc_in_wire.d(8)} -port {y_top_left:rsc:mgc_in_wire.d(8)} -attr vt d
+load net {y_top_left:rsc:mgc_in_wire.d(9)} -port {y_top_left:rsc:mgc_in_wire.d(9)} -attr vt d
+load netBundle {y_top_left:rsc:mgc_in_wire.d} 10 {y_top_left:rsc:mgc_in_wire.d(0)} {y_top_left:rsc:mgc_in_wire.d(1)} {y_top_left:rsc:mgc_in_wire.d(2)} {y_top_left:rsc:mgc_in_wire.d(3)} {y_top_left:rsc:mgc_in_wire.d(4)} {y_top_left:rsc:mgc_in_wire.d(5)} {y_top_left:rsc:mgc_in_wire.d(6)} {y_top_left:rsc:mgc_in_wire.d(7)} {y_top_left:rsc:mgc_in_wire.d(8)} {y_top_left:rsc:mgc_in_wire.d(9)} -attr xrf 13038 -attr oid 24 -attr vt d -attr @path {/get_square_intensity/get_square_intensity:core/y_top_left:rsc:mgc_in_wire.d}
+load net {height:rsc:mgc_in_wire.d(0)} -attr vt d
+load net {height:rsc:mgc_in_wire.d(1)} -attr vt d
+load net {height:rsc:mgc_in_wire.d(2)} -attr vt d
+load net {height:rsc:mgc_in_wire.d(3)} -attr vt d
+load net {height:rsc:mgc_in_wire.d(4)} -attr vt d
+load net {height:rsc:mgc_in_wire.d(5)} -attr vt d
+load net {height:rsc:mgc_in_wire.d(6)} -attr vt d
+load net {height:rsc:mgc_in_wire.d(7)} -attr vt d
+load net {height:rsc:mgc_in_wire.d(8)} -attr vt d
+load net {height:rsc:mgc_in_wire.d(9)} -attr vt d
+load netBundle {height:rsc:mgc_in_wire.d} 10 {height:rsc:mgc_in_wire.d(0)} {height:rsc:mgc_in_wire.d(1)} {height:rsc:mgc_in_wire.d(2)} {height:rsc:mgc_in_wire.d(3)} {height:rsc:mgc_in_wire.d(4)} {height:rsc:mgc_in_wire.d(5)} {height:rsc:mgc_in_wire.d(6)} {height:rsc:mgc_in_wire.d(7)} {height:rsc:mgc_in_wire.d(8)} {height:rsc:mgc_in_wire.d(9)} -attr xrf 13039 -attr oid 25 -attr vt d -attr @path {/get_square_intensity/get_square_intensity:core/height:rsc:mgc_in_wire.d}
+load net {height:rsc:mgc_in_wire.d(0)} -port {height:rsc:mgc_in_wire.d(0)} -attr vt d
+load net {height:rsc:mgc_in_wire.d(1)} -port {height:rsc:mgc_in_wire.d(1)} -attr vt d
+load net {height:rsc:mgc_in_wire.d(2)} -port {height:rsc:mgc_in_wire.d(2)} -attr vt d
+load net {height:rsc:mgc_in_wire.d(3)} -port {height:rsc:mgc_in_wire.d(3)} -attr vt d
+load net {height:rsc:mgc_in_wire.d(4)} -port {height:rsc:mgc_in_wire.d(4)} -attr vt d
+load net {height:rsc:mgc_in_wire.d(5)} -port {height:rsc:mgc_in_wire.d(5)} -attr vt d
+load net {height:rsc:mgc_in_wire.d(6)} -port {height:rsc:mgc_in_wire.d(6)} -attr vt d
+load net {height:rsc:mgc_in_wire.d(7)} -port {height:rsc:mgc_in_wire.d(7)} -attr vt d
+load net {height:rsc:mgc_in_wire.d(8)} -port {height:rsc:mgc_in_wire.d(8)} -attr vt d
+load net {height:rsc:mgc_in_wire.d(9)} -port {height:rsc:mgc_in_wire.d(9)} -attr vt d
+load netBundle {height:rsc:mgc_in_wire.d} 10 {height:rsc:mgc_in_wire.d(0)} {height:rsc:mgc_in_wire.d(1)} {height:rsc:mgc_in_wire.d(2)} {height:rsc:mgc_in_wire.d(3)} {height:rsc:mgc_in_wire.d(4)} {height:rsc:mgc_in_wire.d(5)} {height:rsc:mgc_in_wire.d(6)} {height:rsc:mgc_in_wire.d(7)} {height:rsc:mgc_in_wire.d(8)} {height:rsc:mgc_in_wire.d(9)} -attr xrf 13040 -attr oid 26 -attr vt d -attr @path {/get_square_intensity/get_square_intensity:core/height:rsc:mgc_in_wire.d}
+load net {last_pixel:rsc:mgc_out_stdreg.d} -attr xrf 13041 -attr oid 27 -attr vt d
+load net {last_pixel:rsc:mgc_out_stdreg.d} -port {last_pixel:rsc:mgc_out_stdreg.d} -attr xrf 13042 -attr oid 28 -attr vt d -attr @path {/get_square_intensity/get_square_intensity:core/last_pixel:rsc:mgc_out_stdreg.d}
+load inst "vga_y:not#1" "not(10)" "INTERFACE" -attr xrf 13043 -attr oid 29 -attr vt d -attr @path {/get_square_intensity/get_square_intensity:core/vga_y:not#1} -attr area 0.001000 -attr delay -1000000000000000000000000000000.000000 -attr qmod "mgc_Altera-Cyclone-III-6_beh_psr.mgc_not(10)"
+load net {vga_xy:rsc:mgc_in_wire.d(10)} -pin  "vga_y:not#1" {A(0)} -attr vt d -attr @path {/get_square_intensity/get_square_intensity:core/slc#3.itm}
+load net {vga_xy:rsc:mgc_in_wire.d(11)} -pin  "vga_y:not#1" {A(1)} -attr vt d -attr @path {/get_square_intensity/get_square_intensity:core/slc#3.itm}
+load net {vga_xy:rsc:mgc_in_wire.d(12)} -pin  "vga_y:not#1" {A(2)} -attr vt d -attr @path {/get_square_intensity/get_square_intensity:core/slc#3.itm}
+load net {vga_xy:rsc:mgc_in_wire.d(13)} -pin  "vga_y:not#1" {A(3)} -attr vt d -attr @path {/get_square_intensity/get_square_intensity:core/slc#3.itm}
+load net {vga_xy:rsc:mgc_in_wire.d(14)} -pin  "vga_y:not#1" {A(4)} -attr vt d -attr @path {/get_square_intensity/get_square_intensity:core/slc#3.itm}
+load net {vga_xy:rsc:mgc_in_wire.d(15)} -pin  "vga_y:not#1" {A(5)} -attr vt d -attr @path {/get_square_intensity/get_square_intensity:core/slc#3.itm}
+load net {vga_xy:rsc:mgc_in_wire.d(16)} -pin  "vga_y:not#1" {A(6)} -attr vt d -attr @path {/get_square_intensity/get_square_intensity:core/slc#3.itm}
+load net {vga_xy:rsc:mgc_in_wire.d(17)} -pin  "vga_y:not#1" {A(7)} -attr vt d -attr @path {/get_square_intensity/get_square_intensity:core/slc#3.itm}
+load net {vga_xy:rsc:mgc_in_wire.d(18)} -pin  "vga_y:not#1" {A(8)} -attr vt d -attr @path {/get_square_intensity/get_square_intensity:core/slc#3.itm}
+load net {vga_xy:rsc:mgc_in_wire.d(19)} -pin  "vga_y:not#1" {A(9)} -attr vt d -attr @path {/get_square_intensity/get_square_intensity:core/slc#3.itm}
+load net {vga_y:not#1.itm(0)} -pin  "vga_y:not#1" {Z(0)} -attr vt d -attr @path {/get_square_intensity/get_square_intensity:core/vga_y:not#1.itm}
+load net {vga_y:not#1.itm(1)} -pin  "vga_y:not#1" {Z(1)} -attr vt d -attr @path {/get_square_intensity/get_square_intensity:core/vga_y:not#1.itm}
+load net {vga_y:not#1.itm(2)} -pin  "vga_y:not#1" {Z(2)} -attr vt d -attr @path {/get_square_intensity/get_square_intensity:core/vga_y:not#1.itm}
+load net {vga_y:not#1.itm(3)} -pin  "vga_y:not#1" {Z(3)} -attr vt d -attr @path {/get_square_intensity/get_square_intensity:core/vga_y:not#1.itm}
+load net {vga_y:not#1.itm(4)} -pin  "vga_y:not#1" {Z(4)} -attr vt d -attr @path {/get_square_intensity/get_square_intensity:core/vga_y:not#1.itm}
+load net {vga_y:not#1.itm(5)} -pin  "vga_y:not#1" {Z(5)} -attr vt d -attr @path {/get_square_intensity/get_square_intensity:core/vga_y:not#1.itm}
+load net {vga_y:not#1.itm(6)} -pin  "vga_y:not#1" {Z(6)} -attr vt d -attr @path {/get_square_intensity/get_square_intensity:core/vga_y:not#1.itm}
+load net {vga_y:not#1.itm(7)} -pin  "vga_y:not#1" {Z(7)} -attr vt d -attr @path {/get_square_intensity/get_square_intensity:core/vga_y:not#1.itm}
+load net {vga_y:not#1.itm(8)} -pin  "vga_y:not#1" {Z(8)} -attr vt d -attr @path {/get_square_intensity/get_square_intensity:core/vga_y:not#1.itm}
+load net {vga_y:not#1.itm(9)} -pin  "vga_y:not#1" {Z(9)} -attr vt d -attr @path {/get_square_intensity/get_square_intensity:core/vga_y:not#1.itm}
+load inst "if#1:acc#1" "add(11,0,11,0,12)" "INTERFACE" -attr xrf 13044 -attr oid 30 -attr vt dc -attr @path {/get_square_intensity/get_square_intensity:core/if#1:acc#1} -attr area 12.232538 -attr delay -1000000000000000000000000000000.000000 -attr qmod "mgc_Altera-Cyclone-III-6_beh_psr.mgc_add(11,0,11,0,12)"
+load net {PWR} -pin  "if#1:acc#1" {A(0)} -attr @path {/get_square_intensity/get_square_intensity:core/conc.itm}
+load net {height:rsc:mgc_in_wire.d(0)} -pin  "if#1:acc#1" {A(1)} -attr vt dc -attr @path {/get_square_intensity/get_square_intensity:core/conc.itm}
+load net {height:rsc:mgc_in_wire.d(1)} -pin  "if#1:acc#1" {A(2)} -attr vt dc -attr @path {/get_square_intensity/get_square_intensity:core/conc.itm}
+load net {height:rsc:mgc_in_wire.d(2)} -pin  "if#1:acc#1" {A(3)} -attr vt dc -attr @path {/get_square_intensity/get_square_intensity:core/conc.itm}
+load net {height:rsc:mgc_in_wire.d(3)} -pin  "if#1:acc#1" {A(4)} -attr vt dc -attr @path {/get_square_intensity/get_square_intensity:core/conc.itm}
+load net {height:rsc:mgc_in_wire.d(4)} -pin  "if#1:acc#1" {A(5)} -attr vt dc -attr @path {/get_square_intensity/get_square_intensity:core/conc.itm}
+load net {height:rsc:mgc_in_wire.d(5)} -pin  "if#1:acc#1" {A(6)} -attr vt dc -attr @path {/get_square_intensity/get_square_intensity:core/conc.itm}
+load net {height:rsc:mgc_in_wire.d(6)} -pin  "if#1:acc#1" {A(7)} -attr vt dc -attr @path {/get_square_intensity/get_square_intensity:core/conc.itm}
+load net {height:rsc:mgc_in_wire.d(7)} -pin  "if#1:acc#1" {A(8)} -attr vt dc -attr @path {/get_square_intensity/get_square_intensity:core/conc.itm}
+load net {height:rsc:mgc_in_wire.d(8)} -pin  "if#1:acc#1" {A(9)} -attr vt dc -attr @path {/get_square_intensity/get_square_intensity:core/conc.itm}
+load net {height:rsc:mgc_in_wire.d(9)} -pin  "if#1:acc#1" {A(10)} -attr vt dc -attr @path {/get_square_intensity/get_square_intensity:core/conc.itm}
+load net {PWR} -pin  "if#1:acc#1" {B(0)} -attr @path {/get_square_intensity/get_square_intensity:core/conc#1.itm}
+load net {vga_y:not#1.itm(0)} -pin  "if#1:acc#1" {B(1)} -attr vt d -attr @path {/get_square_intensity/get_square_intensity:core/conc#1.itm}
+load net {vga_y:not#1.itm(1)} -pin  "if#1:acc#1" {B(2)} -attr vt d -attr @path {/get_square_intensity/get_square_intensity:core/conc#1.itm}
+load net {vga_y:not#1.itm(2)} -pin  "if#1:acc#1" {B(3)} -attr vt d -attr @path {/get_square_intensity/get_square_intensity:core/conc#1.itm}
+load net {vga_y:not#1.itm(3)} -pin  "if#1:acc#1" {B(4)} -attr vt d -attr @path {/get_square_intensity/get_square_intensity:core/conc#1.itm}
+load net {vga_y:not#1.itm(4)} -pin  "if#1:acc#1" {B(5)} -attr vt d -attr @path {/get_square_intensity/get_square_intensity:core/conc#1.itm}
+load net {vga_y:not#1.itm(5)} -pin  "if#1:acc#1" {B(6)} -attr vt d -attr @path {/get_square_intensity/get_square_intensity:core/conc#1.itm}
+load net {vga_y:not#1.itm(6)} -pin  "if#1:acc#1" {B(7)} -attr vt d -attr @path {/get_square_intensity/get_square_intensity:core/conc#1.itm}
+load net {vga_y:not#1.itm(7)} -pin  "if#1:acc#1" {B(8)} -attr vt d -attr @path {/get_square_intensity/get_square_intensity:core/conc#1.itm}
+load net {vga_y:not#1.itm(8)} -pin  "if#1:acc#1" {B(9)} -attr vt d -attr @path {/get_square_intensity/get_square_intensity:core/conc#1.itm}
+load net {vga_y:not#1.itm(9)} -pin  "if#1:acc#1" {B(10)} -attr vt d -attr @path {/get_square_intensity/get_square_intensity:core/conc#1.itm}
+load net {if#1:acc#1.itm(0)} -pin  "if#1:acc#1" {Z(0)} -attr vt dc -attr @path {/get_square_intensity/get_square_intensity:core/if#1:acc#1.itm}
+load net {if#1:acc#1.itm(1)} -pin  "if#1:acc#1" {Z(1)} -attr vt dc -attr @path {/get_square_intensity/get_square_intensity:core/if#1:acc#1.itm}
+load net {if#1:acc#1.itm(2)} -pin  "if#1:acc#1" {Z(2)} -attr vt dc -attr @path {/get_square_intensity/get_square_intensity:core/if#1:acc#1.itm}
+load net {if#1:acc#1.itm(3)} -pin  "if#1:acc#1" {Z(3)} -attr vt dc -attr @path {/get_square_intensity/get_square_intensity:core/if#1:acc#1.itm}
+load net {if#1:acc#1.itm(4)} -pin  "if#1:acc#1" {Z(4)} -attr vt dc -attr @path {/get_square_intensity/get_square_intensity:core/if#1:acc#1.itm}
+load net {if#1:acc#1.itm(5)} -pin  "if#1:acc#1" {Z(5)} -attr vt dc -attr @path {/get_square_intensity/get_square_intensity:core/if#1:acc#1.itm}
+load net {if#1:acc#1.itm(6)} -pin  "if#1:acc#1" {Z(6)} -attr vt dc -attr @path {/get_square_intensity/get_square_intensity:core/if#1:acc#1.itm}
+load net {if#1:acc#1.itm(7)} -pin  "if#1:acc#1" {Z(7)} -attr vt dc -attr @path {/get_square_intensity/get_square_intensity:core/if#1:acc#1.itm}
+load net {if#1:acc#1.itm(8)} -pin  "if#1:acc#1" {Z(8)} -attr vt dc -attr @path {/get_square_intensity/get_square_intensity:core/if#1:acc#1.itm}
+load net {if#1:acc#1.itm(9)} -pin  "if#1:acc#1" {Z(9)} -attr vt dc -attr @path {/get_square_intensity/get_square_intensity:core/if#1:acc#1.itm}
+load net {if#1:acc#1.itm(10)} -pin  "if#1:acc#1" {Z(10)} -attr vt dc -attr @path {/get_square_intensity/get_square_intensity:core/if#1:acc#1.itm}
+load net {if#1:acc#1.itm(11)} -pin  "if#1:acc#1" {Z(11)} -attr vt dc -attr @path {/get_square_intensity/get_square_intensity:core/if#1:acc#1.itm}
+load inst "if#1:acc" "add(11,0,11,1,12)" "INTERFACE" -attr xrf 13045 -attr oid 31 -attr vt dc -attr @path {/get_square_intensity/get_square_intensity:core/if#1:acc} -attr area 12.000000 -attr delay -1000000000000000000000000000000.000000 -attr qmod "mgc_Altera-Cyclone-III-6_beh_psr.mgc_add(11,0,11,1,12)"
+load net {if#1:acc#1.itm(1)} -pin  "if#1:acc" {A(0)} -attr vt dc -attr @path {/get_square_intensity/get_square_intensity:core/if#1:slc.itm}
+load net {if#1:acc#1.itm(2)} -pin  "if#1:acc" {A(1)} -attr vt dc -attr @path {/get_square_intensity/get_square_intensity:core/if#1:slc.itm}
+load net {if#1:acc#1.itm(3)} -pin  "if#1:acc" {A(2)} -attr vt dc -attr @path {/get_square_intensity/get_square_intensity:core/if#1:slc.itm}
+load net {if#1:acc#1.itm(4)} -pin  "if#1:acc" {A(3)} -attr vt dc -attr @path {/get_square_intensity/get_square_intensity:core/if#1:slc.itm}
+load net {if#1:acc#1.itm(5)} -pin  "if#1:acc" {A(4)} -attr vt dc -attr @path {/get_square_intensity/get_square_intensity:core/if#1:slc.itm}
+load net {if#1:acc#1.itm(6)} -pin  "if#1:acc" {A(5)} -attr vt dc -attr @path {/get_square_intensity/get_square_intensity:core/if#1:slc.itm}
+load net {if#1:acc#1.itm(7)} -pin  "if#1:acc" {A(6)} -attr vt dc -attr @path {/get_square_intensity/get_square_intensity:core/if#1:slc.itm}
+load net {if#1:acc#1.itm(8)} -pin  "if#1:acc" {A(7)} -attr vt dc -attr @path {/get_square_intensity/get_square_intensity:core/if#1:slc.itm}
+load net {if#1:acc#1.itm(9)} -pin  "if#1:acc" {A(8)} -attr vt dc -attr @path {/get_square_intensity/get_square_intensity:core/if#1:slc.itm}
+load net {if#1:acc#1.itm(10)} -pin  "if#1:acc" {A(9)} -attr vt dc -attr @path {/get_square_intensity/get_square_intensity:core/if#1:slc.itm}
+load net {if#1:acc#1.itm(11)} -pin  "if#1:acc" {A(10)} -attr vt dc -attr @path {/get_square_intensity/get_square_intensity:core/if#1:slc.itm}
+load net {y_top_left:rsc:mgc_in_wire.d(0)} -pin  "if#1:acc" {B(0)} -attr vt d -attr @path {/get_square_intensity/get_square_intensity:core/conc#2.itm}
+load net {y_top_left:rsc:mgc_in_wire.d(1)} -pin  "if#1:acc" {B(1)} -attr vt d -attr @path {/get_square_intensity/get_square_intensity:core/conc#2.itm}
+load net {y_top_left:rsc:mgc_in_wire.d(2)} -pin  "if#1:acc" {B(2)} -attr vt d -attr @path {/get_square_intensity/get_square_intensity:core/conc#2.itm}
+load net {y_top_left:rsc:mgc_in_wire.d(3)} -pin  "if#1:acc" {B(3)} -attr vt d -attr @path {/get_square_intensity/get_square_intensity:core/conc#2.itm}
+load net {y_top_left:rsc:mgc_in_wire.d(4)} -pin  "if#1:acc" {B(4)} -attr vt d -attr @path {/get_square_intensity/get_square_intensity:core/conc#2.itm}
+load net {y_top_left:rsc:mgc_in_wire.d(5)} -pin  "if#1:acc" {B(5)} -attr vt d -attr @path {/get_square_intensity/get_square_intensity:core/conc#2.itm}
+load net {y_top_left:rsc:mgc_in_wire.d(6)} -pin  "if#1:acc" {B(6)} -attr vt d -attr @path {/get_square_intensity/get_square_intensity:core/conc#2.itm}
+load net {y_top_left:rsc:mgc_in_wire.d(7)} -pin  "if#1:acc" {B(7)} -attr vt d -attr @path {/get_square_intensity/get_square_intensity:core/conc#2.itm}
+load net {y_top_left:rsc:mgc_in_wire.d(8)} -pin  "if#1:acc" {B(8)} -attr vt d -attr @path {/get_square_intensity/get_square_intensity:core/conc#2.itm}
+load net {y_top_left:rsc:mgc_in_wire.d(9)} -pin  "if#1:acc" {B(9)} -attr vt d -attr @path {/get_square_intensity/get_square_intensity:core/conc#2.itm}
+load net {PWR} -pin  "if#1:acc" {B(10)} -attr @path {/get_square_intensity/get_square_intensity:core/conc#2.itm}
+load net {if#1:acc.itm(0)} -pin  "if#1:acc" {Z(0)} -attr vt dc -attr @path {/get_square_intensity/get_square_intensity:core/if#1:acc.itm}
+load net {if#1:acc.itm(1)} -pin  "if#1:acc" {Z(1)} -attr vt dc -attr @path {/get_square_intensity/get_square_intensity:core/if#1:acc.itm}
+load net {if#1:acc.itm(2)} -pin  "if#1:acc" {Z(2)} -attr vt dc -attr @path {/get_square_intensity/get_square_intensity:core/if#1:acc.itm}
+load net {if#1:acc.itm(3)} -pin  "if#1:acc" {Z(3)} -attr vt dc -attr @path {/get_square_intensity/get_square_intensity:core/if#1:acc.itm}
+load net {if#1:acc.itm(4)} -pin  "if#1:acc" {Z(4)} -attr vt dc -attr @path {/get_square_intensity/get_square_intensity:core/if#1:acc.itm}
+load net {if#1:acc.itm(5)} -pin  "if#1:acc" {Z(5)} -attr vt dc -attr @path {/get_square_intensity/get_square_intensity:core/if#1:acc.itm}
+load net {if#1:acc.itm(6)} -pin  "if#1:acc" {Z(6)} -attr vt dc -attr @path {/get_square_intensity/get_square_intensity:core/if#1:acc.itm}
+load net {if#1:acc.itm(7)} -pin  "if#1:acc" {Z(7)} -attr vt dc -attr @path {/get_square_intensity/get_square_intensity:core/if#1:acc.itm}
+load net {if#1:acc.itm(8)} -pin  "if#1:acc" {Z(8)} -attr vt dc -attr @path {/get_square_intensity/get_square_intensity:core/if#1:acc.itm}
+load net {if#1:acc.itm(9)} -pin  "if#1:acc" {Z(9)} -attr vt dc -attr @path {/get_square_intensity/get_square_intensity:core/if#1:acc.itm}
+load net {if#1:acc.itm(10)} -pin  "if#1:acc" {Z(10)} -attr vt dc -attr @path {/get_square_intensity/get_square_intensity:core/if#1:acc.itm}
+load net {if#1:acc.itm(11)} -pin  "if#1:acc" {Z(11)} -attr vt dc -attr @path {/get_square_intensity/get_square_intensity:core/if#1:acc.itm}
+load inst "reg(last_pixel:rsc:mgc_out_stdreg.d)" "reg(1,1,1,-1,0)" "INTERFACE" -attr xrf 13046 -attr oid 32 -attr vt c -attr @path {/get_square_intensity/get_square_intensity:core/reg(last_pixel:rsc:mgc_out_stdreg.d)}
+load net {if#1:acc.itm(11)} -pin  "reg(last_pixel:rsc:mgc_out_stdreg.d)" {D(0)} -attr vt c -attr @path {/get_square_intensity/get_square_intensity:core/slc#1.itm}
+load net {GND} -pin  "reg(last_pixel:rsc:mgc_out_stdreg.d)" {DRa(0)} -attr @path {/get_square_intensity/get_square_intensity:core/C0_1}
+load net {clk} -pin  "reg(last_pixel:rsc:mgc_out_stdreg.d)" {clk} -attr xrf 13047 -attr oid 33 -attr @path {/get_square_intensity/get_square_intensity:core/clk}
+load net {en} -pin  "reg(last_pixel:rsc:mgc_out_stdreg.d)" {en(0)} -attr @path {/get_square_intensity/get_square_intensity:core/en}
+load net {arst_n} -pin  "reg(last_pixel:rsc:mgc_out_stdreg.d)" {Ra(0)} -attr @path {/get_square_intensity/get_square_intensity:core/arst_n}
+load net {last_pixel:rsc:mgc_out_stdreg.d} -pin  "reg(last_pixel:rsc:mgc_out_stdreg.d)" {Z(0)} -attr @path {/get_square_intensity/get_square_intensity:core/last_pixel:rsc:mgc_out_stdreg.d}
+### END MODULE 
+
+module new "get_square_intensity" "orig"
+load portBus {vga_xy:rsc.z(19:0)} input 20 {vga_xy:rsc.z(19)} {vga_xy:rsc.z(18)} {vga_xy:rsc.z(17)} {vga_xy:rsc.z(16)} {vga_xy:rsc.z(15)} {vga_xy:rsc.z(14)} {vga_xy:rsc.z(13)} {vga_xy:rsc.z(12)} {vga_xy:rsc.z(11)} {vga_xy:rsc.z(10)} {vga_xy:rsc.z(9)} {vga_xy:rsc.z(8)} {vga_xy:rsc.z(7)} {vga_xy:rsc.z(6)} {vga_xy:rsc.z(5)} {vga_xy:rsc.z(4)} {vga_xy:rsc.z(3)} {vga_xy:rsc.z(2)} {vga_xy:rsc.z(1)} {vga_xy:rsc.z(0)} -attr xrf 13048 -attr oid 34 -attr vt d -attr @path {/get_square_intensity/vga_xy:rsc.z}
+load portBus {y_top_left:rsc.z(9:0)} input 10 {y_top_left:rsc.z(9)} {y_top_left:rsc.z(8)} {y_top_left:rsc.z(7)} {y_top_left:rsc.z(6)} {y_top_left:rsc.z(5)} {y_top_left:rsc.z(4)} {y_top_left:rsc.z(3)} {y_top_left:rsc.z(2)} {y_top_left:rsc.z(1)} {y_top_left:rsc.z(0)} -attr xrf 13049 -attr oid 35 -attr vt d -attr @path {/get_square_intensity/y_top_left:rsc.z}
+load portBus {height:rsc.z(9:0)} input 10 {height:rsc.z(9)} {height:rsc.z(8)} {height:rsc.z(7)} {height:rsc.z(6)} {height:rsc.z(5)} {height:rsc.z(4)} {height:rsc.z(3)} {height:rsc.z(2)} {height:rsc.z(1)} {height:rsc.z(0)} -attr xrf 13050 -attr oid 36 -attr vt d -attr @path {/get_square_intensity/height:rsc.z}
+load port {white_or_not:rsc.z} output -attr xrf 13051 -attr oid 37 -attr vt d -attr @path {/get_square_intensity/white_or_not:rsc.z}
+load port {last_pixel:rsc.z} output -attr xrf 13052 -attr oid 38 -attr vt d -attr @path {/get_square_intensity/last_pixel:rsc.z}
+load port {clk} input -attr xrf 13053 -attr oid 39 -attr vt d -attr @path {/get_square_intensity/clk}
+load port {en} input -attr xrf 13054 -attr oid 40 -attr vt d -attr @path {/get_square_intensity/en}
+load port {arst_n} input -attr xrf 13055 -attr oid 41 -attr vt d -attr @path {/get_square_intensity/arst_n}
+load symbol "mgc_ioport.mgc_in_wire(1,20)" "INTERFACE" GEN boxcolor 0 \
+     portBus {d(19:0)} output 20 {d(19)} {d(18)} {d(17)} {d(16)} {d(15)} {d(14)} {d(13)} {d(12)} {d(11)} {d(10)} {d(9)} {d(8)} {d(7)} {d(6)} {d(5)} {d(4)} {d(3)} {d(2)} {d(1)} {d(0)} \
+     portBus {z(19:0)} input 20 {z(19)} {z(18)} {z(17)} {z(16)} {z(15)} {z(14)} {z(13)} {z(12)} {z(11)} {z(10)} {z(9)} {z(8)} {z(7)} {z(6)} {z(5)} {z(4)} {z(3)} {z(2)} {z(1)} {z(0)} \
+
+load symbol "mgc_ioport.mgc_in_wire(3,10)" "INTERFACE" GEN boxcolor 0 \
+     portBus {d(9:0)} output 10 {d(9)} {d(8)} {d(7)} {d(6)} {d(5)} {d(4)} {d(3)} {d(2)} {d(1)} {d(0)} \
+     portBus {z(9:0)} input 10 {z(9)} {z(8)} {z(7)} {z(6)} {z(5)} {z(4)} {z(3)} {z(2)} {z(1)} {z(0)} \
+
+load symbol "mgc_ioport.mgc_in_wire(5,10)" "INTERFACE" GEN boxcolor 0 \
+     portBus {d(9:0)} output 10 {d(9)} {d(8)} {d(7)} {d(6)} {d(5)} {d(4)} {d(3)} {d(2)} {d(1)} {d(0)} \
+     portBus {z(9:0)} input 10 {z(9)} {z(8)} {z(7)} {z(6)} {z(5)} {z(4)} {z(3)} {z(2)} {z(1)} {z(0)} \
+
+load symbol "mgc_ioport.mgc_out_stdreg(7,1)" "INTERFACE" GEN boxcolor 0 \
+     portBus {d(0:0)} input 1 {d(0)} \
+     portBus {z(0:0)} output 1 {z(0)} \
+
+load symbol "mgc_ioport.mgc_out_stdreg(8,1)" "INTERFACE" GEN boxcolor 0 \
+     portBus {d(0:0)} input 1 {d(0)} \
+     portBus {z(0:0)} output 1 {z(0)} \
+
+load symbol "get_square_intensity:core" "orig" GEN \
+     port {clk#1} input \
+     port {en#1} input \
+     port {arst_n#1} input \
+     portBus {vga_xy:rsc:mgc_in_wire.d(19:0)} input 20 {vga_xy:rsc:mgc_in_wire.d(19)} {vga_xy:rsc:mgc_in_wire.d(18)} {vga_xy:rsc:mgc_in_wire.d(17)} {vga_xy:rsc:mgc_in_wire.d(16)} {vga_xy:rsc:mgc_in_wire.d(15)} {vga_xy:rsc:mgc_in_wire.d(14)} {vga_xy:rsc:mgc_in_wire.d(13)} {vga_xy:rsc:mgc_in_wire.d(12)} {vga_xy:rsc:mgc_in_wire.d(11)} {vga_xy:rsc:mgc_in_wire.d(10)} {vga_xy:rsc:mgc_in_wire.d(9)} {vga_xy:rsc:mgc_in_wire.d(8)} {vga_xy:rsc:mgc_in_wire.d(7)} {vga_xy:rsc:mgc_in_wire.d(6)} {vga_xy:rsc:mgc_in_wire.d(5)} {vga_xy:rsc:mgc_in_wire.d(4)} {vga_xy:rsc:mgc_in_wire.d(3)} {vga_xy:rsc:mgc_in_wire.d(2)} {vga_xy:rsc:mgc_in_wire.d(1)} {vga_xy:rsc:mgc_in_wire.d(0)} \
+     portBus {y_top_left:rsc:mgc_in_wire.d(9:0)} input 10 {y_top_left:rsc:mgc_in_wire.d(9)} {y_top_left:rsc:mgc_in_wire.d(8)} {y_top_left:rsc:mgc_in_wire.d(7)} {y_top_left:rsc:mgc_in_wire.d(6)} {y_top_left:rsc:mgc_in_wire.d(5)} {y_top_left:rsc:mgc_in_wire.d(4)} {y_top_left:rsc:mgc_in_wire.d(3)} {y_top_left:rsc:mgc_in_wire.d(2)} {y_top_left:rsc:mgc_in_wire.d(1)} {y_top_left:rsc:mgc_in_wire.d(0)} \
+     portBus {height:rsc:mgc_in_wire.d(9:0)} input 10 {height:rsc:mgc_in_wire.d(9)} {height:rsc:mgc_in_wire.d(8)} {height:rsc:mgc_in_wire.d(7)} {height:rsc:mgc_in_wire.d(6)} {height:rsc:mgc_in_wire.d(5)} {height:rsc:mgc_in_wire.d(4)} {height:rsc:mgc_in_wire.d(3)} {height:rsc:mgc_in_wire.d(2)} {height:rsc:mgc_in_wire.d(1)} {height:rsc:mgc_in_wire.d(0)} \
+     port {last_pixel:rsc:mgc_out_stdreg.d} output \
+
+load net {vga_xy:rsc:mgc_in_wire.d#1(0)} -attr vt d
+load net {vga_xy:rsc:mgc_in_wire.d#1(1)} -attr vt d
+load net {vga_xy:rsc:mgc_in_wire.d#1(2)} -attr vt d
+load net {vga_xy:rsc:mgc_in_wire.d#1(3)} -attr vt d
+load net {vga_xy:rsc:mgc_in_wire.d#1(4)} -attr vt d
+load net {vga_xy:rsc:mgc_in_wire.d#1(5)} -attr vt d
+load net {vga_xy:rsc:mgc_in_wire.d#1(6)} -attr vt d
+load net {vga_xy:rsc:mgc_in_wire.d#1(7)} -attr vt d
+load net {vga_xy:rsc:mgc_in_wire.d#1(8)} -attr vt d
+load net {vga_xy:rsc:mgc_in_wire.d#1(9)} -attr vt d
+load net {vga_xy:rsc:mgc_in_wire.d#1(10)} -attr vt d
+load net {vga_xy:rsc:mgc_in_wire.d#1(11)} -attr vt d
+load net {vga_xy:rsc:mgc_in_wire.d#1(12)} -attr vt d
+load net {vga_xy:rsc:mgc_in_wire.d#1(13)} -attr vt d
+load net {vga_xy:rsc:mgc_in_wire.d#1(14)} -attr vt d
+load net {vga_xy:rsc:mgc_in_wire.d#1(15)} -attr vt d
+load net {vga_xy:rsc:mgc_in_wire.d#1(16)} -attr vt d
+load net {vga_xy:rsc:mgc_in_wire.d#1(17)} -attr vt d
+load net {vga_xy:rsc:mgc_in_wire.d#1(18)} -attr vt d
+load net {vga_xy:rsc:mgc_in_wire.d#1(19)} -attr vt d
+load netBundle {vga_xy:rsc:mgc_in_wire.d#1} 20 {vga_xy:rsc:mgc_in_wire.d#1(0)} {vga_xy:rsc:mgc_in_wire.d#1(1)} {vga_xy:rsc:mgc_in_wire.d#1(2)} {vga_xy:rsc:mgc_in_wire.d#1(3)} {vga_xy:rsc:mgc_in_wire.d#1(4)} {vga_xy:rsc:mgc_in_wire.d#1(5)} {vga_xy:rsc:mgc_in_wire.d#1(6)} {vga_xy:rsc:mgc_in_wire.d#1(7)} {vga_xy:rsc:mgc_in_wire.d#1(8)} {vga_xy:rsc:mgc_in_wire.d#1(9)} {vga_xy:rsc:mgc_in_wire.d#1(10)} {vga_xy:rsc:mgc_in_wire.d#1(11)} {vga_xy:rsc:mgc_in_wire.d#1(12)} {vga_xy:rsc:mgc_in_wire.d#1(13)} {vga_xy:rsc:mgc_in_wire.d#1(14)} {vga_xy:rsc:mgc_in_wire.d#1(15)} {vga_xy:rsc:mgc_in_wire.d#1(16)} {vga_xy:rsc:mgc_in_wire.d#1(17)} {vga_xy:rsc:mgc_in_wire.d#1(18)} {vga_xy:rsc:mgc_in_wire.d#1(19)} -attr xrf 13056 -attr oid 42 -attr vt d -attr @path {/get_square_intensity/vga_xy:rsc:mgc_in_wire.d}
+load net {y_top_left:rsc:mgc_in_wire.d#1(0)} -attr vt d
+load net {y_top_left:rsc:mgc_in_wire.d#1(1)} -attr vt d
+load net {y_top_left:rsc:mgc_in_wire.d#1(2)} -attr vt d
+load net {y_top_left:rsc:mgc_in_wire.d#1(3)} -attr vt d
+load net {y_top_left:rsc:mgc_in_wire.d#1(4)} -attr vt d
+load net {y_top_left:rsc:mgc_in_wire.d#1(5)} -attr vt d
+load net {y_top_left:rsc:mgc_in_wire.d#1(6)} -attr vt d
+load net {y_top_left:rsc:mgc_in_wire.d#1(7)} -attr vt d
+load net {y_top_left:rsc:mgc_in_wire.d#1(8)} -attr vt d
+load net {y_top_left:rsc:mgc_in_wire.d#1(9)} -attr vt d
+load netBundle {y_top_left:rsc:mgc_in_wire.d#1} 10 {y_top_left:rsc:mgc_in_wire.d#1(0)} {y_top_left:rsc:mgc_in_wire.d#1(1)} {y_top_left:rsc:mgc_in_wire.d#1(2)} {y_top_left:rsc:mgc_in_wire.d#1(3)} {y_top_left:rsc:mgc_in_wire.d#1(4)} {y_top_left:rsc:mgc_in_wire.d#1(5)} {y_top_left:rsc:mgc_in_wire.d#1(6)} {y_top_left:rsc:mgc_in_wire.d#1(7)} {y_top_left:rsc:mgc_in_wire.d#1(8)} {y_top_left:rsc:mgc_in_wire.d#1(9)} -attr xrf 13057 -attr oid 43 -attr vt d -attr @path {/get_square_intensity/y_top_left:rsc:mgc_in_wire.d}
+load net {height:rsc:mgc_in_wire.d#1(0)} -attr vt d
+load net {height:rsc:mgc_in_wire.d#1(1)} -attr vt d
+load net {height:rsc:mgc_in_wire.d#1(2)} -attr vt d
+load net {height:rsc:mgc_in_wire.d#1(3)} -attr vt d
+load net {height:rsc:mgc_in_wire.d#1(4)} -attr vt d
+load net {height:rsc:mgc_in_wire.d#1(5)} -attr vt d
+load net {height:rsc:mgc_in_wire.d#1(6)} -attr vt d
+load net {height:rsc:mgc_in_wire.d#1(7)} -attr vt d
+load net {height:rsc:mgc_in_wire.d#1(8)} -attr vt d
+load net {height:rsc:mgc_in_wire.d#1(9)} -attr vt d
+load netBundle {height:rsc:mgc_in_wire.d#1} 10 {height:rsc:mgc_in_wire.d#1(0)} {height:rsc:mgc_in_wire.d#1(1)} {height:rsc:mgc_in_wire.d#1(2)} {height:rsc:mgc_in_wire.d#1(3)} {height:rsc:mgc_in_wire.d#1(4)} {height:rsc:mgc_in_wire.d#1(5)} {height:rsc:mgc_in_wire.d#1(6)} {height:rsc:mgc_in_wire.d#1(7)} {height:rsc:mgc_in_wire.d#1(8)} {height:rsc:mgc_in_wire.d#1(9)} -attr xrf 13058 -attr oid 44 -attr vt d -attr @path {/get_square_intensity/height:rsc:mgc_in_wire.d}
+load net {last_pixel:rsc:mgc_out_stdreg.d#1} -attr xrf 13059 -attr oid 45 -attr vt d
+load net {vga_xy:rsc.z(0)} -attr vt d
+load net {vga_xy:rsc.z(1)} -attr vt d
+load net {vga_xy:rsc.z(2)} -attr vt d
+load net {vga_xy:rsc.z(3)} -attr vt d
+load net {vga_xy:rsc.z(4)} -attr vt d
+load net {vga_xy:rsc.z(5)} -attr vt d
+load net {vga_xy:rsc.z(6)} -attr vt d
+load net {vga_xy:rsc.z(7)} -attr vt d
+load net {vga_xy:rsc.z(8)} -attr vt d
+load net {vga_xy:rsc.z(9)} -attr vt d
+load net {vga_xy:rsc.z(10)} -attr vt d
+load net {vga_xy:rsc.z(11)} -attr vt d
+load net {vga_xy:rsc.z(12)} -attr vt d
+load net {vga_xy:rsc.z(13)} -attr vt d
+load net {vga_xy:rsc.z(14)} -attr vt d
+load net {vga_xy:rsc.z(15)} -attr vt d
+load net {vga_xy:rsc.z(16)} -attr vt d
+load net {vga_xy:rsc.z(17)} -attr vt d
+load net {vga_xy:rsc.z(18)} -attr vt d
+load net {vga_xy:rsc.z(19)} -attr vt d
+load netBundle {vga_xy:rsc.z} 20 {vga_xy:rsc.z(0)} {vga_xy:rsc.z(1)} {vga_xy:rsc.z(2)} {vga_xy:rsc.z(3)} {vga_xy:rsc.z(4)} {vga_xy:rsc.z(5)} {vga_xy:rsc.z(6)} {vga_xy:rsc.z(7)} {vga_xy:rsc.z(8)} {vga_xy:rsc.z(9)} {vga_xy:rsc.z(10)} {vga_xy:rsc.z(11)} {vga_xy:rsc.z(12)} {vga_xy:rsc.z(13)} {vga_xy:rsc.z(14)} {vga_xy:rsc.z(15)} {vga_xy:rsc.z(16)} {vga_xy:rsc.z(17)} {vga_xy:rsc.z(18)} {vga_xy:rsc.z(19)} -attr xrf 13060 -attr oid 46 -attr vt d -attr @path {/get_square_intensity/vga_xy:rsc.z}
+load net {vga_xy:rsc.z(0)} -port {vga_xy:rsc.z(0)} -attr vt d
+load net {vga_xy:rsc.z(1)} -port {vga_xy:rsc.z(1)} -attr vt d
+load net {vga_xy:rsc.z(2)} -port {vga_xy:rsc.z(2)} -attr vt d
+load net {vga_xy:rsc.z(3)} -port {vga_xy:rsc.z(3)} -attr vt d
+load net {vga_xy:rsc.z(4)} -port {vga_xy:rsc.z(4)} -attr vt d
+load net {vga_xy:rsc.z(5)} -port {vga_xy:rsc.z(5)} -attr vt d
+load net {vga_xy:rsc.z(6)} -port {vga_xy:rsc.z(6)} -attr vt d
+load net {vga_xy:rsc.z(7)} -port {vga_xy:rsc.z(7)} -attr vt d
+load net {vga_xy:rsc.z(8)} -port {vga_xy:rsc.z(8)} -attr vt d
+load net {vga_xy:rsc.z(9)} -port {vga_xy:rsc.z(9)} -attr vt d
+load net {vga_xy:rsc.z(10)} -port {vga_xy:rsc.z(10)} -attr vt d
+load net {vga_xy:rsc.z(11)} -port {vga_xy:rsc.z(11)} -attr vt d
+load net {vga_xy:rsc.z(12)} -port {vga_xy:rsc.z(12)} -attr vt d
+load net {vga_xy:rsc.z(13)} -port {vga_xy:rsc.z(13)} -attr vt d
+load net {vga_xy:rsc.z(14)} -port {vga_xy:rsc.z(14)} -attr vt d
+load net {vga_xy:rsc.z(15)} -port {vga_xy:rsc.z(15)} -attr vt d
+load net {vga_xy:rsc.z(16)} -port {vga_xy:rsc.z(16)} -attr vt d
+load net {vga_xy:rsc.z(17)} -port {vga_xy:rsc.z(17)} -attr vt d
+load net {vga_xy:rsc.z(18)} -port {vga_xy:rsc.z(18)} -attr vt d
+load net {vga_xy:rsc.z(19)} -port {vga_xy:rsc.z(19)} -attr vt d
+load netBundle {vga_xy:rsc.z} 20 {vga_xy:rsc.z(0)} {vga_xy:rsc.z(1)} {vga_xy:rsc.z(2)} {vga_xy:rsc.z(3)} {vga_xy:rsc.z(4)} {vga_xy:rsc.z(5)} {vga_xy:rsc.z(6)} {vga_xy:rsc.z(7)} {vga_xy:rsc.z(8)} {vga_xy:rsc.z(9)} {vga_xy:rsc.z(10)} {vga_xy:rsc.z(11)} {vga_xy:rsc.z(12)} {vga_xy:rsc.z(13)} {vga_xy:rsc.z(14)} {vga_xy:rsc.z(15)} {vga_xy:rsc.z(16)} {vga_xy:rsc.z(17)} {vga_xy:rsc.z(18)} {vga_xy:rsc.z(19)} -attr xrf 13061 -attr oid 47 -attr vt d -attr @path {/get_square_intensity/vga_xy:rsc.z}
+load net {y_top_left:rsc.z(0)} -attr vt d
+load net {y_top_left:rsc.z(1)} -attr vt d
+load net {y_top_left:rsc.z(2)} -attr vt d
+load net {y_top_left:rsc.z(3)} -attr vt d
+load net {y_top_left:rsc.z(4)} -attr vt d
+load net {y_top_left:rsc.z(5)} -attr vt d
+load net {y_top_left:rsc.z(6)} -attr vt d
+load net {y_top_left:rsc.z(7)} -attr vt d
+load net {y_top_left:rsc.z(8)} -attr vt d
+load net {y_top_left:rsc.z(9)} -attr vt d
+load netBundle {y_top_left:rsc.z} 10 {y_top_left:rsc.z(0)} {y_top_left:rsc.z(1)} {y_top_left:rsc.z(2)} {y_top_left:rsc.z(3)} {y_top_left:rsc.z(4)} {y_top_left:rsc.z(5)} {y_top_left:rsc.z(6)} {y_top_left:rsc.z(7)} {y_top_left:rsc.z(8)} {y_top_left:rsc.z(9)} -attr xrf 13062 -attr oid 48 -attr vt d -attr @path {/get_square_intensity/y_top_left:rsc.z}
+load net {y_top_left:rsc.z(0)} -port {y_top_left:rsc.z(0)} -attr vt d
+load net {y_top_left:rsc.z(1)} -port {y_top_left:rsc.z(1)} -attr vt d
+load net {y_top_left:rsc.z(2)} -port {y_top_left:rsc.z(2)} -attr vt d
+load net {y_top_left:rsc.z(3)} -port {y_top_left:rsc.z(3)} -attr vt d
+load net {y_top_left:rsc.z(4)} -port {y_top_left:rsc.z(4)} -attr vt d
+load net {y_top_left:rsc.z(5)} -port {y_top_left:rsc.z(5)} -attr vt d
+load net {y_top_left:rsc.z(6)} -port {y_top_left:rsc.z(6)} -attr vt d
+load net {y_top_left:rsc.z(7)} -port {y_top_left:rsc.z(7)} -attr vt d
+load net {y_top_left:rsc.z(8)} -port {y_top_left:rsc.z(8)} -attr vt d
+load net {y_top_left:rsc.z(9)} -port {y_top_left:rsc.z(9)} -attr vt d
+load netBundle {y_top_left:rsc.z} 10 {y_top_left:rsc.z(0)} {y_top_left:rsc.z(1)} {y_top_left:rsc.z(2)} {y_top_left:rsc.z(3)} {y_top_left:rsc.z(4)} {y_top_left:rsc.z(5)} {y_top_left:rsc.z(6)} {y_top_left:rsc.z(7)} {y_top_left:rsc.z(8)} {y_top_left:rsc.z(9)} -attr xrf 13063 -attr oid 49 -attr vt d -attr @path {/get_square_intensity/y_top_left:rsc.z}
+load net {height:rsc.z(0)} -attr vt d
+load net {height:rsc.z(1)} -attr vt d
+load net {height:rsc.z(2)} -attr vt d
+load net {height:rsc.z(3)} -attr vt d
+load net {height:rsc.z(4)} -attr vt d
+load net {height:rsc.z(5)} -attr vt d
+load net {height:rsc.z(6)} -attr vt d
+load net {height:rsc.z(7)} -attr vt d
+load net {height:rsc.z(8)} -attr vt d
+load net {height:rsc.z(9)} -attr vt d
+load netBundle {height:rsc.z} 10 {height:rsc.z(0)} {height:rsc.z(1)} {height:rsc.z(2)} {height:rsc.z(3)} {height:rsc.z(4)} {height:rsc.z(5)} {height:rsc.z(6)} {height:rsc.z(7)} {height:rsc.z(8)} {height:rsc.z(9)} -attr xrf 13064 -attr oid 50 -attr vt d -attr @path {/get_square_intensity/height:rsc.z}
+load net {height:rsc.z(0)} -port {height:rsc.z(0)} -attr vt d
+load net {height:rsc.z(1)} -port {height:rsc.z(1)} -attr vt d
+load net {height:rsc.z(2)} -port {height:rsc.z(2)} -attr vt d
+load net {height:rsc.z(3)} -port {height:rsc.z(3)} -attr vt d
+load net {height:rsc.z(4)} -port {height:rsc.z(4)} -attr vt d
+load net {height:rsc.z(5)} -port {height:rsc.z(5)} -attr vt d
+load net {height:rsc.z(6)} -port {height:rsc.z(6)} -attr vt d
+load net {height:rsc.z(7)} -port {height:rsc.z(7)} -attr vt d
+load net {height:rsc.z(8)} -port {height:rsc.z(8)} -attr vt d
+load net {height:rsc.z(9)} -port {height:rsc.z(9)} -attr vt d
+load netBundle {height:rsc.z} 10 {height:rsc.z(0)} {height:rsc.z(1)} {height:rsc.z(2)} {height:rsc.z(3)} {height:rsc.z(4)} {height:rsc.z(5)} {height:rsc.z(6)} {height:rsc.z(7)} {height:rsc.z(8)} {height:rsc.z(9)} -attr xrf 13065 -attr oid 51 -attr vt d -attr @path {/get_square_intensity/height:rsc.z}
+load net {white_or_not:rsc.z} -attr xrf 13066 -attr oid 52 -attr vt d
+load net {white_or_not:rsc.z} -port {white_or_not:rsc.z} -attr xrf 13067 -attr oid 53 -attr vt d -attr @path {/get_square_intensity/white_or_not:rsc.z}
+load net {last_pixel:rsc.z} -attr xrf 13068 -attr oid 54 -attr vt d
+load net {last_pixel:rsc.z} -port {last_pixel:rsc.z} -attr xrf 13069 -attr oid 55 -attr vt d -attr @path {/get_square_intensity/last_pixel:rsc.z}
+load net {clk} -attr xrf 13070 -attr oid 56
+load net {clk} -port {clk} -attr xrf 13071 -attr oid 57
+load net {en} -attr xrf 13072 -attr oid 58
+load net {en} -port {en} -attr xrf 13073 -attr oid 59
+load net {arst_n} -attr xrf 13074 -attr oid 60
+load net {arst_n} -port {arst_n} -attr xrf 13075 -attr oid 61
+load inst "get_square_intensity:core:inst" "get_square_intensity:core" "orig" -attr xrf 13076 -attr oid 62 -attr vt dc -attr @path {/get_square_intensity/get_square_intensity:core:inst} -attr area 24.233538 -attr hier "/get_square_intensity/get_square_intensity:core" -pg 1 -lvl 3
+load net {clk} -pin  "get_square_intensity:core:inst" {clk#1} -attr xrf 13077 -attr oid 63 -attr @path {/get_square_intensity/clk}
+load net {en} -pin  "get_square_intensity:core:inst" {en#1} -attr xrf 13078 -attr oid 64 -attr @path {/get_square_intensity/en}
+load net {arst_n} -pin  "get_square_intensity:core:inst" {arst_n#1} -attr xrf 13079 -attr oid 65 -attr @path {/get_square_intensity/arst_n}
+load net {vga_xy:rsc:mgc_in_wire.d#1(0)} -pin  "get_square_intensity:core:inst" {vga_xy:rsc:mgc_in_wire.d(0)} -attr vt dc -attr @path {/get_square_intensity/vga_xy:rsc:mgc_in_wire.d}
+load net {vga_xy:rsc:mgc_in_wire.d#1(1)} -pin  "get_square_intensity:core:inst" {vga_xy:rsc:mgc_in_wire.d(1)} -attr vt dc -attr @path {/get_square_intensity/vga_xy:rsc:mgc_in_wire.d}
+load net {vga_xy:rsc:mgc_in_wire.d#1(2)} -pin  "get_square_intensity:core:inst" {vga_xy:rsc:mgc_in_wire.d(2)} -attr vt dc -attr @path {/get_square_intensity/vga_xy:rsc:mgc_in_wire.d}
+load net {vga_xy:rsc:mgc_in_wire.d#1(3)} -pin  "get_square_intensity:core:inst" {vga_xy:rsc:mgc_in_wire.d(3)} -attr vt dc -attr @path {/get_square_intensity/vga_xy:rsc:mgc_in_wire.d}
+load net {vga_xy:rsc:mgc_in_wire.d#1(4)} -pin  "get_square_intensity:core:inst" {vga_xy:rsc:mgc_in_wire.d(4)} -attr vt dc -attr @path {/get_square_intensity/vga_xy:rsc:mgc_in_wire.d}
+load net {vga_xy:rsc:mgc_in_wire.d#1(5)} -pin  "get_square_intensity:core:inst" {vga_xy:rsc:mgc_in_wire.d(5)} -attr vt dc -attr @path {/get_square_intensity/vga_xy:rsc:mgc_in_wire.d}
+load net {vga_xy:rsc:mgc_in_wire.d#1(6)} -pin  "get_square_intensity:core:inst" {vga_xy:rsc:mgc_in_wire.d(6)} -attr vt dc -attr @path {/get_square_intensity/vga_xy:rsc:mgc_in_wire.d}
+load net {vga_xy:rsc:mgc_in_wire.d#1(7)} -pin  "get_square_intensity:core:inst" {vga_xy:rsc:mgc_in_wire.d(7)} -attr vt dc -attr @path {/get_square_intensity/vga_xy:rsc:mgc_in_wire.d}
+load net {vga_xy:rsc:mgc_in_wire.d#1(8)} -pin  "get_square_intensity:core:inst" {vga_xy:rsc:mgc_in_wire.d(8)} -attr vt dc -attr @path {/get_square_intensity/vga_xy:rsc:mgc_in_wire.d}
+load net {vga_xy:rsc:mgc_in_wire.d#1(9)} -pin  "get_square_intensity:core:inst" {vga_xy:rsc:mgc_in_wire.d(9)} -attr vt dc -attr @path {/get_square_intensity/vga_xy:rsc:mgc_in_wire.d}
+load net {vga_xy:rsc:mgc_in_wire.d#1(10)} -pin  "get_square_intensity:core:inst" {vga_xy:rsc:mgc_in_wire.d(10)} -attr vt dc -attr @path {/get_square_intensity/vga_xy:rsc:mgc_in_wire.d}
+load net {vga_xy:rsc:mgc_in_wire.d#1(11)} -pin  "get_square_intensity:core:inst" {vga_xy:rsc:mgc_in_wire.d(11)} -attr vt dc -attr @path {/get_square_intensity/vga_xy:rsc:mgc_in_wire.d}
+load net {vga_xy:rsc:mgc_in_wire.d#1(12)} -pin  "get_square_intensity:core:inst" {vga_xy:rsc:mgc_in_wire.d(12)} -attr vt dc -attr @path {/get_square_intensity/vga_xy:rsc:mgc_in_wire.d}
+load net {vga_xy:rsc:mgc_in_wire.d#1(13)} -pin  "get_square_intensity:core:inst" {vga_xy:rsc:mgc_in_wire.d(13)} -attr vt dc -attr @path {/get_square_intensity/vga_xy:rsc:mgc_in_wire.d}
+load net {vga_xy:rsc:mgc_in_wire.d#1(14)} -pin  "get_square_intensity:core:inst" {vga_xy:rsc:mgc_in_wire.d(14)} -attr vt dc -attr @path {/get_square_intensity/vga_xy:rsc:mgc_in_wire.d}
+load net {vga_xy:rsc:mgc_in_wire.d#1(15)} -pin  "get_square_intensity:core:inst" {vga_xy:rsc:mgc_in_wire.d(15)} -attr vt dc -attr @path {/get_square_intensity/vga_xy:rsc:mgc_in_wire.d}
+load net {vga_xy:rsc:mgc_in_wire.d#1(16)} -pin  "get_square_intensity:core:inst" {vga_xy:rsc:mgc_in_wire.d(16)} -attr vt dc -attr @path {/get_square_intensity/vga_xy:rsc:mgc_in_wire.d}
+load net {vga_xy:rsc:mgc_in_wire.d#1(17)} -pin  "get_square_intensity:core:inst" {vga_xy:rsc:mgc_in_wire.d(17)} -attr vt dc -attr @path {/get_square_intensity/vga_xy:rsc:mgc_in_wire.d}
+load net {vga_xy:rsc:mgc_in_wire.d#1(18)} -pin  "get_square_intensity:core:inst" {vga_xy:rsc:mgc_in_wire.d(18)} -attr vt dc -attr @path {/get_square_intensity/vga_xy:rsc:mgc_in_wire.d}
+load net {vga_xy:rsc:mgc_in_wire.d#1(19)} -pin  "get_square_intensity:core:inst" {vga_xy:rsc:mgc_in_wire.d(19)} -attr vt dc -attr @path {/get_square_intensity/vga_xy:rsc:mgc_in_wire.d}
+load net {y_top_left:rsc:mgc_in_wire.d#1(0)} -pin  "get_square_intensity:core:inst" {y_top_left:rsc:mgc_in_wire.d(0)} -attr vt dc -attr @path {/get_square_intensity/y_top_left:rsc:mgc_in_wire.d}
+load net {y_top_left:rsc:mgc_in_wire.d#1(1)} -pin  "get_square_intensity:core:inst" {y_top_left:rsc:mgc_in_wire.d(1)} -attr vt dc -attr @path {/get_square_intensity/y_top_left:rsc:mgc_in_wire.d}
+load net {y_top_left:rsc:mgc_in_wire.d#1(2)} -pin  "get_square_intensity:core:inst" {y_top_left:rsc:mgc_in_wire.d(2)} -attr vt dc -attr @path {/get_square_intensity/y_top_left:rsc:mgc_in_wire.d}
+load net {y_top_left:rsc:mgc_in_wire.d#1(3)} -pin  "get_square_intensity:core:inst" {y_top_left:rsc:mgc_in_wire.d(3)} -attr vt dc -attr @path {/get_square_intensity/y_top_left:rsc:mgc_in_wire.d}
+load net {y_top_left:rsc:mgc_in_wire.d#1(4)} -pin  "get_square_intensity:core:inst" {y_top_left:rsc:mgc_in_wire.d(4)} -attr vt dc -attr @path {/get_square_intensity/y_top_left:rsc:mgc_in_wire.d}
+load net {y_top_left:rsc:mgc_in_wire.d#1(5)} -pin  "get_square_intensity:core:inst" {y_top_left:rsc:mgc_in_wire.d(5)} -attr vt dc -attr @path {/get_square_intensity/y_top_left:rsc:mgc_in_wire.d}
+load net {y_top_left:rsc:mgc_in_wire.d#1(6)} -pin  "get_square_intensity:core:inst" {y_top_left:rsc:mgc_in_wire.d(6)} -attr vt dc -attr @path {/get_square_intensity/y_top_left:rsc:mgc_in_wire.d}
+load net {y_top_left:rsc:mgc_in_wire.d#1(7)} -pin  "get_square_intensity:core:inst" {y_top_left:rsc:mgc_in_wire.d(7)} -attr vt dc -attr @path {/get_square_intensity/y_top_left:rsc:mgc_in_wire.d}
+load net {y_top_left:rsc:mgc_in_wire.d#1(8)} -pin  "get_square_intensity:core:inst" {y_top_left:rsc:mgc_in_wire.d(8)} -attr vt dc -attr @path {/get_square_intensity/y_top_left:rsc:mgc_in_wire.d}
+load net {y_top_left:rsc:mgc_in_wire.d#1(9)} -pin  "get_square_intensity:core:inst" {y_top_left:rsc:mgc_in_wire.d(9)} -attr vt dc -attr @path {/get_square_intensity/y_top_left:rsc:mgc_in_wire.d}
+load net {height:rsc:mgc_in_wire.d#1(0)} -pin  "get_square_intensity:core:inst" {height:rsc:mgc_in_wire.d(0)} -attr vt dc -attr @path {/get_square_intensity/height:rsc:mgc_in_wire.d}
+load net {height:rsc:mgc_in_wire.d#1(1)} -pin  "get_square_intensity:core:inst" {height:rsc:mgc_in_wire.d(1)} -attr vt dc -attr @path {/get_square_intensity/height:rsc:mgc_in_wire.d}
+load net {height:rsc:mgc_in_wire.d#1(2)} -pin  "get_square_intensity:core:inst" {height:rsc:mgc_in_wire.d(2)} -attr vt dc -attr @path {/get_square_intensity/height:rsc:mgc_in_wire.d}
+load net {height:rsc:mgc_in_wire.d#1(3)} -pin  "get_square_intensity:core:inst" {height:rsc:mgc_in_wire.d(3)} -attr vt dc -attr @path {/get_square_intensity/height:rsc:mgc_in_wire.d}
+load net {height:rsc:mgc_in_wire.d#1(4)} -pin  "get_square_intensity:core:inst" {height:rsc:mgc_in_wire.d(4)} -attr vt dc -attr @path {/get_square_intensity/height:rsc:mgc_in_wire.d}
+load net {height:rsc:mgc_in_wire.d#1(5)} -pin  "get_square_intensity:core:inst" {height:rsc:mgc_in_wire.d(5)} -attr vt dc -attr @path {/get_square_intensity/height:rsc:mgc_in_wire.d}
+load net {height:rsc:mgc_in_wire.d#1(6)} -pin  "get_square_intensity:core:inst" {height:rsc:mgc_in_wire.d(6)} -attr vt dc -attr @path {/get_square_intensity/height:rsc:mgc_in_wire.d}
+load net {height:rsc:mgc_in_wire.d#1(7)} -pin  "get_square_intensity:core:inst" {height:rsc:mgc_in_wire.d(7)} -attr vt dc -attr @path {/get_square_intensity/height:rsc:mgc_in_wire.d}
+load net {height:rsc:mgc_in_wire.d#1(8)} -pin  "get_square_intensity:core:inst" {height:rsc:mgc_in_wire.d(8)} -attr vt dc -attr @path {/get_square_intensity/height:rsc:mgc_in_wire.d}
+load net {height:rsc:mgc_in_wire.d#1(9)} -pin  "get_square_intensity:core:inst" {height:rsc:mgc_in_wire.d(9)} -attr vt dc -attr @path {/get_square_intensity/height:rsc:mgc_in_wire.d}
+load net {last_pixel:rsc:mgc_out_stdreg.d#1} -pin  "get_square_intensity:core:inst" {last_pixel:rsc:mgc_out_stdreg.d} -attr xrf 13080 -attr oid 66 -attr vt dc -attr @path {/get_square_intensity/last_pixel:rsc:mgc_out_stdreg.d}
+load inst "vga_xy:rsc:mgc_in_wire" "mgc_ioport.mgc_in_wire(1,20)" "INTERFACE" -attr xrf 13081 -attr oid 67 -attr vt d -attr @path {/get_square_intensity/vga_xy:rsc:mgc_in_wire} -attr delay -1000000000000000000000000000000.000000 -attr qmod "mgc_ioport.mgc_in_wire(1,20)" -pg 1 -lvl 1
+load net {vga_xy:rsc:mgc_in_wire.d#1(0)} -pin  "vga_xy:rsc:mgc_in_wire" {d(0)} -attr vt d -attr @path {/get_square_intensity/vga_xy:rsc:mgc_in_wire.d}
+load net {vga_xy:rsc:mgc_in_wire.d#1(1)} -pin  "vga_xy:rsc:mgc_in_wire" {d(1)} -attr vt d -attr @path {/get_square_intensity/vga_xy:rsc:mgc_in_wire.d}
+load net {vga_xy:rsc:mgc_in_wire.d#1(2)} -pin  "vga_xy:rsc:mgc_in_wire" {d(2)} -attr vt d -attr @path {/get_square_intensity/vga_xy:rsc:mgc_in_wire.d}
+load net {vga_xy:rsc:mgc_in_wire.d#1(3)} -pin  "vga_xy:rsc:mgc_in_wire" {d(3)} -attr vt d -attr @path {/get_square_intensity/vga_xy:rsc:mgc_in_wire.d}
+load net {vga_xy:rsc:mgc_in_wire.d#1(4)} -pin  "vga_xy:rsc:mgc_in_wire" {d(4)} -attr vt d -attr @path {/get_square_intensity/vga_xy:rsc:mgc_in_wire.d}
+load net {vga_xy:rsc:mgc_in_wire.d#1(5)} -pin  "vga_xy:rsc:mgc_in_wire" {d(5)} -attr vt d -attr @path {/get_square_intensity/vga_xy:rsc:mgc_in_wire.d}
+load net {vga_xy:rsc:mgc_in_wire.d#1(6)} -pin  "vga_xy:rsc:mgc_in_wire" {d(6)} -attr vt d -attr @path {/get_square_intensity/vga_xy:rsc:mgc_in_wire.d}
+load net {vga_xy:rsc:mgc_in_wire.d#1(7)} -pin  "vga_xy:rsc:mgc_in_wire" {d(7)} -attr vt d -attr @path {/get_square_intensity/vga_xy:rsc:mgc_in_wire.d}
+load net {vga_xy:rsc:mgc_in_wire.d#1(8)} -pin  "vga_xy:rsc:mgc_in_wire" {d(8)} -attr vt d -attr @path {/get_square_intensity/vga_xy:rsc:mgc_in_wire.d}
+load net {vga_xy:rsc:mgc_in_wire.d#1(9)} -pin  "vga_xy:rsc:mgc_in_wire" {d(9)} -attr vt d -attr @path {/get_square_intensity/vga_xy:rsc:mgc_in_wire.d}
+load net {vga_xy:rsc:mgc_in_wire.d#1(10)} -pin  "vga_xy:rsc:mgc_in_wire" {d(10)} -attr vt d -attr @path {/get_square_intensity/vga_xy:rsc:mgc_in_wire.d}
+load net {vga_xy:rsc:mgc_in_wire.d#1(11)} -pin  "vga_xy:rsc:mgc_in_wire" {d(11)} -attr vt d -attr @path {/get_square_intensity/vga_xy:rsc:mgc_in_wire.d}
+load net {vga_xy:rsc:mgc_in_wire.d#1(12)} -pin  "vga_xy:rsc:mgc_in_wire" {d(12)} -attr vt d -attr @path {/get_square_intensity/vga_xy:rsc:mgc_in_wire.d}
+load net {vga_xy:rsc:mgc_in_wire.d#1(13)} -pin  "vga_xy:rsc:mgc_in_wire" {d(13)} -attr vt d -attr @path {/get_square_intensity/vga_xy:rsc:mgc_in_wire.d}
+load net {vga_xy:rsc:mgc_in_wire.d#1(14)} -pin  "vga_xy:rsc:mgc_in_wire" {d(14)} -attr vt d -attr @path {/get_square_intensity/vga_xy:rsc:mgc_in_wire.d}
+load net {vga_xy:rsc:mgc_in_wire.d#1(15)} -pin  "vga_xy:rsc:mgc_in_wire" {d(15)} -attr vt d -attr @path {/get_square_intensity/vga_xy:rsc:mgc_in_wire.d}
+load net {vga_xy:rsc:mgc_in_wire.d#1(16)} -pin  "vga_xy:rsc:mgc_in_wire" {d(16)} -attr vt d -attr @path {/get_square_intensity/vga_xy:rsc:mgc_in_wire.d}
+load net {vga_xy:rsc:mgc_in_wire.d#1(17)} -pin  "vga_xy:rsc:mgc_in_wire" {d(17)} -attr vt d -attr @path {/get_square_intensity/vga_xy:rsc:mgc_in_wire.d}
+load net {vga_xy:rsc:mgc_in_wire.d#1(18)} -pin  "vga_xy:rsc:mgc_in_wire" {d(18)} -attr vt d -attr @path {/get_square_intensity/vga_xy:rsc:mgc_in_wire.d}
+load net {vga_xy:rsc:mgc_in_wire.d#1(19)} -pin  "vga_xy:rsc:mgc_in_wire" {d(19)} -attr vt d -attr @path {/get_square_intensity/vga_xy:rsc:mgc_in_wire.d}
+load net {vga_xy:rsc.z(0)} -pin  "vga_xy:rsc:mgc_in_wire" {z(0)} -attr vt d -attr @path {/get_square_intensity/vga_xy:rsc.z}
+load net {vga_xy:rsc.z(1)} -pin  "vga_xy:rsc:mgc_in_wire" {z(1)} -attr vt d -attr @path {/get_square_intensity/vga_xy:rsc.z}
+load net {vga_xy:rsc.z(2)} -pin  "vga_xy:rsc:mgc_in_wire" {z(2)} -attr vt d -attr @path {/get_square_intensity/vga_xy:rsc.z}
+load net {vga_xy:rsc.z(3)} -pin  "vga_xy:rsc:mgc_in_wire" {z(3)} -attr vt d -attr @path {/get_square_intensity/vga_xy:rsc.z}
+load net {vga_xy:rsc.z(4)} -pin  "vga_xy:rsc:mgc_in_wire" {z(4)} -attr vt d -attr @path {/get_square_intensity/vga_xy:rsc.z}
+load net {vga_xy:rsc.z(5)} -pin  "vga_xy:rsc:mgc_in_wire" {z(5)} -attr vt d -attr @path {/get_square_intensity/vga_xy:rsc.z}
+load net {vga_xy:rsc.z(6)} -pin  "vga_xy:rsc:mgc_in_wire" {z(6)} -attr vt d -attr @path {/get_square_intensity/vga_xy:rsc.z}
+load net {vga_xy:rsc.z(7)} -pin  "vga_xy:rsc:mgc_in_wire" {z(7)} -attr vt d -attr @path {/get_square_intensity/vga_xy:rsc.z}
+load net {vga_xy:rsc.z(8)} -pin  "vga_xy:rsc:mgc_in_wire" {z(8)} -attr vt d -attr @path {/get_square_intensity/vga_xy:rsc.z}
+load net {vga_xy:rsc.z(9)} -pin  "vga_xy:rsc:mgc_in_wire" {z(9)} -attr vt d -attr @path {/get_square_intensity/vga_xy:rsc.z}
+load net {vga_xy:rsc.z(10)} -pin  "vga_xy:rsc:mgc_in_wire" {z(10)} -attr vt d -attr @path {/get_square_intensity/vga_xy:rsc.z}
+load net {vga_xy:rsc.z(11)} -pin  "vga_xy:rsc:mgc_in_wire" {z(11)} -attr vt d -attr @path {/get_square_intensity/vga_xy:rsc.z}
+load net {vga_xy:rsc.z(12)} -pin  "vga_xy:rsc:mgc_in_wire" {z(12)} -attr vt d -attr @path {/get_square_intensity/vga_xy:rsc.z}
+load net {vga_xy:rsc.z(13)} -pin  "vga_xy:rsc:mgc_in_wire" {z(13)} -attr vt d -attr @path {/get_square_intensity/vga_xy:rsc.z}
+load net {vga_xy:rsc.z(14)} -pin  "vga_xy:rsc:mgc_in_wire" {z(14)} -attr vt d -attr @path {/get_square_intensity/vga_xy:rsc.z}
+load net {vga_xy:rsc.z(15)} -pin  "vga_xy:rsc:mgc_in_wire" {z(15)} -attr vt d -attr @path {/get_square_intensity/vga_xy:rsc.z}
+load net {vga_xy:rsc.z(16)} -pin  "vga_xy:rsc:mgc_in_wire" {z(16)} -attr vt d -attr @path {/get_square_intensity/vga_xy:rsc.z}
+load net {vga_xy:rsc.z(17)} -pin  "vga_xy:rsc:mgc_in_wire" {z(17)} -attr vt d -attr @path {/get_square_intensity/vga_xy:rsc.z}
+load net {vga_xy:rsc.z(18)} -pin  "vga_xy:rsc:mgc_in_wire" {z(18)} -attr vt d -attr @path {/get_square_intensity/vga_xy:rsc.z}
+load net {vga_xy:rsc.z(19)} -pin  "vga_xy:rsc:mgc_in_wire" {z(19)} -attr vt d -attr @path {/get_square_intensity/vga_xy:rsc.z}
+load inst "y_top_left:rsc:mgc_in_wire" "mgc_ioport.mgc_in_wire(3,10)" "INTERFACE" -attr xrf 13082 -attr oid 68 -attr vt d -attr @path {/get_square_intensity/y_top_left:rsc:mgc_in_wire} -attr delay -1000000000000000000000000000000.000000 -attr qmod "mgc_ioport.mgc_in_wire(3,10)" -pg 1 -lvl 1
+load net {y_top_left:rsc:mgc_in_wire.d#1(0)} -pin  "y_top_left:rsc:mgc_in_wire" {d(0)} -attr vt d -attr @path {/get_square_intensity/y_top_left:rsc:mgc_in_wire.d}
+load net {y_top_left:rsc:mgc_in_wire.d#1(1)} -pin  "y_top_left:rsc:mgc_in_wire" {d(1)} -attr vt d -attr @path {/get_square_intensity/y_top_left:rsc:mgc_in_wire.d}
+load net {y_top_left:rsc:mgc_in_wire.d#1(2)} -pin  "y_top_left:rsc:mgc_in_wire" {d(2)} -attr vt d -attr @path {/get_square_intensity/y_top_left:rsc:mgc_in_wire.d}
+load net {y_top_left:rsc:mgc_in_wire.d#1(3)} -pin  "y_top_left:rsc:mgc_in_wire" {d(3)} -attr vt d -attr @path {/get_square_intensity/y_top_left:rsc:mgc_in_wire.d}
+load net {y_top_left:rsc:mgc_in_wire.d#1(4)} -pin  "y_top_left:rsc:mgc_in_wire" {d(4)} -attr vt d -attr @path {/get_square_intensity/y_top_left:rsc:mgc_in_wire.d}
+load net {y_top_left:rsc:mgc_in_wire.d#1(5)} -pin  "y_top_left:rsc:mgc_in_wire" {d(5)} -attr vt d -attr @path {/get_square_intensity/y_top_left:rsc:mgc_in_wire.d}
+load net {y_top_left:rsc:mgc_in_wire.d#1(6)} -pin  "y_top_left:rsc:mgc_in_wire" {d(6)} -attr vt d -attr @path {/get_square_intensity/y_top_left:rsc:mgc_in_wire.d}
+load net {y_top_left:rsc:mgc_in_wire.d#1(7)} -pin  "y_top_left:rsc:mgc_in_wire" {d(7)} -attr vt d -attr @path {/get_square_intensity/y_top_left:rsc:mgc_in_wire.d}
+load net {y_top_left:rsc:mgc_in_wire.d#1(8)} -pin  "y_top_left:rsc:mgc_in_wire" {d(8)} -attr vt d -attr @path {/get_square_intensity/y_top_left:rsc:mgc_in_wire.d}
+load net {y_top_left:rsc:mgc_in_wire.d#1(9)} -pin  "y_top_left:rsc:mgc_in_wire" {d(9)} -attr vt d -attr @path {/get_square_intensity/y_top_left:rsc:mgc_in_wire.d}
+load net {y_top_left:rsc.z(0)} -pin  "y_top_left:rsc:mgc_in_wire" {z(0)} -attr vt d -attr @path {/get_square_intensity/y_top_left:rsc.z}
+load net {y_top_left:rsc.z(1)} -pin  "y_top_left:rsc:mgc_in_wire" {z(1)} -attr vt d -attr @path {/get_square_intensity/y_top_left:rsc.z}
+load net {y_top_left:rsc.z(2)} -pin  "y_top_left:rsc:mgc_in_wire" {z(2)} -attr vt d -attr @path {/get_square_intensity/y_top_left:rsc.z}
+load net {y_top_left:rsc.z(3)} -pin  "y_top_left:rsc:mgc_in_wire" {z(3)} -attr vt d -attr @path {/get_square_intensity/y_top_left:rsc.z}
+load net {y_top_left:rsc.z(4)} -pin  "y_top_left:rsc:mgc_in_wire" {z(4)} -attr vt d -attr @path {/get_square_intensity/y_top_left:rsc.z}
+load net {y_top_left:rsc.z(5)} -pin  "y_top_left:rsc:mgc_in_wire" {z(5)} -attr vt d -attr @path {/get_square_intensity/y_top_left:rsc.z}
+load net {y_top_left:rsc.z(6)} -pin  "y_top_left:rsc:mgc_in_wire" {z(6)} -attr vt d -attr @path {/get_square_intensity/y_top_left:rsc.z}
+load net {y_top_left:rsc.z(7)} -pin  "y_top_left:rsc:mgc_in_wire" {z(7)} -attr vt d -attr @path {/get_square_intensity/y_top_left:rsc.z}
+load net {y_top_left:rsc.z(8)} -pin  "y_top_left:rsc:mgc_in_wire" {z(8)} -attr vt d -attr @path {/get_square_intensity/y_top_left:rsc.z}
+load net {y_top_left:rsc.z(9)} -pin  "y_top_left:rsc:mgc_in_wire" {z(9)} -attr vt d -attr @path {/get_square_intensity/y_top_left:rsc.z}
+load inst "height:rsc:mgc_in_wire" "mgc_ioport.mgc_in_wire(5,10)" "INTERFACE" -attr xrf 13083 -attr oid 69 -attr vt d -attr @path {/get_square_intensity/height:rsc:mgc_in_wire} -attr delay -1000000000000000000000000000000.000000 -attr qmod "mgc_ioport.mgc_in_wire(5,10)" -pg 1 -lvl 1
+load net {height:rsc:mgc_in_wire.d#1(0)} -pin  "height:rsc:mgc_in_wire" {d(0)} -attr vt d -attr @path {/get_square_intensity/height:rsc:mgc_in_wire.d}
+load net {height:rsc:mgc_in_wire.d#1(1)} -pin  "height:rsc:mgc_in_wire" {d(1)} -attr vt d -attr @path {/get_square_intensity/height:rsc:mgc_in_wire.d}
+load net {height:rsc:mgc_in_wire.d#1(2)} -pin  "height:rsc:mgc_in_wire" {d(2)} -attr vt d -attr @path {/get_square_intensity/height:rsc:mgc_in_wire.d}
+load net {height:rsc:mgc_in_wire.d#1(3)} -pin  "height:rsc:mgc_in_wire" {d(3)} -attr vt d -attr @path {/get_square_intensity/height:rsc:mgc_in_wire.d}
+load net {height:rsc:mgc_in_wire.d#1(4)} -pin  "height:rsc:mgc_in_wire" {d(4)} -attr vt d -attr @path {/get_square_intensity/height:rsc:mgc_in_wire.d}
+load net {height:rsc:mgc_in_wire.d#1(5)} -pin  "height:rsc:mgc_in_wire" {d(5)} -attr vt d -attr @path {/get_square_intensity/height:rsc:mgc_in_wire.d}
+load net {height:rsc:mgc_in_wire.d#1(6)} -pin  "height:rsc:mgc_in_wire" {d(6)} -attr vt d -attr @path {/get_square_intensity/height:rsc:mgc_in_wire.d}
+load net {height:rsc:mgc_in_wire.d#1(7)} -pin  "height:rsc:mgc_in_wire" {d(7)} -attr vt d -attr @path {/get_square_intensity/height:rsc:mgc_in_wire.d}
+load net {height:rsc:mgc_in_wire.d#1(8)} -pin  "height:rsc:mgc_in_wire" {d(8)} -attr vt d -attr @path {/get_square_intensity/height:rsc:mgc_in_wire.d}
+load net {height:rsc:mgc_in_wire.d#1(9)} -pin  "height:rsc:mgc_in_wire" {d(9)} -attr vt d -attr @path {/get_square_intensity/height:rsc:mgc_in_wire.d}
+load net {height:rsc.z(0)} -pin  "height:rsc:mgc_in_wire" {z(0)} -attr vt d -attr @path {/get_square_intensity/height:rsc.z}
+load net {height:rsc.z(1)} -pin  "height:rsc:mgc_in_wire" {z(1)} -attr vt d -attr @path {/get_square_intensity/height:rsc.z}
+load net {height:rsc.z(2)} -pin  "height:rsc:mgc_in_wire" {z(2)} -attr vt d -attr @path {/get_square_intensity/height:rsc.z}
+load net {height:rsc.z(3)} -pin  "height:rsc:mgc_in_wire" {z(3)} -attr vt d -attr @path {/get_square_intensity/height:rsc.z}
+load net {height:rsc.z(4)} -pin  "height:rsc:mgc_in_wire" {z(4)} -attr vt d -attr @path {/get_square_intensity/height:rsc.z}
+load net {height:rsc.z(5)} -pin  "height:rsc:mgc_in_wire" {z(5)} -attr vt d -attr @path {/get_square_intensity/height:rsc.z}
+load net {height:rsc.z(6)} -pin  "height:rsc:mgc_in_wire" {z(6)} -attr vt d -attr @path {/get_square_intensity/height:rsc.z}
+load net {height:rsc.z(7)} -pin  "height:rsc:mgc_in_wire" {z(7)} -attr vt d -attr @path {/get_square_intensity/height:rsc.z}
+load net {height:rsc.z(8)} -pin  "height:rsc:mgc_in_wire" {z(8)} -attr vt d -attr @path {/get_square_intensity/height:rsc.z}
+load net {height:rsc.z(9)} -pin  "height:rsc:mgc_in_wire" {z(9)} -attr vt d -attr @path {/get_square_intensity/height:rsc.z}
+load inst "white_or_not:rsc:mgc_out_stdreg" "mgc_ioport.mgc_out_stdreg(7,1)" "INTERFACE" -attr xrf 13084 -attr oid 70 -attr vt d -attr @path {/get_square_intensity/white_or_not:rsc:mgc_out_stdreg} -attr delay -1000000000000000000000000000000.000000 -attr qmod "mgc_ioport.mgc_out_stdreg(7,1)" -pg 1 -lvl 1002
+load net {GND} -pin  "white_or_not:rsc:mgc_out_stdreg" {d(0)} -attr @path {/get_square_intensity/C0_1}
+load net {white_or_not:rsc.z} -pin  "white_or_not:rsc:mgc_out_stdreg" {z(0)} -attr vt d -attr @path {/get_square_intensity/white_or_not:rsc.z}
+load inst "last_pixel:rsc:mgc_out_stdreg" "mgc_ioport.mgc_out_stdreg(8,1)" "INTERFACE" -attr xrf 13085 -attr oid 71 -attr vt d -attr @path {/get_square_intensity/last_pixel:rsc:mgc_out_stdreg} -attr delay -1000000000000000000000000000000.000000 -attr qmod "mgc_ioport.mgc_out_stdreg(8,1)" -pg 1 -lvl 1002
+load net {last_pixel:rsc:mgc_out_stdreg.d#1} -pin  "last_pixel:rsc:mgc_out_stdreg" {d(0)} -attr vt d -attr @path {/get_square_intensity/last_pixel:rsc:mgc_out_stdreg.d}
+load net {last_pixel:rsc.z} -pin  "last_pixel:rsc:mgc_out_stdreg" {z(0)} -attr vt d -attr @path {/get_square_intensity/last_pixel:rsc.z}
+### END MODULE 
+

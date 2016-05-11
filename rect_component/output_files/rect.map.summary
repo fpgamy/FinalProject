@@ -1,0 +1,14 @@
+Analysis & Synthesis Status : Successful - Sun May 08 16:21:38 2016
+Quartus II 64-Bit Version : 13.0.1 Build 232 06/12/2013 SP 1 SJ Full Version
+Revision Name : rect
+Top-level Entity Name : rect
+Family : Cyclone III
+Total logic elements : 630
+    Total combinational functions : 627
+    Dedicated logic registers : 170
+Total registers : 170
+Total pins : 446
+Total virtual pins : 0
+Total memory bits : 0
+Embedded Multiplier 9-bit elements : 0
+Total PLLs : 0

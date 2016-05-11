@@ -1,0 +1,268 @@
+//  Catapult University Version 2011a.126 (Production Release) Wed Aug  8 00:52:07 PDT 2012
+//  
+//  Copyright (c) Calypto Design Systems, Inc., 1996-2012, All Rights Reserved.
+//                       UNPUBLISHED, LICENSED SOFTWARE.
+//            CONFIDENTIAL AND PROPRIETARY INFORMATION WHICH IS THE
+//          PROPERTY OF CALYPTO DESIGN SYSTEMS OR ITS LICENSORS
+//  
+//  Running on Windows 7 ymh15@EEWS104A-014 Service Pack 1 6.01.7601 i686
+//  
+//  Package information: SIFLIBS v17.0_1.1, HLS_PKGS v17.0_1.1, 
+//                       DesignPad v2.78_0.0
+//  
+//  This version may only be used for academic purposes.  Some optimizations 
+//  are disabled, so results obtained from this version may be sub-optimal.
+//  
+//  Start time Wed May 11 11:34:56 2016
+# -------------------------------------------------
+# Logging session transcript to file "C:\Users\ymh15\AppData\Local\Temp\log740825ba088.0"
+# Loading options from registry.
+# Warning: set_working_dir: Directory 'C:/Windows/System32' not writable, using C:/Users/ymh15/AppData/Local/Temp
+project new -name get_red
+set_working_dir //icnas2.cc.ic.ac.uk/ymh15/final_project/get_red/catapult_proj/vga_mouse
+solution file add ./vga_mouse_square.c
+# /INPUTFILES/1
+go analyze
+# Creating project directory '\\icnas2.cc.ic.ac.uk\ymh15\final_project\get_red\catapult_proj\vga_mouse\get_red'. (PRJ-1)
+# Moving session transcript to file "\\icnas2.cc.ic.ac.uk\ymh15\final_project\get_red\catapult_proj\vga_mouse\catapult.log"
+# Info: Starting transformation 'analyze' on solution 'solution.v1' (SOL-8)
+# Front End called with arguments: -- {\\icnas2.cc.ic.ac.uk\ymh15\final_project\get_red\catapult_proj\vga_mouse\vga_mouse_square.c} (CIN-69)
+# Edison Design Group C++/C Front End - Version 3.10.1 (CIN-1)
+# $PROJECT_HOME/vga_mouse_square.c(45): Pragma 'hls_design<top>' detected on routine 'vga_mouse_square' (CIN-6)
+# Source file analysis completed (CIN-68)
+# Info: Completed transformation 'analyze' on solution 'solution.v1': elapsed time 0.95 seconds, memory usage 151244kB, peak memory usage 176832kB (SOL-9)
+directive set -TECHLIBS {{Altera_accel_CycloneIII.lib Altera_accel_CycloneIII} {mgc_Altera-Cyclone-III-6_beh_psr.lib {{mgc_Altera-Cyclone-III-6_beh_psr part EP3C16F484C}}}}
+# /TECHLIBS {{Altera_accel_CycloneIII.lib Altera_accel_CycloneIII} {mgc_Altera-Cyclone-III-6_beh_psr.lib {{mgc_Altera-Cyclone-III-6_beh_psr part EP3C16F484C}}}}
+directive set -CLOCKS {clk {-CLOCK_PERIOD 20.0 -CLOCK_EDGE rising -CLOCK_HIGH_TIME 10.00 -CLOCK_OFFSET 0.000000 -CLOCK_UNCERTAINTY 0.0 -RESET_KIND sync -RESET_SYNC_NAME rst -RESET_SYNC_ACTIVE high -RESET_ASYNC_NAME arst_n -RESET_ASYNC_ACTIVE low -ENABLE_NAME {} -ENABLE_ACTIVE high}}
+# /CLOCKS {clk {-CLOCK_PERIOD 20.0 -CLOCK_EDGE rising -CLOCK_UNCERTAINTY 0.0 -CLOCK_HIGH_TIME 10.0 -RESET_SYNC_NAME rst -RESET_ASYNC_NAME arst_n -RESET_KIND sync -RESET_SYNC_ACTIVE high -RESET_ASYNC_ACTIVE low -ENABLE_NAME {} -ENABLE_ACTIVE high}}
+directive set -CLOCKS {clk {-CLOCK_PERIOD 20.0 -CLOCK_EDGE rising -CLOCK_HIGH_TIME 10.00 -CLOCK_OFFSET 0.000000 -CLOCK_UNCERTAINTY 0.0 -RESET_KIND async -RESET_SYNC_NAME rst -RESET_SYNC_ACTIVE high -RESET_ASYNC_NAME arst_n -RESET_ASYNC_ACTIVE low -ENABLE_NAME en -ENABLE_ACTIVE high}}
+# /CLOCKS {clk {-CLOCK_PERIOD 20.0 -CLOCK_EDGE rising -CLOCK_UNCERTAINTY 0.0 -CLOCK_HIGH_TIME 10.0 -RESET_SYNC_NAME rst -RESET_ASYNC_NAME arst_n -RESET_KIND async -RESET_SYNC_ACTIVE high -RESET_ASYNC_ACTIVE low -ENABLE_NAME en -ENABLE_ACTIVE high}}
+directive set -DESIGN_HIERARCHY vga_mouse_square
+# /DESIGN_HIERARCHY vga_mouse_square
+go compile
+# Info: Starting transformation 'compile' on solution 'solution.v1' (SOL-8)
+# Reading component library '$MGC_HOME\pkgs\siflibs\mgc_busdefs.lib' [mgc_busdefs]... (LIB-49)
+# Reading component library '$MGC_HOME\pkgs\siflibs\stdops.lib' [STDOPS]... (LIB-49)
+# Reading component library '$MGC_HOME\pkgs\siflibs\mgc_ioport.lib' [mgc_ioport]... (LIB-49)
+# Reading component library '$MGC_HOME\pkgs\ccs_altera\Altera_accel_CycloneIII.lib' [Altera_accel_CycloneIII]... (LIB-49)
+# Reading component library '$MGC_HOME\pkgs\siflibs\psr2010a_up2\mgc_Altera-Cyclone-III-6_beh_psr.lib' [mgc_Altera-Cyclone-III-6_beh_psr]... (LIB-49)
+# Generating synthesis internal form... (CIN-3)
+# $PROJECT_HOME/vga_mouse_square.c(46): Found top design routine 'vga_mouse_square' specified by directive (CIN-52)
+# $PROJECT_HOME/vga_mouse_square.c(46): Synthesizing routine 'vga_mouse_square' (CIN-13)
+# $PROJECT_HOME/vga_mouse_square.c(46): Inlining routine 'vga_mouse_square' (CIN-14)
+# $PROJECT_HOME/vga_mouse_square.c(46): Optimizing block '/vga_mouse_square' ... (CIN-4)
+# $PROJECT_HOME/vga_mouse_square.c(46): Inout port 'vga_xy' is only used as an input. (OPT-10)
+# $PROJECT_HOME/vga_mouse_square.c(46): Inout port 'red_left_x' is only used as an output. (OPT-11)
+# $PROJECT_HOME/vga_mouse_square.c(46): Inout port 'red_right_x' is only used as an output. (OPT-11)
+# $PROJECT_HOME/vga_mouse_square.c(46): Inout port 'y_red' is only used as an output. (OPT-11)
+# $PROJECT_HOME/vga_mouse_square.c(47): Inout port 'video_in' is only used as an input. (OPT-10)
+# $PROJECT_HOME/vga_mouse_square.c(47): Inout port 'video_out' is only used as an output. (OPT-11)
+# Info: Optimizing partition '/vga_mouse_square': (Total ops = 195, Real ops = 39, Vars = 57) (SOL-10)
+# Info: Optimizing partition '/vga_mouse_square/core': (Total ops = 195, Real ops = 39, Vars = 51) (SOL-10)
+# Info: Optimizing partition '/vga_mouse_square/core': (Total ops = 195, Real ops = 39, Vars = 51) (SOL-10)
+# Info: Optimizing partition '/vga_mouse_square': (Total ops = 195, Real ops = 39, Vars = 57) (SOL-10)
+# Info: Optimizing partition '/vga_mouse_square': (Total ops = 195, Real ops = 39, Vars = 57) (SOL-10)
+# Info: Optimizing partition '/vga_mouse_square/core': (Total ops = 195, Real ops = 39, Vars = 51) (SOL-10)
+# Info: Optimizing partition '/vga_mouse_square/core': (Total ops = 187, Real ops = 39, Vars = 33) (SOL-10)
+# Info: Optimizing partition '/vga_mouse_square': (Total ops = 187, Real ops = 39, Vars = 39) (SOL-10)
+# Info: Optimizing partition '/vga_mouse_square': (Total ops = 187, Real ops = 39, Vars = 39) (SOL-10)
+# Info: Optimizing partition '/vga_mouse_square/core': (Total ops = 173, Real ops = 39, Vars = 41) (SOL-10)
+# Info: Optimizing partition '/vga_mouse_square/core': (Total ops = 110, Real ops = 29, Vars = 26) (SOL-10)
+# Info: Optimizing partition '/vga_mouse_square': (Total ops = 110, Real ops = 29, Vars = 32) (SOL-10)
+# Info: Optimizing partition '/vga_mouse_square/core': (Total ops = 110, Real ops = 29, Vars = 26) (SOL-10)
+# Info: Optimizing partition '/vga_mouse_square': (Total ops = 110, Real ops = 29, Vars = 32) (SOL-10)
+# Info: Optimizing partition '/vga_mouse_square': (Total ops = 110, Real ops = 29, Vars = 32) (SOL-10)
+# Info: Optimizing partition '/vga_mouse_square/core': (Total ops = 110, Real ops = 29, Vars = 26) (SOL-10)
+# Info: Optimizing partition '/vga_mouse_square/core': (Total ops = 125, Real ops = 29, Vars = 39) (SOL-10)
+# Info: Optimizing partition '/vga_mouse_square/core': (Total ops = 107, Real ops = 29, Vars = 35) (SOL-10)
+# Info: Optimizing partition '/vga_mouse_square/core': (Total ops = 98, Real ops = 29, Vars = 26) (SOL-10)
+# Info: Optimizing partition '/vga_mouse_square': (Total ops = 98, Real ops = 29, Vars = 32) (SOL-10)
+# Info: Optimizing partition '/vga_mouse_square/core': (Total ops = 98, Real ops = 29, Vars = 26) (SOL-10)
+# Info: Optimizing partition '/vga_mouse_square': (Total ops = 98, Real ops = 29, Vars = 32) (SOL-10)
+# Info: Optimizing partition '/vga_mouse_square': (Total ops = 98, Real ops = 29, Vars = 32) (SOL-10)
+# Info: Optimizing partition '/vga_mouse_square/core': (Total ops = 98, Real ops = 29, Vars = 26) (SOL-10)
+# Design 'vga_mouse_square' was read (SOL-1)
+# Info: Completed transformation 'compile' on solution 'vga_mouse_square.v1': elapsed time 0.51 seconds, memory usage 157244kB, peak memory usage 176832kB (SOL-9)
+directive set /vga_mouse_square/vga_xy -STREAM 20
+# /vga_mouse_square/vga_xy/STREAM 20
+directive set /vga_mouse_square/video_in -STREAM 30
+# /vga_mouse_square/video_in/STREAM 30
+directive set /vga_mouse_square/core/main -PIPELINE_INIT_INTERVAL 1
+# /vga_mouse_square/core/main/PIPELINE_INIT_INTERVAL 1
+directive set /vga_mouse_square/core/main -DISTRIBUTED_PIPELINE true
+# /vga_mouse_square/core/main/DISTRIBUTED_PIPELINE true
+# File '$PROJECT_HOME/vga_mouse_square.c' saved
+# Input file has changed
+go new
+solution file set {$PROJECT_HOME/vga_mouse_square.c} -updated
+# Info: Branching solution 'solution.v1' at state 'new' (PRJ-2)
+# File '$PROJECT_HOME/vga_mouse_square.c' saved
+go extract
+# Info: Starting transformation 'analyze' on solution 'solution.v1' (SOL-8)
+# Front End called with arguments: -- {\\icnas2.cc.ic.ac.uk\ymh15\final_project\get_red\catapult_proj\vga_mouse\vga_mouse_square.c} (CIN-69)
+# Edison Design Group C++/C Front End - Version 3.10.1 (CIN-1)
+# $PROJECT_HOME/vga_mouse_square.c(45): Pragma 'hls_design<top>' detected on routine 'vga_mouse_square' (CIN-6)
+# Source file analysis completed (CIN-68)
+# Info: Completed transformation 'analyze' on solution 'solution.v1': elapsed time 0.95 seconds, memory usage 157828kB, peak memory usage 182616kB (SOL-9)
+# Info: Starting transformation 'compile' on solution 'solution.v1' (SOL-8)
+# Generating synthesis internal form... (CIN-3)
+# $PROJECT_HOME/vga_mouse_square.c(46): Found top design routine 'vga_mouse_square' specified by directive (CIN-52)
+# $PROJECT_HOME/vga_mouse_square.c(46): Synthesizing routine 'vga_mouse_square' (CIN-13)
+# $PROJECT_HOME/vga_mouse_square.c(46): Inlining routine 'vga_mouse_square' (CIN-14)
+# $PROJECT_HOME/vga_mouse_square.c(46): Optimizing block '/vga_mouse_square' ... (CIN-4)
+# $PROJECT_HOME/vga_mouse_square.c(46): Inout port 'vga_xy' is only used as an input. (OPT-10)
+# $PROJECT_HOME/vga_mouse_square.c(46): Inout port 'red_left_x' is only used as an output. (OPT-11)
+# $PROJECT_HOME/vga_mouse_square.c(46): Inout port 'red_right_x' is only used as an output. (OPT-11)
+# $PROJECT_HOME/vga_mouse_square.c(46): Inout port 'y_red' is only used as an output. (OPT-11)
+# $PROJECT_HOME/vga_mouse_square.c(47): Inout port 'video_in' is only used as an input. (OPT-10)
+# $PROJECT_HOME/vga_mouse_square.c(47): Inout port 'video_out' is only used as an output. (OPT-11)
+# Info: Optimizing partition '/vga_mouse_square': (Total ops = 195, Real ops = 39, Vars = 57) (SOL-10)
+# Info: Optimizing partition '/vga_mouse_square/core': (Total ops = 195, Real ops = 39, Vars = 51) (SOL-10)
+# Info: Optimizing partition '/vga_mouse_square/core': (Total ops = 195, Real ops = 39, Vars = 51) (SOL-10)
+# Info: Optimizing partition '/vga_mouse_square': (Total ops = 195, Real ops = 39, Vars = 57) (SOL-10)
+# Info: Optimizing partition '/vga_mouse_square': (Total ops = 195, Real ops = 39, Vars = 57) (SOL-10)
+# Info: Optimizing partition '/vga_mouse_square/core': (Total ops = 195, Real ops = 39, Vars = 51) (SOL-10)
+# Info: Optimizing partition '/vga_mouse_square/core': (Total ops = 187, Real ops = 39, Vars = 33) (SOL-10)
+# Info: Optimizing partition '/vga_mouse_square': (Total ops = 187, Real ops = 39, Vars = 39) (SOL-10)
+# Info: Optimizing partition '/vga_mouse_square': (Total ops = 187, Real ops = 39, Vars = 39) (SOL-10)
+# Info: Optimizing partition '/vga_mouse_square/core': (Total ops = 173, Real ops = 39, Vars = 41) (SOL-10)
+# Info: Optimizing partition '/vga_mouse_square/core': (Total ops = 116, Real ops = 29, Vars = 26) (SOL-10)
+# Info: Optimizing partition '/vga_mouse_square': (Total ops = 116, Real ops = 29, Vars = 32) (SOL-10)
+# Info: Optimizing partition '/vga_mouse_square/core': (Total ops = 116, Real ops = 29, Vars = 26) (SOL-10)
+# Info: Optimizing partition '/vga_mouse_square': (Total ops = 116, Real ops = 29, Vars = 32) (SOL-10)
+# Info: Optimizing partition '/vga_mouse_square': (Total ops = 116, Real ops = 29, Vars = 32) (SOL-10)
+# Info: Optimizing partition '/vga_mouse_square/core': (Total ops = 116, Real ops = 29, Vars = 26) (SOL-10)
+# Info: Optimizing partition '/vga_mouse_square/core': (Total ops = 131, Real ops = 29, Vars = 39) (SOL-10)
+# Info: Optimizing partition '/vga_mouse_square/core': (Total ops = 113, Real ops = 29, Vars = 35) (SOL-10)
+# Info: Optimizing partition '/vga_mouse_square/core': (Total ops = 104, Real ops = 29, Vars = 26) (SOL-10)
+# Info: Optimizing partition '/vga_mouse_square': (Total ops = 104, Real ops = 29, Vars = 32) (SOL-10)
+# Info: Optimizing partition '/vga_mouse_square/core': (Total ops = 104, Real ops = 29, Vars = 26) (SOL-10)
+# Info: Optimizing partition '/vga_mouse_square': (Total ops = 104, Real ops = 29, Vars = 32) (SOL-10)
+# Info: Optimizing partition '/vga_mouse_square': (Total ops = 104, Real ops = 29, Vars = 32) (SOL-10)
+# Info: Optimizing partition '/vga_mouse_square/core': (Total ops = 104, Real ops = 29, Vars = 26) (SOL-10)
+# Design 'vga_mouse_square' was read (SOL-1)
+# Input file has changed
+go new
+solution file set {$PROJECT_HOME/vga_mouse_square.c} -updated
+# Info: Branching solution 'solution.v1' at state 'new' (PRJ-2)
+# Info: Completed transformation 'compile' on solution 'vga_mouse_square.v2': elapsed time 0.91 seconds, memory usage 160796kB, peak memory usage 182616kB (SOL-9)
+# Info: Starting transformation 'architect' on solution 'vga_mouse_square.v2' (SOL-8)
+# $PROJECT_HOME/vga_mouse_square.c(46): Loop '/vga_mouse_square/core/main' is left rolled. (LOOP-4)
+# $PROJECT_HOME/vga_mouse_square.c(46): I/O-Port inferred - resource 'vga_xy:rsc' (from var: vga_xy) mapped to 'mgc_ioport.mgc_in_wire' (size: 20). (MEM-2)
+# $PROJECT_HOME/vga_mouse_square.c(46): I/O-Port inferred - resource 'red_left_x:rsc' (from var: red_left_x) mapped to 'mgc_ioport.mgc_out_stdreg' (size: 10). (MEM-2)
+# $PROJECT_HOME/vga_mouse_square.c(46): I/O-Port inferred - resource 'red_right_x:rsc' (from var: red_right_x) mapped to 'mgc_ioport.mgc_out_stdreg' (size: 10). (MEM-2)
+# $PROJECT_HOME/vga_mouse_square.c(46): I/O-Port inferred - resource 'y_red:rsc' (from var: y_red) mapped to 'mgc_ioport.mgc_out_stdreg' (size: 10). (MEM-2)
+# $PROJECT_HOME/vga_mouse_square.c(47): I/O-Port inferred - resource 'video_in:rsc' (from var: video_in) mapped to 'mgc_ioport.mgc_in_wire' (size: 30). (MEM-2)
+# $PROJECT_HOME/vga_mouse_square.c(47): I/O-Port inferred - resource 'video_out:rsc' (from var: video_out) mapped to 'mgc_ioport.mgc_out_stdreg' (size: 30). (MEM-2)
+# Info: Optimizing partition '/vga_mouse_square': (Total ops = 110, Real ops = 30, Vars = 35) (SOL-10)
+# Info: Optimizing partition '/vga_mouse_square/core': (Total ops = 110, Real ops = 30, Vars = 26) (SOL-10)
+# Info: Optimizing partition '/vga_mouse_square/core': (Total ops = 112, Real ops = 30, Vars = 23) (SOL-10)
+# Info: Optimizing partition '/vga_mouse_square': (Total ops = 112, Real ops = 30, Vars = 32) (SOL-10)
+# Info: Optimizing partition '/vga_mouse_square': (Total ops = 112, Real ops = 30, Vars = 32) (SOL-10)
+# Info: Optimizing partition '/vga_mouse_square/core': (Total ops = 112, Real ops = 30, Vars = 23) (SOL-10)
+# Info: Optimizing partition '/vga_mouse_square/core': (Total ops = 430, Real ops = 91, Vars = 219) (SOL-10)
+# Info: Optimizing partition '/vga_mouse_square/core': (Total ops = 139, Real ops = 59, Vars = 41) (SOL-10)
+# Info: Optimizing partition '/vga_mouse_square/core': (Total ops = 139, Real ops = 59, Vars = 39) (SOL-10)
+# Design 'vga_mouse_square' contains '65' real operations. (SOL-11)
+# Info: Completed transformation 'architect' on solution 'vga_mouse_square.v2': elapsed time 0.75 seconds, memory usage 161096kB, peak memory usage 182616kB (SOL-9)
+# Info: Starting transformation 'allocate' on solution 'vga_mouse_square.v2' (SOL-8)
+# Performing concurrent resource allocation and scheduling on '/vga_mouse_square/core' (CRAAS-1)
+# Info: Select qualified components for data operations ... (CRAAS-3)
+# Info: Apply resource constraints on data operations ... (CRAAS-4)
+# $PROJECT_HOME/vga_mouse_square.c(46): Prescheduled LOOP 'main' (3 c-steps) (SCHD-7)
+# $PROJECT_HOME/vga_mouse_square.c(46): Prescheduled LOOP 'core:rlp' (0 c-steps) (SCHD-7)
+# $PROJECT_HOME/vga_mouse_square.c(46): Prescheduled SEQUENTIAL 'core' (total length 3 c-steps) (SCHD-8)
+# Info: Initial schedule of SEQUENTIAL 'core': Latency = 2, Area (Datapath, Register, Total) = 338.87, 0.00, 338.87 (CRAAS-11)
+# At least one feasible schedule exists. (CRAAS-9)
+# Info: Final schedule of SEQUENTIAL 'core': Latency = 2, Area (Datapath, Register, Total) = 338.87, 0.00, 338.87 (CRAAS-12)
+# Resource allocation and scheduling done. (CRAAS-2)
+# Netlist written to file 'schedule.gnt' (NET-4)
+# Info: Completed transformation 'allocate' on solution 'vga_mouse_square.v2': elapsed time 0.11 seconds, memory usage 161516kB, peak memory usage 182616kB (SOL-9)
+# Info: Starting transformation 'schedule' on solution 'vga_mouse_square.v2' (SOL-8)
+# Performing concurrent resource allocation and scheduling on '/vga_mouse_square/core' (CRAAS-1)
+# Warning: Cannot build distributed pipeline in process 'core' because of missing handshake for resource 'red_left_x:rsc' (SCHD-15)
+# Warning: Cannot build distributed pipeline in process 'core' because of missing handshake for resource 'red_right_x:rsc' (SCHD-15)
+# Warning: Cannot build distributed pipeline in process 'core' because of missing handshake for resource 'y_red:rsc' (SCHD-15)
+# Warning: Cannot build distributed pipeline in process 'core' because of missing handshake for resource 'video_out:rsc' (SCHD-15)
+# Global signal 'vga_xy:rsc.z' added to design 'vga_mouse_square' for component 'vga_xy:rsc:mgc_in_wire' (LIB-3)
+# Global signal 'red_left_x:rsc.z' added to design 'vga_mouse_square' for component 'red_left_x:rsc:mgc_out_stdreg' (LIB-3)
+# Global signal 'red_right_x:rsc.z' added to design 'vga_mouse_square' for component 'red_right_x:rsc:mgc_out_stdreg' (LIB-3)
+# Global signal 'y_red:rsc.z' added to design 'vga_mouse_square' for component 'y_red:rsc:mgc_out_stdreg' (LIB-3)
+# Global signal 'video_in:rsc.z' added to design 'vga_mouse_square' for component 'video_in:rsc:mgc_in_wire' (LIB-3)
+# Global signal 'video_out:rsc.z' added to design 'vga_mouse_square' for component 'video_out:rsc:mgc_out_stdreg' (LIB-3)
+# Info: Optimizing partition '/vga_mouse_square': (Total ops = 206, Real ops = 66, Vars = 88) (SOL-10)
+# Info: Optimizing partition '/vga_mouse_square/vga_mouse_square:core': (Total ops = 184, Real ops = 65, Vars = 72) (SOL-10)
+# Info: Optimizing partition '/vga_mouse_square/vga_mouse_square:core/core': (Total ops = 175, Real ops = 65, Vars = 64) (SOL-10)
+# Info: Optimizing partition '/vga_mouse_square/vga_mouse_square:core/core': (Total ops = 150, Real ops = 64, Vars = 48) (SOL-10)
+# Info: Optimizing partition '/vga_mouse_square/vga_mouse_square:core/core': (Total ops = 149, Real ops = 64, Vars = 47) (SOL-10)
+# Info: Optimizing partition '/vga_mouse_square': (Total ops = 179, Real ops = 64, Vars = 71) (SOL-10)
+# Info: Optimizing partition '/vga_mouse_square/vga_mouse_square:core': (Total ops = 158, Real ops = 64, Vars = 56) (SOL-10)
+# Info: Optimizing partition '/vga_mouse_square/vga_mouse_square:core/core': (Total ops = 149, Real ops = 64, Vars = 47) (SOL-10)
+# Info: Optimizing partition '/vga_mouse_square': (Total ops = 179, Real ops = 64, Vars = 71) (SOL-10)
+# Info: Optimizing partition '/vga_mouse_square/vga_mouse_square:core': (Total ops = 158, Real ops = 64, Vars = 56) (SOL-10)
+# Report written to file 'cycle.rpt'
+# Netlist written to file 'cycle.v' (NET-4)
+# Info: Completed transformation 'schedule' on solution 'vga_mouse_square.v2': elapsed time 0.75 seconds, memory usage 162600kB, peak memory usage 182616kB (SOL-9)
+# Info: Starting transformation 'dpfsm' on solution 'vga_mouse_square.v2' (SOL-8)
+# Performing FSM extraction... (FSM-1)
+# Info: Optimizing partition '/vga_mouse_square': (Total ops = 262, Real ops = 111, Vars = 276) (SOL-10)
+# Info: Optimizing partition '/vga_mouse_square/vga_mouse_square:core': (Total ops = 241, Real ops = 111, Vars = 261) (SOL-10)
+# Info: Optimizing partition '/vga_mouse_square': (Total ops = 203, Real ops = 88, Vars = 56) (SOL-10)
+# Info: Optimizing partition '/vga_mouse_square/vga_mouse_square:core': (Total ops = 182, Real ops = 88, Vars = 41) (SOL-10)
+# Info: Optimizing partition '/vga_mouse_square': (Total ops = 149, Real ops = 78, Vars = 55) (SOL-10)
+# Info: Optimizing partition '/vga_mouse_square/vga_mouse_square:core': (Total ops = 128, Real ops = 78, Vars = 40) (SOL-10)
+# Info: Optimizing partition '/vga_mouse_square': (Total ops = 142, Real ops = 72, Vars = 53) (SOL-10)
+# Info: Optimizing partition '/vga_mouse_square/vga_mouse_square:core': (Total ops = 121, Real ops = 72, Vars = 38) (SOL-10)
+# Info: Optimizing partition '/vga_mouse_square': (Total ops = 142, Real ops = 72, Vars = 53) (SOL-10)
+# Info: Optimizing partition '/vga_mouse_square/vga_mouse_square:core': (Total ops = 121, Real ops = 72, Vars = 38) (SOL-10)
+# Info: Optimizing partition '/vga_mouse_square/vga_mouse_square:core': (Total ops = 121, Real ops = 72, Vars = 38) (SOL-10)
+# Info: Optimizing partition '/vga_mouse_square': (Total ops = 142, Real ops = 72, Vars = 53) (SOL-10)
+# Info: Optimizing partition '/vga_mouse_square': (Total ops = 142, Real ops = 72, Vars = 53) (SOL-10)
+# Info: Optimizing partition '/vga_mouse_square/vga_mouse_square:core': (Total ops = 121, Real ops = 72, Vars = 38) (SOL-10)
+# Info: Optimizing partition '/vga_mouse_square': (Total ops = 143, Real ops = 72, Vars = 54) (SOL-10)
+# Info: Optimizing partition '/vga_mouse_square/vga_mouse_square:core': (Total ops = 122, Real ops = 72, Vars = 39) (SOL-10)
+# Info: Optimizing partition '/vga_mouse_square': (Total ops = 142, Real ops = 72, Vars = 53) (SOL-10)
+# Info: Optimizing partition '/vga_mouse_square/vga_mouse_square:core': (Total ops = 121, Real ops = 72, Vars = 38) (SOL-10)
+# Info: Completed transformation 'dpfsm' on solution 'vga_mouse_square.v2': elapsed time 0.22 seconds, memory usage 162600kB, peak memory usage 182616kB (SOL-9)
+# Info: Starting transformation 'extract' on solution 'vga_mouse_square.v2' (SOL-8)
+# Info: Optimizing partition '/vga_mouse_square': (Total ops = 172, Real ops = 86, Vars = 162) (SOL-10)
+# Info: Optimizing partition '/vga_mouse_square/vga_mouse_square:core': (Total ops = 151, Real ops = 86, Vars = 147) (SOL-10)
+# Info: Optimizing partition '/vga_mouse_square': (Total ops = 137, Real ops = 67, Vars = 50) (SOL-10)
+# Info: Optimizing partition '/vga_mouse_square/vga_mouse_square:core': (Total ops = 116, Real ops = 67, Vars = 35) (SOL-10)
+# Info: Optimizing partition '/vga_mouse_square': (Total ops = 137, Real ops = 67, Vars = 50) (SOL-10)
+# Info: Optimizing partition '/vga_mouse_square/vga_mouse_square:core': (Total ops = 116, Real ops = 67, Vars = 35) (SOL-10)
+# Info: Optimizing partition '/vga_mouse_square/vga_mouse_square:core': (Total ops = 117, Real ops = 67, Vars = 36) (SOL-10)
+# Info: Optimizing partition '/vga_mouse_square/vga_mouse_square:core': (Total ops = 116, Real ops = 67, Vars = 35) (SOL-10)
+# Info: Optimizing partition '/vga_mouse_square': (Total ops = 137, Real ops = 67, Vars = 50) (SOL-10)
+# Info: Optimizing partition '/vga_mouse_square': (Total ops = 137, Real ops = 67, Vars = 50) (SOL-10)
+# Info: Optimizing partition '/vga_mouse_square/vga_mouse_square:core': (Total ops = 116, Real ops = 67, Vars = 35) (SOL-10)
+# Info: Optimizing partition '/vga_mouse_square': (Total ops = 137, Real ops = 67, Vars = 50) (SOL-10)
+# Info: Optimizing partition '/vga_mouse_square/vga_mouse_square:core': (Total ops = 116, Real ops = 67, Vars = 35) (SOL-10)
+# Warning: Reassigned operation or#3:mgc_Altera-Cyclone-III-6_beh_psr.mgc_or(10,2) to mgc_Altera-Cyclone-III-6_beh_psr.mgc_or(10,3) (ASG-1)
+# Warning: Reassigned operation else#4:if:and#1:mgc_Altera-Cyclone-III-6_beh_psr.mgc_and(1,2) to mgc_Altera-Cyclone-III-6_beh_psr.mgc_and(1,3) (ASG-1)
+# Warning: Reassigned operation if:if:and#1:mgc_Altera-Cyclone-III-6_beh_psr.mgc_and(1,2) to mgc_Altera-Cyclone-III-6_beh_psr.mgc_and(1,3) (ASG-1)
+# Info: Optimizing partition '/vga_mouse_square': (Total ops = 173, Real ops = 84, Vars = 163) (SOL-10)
+# Info: Optimizing partition '/vga_mouse_square/vga_mouse_square:core': (Total ops = 152, Real ops = 84, Vars = 148) (SOL-10)
+# Netlist written to file 'schematic.nlv' (NET-4)
+# Info: Optimizing partition '/vga_mouse_square': (Total ops = 173, Real ops = 84, Vars = 163) (SOL-10)
+# Info: Optimizing partition '/vga_mouse_square/vga_mouse_square:core': (Total ops = 152, Real ops = 84, Vars = 148) (SOL-10)
+# Info: Optimizing partition '/vga_mouse_square': (Total ops = 137, Real ops = 67, Vars = 50) (SOL-10)
+# Info: Optimizing partition '/vga_mouse_square/vga_mouse_square:core': (Total ops = 116, Real ops = 67, Vars = 35) (SOL-10)
+# Info: Optimizing partition '/vga_mouse_square': (Total ops = 137, Real ops = 67, Vars = 50) (SOL-10)
+# Info: Optimizing partition '/vga_mouse_square/vga_mouse_square:core': (Total ops = 116, Real ops = 67, Vars = 35) (SOL-10)
+# Report written to file 'rtl.rpt'
+# Netlist written to file 'rtl.v' (NET-4)
+# generate concat
+# order file name is: rtl.v_order.txt
+# Add dependent file: ./rtl_mgc_ioport.v
+# Add dependent file: ./rtl_mgc_ioport_v2001.v
+# Add dependent file: ./rtl.v
+# Finished writing concatenated file: //icnas2.cc.ic.ac.uk/ymh15/final_project/get_red/catapult_proj/vga_mouse/get_red/vga_mouse_square.v2/concat_rtl.v
+# Synthesis timing script written to file './rtl.v.psr_timing'
+# IO timing constraints written to synthesis script file
+# Synthesis script written to file 'rtl.v.psr'
+# Info: Completed transformation 'extract' on solution 'vga_mouse_square.v2': elapsed time 2.31 seconds, memory usage 163040kB, peak memory usage 182616kB (SOL-9)
+# File '$PROJECT_HOME/get_red/vga_mouse_square.v2/rtl.v' saved
+project save
+# Saving project file '//icnas2.cc.ic.ac.uk/ymh15/final_project/get_red/catapult_proj/vga_mouse/get_red.ccs'. (PRJ-5)
+quit -f

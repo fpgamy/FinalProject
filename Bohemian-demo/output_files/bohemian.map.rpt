@@ -1,0 +1,958 @@
+Analysis & Synthesis report for bohemian
+Sun May 08 17:39:57 2016
+Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Full Version
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Analysis & Synthesis Summary
+  3. Analysis & Synthesis Settings
+  4. Parallel Compilation
+  5. Analysis & Synthesis Source Files Read
+  6. Analysis & Synthesis Resource Usage Summary
+  7. Analysis & Synthesis Resource Utilization by Entity
+  8. General Register Statistics
+  9. Inverted Register Statistics
+ 10. Multiplexer Restructuring Statistics (Restructuring Performed)
+ 11. Parameter Settings for Inferred Entity Instance: tempotestblock:inst7|lpm_divide:Div0
+ 12. Elapsed Time Per Partition
+ 13. Analysis & Synthesis Messages
+ 14. Analysis & Synthesis Suppressed Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2013 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++---------------------------------------------------------------------------------------+
+; Analysis & Synthesis Summary                                                          ;
++------------------------------------+--------------------------------------------------+
+; Analysis & Synthesis Status        ; Successful - Sun May 08 17:39:57 2016            ;
+; Quartus II 64-Bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Full Version ;
+; Revision Name                      ; bohemian                                         ;
+; Top-level Entity Name              ; bohemian                                         ;
+; Family                             ; Cyclone III                                      ;
+; Total logic elements               ; 1,170                                            ;
+;     Total combinational functions  ; 1,170                                            ;
+;     Dedicated logic registers      ; 268                                              ;
+; Total registers                    ; 268                                              ;
+; Total pins                         ; 173                                              ;
+; Total virtual pins                 ; 0                                                ;
+; Total memory bits                  ; 0                                                ;
+; Embedded Multiplier 9-bit elements ; 0                                                ;
+; Total PLLs                         ; 0                                                ;
++------------------------------------+--------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Settings                                                                                        ;
++----------------------------------------------------------------------------+--------------------+--------------------+
+; Option                                                                     ; Setting            ; Default Value      ;
++----------------------------------------------------------------------------+--------------------+--------------------+
+; Device                                                                     ; EP3C16F484C6       ;                    ;
+; Top-level entity name                                                      ; bohemian           ; bohemian           ;
+; Family name                                                                ; Cyclone III        ; Cyclone IV GX      ;
+; Use smart compilation                                                      ; Off                ; Off                ;
+; Enable parallel Assembler and TimeQuest Timing Analyzer during compilation ; On                 ; On                 ;
+; Enable compact report table                                                ; Off                ; Off                ;
+; Restructure Multiplexers                                                   ; Auto               ; Auto               ;
+; Create Debugging Nodes for IP Cores                                        ; Off                ; Off                ;
+; Preserve fewer node names                                                  ; On                 ; On                 ;
+; Disable OpenCore Plus hardware evaluation                                  ; Off                ; Off                ;
+; Verilog Version                                                            ; Verilog_2001       ; Verilog_2001       ;
+; VHDL Version                                                               ; VHDL_1993          ; VHDL_1993          ;
+; State Machine Processing                                                   ; Auto               ; Auto               ;
+; Safe State Machine                                                         ; Off                ; Off                ;
+; Extract Verilog State Machines                                             ; On                 ; On                 ;
+; Extract VHDL State Machines                                                ; On                 ; On                 ;
+; Ignore Verilog initial constructs                                          ; Off                ; Off                ;
+; Iteration limit for constant Verilog loops                                 ; 5000               ; 5000               ;
+; Iteration limit for non-constant Verilog loops                             ; 250                ; 250                ;
+; Add Pass-Through Logic to Inferred RAMs                                    ; On                 ; On                 ;
+; Infer RAMs from Raw Logic                                                  ; On                 ; On                 ;
+; Parallel Synthesis                                                         ; On                 ; On                 ;
+; DSP Block Balancing                                                        ; Auto               ; Auto               ;
+; NOT Gate Push-Back                                                         ; On                 ; On                 ;
+; Power-Up Don't Care                                                        ; On                 ; On                 ;
+; Remove Redundant Logic Cells                                               ; Off                ; Off                ;
+; Remove Duplicate Registers                                                 ; On                 ; On                 ;
+; Ignore CARRY Buffers                                                       ; Off                ; Off                ;
+; Ignore CASCADE Buffers                                                     ; Off                ; Off                ;
+; Ignore GLOBAL Buffers                                                      ; Off                ; Off                ;
+; Ignore ROW GLOBAL Buffers                                                  ; Off                ; Off                ;
+; Ignore LCELL Buffers                                                       ; Off                ; Off                ;
+; Ignore SOFT Buffers                                                        ; On                 ; On                 ;
+; Limit AHDL Integers to 32 Bits                                             ; Off                ; Off                ;
+; Optimization Technique                                                     ; Balanced           ; Balanced           ;
+; Carry Chain Length                                                         ; 70                 ; 70                 ;
+; Auto Carry Chains                                                          ; On                 ; On                 ;
+; Auto Open-Drain Pins                                                       ; On                 ; On                 ;
+; Perform WYSIWYG Primitive Resynthesis                                      ; Off                ; Off                ;
+; Auto ROM Replacement                                                       ; On                 ; On                 ;
+; Auto RAM Replacement                                                       ; On                 ; On                 ;
+; Auto DSP Block Replacement                                                 ; On                 ; On                 ;
+; Auto Shift Register Replacement                                            ; Auto               ; Auto               ;
+; Allow Shift Register Merging across Hierarchies                            ; Auto               ; Auto               ;
+; Auto Clock Enable Replacement                                              ; On                 ; On                 ;
+; Strict RAM Replacement                                                     ; Off                ; Off                ;
+; Allow Synchronous Control Signals                                          ; On                 ; On                 ;
+; Force Use of Synchronous Clear Signals                                     ; Off                ; Off                ;
+; Auto RAM Block Balancing                                                   ; On                 ; On                 ;
+; Auto RAM to Logic Cell Conversion                                          ; Off                ; Off                ;
+; Auto Resource Sharing                                                      ; Off                ; Off                ;
+; Allow Any RAM Size For Recognition                                         ; Off                ; Off                ;
+; Allow Any ROM Size For Recognition                                         ; Off                ; Off                ;
+; Allow Any Shift Register Size For Recognition                              ; Off                ; Off                ;
+; Use LogicLock Constraints during Resource Balancing                        ; On                 ; On                 ;
+; Ignore translate_off and synthesis_off directives                          ; Off                ; Off                ;
+; Timing-Driven Synthesis                                                    ; On                 ; On                 ;
+; Report Parameter Settings                                                  ; On                 ; On                 ;
+; Report Source Assignments                                                  ; On                 ; On                 ;
+; Report Connectivity Checks                                                 ; On                 ; On                 ;
+; Ignore Maximum Fan-Out Assignments                                         ; Off                ; Off                ;
+; Synchronization Register Chain Length                                      ; 2                  ; 2                  ;
+; PowerPlay Power Optimization                                               ; Normal compilation ; Normal compilation ;
+; HDL message level                                                          ; Level2             ; Level2             ;
+; Suppress Register Optimization Related Messages                            ; Off                ; Off                ;
+; Number of Removed Registers Reported in Synthesis Report                   ; 5000               ; 5000               ;
+; Number of Swept Nodes Reported in Synthesis Report                         ; 5000               ; 5000               ;
+; Number of Inverted Registers Reported in Synthesis Report                  ; 100                ; 100                ;
+; Clock MUX Protection                                                       ; On                 ; On                 ;
+; Auto Gated Clock Conversion                                                ; Off                ; Off                ;
+; Block Design Naming                                                        ; Auto               ; Auto               ;
+; SDC constraint protection                                                  ; Off                ; Off                ;
+; Synthesis Effort                                                           ; Auto               ; Auto               ;
+; Shift Register Replacement - Allow Asynchronous Clear Signal               ; On                 ; On                 ;
+; Pre-Mapping Resynthesis Optimization                                       ; Off                ; Off                ;
+; Analysis & Synthesis Message Level                                         ; Medium             ; Medium             ;
+; Disable Register Merging Across Hierarchies                                ; Auto               ; Auto               ;
+; Resource Aware Inference For Block RAM                                     ; On                 ; On                 ;
+; Synthesis Seed                                                             ; 1                  ; 1                  ;
++----------------------------------------------------------------------------+--------------------+--------------------+
+
+
++------------------------------------------+
+; Parallel Compilation                     ;
++----------------------------+-------------+
+; Processors                 ; Number      ;
++----------------------------+-------------+
+; Number detected on machine ; 8           ;
+; Maximum allowed            ; 4           ;
+;                            ;             ;
+; Average used               ; 1.00        ;
+; Maximum used               ; 1           ;
+;                            ;             ;
+; Usage by Processor         ; % Time Used ;
+;     Processor 1            ; 100.0%      ;
+;     Processors 2-8         ;   0.0%      ;
++----------------------------+-------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                      ;
++------------------------------------+-----------------+------------------------------------+-----------------------------------------------------------------------+---------+
+; File Name with User-Entered Path   ; Used in Netlist ; File Type                          ; File Name with Absolute Path                                          ; Library ;
++------------------------------------+-----------------+------------------------------------+-----------------------------------------------------------------------+---------+
+; ../tempotestblock/tempotestblock.v ; yes             ; User Verilog HDL File              ; C:/git/final_project/tempotestblock/tempotestblock.v                  ;         ;
+; ../tone_test/Tonetest.v            ; yes             ; User Verilog HDL File              ; C:/git/final_project/tone_test/Tonetest.v                             ;         ;
+; bohemian.bdf                       ; yes             ; User Block Diagram/Schematic File  ; C:/git/final_project/Bohemian-demo/bohemian.bdf                       ;         ;
+; lpm_divide.tdf                     ; yes             ; Megafunction                       ; c:/altera/13.0sp1/quartus/libraries/megafunctions/lpm_divide.tdf      ;         ;
+; abs_divider.inc                    ; yes             ; Megafunction                       ; c:/altera/13.0sp1/quartus/libraries/megafunctions/abs_divider.inc     ;         ;
+; sign_div_unsign.inc                ; yes             ; Megafunction                       ; c:/altera/13.0sp1/quartus/libraries/megafunctions/sign_div_unsign.inc ;         ;
+; aglobal130.inc                     ; yes             ; Megafunction                       ; c:/altera/13.0sp1/quartus/libraries/megafunctions/aglobal130.inc      ;         ;
+; db/lpm_divide_4jm.tdf              ; yes             ; Auto-Generated Megafunction        ; C:/git/final_project/Bohemian-demo/db/lpm_divide_4jm.tdf              ;         ;
+; db/sign_div_unsign_5nh.tdf         ; yes             ; Auto-Generated Megafunction        ; C:/git/final_project/Bohemian-demo/db/sign_div_unsign_5nh.tdf         ;         ;
+; db/alt_u_div_l8f.tdf               ; yes             ; Auto-Generated Megafunction        ; C:/git/final_project/Bohemian-demo/db/alt_u_div_l8f.tdf               ;         ;
+; db/add_sub_unc.tdf                 ; yes             ; Auto-Generated Megafunction        ; C:/git/final_project/Bohemian-demo/db/add_sub_unc.tdf                 ;         ;
+; db/add_sub_vnc.tdf                 ; yes             ; Auto-Generated Megafunction        ; C:/git/final_project/Bohemian-demo/db/add_sub_vnc.tdf                 ;         ;
++------------------------------------+-----------------+------------------------------------+-----------------------------------------------------------------------+---------+
+
+
++-------------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary                 ;
++---------------------------------------------+---------------+
+; Resource                                    ; Usage         ;
++---------------------------------------------+---------------+
+; Estimated Total logic elements              ; 1,170         ;
+;                                             ;               ;
+; Total combinational functions               ; 1170          ;
+; Logic element usage by number of LUT inputs ;               ;
+;     -- 4 input functions                    ; 334           ;
+;     -- 3 input functions                    ; 403           ;
+;     -- <=2 input functions                  ; 433           ;
+;                                             ;               ;
+; Logic elements by mode                      ;               ;
+;     -- normal mode                          ; 917           ;
+;     -- arithmetic mode                      ; 253           ;
+;                                             ;               ;
+; Total registers                             ; 268           ;
+;     -- Dedicated logic registers            ; 268           ;
+;     -- I/O registers                        ; 0             ;
+;                                             ;               ;
+; I/O pins                                    ; 173           ;
+; Embedded Multiplier 9-bit elements          ; 0             ;
+; Maximum fan-out node                        ; Switch2~input ;
+; Maximum fan-out                             ; 481           ;
+; Total fan-out                               ; 4326          ;
+; Average fan-out                             ; 2.42          ;
++---------------------------------------------+---------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                                                                                   ;
++-------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+--------------------------------------------------------------------------------------------------------------------------------+--------------+
+; Compilation Hierarchy Node                ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                                                            ; Library Name ;
++-------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+--------------------------------------------------------------------------------------------------------------------------------+--------------+
+; |bohemian                                 ; 1170 (480)        ; 268 (160)    ; 0           ; 0            ; 0       ; 0         ; 173  ; 0            ; |bohemian                                                                                                                      ; work         ;
+;    |Tonetest:inst|                        ; 179 (179)         ; 81 (81)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |bohemian|Tonetest:inst                                                                                                        ; work         ;
+;    |tempotestblock:inst7|                 ; 511 (53)          ; 27 (27)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |bohemian|tempotestblock:inst7                                                                                                 ; work         ;
+;       |lpm_divide:Div0|                   ; 458 (0)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |bohemian|tempotestblock:inst7|lpm_divide:Div0                                                                                 ; work         ;
+;          |lpm_divide_4jm:auto_generated|  ; 458 (0)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |bohemian|tempotestblock:inst7|lpm_divide:Div0|lpm_divide_4jm:auto_generated                                                   ; work         ;
+;             |sign_div_unsign_5nh:divider| ; 458 (0)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |bohemian|tempotestblock:inst7|lpm_divide:Div0|lpm_divide_4jm:auto_generated|sign_div_unsign_5nh:divider                       ; work         ;
+;                |alt_u_div_l8f:divider|    ; 458 (458)         ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |bohemian|tempotestblock:inst7|lpm_divide:Div0|lpm_divide_4jm:auto_generated|sign_div_unsign_5nh:divider|alt_u_div_l8f:divider ; work         ;
++-------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+--------------------------------------------------------------------------------------------------------------------------------+--------------+
+Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
+
+
++------------------------------------------------------+
+; General Register Statistics                          ;
++----------------------------------------------+-------+
+; Statistic                                    ; Value ;
++----------------------------------------------+-------+
+; Total registers                              ; 268   ;
+; Number of registers using Synchronous Clear  ; 45    ;
+; Number of registers using Synchronous Load   ; 0     ;
+; Number of registers using Asynchronous Clear ; 160   ;
+; Number of registers using Asynchronous Load  ; 0     ;
+; Number of registers using Clock Enable       ; 61    ;
+; Number of registers using Preset             ; 0     ;
++----------------------------------------------+-------+
+
+
++---------------------------------------------------+
+; Inverted Register Statistics                      ;
++-----------------------------------------+---------+
+; Inverted Register                       ; Fan out ;
++-----------------------------------------+---------+
+; Tonetest:inst|pitch[15]                 ; 1       ;
+; Tonetest:inst|oldpitch[15]              ; 1       ;
+; Tonetest:inst|pitch[14]                 ; 1       ;
+; Tonetest:inst|oldpitch[14]              ; 1       ;
+; Tonetest:inst|pitch[12]                 ; 1       ;
+; Tonetest:inst|oldpitch[12]              ; 1       ;
+; Tonetest:inst|pitch[11]                 ; 1       ;
+; Tonetest:inst|oldpitch[11]              ; 1       ;
+; Tonetest:inst|pitch[10]                 ; 1       ;
+; Tonetest:inst|oldpitch[10]              ; 1       ;
+; Tonetest:inst|pitch[8]                  ; 1       ;
+; Tonetest:inst|oldpitch[8]               ; 1       ;
+; Tonetest:inst|pitch[7]                  ; 1       ;
+; Tonetest:inst|oldpitch[7]               ; 1       ;
+; Tonetest:inst|pitch[6]                  ; 1       ;
+; Tonetest:inst|oldpitch[6]               ; 1       ;
+; Tonetest:inst|pitch[5]                  ; 1       ;
+; Tonetest:inst|oldpitch[5]               ; 1       ;
+; Tonetest:inst|pitch[4]                  ; 1       ;
+; Tonetest:inst|oldpitch[4]               ; 1       ;
+; Tonetest:inst|pitch[1]                  ; 1       ;
+; Tonetest:inst|oldpitch[1]               ; 1       ;
+; Total number of inverted registers = 22 ;         ;
++-----------------------------------------+---------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------+
+; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                              ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+-------------------------------+
+; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output    ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+-------------------------------+
+; 3:1                ; 19 bits   ; 38 LEs        ; 38 LEs               ; 0 LEs                  ; No         ; |bohemian|Tonetest:inst|pitch ;
+; 32:1               ; 19 bits   ; 399 LEs       ; 266 LEs              ; 133 LEs                ; No         ; |bohemian|Tonetest:inst|pitch ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+-------------------------------+
+
+
++---------------------------------------------------------------------------------------+
+; Parameter Settings for Inferred Entity Instance: tempotestblock:inst7|lpm_divide:Div0 ;
++------------------------+----------------+---------------------------------------------+
+; Parameter Name         ; Value          ; Type                                        ;
++------------------------+----------------+---------------------------------------------+
+; LPM_WIDTHN             ; 32             ; Untyped                                     ;
+; LPM_WIDTHD             ; 10             ; Untyped                                     ;
+; LPM_NREPRESENTATION    ; UNSIGNED       ; Untyped                                     ;
+; LPM_DREPRESENTATION    ; UNSIGNED       ; Untyped                                     ;
+; LPM_PIPELINE           ; 0              ; Untyped                                     ;
+; LPM_REMAINDERPOSITIVE  ; TRUE           ; Untyped                                     ;
+; MAXIMIZE_SPEED         ; 5              ; Untyped                                     ;
+; CBXI_PARAMETER         ; lpm_divide_4jm ; Untyped                                     ;
+; CARRY_CHAIN            ; MANUAL         ; Untyped                                     ;
+; OPTIMIZE_FOR_SPEED     ; 5              ; Untyped                                     ;
+; AUTO_CARRY_CHAINS      ; ON             ; AUTO_CARRY                                  ;
+; IGNORE_CARRY_BUFFERS   ; OFF            ; IGNORE_CARRY                                ;
+; AUTO_CASCADE_CHAINS    ; ON             ; AUTO_CASCADE                                ;
+; IGNORE_CASCADE_BUFFERS ; OFF            ; IGNORE_CASCADE                              ;
++------------------------+----------------+---------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------+
+; Elapsed Time Per Partition    ;
++----------------+--------------+
+; Partition Name ; Elapsed Time ;
++----------------+--------------+
+; Top            ; 00:00:02     ;
++----------------+--------------+
+
+
++-------------------------------+
+; Analysis & Synthesis Messages ;
++-------------------------------+
+Info: *******************************************************************
+Info: Running Quartus II 64-Bit Analysis & Synthesis
+    Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Full Version
+    Info: Processing started: Sun May 08 17:39:53 2016
+Info: Command: quartus_map --read_settings_files=on --write_settings_files=off bohemian -c bohemian
+Info (11104): Parallel Compilation has detected 8 hyper-threaded processors. However, the extra hyper-threaded processors will not be used by default. Parallel Compilation will use 4 of the 4 physical processors detected instead.
+Info (12021): Found 1 design units, including 1 entities, in source file /git/final_project/tempotestblock/tempotestblock.v
+    Info (12023): Found entity 1: tempotestblock
+Info (12021): Found 1 design units, including 1 entities, in source file /git/final_project/tone_test/tonetest.v
+    Info (12023): Found entity 1: Tonetest
+Info (12021): Found 1 design units, including 1 entities, in source file /git/final_project/tempotestblock/musicplayer.bdf
+    Info (12023): Found entity 1: musicPlayer
+Info (12021): Found 1 design units, including 1 entities, in source file bohemian.bdf
+    Info (12023): Found entity 1: bohemian
+Info (12127): Elaborating entity "bohemian" for the top level hierarchy
+Warning (275083): Bus "NOTE10[4..0]" found using same base name as "NOTE1", which might lead to a name conflict.
+Warning (275083): Bus "NOTE11[4..0]" found using same base name as "NOTE1", which might lead to a name conflict.
+Warning (275083): Bus "NOTE12[4..0]" found using same base name as "NOTE1", which might lead to a name conflict.
+Warning (275083): Bus "NOTE13[4..0]" found using same base name as "NOTE1", which might lead to a name conflict.
+Warning (275083): Bus "NOTE14[4..0]" found using same base name as "NOTE1", which might lead to a name conflict.
+Warning (275083): Bus "NOTE20[4..0]" found using same base name as "NOTE2", which might lead to a name conflict.
+Warning (275083): Bus "NOTE21[4..0]" found using same base name as "NOTE2", which might lead to a name conflict.
+Warning (275083): Bus "NOTE22[4..0]" found using same base name as "NOTE2", which might lead to a name conflict.
+Warning (275083): Bus "NOTE23[4..0]" found using same base name as "NOTE2", which might lead to a name conflict.
+Warning (275083): Bus "NOTE24[4..0]" found using same base name as "NOTE2", which might lead to a name conflict.
+Warning (275083): Bus "NOTE30[4..0]" found using same base name as "NOTE3", which might lead to a name conflict.
+Warning (275083): Bus "NOTE31[4..0]" found using same base name as "NOTE3", which might lead to a name conflict.
+Warning (275083): Bus "N0[4]" found using same base name as "N", which might lead to a name conflict.
+Warning (275083): Bus "N4[0]" found using same base name as "N", which might lead to a name conflict.
+Warning (275083): Bus "N4[1]" found using same base name as "N", which might lead to a name conflict.
+Warning (275083): Bus "N4[2]" found using same base name as "N", which might lead to a name conflict.
+Warning (275083): Bus "N4[3]" found using same base name as "N", which might lead to a name conflict.
+Warning (275083): Bus "N4[4]" found using same base name as "N", which might lead to a name conflict.
+Warning (275083): Bus "N3[3]" found using same base name as "N", which might lead to a name conflict.
+Warning (275083): Bus "N2[3]" found using same base name as "N", which might lead to a name conflict.
+Warning (275083): Bus "N0[4..0]" found using same base name as "N", which might lead to a name conflict.
+Warning (275083): Bus "N1[4..0]" found using same base name as "N", which might lead to a name conflict.
+Warning (275083): Bus "N2[4..0]" found using same base name as "N", which might lead to a name conflict.
+Warning (275083): Bus "N3[4..0]" found using same base name as "N", which might lead to a name conflict.
+Warning (275083): Bus "N4[4..0]" found using same base name as "N", which might lead to a name conflict.
+Warning (275083): Bus "N10[4..0]" found using same base name as "N10", which might lead to a name conflict.
+Warning (275083): Bus "N11[4..0]" found using same base name as "N11", which might lead to a name conflict.
+Warning (275083): Bus "N12[4..0]" found using same base name as "N12", which might lead to a name conflict.
+Warning (275083): Bus "N13[4..0]" found using same base name as "N13", which might lead to a name conflict.
+Warning (275083): Bus "N14[4..0]" found using same base name as "N14", which might lead to a name conflict.
+Warning (275083): Bus "N20[4..0]" found using same base name as "N20", which might lead to a name conflict.
+Warning (275083): Bus "N21[4..0]" found using same base name as "N21", which might lead to a name conflict.
+Warning (275083): Bus "N22[4..0]" found using same base name as "N22", which might lead to a name conflict.
+Warning (275083): Bus "N23[4..0]" found using same base name as "N23", which might lead to a name conflict.
+Warning (275083): Bus "N24[4..0]" found using same base name as "N24", which might lead to a name conflict.
+Warning (275083): Bus "N30[4..0]" found using same base name as "N30", which might lead to a name conflict.
+Warning (275083): Bus "N31[4..0]" found using same base name as "N31", which might lead to a name conflict.
+Warning (275083): Bus "N3[4]" found using same base name as "N", which might lead to a name conflict.
+Warning (275083): Bus "N2[4]" found using same base name as "N", which might lead to a name conflict.
+Warning (275083): Bus "N14[4]" found using same base name as "N14", which might lead to a name conflict.
+Warning (275083): Bus "N3[2]" found using same base name as "N", which might lead to a name conflict.
+Warning (275083): Bus "N3[1]" found using same base name as "N", which might lead to a name conflict.
+Warning (275083): Bus "N3[0]" found using same base name as "N", which might lead to a name conflict.
+Warning (275083): Bus "N1[3]" found using same base name as "N", which might lead to a name conflict.
+Warning (275083): Bus "N2[0]" found using same base name as "N", which might lead to a name conflict.
+Warning (275083): Bus "N1[0]" found using same base name as "N", which might lead to a name conflict.
+Warning (275083): Bus "N0[0]" found using same base name as "N", which might lead to a name conflict.
+Warning (275083): Bus "N0[1]" found using same base name as "N", which might lead to a name conflict.
+Warning (275083): Bus "N1[1]" found using same base name as "N", which might lead to a name conflict.
+Warning (275083): Bus "N2[1]" found using same base name as "N", which might lead to a name conflict.
+Warning (275083): Bus "N2[2]" found using same base name as "N", which might lead to a name conflict.
+Warning (275083): Bus "N1[2]" found using same base name as "N", which might lead to a name conflict.
+Warning (275083): Bus "N0[2]" found using same base name as "N", which might lead to a name conflict.
+Warning (275083): Bus "N1[4]" found using same base name as "N", which might lead to a name conflict.
+Warning (275083): Bus "N0[3]" found using same base name as "N", which might lead to a name conflict.
+Warning (275083): Bus "I10[4..0]" found using same base name as "I10", which might lead to a name conflict.
+Warning (275083): Bus "I11[4..0]" found using same base name as "I11", which might lead to a name conflict.
+Warning (275083): Bus "I12[4..0]" found using same base name as "I12", which might lead to a name conflict.
+Warning (275083): Bus "I13[4..0]" found using same base name as "I13", which might lead to a name conflict.
+Warning (275083): Bus "I14[4..0]" found using same base name as "I14", which might lead to a name conflict.
+Warning (275083): Bus "I20[4..0]" found using same base name as "I20", which might lead to a name conflict.
+Warning (275083): Bus "I21[4..0]" found using same base name as "I21", which might lead to a name conflict.
+Warning (275083): Bus "I22[4..0]" found using same base name as "I22", which might lead to a name conflict.
+Warning (275083): Bus "I23[4..0]" found using same base name as "I23", which might lead to a name conflict.
+Warning (275083): Bus "I24[4..0]" found using same base name as "I24", which might lead to a name conflict.
+Warning (275083): Bus "I30[4..0]" found using same base name as "I30", which might lead to a name conflict.
+Warning (275083): Bus "I31[4..0]" found using same base name as "I31", which might lead to a name conflict.
+Warning (275083): Bus "N0[4..0]" found using same base name as "N", which might lead to a name conflict.
+Warning (275083): Bus "N1[4..0]" found using same base name as "N", which might lead to a name conflict.
+Warning (275083): Bus "N2[4..0]" found using same base name as "N", which might lead to a name conflict.
+Warning (275083): Bus "N3[4..0]" found using same base name as "N", which might lead to a name conflict.
+Warning (275083): Bus "N4[4..0]" found using same base name as "N", which might lead to a name conflict.
+Warning (275083): Bus "N10[4..0]" found using same base name as "N10", which might lead to a name conflict.
+Warning (275083): Bus "N11[4..0]" found using same base name as "N11", which might lead to a name conflict.
+Warning (275083): Bus "N12[4..0]" found using same base name as "N12", which might lead to a name conflict.
+Warning (275083): Bus "N13[4..0]" found using same base name as "N13", which might lead to a name conflict.
+Warning (275083): Bus "N14[4..0]" found using same base name as "N14", which might lead to a name conflict.
+Warning (275083): Bus "N20[4..0]" found using same base name as "N20", which might lead to a name conflict.
+Warning (275083): Bus "N21[4..0]" found using same base name as "N21", which might lead to a name conflict.
+Warning (275083): Bus "N22[4..0]" found using same base name as "N22", which might lead to a name conflict.
+Warning (275083): Bus "N23[4..0]" found using same base name as "N23", which might lead to a name conflict.
+Warning (275083): Bus "N24[4..0]" found using same base name as "N24", which might lead to a name conflict.
+Warning (275083): Bus "N30[4..0]" found using same base name as "N30", which might lead to a name conflict.
+Warning (275083): Bus "N31[4..0]" found using same base name as "N31", which might lead to a name conflict.
+Warning (275083): Bus "N23[3]" found using same base name as "N23", which might lead to a name conflict.
+Warning (275083): Bus "I23[3]" found using same base name as "I23", which might lead to a name conflict.
+Warning (275083): Bus "NOTE10[4..0]" found using same base name as "NOTE1", which might lead to a name conflict.
+Warning (275083): Bus "NOTE11[4..0]" found using same base name as "NOTE1", which might lead to a name conflict.
+Warning (275083): Bus "NOTE12[4..0]" found using same base name as "NOTE1", which might lead to a name conflict.
+Warning (275083): Bus "NOTE13[4..0]" found using same base name as "NOTE1", which might lead to a name conflict.
+Warning (275083): Bus "NOTE14[4..0]" found using same base name as "NOTE1", which might lead to a name conflict.
+Warning (275083): Bus "NOTE20[4..0]" found using same base name as "NOTE2", which might lead to a name conflict.
+Warning (275083): Bus "NOTE21[4..0]" found using same base name as "NOTE2", which might lead to a name conflict.
+Warning (275083): Bus "NOTE22[4..0]" found using same base name as "NOTE2", which might lead to a name conflict.
+Warning (275083): Bus "NOTE23[4..0]" found using same base name as "NOTE2", which might lead to a name conflict.
+Warning (275083): Bus "NOTE24[4..0]" found using same base name as "NOTE2", which might lead to a name conflict.
+Warning (275083): Bus "NOTE30[4..0]" found using same base name as "NOTE3", which might lead to a name conflict.
+Warning (275083): Bus "NOTE31[4..0]" found using same base name as "NOTE3", which might lead to a name conflict.
+Warning (275083): Bus "NOTE10[4..0]" found using same base name as "NOTE1", which might lead to a name conflict.
+Warning (275083): Bus "NOTE11[4..0]" found using same base name as "NOTE1", which might lead to a name conflict.
+Warning (275083): Bus "NOTE12[4..0]" found using same base name as "NOTE1", which might lead to a name conflict.
+Warning (275083): Bus "NOTE13[4..0]" found using same base name as "NOTE1", which might lead to a name conflict.
+Warning (275083): Bus "NOTE14[4..0]" found using same base name as "NOTE1", which might lead to a name conflict.
+Warning (275083): Bus "NOTE20[4..0]" found using same base name as "NOTE2", which might lead to a name conflict.
+Warning (275083): Bus "NOTE21[4..0]" found using same base name as "NOTE2", which might lead to a name conflict.
+Warning (275083): Bus "NOTE22[4..0]" found using same base name as "NOTE2", which might lead to a name conflict.
+Warning (275083): Bus "NOTE23[4..0]" found using same base name as "NOTE2", which might lead to a name conflict.
+Warning (275083): Bus "NOTE24[4..0]" found using same base name as "NOTE2", which might lead to a name conflict.
+Warning (275083): Bus "NOTE30[4..0]" found using same base name as "NOTE3", which might lead to a name conflict.
+Warning (275083): Bus "NOTE31[4..0]" found using same base name as "NOTE3", which might lead to a name conflict.
+Warning (275011): Block or symbol "GND" of instance "DFF100" overlaps another block or symbol
+Warning (275011): Block or symbol "GND" of instance "DFF123" overlaps another block or symbol
+Warning (275080): Converted elements in bus name "I1" using legacy naming rules. Make any assignments on the new names, not on the original names.
+    Warning (275081): Converted element name(s) from "I1[3]" to "I13"
+    Warning (275081): Converted element name(s) from "I1[0]" to "I10"
+    Warning (275081): Converted element name(s) from "I1[1]" to "I11"
+    Warning (275081): Converted element name(s) from "I1[2]" to "I12"
+    Warning (275081): Converted element name(s) from "I1[4]" to "I14"
+    Warning (275081): Converted element name(s) from "I1[4..0]" to "I14..0"
+Warning (275080): Converted elements in bus name "I10" using legacy naming rules. Make any assignments on the new names, not on the original names.
+    Warning (275081): Converted element name(s) from "I10[0]" to "I100"
+    Warning (275081): Converted element name(s) from "I10[1]" to "I101"
+    Warning (275081): Converted element name(s) from "I10[2]" to "I102"
+    Warning (275081): Converted element name(s) from "I10[3]" to "I103"
+    Warning (275081): Converted element name(s) from "I10[4]" to "I104"
+    Warning (275081): Converted element name(s) from "I10[4..0]" to "I104..0"
+Warning (275080): Converted elements in bus name "I11" using legacy naming rules. Make any assignments on the new names, not on the original names.
+    Warning (275081): Converted element name(s) from "I11[0]" to "I110"
+    Warning (275081): Converted element name(s) from "I11[1]" to "I111"
+    Warning (275081): Converted element name(s) from "I11[2]" to "I112"
+    Warning (275081): Converted element name(s) from "I11[3]" to "I113"
+    Warning (275081): Converted element name(s) from "I11[4]" to "I114"
+    Warning (275081): Converted element name(s) from "I11[4..0]" to "I114..0"
+Warning (275080): Converted elements in bus name "I12" using legacy naming rules. Make any assignments on the new names, not on the original names.
+    Warning (275081): Converted element name(s) from "I12[0]" to "I120"
+    Warning (275081): Converted element name(s) from "I12[1]" to "I121"
+    Warning (275081): Converted element name(s) from "I12[2]" to "I122"
+    Warning (275081): Converted element name(s) from "I12[3]" to "I123"
+    Warning (275081): Converted element name(s) from "I12[4]" to "I124"
+    Warning (275081): Converted element name(s) from "I12[4..0]" to "I124..0"
+Warning (275080): Converted elements in bus name "I13" using legacy naming rules. Make any assignments on the new names, not on the original names.
+    Warning (275081): Converted element name(s) from "I13[0]" to "I130"
+    Warning (275081): Converted element name(s) from "I13[1]" to "I131"
+    Warning (275081): Converted element name(s) from "I13[2]" to "I132"
+    Warning (275081): Converted element name(s) from "I13[3]" to "I133"
+    Warning (275081): Converted element name(s) from "I13[4]" to "I134"
+    Warning (275081): Converted element name(s) from "I13[4..0]" to "I134..0"
+Warning (275080): Converted elements in bus name "I14" using legacy naming rules. Make any assignments on the new names, not on the original names.
+    Warning (275081): Converted element name(s) from "I14[0]" to "I140"
+    Warning (275081): Converted element name(s) from "I14[1]" to "I141"
+    Warning (275081): Converted element name(s) from "I14[2]" to "I142"
+    Warning (275081): Converted element name(s) from "I14[3]" to "I143"
+    Warning (275081): Converted element name(s) from "I14[4]" to "I144"
+    Warning (275081): Converted element name(s) from "I14[4..0]" to "I144..0"
+Warning (275080): Converted elements in bus name "I2" using legacy naming rules. Make any assignments on the new names, not on the original names.
+    Warning (275081): Converted element name(s) from "I2[3]" to "I23"
+    Warning (275081): Converted element name(s) from "I2[4]" to "I24"
+    Warning (275081): Converted element name(s) from "I2[0]" to "I20"
+    Warning (275081): Converted element name(s) from "I2[1]" to "I21"
+    Warning (275081): Converted element name(s) from "I2[2]" to "I22"
+    Warning (275081): Converted element name(s) from "I2[4..0]" to "I24..0"
+Warning (275080): Converted elements in bus name "I20" using legacy naming rules. Make any assignments on the new names, not on the original names.
+    Warning (275081): Converted element name(s) from "I20[0]" to "I200"
+    Warning (275081): Converted element name(s) from "I20[1]" to "I201"
+    Warning (275081): Converted element name(s) from "I20[2]" to "I202"
+    Warning (275081): Converted element name(s) from "I20[3]" to "I203"
+    Warning (275081): Converted element name(s) from "I20[4]" to "I204"
+    Warning (275081): Converted element name(s) from "I20[4..0]" to "I204..0"
+Warning (275080): Converted elements in bus name "I21" using legacy naming rules. Make any assignments on the new names, not on the original names.
+    Warning (275081): Converted element name(s) from "I21[0]" to "I210"
+    Warning (275081): Converted element name(s) from "I21[1]" to "I211"
+    Warning (275081): Converted element name(s) from "I21[2]" to "I212"
+    Warning (275081): Converted element name(s) from "I21[3]" to "I213"
+    Warning (275081): Converted element name(s) from "I21[4]" to "I214"
+    Warning (275081): Converted element name(s) from "I21[4..0]" to "I214..0"
+Warning (275080): Converted elements in bus name "I22" using legacy naming rules. Make any assignments on the new names, not on the original names.
+    Warning (275081): Converted element name(s) from "I22[0]" to "I220"
+    Warning (275081): Converted element name(s) from "I22[1]" to "I221"
+    Warning (275081): Converted element name(s) from "I22[2]" to "I222"
+    Warning (275081): Converted element name(s) from "I22[3]" to "I223"
+    Warning (275081): Converted element name(s) from "I22[4]" to "I224"
+    Warning (275081): Converted element name(s) from "I22[4..0]" to "I224..0"
+Warning (275080): Converted elements in bus name "I23" using legacy naming rules. Make any assignments on the new names, not on the original names.
+    Warning (275081): Converted element name(s) from "I23[0]" to "I230"
+    Warning (275081): Converted element name(s) from "I23[1]" to "I231"
+    Warning (275081): Converted element name(s) from "I23[2]" to "I232"
+    Warning (275081): Converted element name(s) from "I23[4]" to "I234"
+    Warning (275081): Converted element name(s) from "I23[4..0]" to "I234..0"
+    Warning (275081): Converted element name(s) from "I23[3]" to "I233"
+Warning (275080): Converted elements in bus name "I24" using legacy naming rules. Make any assignments on the new names, not on the original names.
+    Warning (275081): Converted element name(s) from "I24[0]" to "I240"
+    Warning (275081): Converted element name(s) from "I24[1]" to "I241"
+    Warning (275081): Converted element name(s) from "I24[2]" to "I242"
+    Warning (275081): Converted element name(s) from "I24[3]" to "I243"
+    Warning (275081): Converted element name(s) from "I24[4]" to "I244"
+    Warning (275081): Converted element name(s) from "I24[4..0]" to "I244..0"
+Warning (275080): Converted elements in bus name "I3" using legacy naming rules. Make any assignments on the new names, not on the original names.
+    Warning (275081): Converted element name(s) from "I3[3]" to "I33"
+    Warning (275081): Converted element name(s) from "I3[4]" to "I34"
+    Warning (275081): Converted element name(s) from "I3[2]" to "I32"
+    Warning (275081): Converted element name(s) from "I3[1]" to "I31"
+    Warning (275081): Converted element name(s) from "I3[0]" to "I30"
+    Warning (275081): Converted element name(s) from "I3[4..0]" to "I34..0"
+Warning (275080): Converted elements in bus name "I30" using legacy naming rules. Make any assignments on the new names, not on the original names.
+    Warning (275081): Converted element name(s) from "I30[0]" to "I300"
+    Warning (275081): Converted element name(s) from "I30[1]" to "I301"
+    Warning (275081): Converted element name(s) from "I30[2]" to "I302"
+    Warning (275081): Converted element name(s) from "I30[3]" to "I303"
+    Warning (275081): Converted element name(s) from "I30[4]" to "I304"
+    Warning (275081): Converted element name(s) from "I30[4..0]" to "I304..0"
+Warning (275080): Converted elements in bus name "I31" using legacy naming rules. Make any assignments on the new names, not on the original names.
+    Warning (275081): Converted element name(s) from "I31[0]" to "I310"
+    Warning (275081): Converted element name(s) from "I31[1]" to "I311"
+    Warning (275081): Converted element name(s) from "I31[2]" to "I312"
+    Warning (275081): Converted element name(s) from "I31[3]" to "I313"
+    Warning (275081): Converted element name(s) from "I31[4]" to "I314"
+    Warning (275081): Converted element name(s) from "I31[4..0]" to "I314..0"
+Warning (275080): Converted elements in bus name "N" using legacy naming rules. Make any assignments on the new names, not on the original names.
+    Warning (275081): Converted element name(s) from "N[0]" to "N0"
+    Warning (275081): Converted element name(s) from "N[1]" to "N1"
+    Warning (275081): Converted element name(s) from "N[2]" to "N2"
+    Warning (275081): Converted element name(s) from "N[3]" to "N3"
+    Warning (275081): Converted element name(s) from "N[4]" to "N4"
+    Warning (275081): Converted element name(s) from "N[4]" to "N4"
+    Warning (275081): Converted element name(s) from "N[4]" to "N4"
+    Warning (275081): Converted element name(s) from "N[2]" to "N2"
+    Warning (275081): Converted element name(s) from "N[1]" to "N1"
+    Warning (275081): Converted element name(s) from "N[0]" to "N0"
+    Warning (275081): Converted element name(s) from "N[3]" to "N3"
+    Warning (275081): Converted element name(s) from "N[0]" to "N0"
+    Warning (275081): Converted element name(s) from "N[1]" to "N1"
+    Warning (275081): Converted element name(s) from "N[2]" to "N2"
+    Warning (275081): Converted element name(s) from "N[3]" to "N3"
+    Warning (275081): Converted element name(s) from "N[4..0]" to "N4..0"
+    Warning (275081): Converted element name(s) from "N[4..0]" to "N4..0"
+Warning (275080): Converted elements in bus name "N0" using legacy naming rules. Make any assignments on the new names, not on the original names.
+    Warning (275081): Converted element name(s) from "N0[4]" to "N04"
+    Warning (275081): Converted element name(s) from "N0[4..0]" to "N04..0"
+    Warning (275081): Converted element name(s) from "N0[0]" to "N00"
+    Warning (275081): Converted element name(s) from "N0[1]" to "N01"
+    Warning (275081): Converted element name(s) from "N0[2]" to "N02"
+    Warning (275081): Converted element name(s) from "N0[3]" to "N03"
+    Warning (275081): Converted element name(s) from "N0[4..0]" to "N04..0"
+Warning (275080): Converted elements in bus name "N1" using legacy naming rules. Make any assignments on the new names, not on the original names.
+    Warning (275081): Converted element name(s) from "N1[4..0]" to "N14..0"
+    Warning (275081): Converted element name(s) from "N1[3]" to "N13"
+    Warning (275081): Converted element name(s) from "N1[0]" to "N10"
+    Warning (275081): Converted element name(s) from "N1[1]" to "N11"
+    Warning (275081): Converted element name(s) from "N1[2]" to "N12"
+    Warning (275081): Converted element name(s) from "N1[4]" to "N14"
+    Warning (275081): Converted element name(s) from "N1[4..0]" to "N14..0"
+Warning (275080): Converted elements in bus name "N10" using legacy naming rules. Make any assignments on the new names, not on the original names.
+    Warning (275081): Converted element name(s) from "N10[0]" to "N100"
+    Warning (275081): Converted element name(s) from "N10[1]" to "N101"
+    Warning (275081): Converted element name(s) from "N10[2]" to "N102"
+    Warning (275081): Converted element name(s) from "N10[3]" to "N103"
+    Warning (275081): Converted element name(s) from "N10[4]" to "N104"
+    Warning (275081): Converted element name(s) from "N10[4..0]" to "N104..0"
+    Warning (275081): Converted element name(s) from "N10[4..0]" to "N104..0"
+Warning (275080): Converted elements in bus name "N11" using legacy naming rules. Make any assignments on the new names, not on the original names.
+    Warning (275081): Converted element name(s) from "N11[0]" to "N110"
+    Warning (275081): Converted element name(s) from "N11[1]" to "N111"
+    Warning (275081): Converted element name(s) from "N11[2]" to "N112"
+    Warning (275081): Converted element name(s) from "N11[3]" to "N113"
+    Warning (275081): Converted element name(s) from "N11[4]" to "N114"
+    Warning (275081): Converted element name(s) from "N11[4..0]" to "N114..0"
+    Warning (275081): Converted element name(s) from "N11[4..0]" to "N114..0"
+Warning (275080): Converted elements in bus name "N12" using legacy naming rules. Make any assignments on the new names, not on the original names.
+    Warning (275081): Converted element name(s) from "N12[0]" to "N120"
+    Warning (275081): Converted element name(s) from "N12[1]" to "N121"
+    Warning (275081): Converted element name(s) from "N12[2]" to "N122"
+    Warning (275081): Converted element name(s) from "N12[3]" to "N123"
+    Warning (275081): Converted element name(s) from "N12[4]" to "N124"
+    Warning (275081): Converted element name(s) from "N12[4..0]" to "N124..0"
+    Warning (275081): Converted element name(s) from "N12[4..0]" to "N124..0"
+Warning (275080): Converted elements in bus name "N13" using legacy naming rules. Make any assignments on the new names, not on the original names.
+    Warning (275081): Converted element name(s) from "N13[0]" to "N130"
+    Warning (275081): Converted element name(s) from "N13[1]" to "N131"
+    Warning (275081): Converted element name(s) from "N13[2]" to "N132"
+    Warning (275081): Converted element name(s) from "N13[3]" to "N133"
+    Warning (275081): Converted element name(s) from "N13[4]" to "N134"
+    Warning (275081): Converted element name(s) from "N13[4..0]" to "N134..0"
+    Warning (275081): Converted element name(s) from "N13[4..0]" to "N134..0"
+Warning (275080): Converted elements in bus name "N14" using legacy naming rules. Make any assignments on the new names, not on the original names.
+    Warning (275081): Converted element name(s) from "N14[0]" to "N140"
+    Warning (275081): Converted element name(s) from "N14[1]" to "N141"
+    Warning (275081): Converted element name(s) from "N14[2]" to "N142"
+    Warning (275081): Converted element name(s) from "N14[3]" to "N143"
+    Warning (275081): Converted element name(s) from "N14[4..0]" to "N144..0"
+    Warning (275081): Converted element name(s) from "N14[4]" to "N144"
+    Warning (275081): Converted element name(s) from "N14[4..0]" to "N144..0"
+Warning (275080): Converted elements in bus name "N2" using legacy naming rules. Make any assignments on the new names, not on the original names.
+    Warning (275081): Converted element name(s) from "N2[3]" to "N23"
+    Warning (275081): Converted element name(s) from "N2[4..0]" to "N24..0"
+    Warning (275081): Converted element name(s) from "N2[4]" to "N24"
+    Warning (275081): Converted element name(s) from "N2[0]" to "N20"
+    Warning (275081): Converted element name(s) from "N2[1]" to "N21"
+    Warning (275081): Converted element name(s) from "N2[2]" to "N22"
+    Warning (275081): Converted element name(s) from "N2[4..0]" to "N24..0"
+Warning (275080): Converted elements in bus name "N20" using legacy naming rules. Make any assignments on the new names, not on the original names.
+    Warning (275081): Converted element name(s) from "N20[0]" to "N200"
+    Warning (275081): Converted element name(s) from "N20[1]" to "N201"
+    Warning (275081): Converted element name(s) from "N20[2]" to "N202"
+    Warning (275081): Converted element name(s) from "N20[3]" to "N203"
+    Warning (275081): Converted element name(s) from "N20[4]" to "N204"
+    Warning (275081): Converted element name(s) from "N20[4..0]" to "N204..0"
+    Warning (275081): Converted element name(s) from "N20[4..0]" to "N204..0"
+Warning (275080): Converted elements in bus name "N21" using legacy naming rules. Make any assignments on the new names, not on the original names.
+    Warning (275081): Converted element name(s) from "N21[0]" to "N210"
+    Warning (275081): Converted element name(s) from "N21[1]" to "N211"
+    Warning (275081): Converted element name(s) from "N21[2]" to "N212"
+    Warning (275081): Converted element name(s) from "N21[3]" to "N213"
+    Warning (275081): Converted element name(s) from "N21[4]" to "N214"
+    Warning (275081): Converted element name(s) from "N21[4..0]" to "N214..0"
+    Warning (275081): Converted element name(s) from "N21[4..0]" to "N214..0"
+Warning (275080): Converted elements in bus name "N22" using legacy naming rules. Make any assignments on the new names, not on the original names.
+    Warning (275081): Converted element name(s) from "N22[0]" to "N220"
+    Warning (275081): Converted element name(s) from "N22[1]" to "N221"
+    Warning (275081): Converted element name(s) from "N22[2]" to "N222"
+    Warning (275081): Converted element name(s) from "N22[3]" to "N223"
+    Warning (275081): Converted element name(s) from "N22[4]" to "N224"
+    Warning (275081): Converted element name(s) from "N22[4..0]" to "N224..0"
+    Warning (275081): Converted element name(s) from "N22[4..0]" to "N224..0"
+Warning (275080): Converted elements in bus name "N23" using legacy naming rules. Make any assignments on the new names, not on the original names.
+    Warning (275081): Converted element name(s) from "N23[0]" to "N230"
+    Warning (275081): Converted element name(s) from "N23[1]" to "N231"
+    Warning (275081): Converted element name(s) from "N23[2]" to "N232"
+    Warning (275081): Converted element name(s) from "N23[4]" to "N234"
+    Warning (275081): Converted element name(s) from "N23[4..0]" to "N234..0"
+    Warning (275081): Converted element name(s) from "N23[4..0]" to "N234..0"
+    Warning (275081): Converted element name(s) from "N23[3]" to "N233"
+Warning (275080): Converted elements in bus name "N24" using legacy naming rules. Make any assignments on the new names, not on the original names.
+    Warning (275081): Converted element name(s) from "N24[0]" to "N240"
+    Warning (275081): Converted element name(s) from "N24[1]" to "N241"
+    Warning (275081): Converted element name(s) from "N24[2]" to "N242"
+    Warning (275081): Converted element name(s) from "N24[3]" to "N243"
+    Warning (275081): Converted element name(s) from "N24[4]" to "N244"
+    Warning (275081): Converted element name(s) from "N24[4..0]" to "N244..0"
+    Warning (275081): Converted element name(s) from "N24[4..0]" to "N244..0"
+Warning (275080): Converted elements in bus name "N3" using legacy naming rules. Make any assignments on the new names, not on the original names.
+    Warning (275081): Converted element name(s) from "N3[3]" to "N33"
+    Warning (275081): Converted element name(s) from "N3[4..0]" to "N34..0"
+    Warning (275081): Converted element name(s) from "N3[4]" to "N34"
+    Warning (275081): Converted element name(s) from "N3[2]" to "N32"
+    Warning (275081): Converted element name(s) from "N3[1]" to "N31"
+    Warning (275081): Converted element name(s) from "N3[0]" to "N30"
+    Warning (275081): Converted element name(s) from "N3[4..0]" to "N34..0"
+Warning (275080): Converted elements in bus name "N30" using legacy naming rules. Make any assignments on the new names, not on the original names.
+    Warning (275081): Converted element name(s) from "N30[0]" to "N300"
+    Warning (275081): Converted element name(s) from "N30[1]" to "N301"
+    Warning (275081): Converted element name(s) from "N30[2]" to "N302"
+    Warning (275081): Converted element name(s) from "N30[3]" to "N303"
+    Warning (275081): Converted element name(s) from "N30[4]" to "N304"
+    Warning (275081): Converted element name(s) from "N30[4..0]" to "N304..0"
+    Warning (275081): Converted element name(s) from "N30[4..0]" to "N304..0"
+Warning (275080): Converted elements in bus name "N31" using legacy naming rules. Make any assignments on the new names, not on the original names.
+    Warning (275081): Converted element name(s) from "N31[0]" to "N310"
+    Warning (275081): Converted element name(s) from "N31[1]" to "N311"
+    Warning (275081): Converted element name(s) from "N31[2]" to "N312"
+    Warning (275081): Converted element name(s) from "N31[3]" to "N313"
+    Warning (275081): Converted element name(s) from "N31[4]" to "N314"
+    Warning (275081): Converted element name(s) from "N31[4..0]" to "N314..0"
+    Warning (275081): Converted element name(s) from "N31[4..0]" to "N314..0"
+Warning (275080): Converted elements in bus name "N4" using legacy naming rules. Make any assignments on the new names, not on the original names.
+    Warning (275081): Converted element name(s) from "N4[0]" to "N40"
+    Warning (275081): Converted element name(s) from "N4[1]" to "N41"
+    Warning (275081): Converted element name(s) from "N4[2]" to "N42"
+    Warning (275081): Converted element name(s) from "N4[3]" to "N43"
+    Warning (275081): Converted element name(s) from "N4[4]" to "N44"
+    Warning (275081): Converted element name(s) from "N4[4..0]" to "N44..0"
+    Warning (275081): Converted element name(s) from "N4[4..0]" to "N44..0"
+Warning (275080): Converted elements in bus name "NOTE1" using legacy naming rules. Make any assignments on the new names, not on the original names.
+    Warning (275081): Converted element name(s) from "NOTE1[4..0]" to "NOTE14..0"
+Warning (275080): Converted elements in bus name "NOTE10" using legacy naming rules. Make any assignments on the new names, not on the original names.
+    Warning (275081): Converted element name(s) from "NOTE10[4..0]" to "NOTE104..0"
+Warning (275080): Converted elements in bus name "NOTE11" using legacy naming rules. Make any assignments on the new names, not on the original names.
+    Warning (275081): Converted element name(s) from "NOTE11[4..0]" to "NOTE114..0"
+Warning (275080): Converted elements in bus name "NOTE12" using legacy naming rules. Make any assignments on the new names, not on the original names.
+    Warning (275081): Converted element name(s) from "NOTE12[4..0]" to "NOTE124..0"
+Warning (275080): Converted elements in bus name "NOTE13" using legacy naming rules. Make any assignments on the new names, not on the original names.
+    Warning (275081): Converted element name(s) from "NOTE13[4..0]" to "NOTE134..0"
+Warning (275080): Converted elements in bus name "NOTE14" using legacy naming rules. Make any assignments on the new names, not on the original names.
+    Warning (275081): Converted element name(s) from "NOTE14[4..0]" to "NOTE144..0"
+Warning (275080): Converted elements in bus name "NOTE2" using legacy naming rules. Make any assignments on the new names, not on the original names.
+    Warning (275081): Converted element name(s) from "NOTE2[4..0]" to "NOTE24..0"
+Warning (275080): Converted elements in bus name "NOTE20" using legacy naming rules. Make any assignments on the new names, not on the original names.
+    Warning (275081): Converted element name(s) from "NOTE20[4..0]" to "NOTE204..0"
+Warning (275080): Converted elements in bus name "NOTE21" using legacy naming rules. Make any assignments on the new names, not on the original names.
+    Warning (275081): Converted element name(s) from "NOTE21[4..0]" to "NOTE214..0"
+Warning (275080): Converted elements in bus name "NOTE22" using legacy naming rules. Make any assignments on the new names, not on the original names.
+    Warning (275081): Converted element name(s) from "NOTE22[4..0]" to "NOTE224..0"
+Warning (275080): Converted elements in bus name "NOTE23" using legacy naming rules. Make any assignments on the new names, not on the original names.
+    Warning (275081): Converted element name(s) from "NOTE23[4..0]" to "NOTE234..0"
+Warning (275080): Converted elements in bus name "NOTE24" using legacy naming rules. Make any assignments on the new names, not on the original names.
+    Warning (275081): Converted element name(s) from "NOTE24[4..0]" to "NOTE244..0"
+Warning (275080): Converted elements in bus name "NOTE3" using legacy naming rules. Make any assignments on the new names, not on the original names.
+    Warning (275081): Converted element name(s) from "NOTE3[4..0]" to "NOTE34..0"
+Warning (275080): Converted elements in bus name "NOTE30" using legacy naming rules. Make any assignments on the new names, not on the original names.
+    Warning (275081): Converted element name(s) from "NOTE30[4..0]" to "NOTE304..0"
+Warning (275080): Converted elements in bus name "NOTE31" using legacy naming rules. Make any assignments on the new names, not on the original names.
+    Warning (275081): Converted element name(s) from "NOTE31[4..0]" to "NOTE314..0"
+Info (12128): Elaborating entity "Tonetest" for hierarchy "Tonetest:inst"
+Warning (10230): Verilog HDL assignment warning at Tonetest.v(59): truncated value with size 32 to match size of target (23)
+Info (12128): Elaborating entity "tempotestblock" for hierarchy "tempotestblock:inst7"
+Info (278001): Inferred 1 megafunctions from design logic
+    Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "tempotestblock:inst7|Div0"
+Info (12130): Elaborated megafunction instantiation "tempotestblock:inst7|lpm_divide:Div0"
+Info (12133): Instantiated megafunction "tempotestblock:inst7|lpm_divide:Div0" with the following parameter:
+    Info (12134): Parameter "LPM_WIDTHN" = "32"
+    Info (12134): Parameter "LPM_WIDTHD" = "10"
+    Info (12134): Parameter "LPM_NREPRESENTATION" = "UNSIGNED"
+    Info (12134): Parameter "LPM_DREPRESENTATION" = "UNSIGNED"
+Info (12021): Found 1 design units, including 1 entities, in source file db/lpm_divide_4jm.tdf
+    Info (12023): Found entity 1: lpm_divide_4jm
+Info (12021): Found 1 design units, including 1 entities, in source file db/sign_div_unsign_5nh.tdf
+    Info (12023): Found entity 1: sign_div_unsign_5nh
+Info (12021): Found 1 design units, including 1 entities, in source file db/alt_u_div_l8f.tdf
+    Info (12023): Found entity 1: alt_u_div_l8f
+Info (12021): Found 1 design units, including 1 entities, in source file db/add_sub_unc.tdf
+    Info (12023): Found entity 1: add_sub_unc
+Info (12021): Found 1 design units, including 1 entities, in source file db/add_sub_vnc.tdf
+    Info (12023): Found entity 1: add_sub_vnc
+Warning (13004): Presettable and clearable registers converted to equivalent circuits with latches. Registers power-up to an undefined state, and DEVCLRn places the registers in an undefined state.
+    Warning (13310): Register "inst199" is converted into an equivalent circuit using register "inst199~_emulated" and latch "inst199~1"
+    Warning (13310): Register "inst198" is converted into an equivalent circuit using register "inst198~_emulated" and latch "inst198~1"
+    Warning (13310): Register "inst197" is converted into an equivalent circuit using register "inst197~_emulated" and latch "inst197~1"
+    Warning (13310): Register "inst196" is converted into an equivalent circuit using register "inst196~_emulated" and latch "inst196~1"
+    Warning (13310): Register "inst195" is converted into an equivalent circuit using register "inst195~_emulated" and latch "inst195~1"
+    Warning (13310): Register "inst223" is converted into an equivalent circuit using register "inst223~_emulated" and latch "inst223~1"
+    Warning (13310): Register "inst204" is converted into an equivalent circuit using register "inst204~_emulated" and latch "inst204~1"
+    Warning (13310): Register "inst221" is converted into an equivalent circuit using register "inst221~_emulated" and latch "inst221~1"
+    Warning (13310): Register "inst202" is converted into an equivalent circuit using register "inst202~_emulated" and latch "inst202~1"
+    Warning (13310): Register "inst201" is converted into an equivalent circuit using register "inst201~_emulated" and latch "inst201~1"
+    Warning (13310): Register "inst211" is converted into an equivalent circuit using register "inst211~_emulated" and latch "inst211~1"
+    Warning (13310): Register "inst210" is converted into an equivalent circuit using register "inst210~_emulated" and latch "inst210~1"
+    Warning (13310): Register "inst209" is converted into an equivalent circuit using register "inst209~_emulated" and latch "inst209~1"
+    Warning (13310): Register "inst226" is converted into an equivalent circuit using register "inst226~_emulated" and latch "inst226~1"
+    Warning (13310): Register "inst225" is converted into an equivalent circuit using register "inst225~_emulated" and latch "inst225~1"
+    Warning (13310): Register "inst235" is converted into an equivalent circuit using register "inst235~_emulated" and latch "inst235~1"
+    Warning (13310): Register "inst234" is converted into an equivalent circuit using register "inst234~_emulated" and latch "inst234~1"
+    Warning (13310): Register "inst233" is converted into an equivalent circuit using register "inst233~_emulated" and latch "inst233~1"
+    Warning (13310): Register "inst232" is converted into an equivalent circuit using register "inst232~_emulated" and latch "inst232~1"
+    Warning (13310): Register "inst231" is converted into an equivalent circuit using register "inst231~_emulated" and latch "inst231~1"
+    Warning (13310): Register "inst331" is converted into an equivalent circuit using register "inst331~_emulated" and latch "inst331~1"
+    Warning (13310): Register "inst330" is converted into an equivalent circuit using register "inst330~_emulated" and latch "inst330~1"
+    Warning (13310): Register "inst329" is converted into an equivalent circuit using register "inst329~_emulated" and latch "inst329~1"
+    Warning (13310): Register "inst328" is converted into an equivalent circuit using register "inst328~_emulated" and latch "inst328~1"
+    Warning (13310): Register "inst327" is converted into an equivalent circuit using register "inst327~_emulated" and latch "inst327~1"
+    Warning (13310): Register "inst337" is converted into an equivalent circuit using register "inst337~_emulated" and latch "inst337~1"
+    Warning (13310): Register "inst336" is converted into an equivalent circuit using register "inst336~_emulated" and latch "inst336~1"
+    Warning (13310): Register "inst335" is converted into an equivalent circuit using register "inst335~_emulated" and latch "inst335~1"
+    Warning (13310): Register "inst334" is converted into an equivalent circuit using register "inst334~_emulated" and latch "inst334~1"
+    Warning (13310): Register "inst333" is converted into an equivalent circuit using register "inst333~_emulated" and latch "inst333~1"
+    Warning (13310): Register "inst343" is converted into an equivalent circuit using register "inst343~_emulated" and latch "inst343~1"
+    Warning (13310): Register "inst342" is converted into an equivalent circuit using register "inst342~_emulated" and latch "inst342~1"
+    Warning (13310): Register "inst341" is converted into an equivalent circuit using register "inst341~_emulated" and latch "inst341~1"
+    Warning (13310): Register "inst340" is converted into an equivalent circuit using register "inst340~_emulated" and latch "inst340~1"
+    Warning (13310): Register "inst339" is converted into an equivalent circuit using register "inst339~_emulated" and latch "inst339~1"
+    Warning (13310): Register "inst349" is converted into an equivalent circuit using register "inst349~_emulated" and latch "inst349~1"
+    Warning (13310): Register "inst348" is converted into an equivalent circuit using register "inst348~_emulated" and latch "inst348~1"
+    Warning (13310): Register "inst347" is converted into an equivalent circuit using register "inst347~_emulated" and latch "inst347~1"
+    Warning (13310): Register "inst346" is converted into an equivalent circuit using register "inst346~_emulated" and latch "inst346~1"
+    Warning (13310): Register "inst345" is converted into an equivalent circuit using register "inst345~_emulated" and latch "inst345~1"
+    Warning (13310): Register "inst355" is converted into an equivalent circuit using register "inst355~_emulated" and latch "inst355~1"
+    Warning (13310): Register "inst354" is converted into an equivalent circuit using register "inst354~_emulated" and latch "inst354~1"
+    Warning (13310): Register "inst353" is converted into an equivalent circuit using register "inst353~_emulated" and latch "inst353~1"
+    Warning (13310): Register "inst352" is converted into an equivalent circuit using register "inst352~_emulated" and latch "inst352~1"
+    Warning (13310): Register "inst351" is converted into an equivalent circuit using register "inst351~_emulated" and latch "inst351~1"
+    Warning (13310): Register "inst361" is converted into an equivalent circuit using register "inst361~_emulated" and latch "inst361~1"
+    Warning (13310): Register "inst360" is converted into an equivalent circuit using register "inst360~_emulated" and latch "inst360~1"
+    Warning (13310): Register "inst359" is converted into an equivalent circuit using register "inst359~_emulated" and latch "inst359~1"
+    Warning (13310): Register "inst358" is converted into an equivalent circuit using register "inst358~_emulated" and latch "inst358~1"
+    Warning (13310): Register "inst357" is converted into an equivalent circuit using register "inst357~_emulated" and latch "inst357~1"
+    Warning (13310): Register "inst367" is converted into an equivalent circuit using register "inst367~_emulated" and latch "inst367~1"
+    Warning (13310): Register "inst366" is converted into an equivalent circuit using register "inst366~_emulated" and latch "inst366~1"
+    Warning (13310): Register "inst365" is converted into an equivalent circuit using register "inst365~_emulated" and latch "inst365~1"
+    Warning (13310): Register "inst364" is converted into an equivalent circuit using register "inst364~_emulated" and latch "inst364~1"
+    Warning (13310): Register "inst363" is converted into an equivalent circuit using register "inst363~_emulated" and latch "inst363~1"
+    Warning (13310): Register "inst373" is converted into an equivalent circuit using register "inst373~_emulated" and latch "inst373~1"
+    Warning (13310): Register "inst372" is converted into an equivalent circuit using register "inst372~_emulated" and latch "inst372~1"
+    Warning (13310): Register "inst371" is converted into an equivalent circuit using register "inst371~_emulated" and latch "inst371~1"
+    Warning (13310): Register "inst370" is converted into an equivalent circuit using register "inst370~_emulated" and latch "inst370~1"
+    Warning (13310): Register "inst369" is converted into an equivalent circuit using register "inst369~_emulated" and latch "inst369~1"
+    Warning (13310): Register "inst379" is converted into an equivalent circuit using register "inst379~_emulated" and latch "inst379~1"
+    Warning (13310): Register "inst378" is converted into an equivalent circuit using register "inst378~_emulated" and latch "inst378~1"
+    Warning (13310): Register "inst377" is converted into an equivalent circuit using register "inst377~_emulated" and latch "inst377~1"
+    Warning (13310): Register "inst376" is converted into an equivalent circuit using register "inst376~_emulated" and latch "inst376~1"
+    Warning (13310): Register "inst375" is converted into an equivalent circuit using register "inst375~_emulated" and latch "inst375~1"
+    Warning (13310): Register "inst385" is converted into an equivalent circuit using register "inst385~_emulated" and latch "inst385~1"
+    Warning (13310): Register "inst384" is converted into an equivalent circuit using register "inst384~_emulated" and latch "inst384~1"
+    Warning (13310): Register "inst383" is converted into an equivalent circuit using register "inst383~_emulated" and latch "inst383~1"
+    Warning (13310): Register "inst382" is converted into an equivalent circuit using register "inst382~_emulated" and latch "inst382~1"
+    Warning (13310): Register "inst381" is converted into an equivalent circuit using register "inst381~_emulated" and latch "inst381~1"
+    Warning (13310): Register "inst391" is converted into an equivalent circuit using register "inst391~_emulated" and latch "inst391~1"
+    Warning (13310): Register "inst390" is converted into an equivalent circuit using register "inst390~_emulated" and latch "inst390~1"
+    Warning (13310): Register "inst389" is converted into an equivalent circuit using register "inst389~_emulated" and latch "inst389~1"
+    Warning (13310): Register "inst388" is converted into an equivalent circuit using register "inst388~_emulated" and latch "inst388~1"
+    Warning (13310): Register "inst387" is converted into an equivalent circuit using register "inst387~_emulated" and latch "inst387~1"
+    Warning (13310): Register "inst397" is converted into an equivalent circuit using register "inst397~_emulated" and latch "inst397~1"
+    Warning (13310): Register "inst396" is converted into an equivalent circuit using register "inst396~_emulated" and latch "inst396~1"
+    Warning (13310): Register "inst395" is converted into an equivalent circuit using register "inst395~_emulated" and latch "inst395~1"
+    Warning (13310): Register "inst394" is converted into an equivalent circuit using register "inst394~_emulated" and latch "inst394~1"
+    Warning (13310): Register "inst393" is converted into an equivalent circuit using register "inst393~_emulated" and latch "inst393~1"
+    Warning (13310): Register "inst403" is converted into an equivalent circuit using register "inst403~_emulated" and latch "inst403~1"
+    Warning (13310): Register "inst402" is converted into an equivalent circuit using register "inst402~_emulated" and latch "inst402~1"
+    Warning (13310): Register "inst401" is converted into an equivalent circuit using register "inst401~_emulated" and latch "inst401~1"
+    Warning (13310): Register "inst400" is converted into an equivalent circuit using register "inst400~_emulated" and latch "inst400~1"
+    Warning (13310): Register "inst399" is converted into an equivalent circuit using register "inst399~_emulated" and latch "inst399~1"
+    Warning (13310): Register "inst409" is converted into an equivalent circuit using register "inst409~_emulated" and latch "inst409~1"
+    Warning (13310): Register "inst408" is converted into an equivalent circuit using register "inst408~_emulated" and latch "inst408~1"
+    Warning (13310): Register "inst407" is converted into an equivalent circuit using register "inst407~_emulated" and latch "inst407~1"
+    Warning (13310): Register "inst406" is converted into an equivalent circuit using register "inst406~_emulated" and latch "inst406~1"
+    Warning (13310): Register "inst405" is converted into an equivalent circuit using register "inst405~_emulated" and latch "inst405~1"
+    Warning (13310): Register "inst415" is converted into an equivalent circuit using register "inst415~_emulated" and latch "inst415~1"
+    Warning (13310): Register "inst414" is converted into an equivalent circuit using register "inst414~_emulated" and latch "inst414~1"
+    Warning (13310): Register "inst413" is converted into an equivalent circuit using register "inst413~_emulated" and latch "inst413~1"
+    Warning (13310): Register "inst412" is converted into an equivalent circuit using register "inst412~_emulated" and latch "inst412~1"
+    Warning (13310): Register "inst411" is converted into an equivalent circuit using register "inst411~_emulated" and latch "inst411~1"
+    Warning (13310): Register "inst421" is converted into an equivalent circuit using register "inst421~_emulated" and latch "inst421~1"
+    Warning (13310): Register "inst420" is converted into an equivalent circuit using register "inst420~_emulated" and latch "inst420~1"
+    Warning (13310): Register "inst419" is converted into an equivalent circuit using register "inst419~_emulated" and latch "inst419~1"
+    Warning (13310): Register "inst418" is converted into an equivalent circuit using register "inst418~_emulated" and latch "inst418~1"
+    Warning (13310): Register "inst417" is converted into an equivalent circuit using register "inst417~_emulated" and latch "inst417~1"
+    Warning (13310): Register "inst427" is converted into an equivalent circuit using register "inst427~_emulated" and latch "inst427~1"
+    Warning (13310): Register "inst426" is converted into an equivalent circuit using register "inst426~_emulated" and latch "inst426~1"
+    Warning (13310): Register "inst425" is converted into an equivalent circuit using register "inst425~_emulated" and latch "inst425~1"
+    Warning (13310): Register "inst424" is converted into an equivalent circuit using register "inst424~_emulated" and latch "inst424~1"
+    Warning (13310): Register "inst423" is converted into an equivalent circuit using register "inst423~_emulated" and latch "inst423~1"
+    Warning (13310): Register "inst433" is converted into an equivalent circuit using register "inst433~_emulated" and latch "inst433~1"
+    Warning (13310): Register "inst432" is converted into an equivalent circuit using register "inst432~_emulated" and latch "inst432~1"
+    Warning (13310): Register "inst431" is converted into an equivalent circuit using register "inst431~_emulated" and latch "inst431~1"
+    Warning (13310): Register "inst430" is converted into an equivalent circuit using register "inst430~_emulated" and latch "inst430~1"
+    Warning (13310): Register "inst429" is converted into an equivalent circuit using register "inst429~_emulated" and latch "inst429~1"
+    Warning (13310): Register "inst439" is converted into an equivalent circuit using register "inst439~_emulated" and latch "inst439~1"
+    Warning (13310): Register "inst438" is converted into an equivalent circuit using register "inst438~_emulated" and latch "inst438~1"
+    Warning (13310): Register "inst437" is converted into an equivalent circuit using register "inst437~_emulated" and latch "inst437~1"
+    Warning (13310): Register "inst436" is converted into an equivalent circuit using register "inst436~_emulated" and latch "inst436~1"
+    Warning (13310): Register "inst435" is converted into an equivalent circuit using register "inst435~_emulated" and latch "inst435~1"
+    Warning (13310): Register "inst445" is converted into an equivalent circuit using register "inst445~_emulated" and latch "inst445~1"
+    Warning (13310): Register "inst444" is converted into an equivalent circuit using register "inst444~_emulated" and latch "inst444~1"
+    Warning (13310): Register "inst443" is converted into an equivalent circuit using register "inst443~_emulated" and latch "inst443~1"
+    Warning (13310): Register "inst442" is converted into an equivalent circuit using register "inst442~_emulated" and latch "inst442~1"
+    Warning (13310): Register "inst441" is converted into an equivalent circuit using register "inst441~_emulated" and latch "inst441~1"
+    Warning (13310): Register "inst451" is converted into an equivalent circuit using register "inst451~_emulated" and latch "inst451~1"
+    Warning (13310): Register "inst450" is converted into an equivalent circuit using register "inst450~_emulated" and latch "inst450~1"
+    Warning (13310): Register "inst449" is converted into an equivalent circuit using register "inst449~_emulated" and latch "inst449~1"
+    Warning (13310): Register "inst448" is converted into an equivalent circuit using register "inst448~_emulated" and latch "inst448~1"
+    Warning (13310): Register "inst447" is converted into an equivalent circuit using register "inst447~_emulated" and latch "inst447~1"
+    Warning (13310): Register "inst457" is converted into an equivalent circuit using register "inst457~_emulated" and latch "inst457~1"
+    Warning (13310): Register "inst456" is converted into an equivalent circuit using register "inst456~_emulated" and latch "inst456~1"
+    Warning (13310): Register "inst455" is converted into an equivalent circuit using register "inst455~_emulated" and latch "inst455~1"
+    Warning (13310): Register "inst454" is converted into an equivalent circuit using register "inst454~_emulated" and latch "inst454~1"
+    Warning (13310): Register "inst453" is converted into an equivalent circuit using register "inst453~_emulated" and latch "inst453~1"
+    Warning (13310): Register "inst463" is converted into an equivalent circuit using register "inst463~_emulated" and latch "inst463~1"
+    Warning (13310): Register "inst462" is converted into an equivalent circuit using register "inst462~_emulated" and latch "inst462~1"
+    Warning (13310): Register "inst461" is converted into an equivalent circuit using register "inst461~_emulated" and latch "inst461~1"
+    Warning (13310): Register "inst460" is converted into an equivalent circuit using register "inst460~_emulated" and latch "inst460~1"
+    Warning (13310): Register "inst459" is converted into an equivalent circuit using register "inst459~_emulated" and latch "inst459~1"
+    Warning (13310): Register "inst469" is converted into an equivalent circuit using register "inst469~_emulated" and latch "inst469~1"
+    Warning (13310): Register "inst468" is converted into an equivalent circuit using register "inst468~_emulated" and latch "inst468~1"
+    Warning (13310): Register "inst467" is converted into an equivalent circuit using register "inst467~_emulated" and latch "inst467~1"
+    Warning (13310): Register "inst466" is converted into an equivalent circuit using register "inst466~_emulated" and latch "inst466~1"
+    Warning (13310): Register "inst465" is converted into an equivalent circuit using register "inst465~_emulated" and latch "inst465~1"
+    Warning (13310): Register "inst475" is converted into an equivalent circuit using register "inst475~_emulated" and latch "inst475~1"
+    Warning (13310): Register "inst474" is converted into an equivalent circuit using register "inst474~_emulated" and latch "inst474~1"
+    Warning (13310): Register "inst473" is converted into an equivalent circuit using register "inst473~_emulated" and latch "inst473~1"
+    Warning (13310): Register "inst472" is converted into an equivalent circuit using register "inst472~_emulated" and latch "inst472~1"
+    Warning (13310): Register "inst471" is converted into an equivalent circuit using register "inst471~_emulated" and latch "inst471~1"
+    Warning (13310): Register "inst481" is converted into an equivalent circuit using register "inst481~_emulated" and latch "inst481~1"
+    Warning (13310): Register "inst480" is converted into an equivalent circuit using register "inst480~_emulated" and latch "inst480~1"
+    Warning (13310): Register "inst479" is converted into an equivalent circuit using register "inst479~_emulated" and latch "inst479~1"
+    Warning (13310): Register "inst478" is converted into an equivalent circuit using register "inst478~_emulated" and latch "inst478~1"
+    Warning (13310): Register "inst477" is converted into an equivalent circuit using register "inst477~_emulated" and latch "inst477~1"
+    Warning (13310): Register "inst487" is converted into an equivalent circuit using register "inst487~_emulated" and latch "inst487~1"
+    Warning (13310): Register "inst486" is converted into an equivalent circuit using register "inst486~_emulated" and latch "inst486~1"
+    Warning (13310): Register "inst485" is converted into an equivalent circuit using register "inst485~_emulated" and latch "inst485~1"
+    Warning (13310): Register "inst484" is converted into an equivalent circuit using register "inst484~_emulated" and latch "inst484~1"
+    Warning (13310): Register "inst483" is converted into an equivalent circuit using register "inst483~_emulated" and latch "inst483~1"
+    Warning (13310): Register "inst493" is converted into an equivalent circuit using register "inst493~_emulated" and latch "inst493~1"
+    Warning (13310): Register "inst492" is converted into an equivalent circuit using register "inst492~_emulated" and latch "inst492~1"
+    Warning (13310): Register "inst491" is converted into an equivalent circuit using register "inst491~_emulated" and latch "inst491~1"
+    Warning (13310): Register "inst490" is converted into an equivalent circuit using register "inst490~_emulated" and latch "inst490~1"
+    Warning (13310): Register "inst489" is converted into an equivalent circuit using register "inst489~_emulated" and latch "inst489~1"
+Info (286030): Timing-Driven Synthesis is running
+Info (17016): Found the following redundant logic cells in design
+    Info (17048): Logic cell "tempotestblock:inst7|lpm_divide:Div0|lpm_divide_4jm:auto_generated|sign_div_unsign_5nh:divider|alt_u_div_l8f:divider|op_28~4"
+    Info (17048): Logic cell "tempotestblock:inst7|lpm_divide:Div0|lpm_divide_4jm:auto_generated|sign_div_unsign_5nh:divider|alt_u_div_l8f:divider|add_sub_9_result_int[3]~14"
+    Info (17048): Logic cell "tempotestblock:inst7|lpm_divide:Div0|lpm_divide_4jm:auto_generated|sign_div_unsign_5nh:divider|alt_u_div_l8f:divider|op_3~16"
+    Info (17048): Logic cell "tempotestblock:inst7|lpm_divide:Div0|lpm_divide_4jm:auto_generated|sign_div_unsign_5nh:divider|alt_u_div_l8f:divider|op_5~16"
+    Info (17048): Logic cell "tempotestblock:inst7|lpm_divide:Div0|lpm_divide_4jm:auto_generated|sign_div_unsign_5nh:divider|alt_u_div_l8f:divider|op_6~16"
+    Info (17048): Logic cell "tempotestblock:inst7|lpm_divide:Div0|lpm_divide_4jm:auto_generated|sign_div_unsign_5nh:divider|alt_u_div_l8f:divider|op_7~16"
+    Info (17048): Logic cell "tempotestblock:inst7|lpm_divide:Div0|lpm_divide_4jm:auto_generated|sign_div_unsign_5nh:divider|alt_u_div_l8f:divider|add_sub_17_result_int[3]~16"
+    Info (17048): Logic cell "tempotestblock:inst7|lpm_divide:Div0|lpm_divide_4jm:auto_generated|sign_div_unsign_5nh:divider|alt_u_div_l8f:divider|op_9~16"
+    Info (17048): Logic cell "tempotestblock:inst7|lpm_divide:Div0|lpm_divide_4jm:auto_generated|sign_div_unsign_5nh:divider|alt_u_div_l8f:divider|add_sub_20_result_int[3]~16"
+    Info (17048): Logic cell "tempotestblock:inst7|lpm_divide:Div0|lpm_divide_4jm:auto_generated|sign_div_unsign_5nh:divider|alt_u_div_l8f:divider|op_17~16"
+    Info (17048): Logic cell "tempotestblock:inst7|lpm_divide:Div0|lpm_divide_4jm:auto_generated|sign_div_unsign_5nh:divider|alt_u_div_l8f:divider|op_18~16"
+    Info (17048): Logic cell "tempotestblock:inst7|lpm_divide:Div0|lpm_divide_4jm:auto_generated|sign_div_unsign_5nh:divider|alt_u_div_l8f:divider|op_19~16"
+    Info (17048): Logic cell "tempotestblock:inst7|lpm_divide:Div0|lpm_divide_4jm:auto_generated|sign_div_unsign_5nh:divider|alt_u_div_l8f:divider|op_20~16"
+Info (144001): Generated suppressed messages file C:/git/final_project/Bohemian-demo/output_files/bohemian.map.smsg
+Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
+    Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
+Info (21057): Implemented 1391 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 165 input pins
+    Info (21059): Implemented 8 output pins
+    Info (21061): Implemented 1218 logic cells
+Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 563 warnings
+    Info: Peak virtual memory: 481 megabytes
+    Info: Processing ended: Sun May 08 17:39:57 2016
+    Info: Elapsed time: 00:00:04
+    Info: Total CPU time (on all processors): 00:00:03
+
+
++------------------------------------------+
+; Analysis & Synthesis Suppressed Messages ;
++------------------------------------------+
+The suppressed messages can be found in C:/git/final_project/Bohemian-demo/output_files/bohemian.map.smsg.
+
+

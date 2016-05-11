@@ -1,0 +1,302 @@
+/*
+WARNING: Do NOT edit the input and output ports in this file in a text
+editor if you plan to continue editing the block that represents it in
+the Block Editor! File corruption is VERY likely to occur.
+*/
+/*
+Copyright (C) 1991-2013 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+*/
+(header "symbol" (version "1.2"))
+(symbol
+	(rect 16 16 200 624)
+	(text "sound_regs" (rect 5 0 73 14)(font "Arial" (font_size 8)))
+	(text "inst" (rect 8 592 25 604)(font "Arial" ))
+	(port
+		(pt 0 32)
+		(input)
+		(text "Switch2" (rect 0 0 47 14)(font "Arial" (font_size 8)))
+		(text "Switch2" (rect 21 27 68 41)(font "Arial" (font_size 8)))
+		(line (pt 0 32)(pt 16 32))
+	)
+	(port
+		(pt 0 48)
+		(input)
+		(text "CLK" (rect 0 0 23 14)(font "Arial" (font_size 8)))
+		(text "CLK" (rect 21 43 44 57)(font "Arial" (font_size 8)))
+		(line (pt 0 48)(pt 16 48))
+	)
+	(port
+		(pt 0 64)
+		(input)
+		(text "TEMPO[2..0]" (rect 0 0 68 14)(font "Arial" (font_size 8)))
+		(text "TEMPO[2..0]" (rect 21 59 89 73)(font "Arial" (font_size 8)))
+		(line (pt 0 64)(pt 16 64)(line_width 3))
+	)
+	(port
+		(pt 0 80)
+		(input)
+		(text "NOTE0[4..0]" (rect 0 0 67 14)(font "Arial" (font_size 8)))
+		(text "NOTE0[4..0]" (rect 21 75 88 89)(font "Arial" (font_size 8)))
+		(line (pt 0 80)(pt 16 80)(line_width 3))
+	)
+	(port
+		(pt 0 96)
+		(input)
+		(text "NOTE1[4..0]" (rect 0 0 67 14)(font "Arial" (font_size 8)))
+		(text "NOTE1[4..0]" (rect 21 91 88 105)(font "Arial" (font_size 8)))
+		(line (pt 0 96)(pt 16 96)(line_width 3))
+	)
+	(port
+		(pt 0 112)
+		(input)
+		(text "NOTE2[4..0]" (rect 0 0 67 14)(font "Arial" (font_size 8)))
+		(text "NOTE2[4..0]" (rect 21 107 88 121)(font "Arial" (font_size 8)))
+		(line (pt 0 112)(pt 16 112)(line_width 3))
+	)
+	(port
+		(pt 0 128)
+		(input)
+		(text "NOTE3[4..0]" (rect 0 0 67 14)(font "Arial" (font_size 8)))
+		(text "NOTE3[4..0]" (rect 21 123 88 137)(font "Arial" (font_size 8)))
+		(line (pt 0 128)(pt 16 128)(line_width 3))
+	)
+	(port
+		(pt 0 144)
+		(input)
+		(text "NOTE4[4..0]" (rect 0 0 67 14)(font "Arial" (font_size 8)))
+		(text "NOTE4[4..0]" (rect 21 139 88 153)(font "Arial" (font_size 8)))
+		(line (pt 0 144)(pt 16 144)(line_width 3))
+	)
+	(port
+		(pt 0 160)
+		(input)
+		(text "NOTE5[4..0]" (rect 0 0 67 14)(font "Arial" (font_size 8)))
+		(text "NOTE5[4..0]" (rect 21 155 88 169)(font "Arial" (font_size 8)))
+		(line (pt 0 160)(pt 16 160)(line_width 3))
+	)
+	(port
+		(pt 0 176)
+		(input)
+		(text "NOTE6[4..0]" (rect 0 0 67 14)(font "Arial" (font_size 8)))
+		(text "NOTE6[4..0]" (rect 21 171 88 185)(font "Arial" (font_size 8)))
+		(line (pt 0 176)(pt 16 176)(line_width 3))
+	)
+	(port
+		(pt 0 192)
+		(input)
+		(text "NOTE7[4..0]" (rect 0 0 67 14)(font "Arial" (font_size 8)))
+		(text "NOTE7[4..0]" (rect 21 187 88 201)(font "Arial" (font_size 8)))
+		(line (pt 0 192)(pt 16 192)(line_width 3))
+	)
+	(port
+		(pt 0 208)
+		(input)
+		(text "NOTE8[4..0]" (rect 0 0 67 14)(font "Arial" (font_size 8)))
+		(text "NOTE8[4..0]" (rect 21 203 88 217)(font "Arial" (font_size 8)))
+		(line (pt 0 208)(pt 16 208)(line_width 3))
+	)
+	(port
+		(pt 0 224)
+		(input)
+		(text "NOTE9[4..0]" (rect 0 0 67 14)(font "Arial" (font_size 8)))
+		(text "NOTE9[4..0]" (rect 21 219 88 233)(font "Arial" (font_size 8)))
+		(line (pt 0 224)(pt 16 224)(line_width 3))
+	)
+	(port
+		(pt 0 240)
+		(input)
+		(text "NOTE10[4..0]" (rect 0 0 74 14)(font "Arial" (font_size 8)))
+		(text "NOTE10[4..0]" (rect 21 235 95 249)(font "Arial" (font_size 8)))
+		(line (pt 0 240)(pt 16 240)(line_width 3))
+	)
+	(port
+		(pt 0 256)
+		(input)
+		(text "NOTE11[4..0]" (rect 0 0 74 14)(font "Arial" (font_size 8)))
+		(text "NOTE11[4..0]" (rect 21 251 95 265)(font "Arial" (font_size 8)))
+		(line (pt 0 256)(pt 16 256)(line_width 3))
+	)
+	(port
+		(pt 0 272)
+		(input)
+		(text "NOTE12[4..0]" (rect 0 0 74 14)(font "Arial" (font_size 8)))
+		(text "NOTE12[4..0]" (rect 21 267 95 281)(font "Arial" (font_size 8)))
+		(line (pt 0 272)(pt 16 272)(line_width 3))
+	)
+	(port
+		(pt 0 288)
+		(input)
+		(text "NOTE13[4..0]" (rect 0 0 74 14)(font "Arial" (font_size 8)))
+		(text "NOTE13[4..0]" (rect 21 283 95 297)(font "Arial" (font_size 8)))
+		(line (pt 0 288)(pt 16 288)(line_width 3))
+	)
+	(port
+		(pt 0 304)
+		(input)
+		(text "NOTE14[4..0]" (rect 0 0 74 14)(font "Arial" (font_size 8)))
+		(text "NOTE14[4..0]" (rect 21 299 95 313)(font "Arial" (font_size 8)))
+		(line (pt 0 304)(pt 16 304)(line_width 3))
+	)
+	(port
+		(pt 0 320)
+		(input)
+		(text "NOTE15[4..0]" (rect 0 0 74 14)(font "Arial" (font_size 8)))
+		(text "NOTE15[4..0]" (rect 21 315 95 329)(font "Arial" (font_size 8)))
+		(line (pt 0 320)(pt 16 320)(line_width 3))
+	)
+	(port
+		(pt 0 336)
+		(input)
+		(text "NOTE16[4..0]" (rect 0 0 74 14)(font "Arial" (font_size 8)))
+		(text "NOTE16[4..0]" (rect 21 331 95 345)(font "Arial" (font_size 8)))
+		(line (pt 0 336)(pt 16 336)(line_width 3))
+	)
+	(port
+		(pt 0 352)
+		(input)
+		(text "NOTE17[4..0]" (rect 0 0 74 14)(font "Arial" (font_size 8)))
+		(text "NOTE17[4..0]" (rect 21 347 95 361)(font "Arial" (font_size 8)))
+		(line (pt 0 352)(pt 16 352)(line_width 3))
+	)
+	(port
+		(pt 0 368)
+		(input)
+		(text "NOTE18[4..0]" (rect 0 0 74 14)(font "Arial" (font_size 8)))
+		(text "NOTE18[4..0]" (rect 21 363 95 377)(font "Arial" (font_size 8)))
+		(line (pt 0 368)(pt 16 368)(line_width 3))
+	)
+	(port
+		(pt 0 384)
+		(input)
+		(text "NOTE19[4..0]" (rect 0 0 74 14)(font "Arial" (font_size 8)))
+		(text "NOTE19[4..0]" (rect 21 379 95 393)(font "Arial" (font_size 8)))
+		(line (pt 0 384)(pt 16 384)(line_width 3))
+	)
+	(port
+		(pt 0 400)
+		(input)
+		(text "NOTE20[4..0]" (rect 0 0 74 14)(font "Arial" (font_size 8)))
+		(text "NOTE20[4..0]" (rect 21 395 95 409)(font "Arial" (font_size 8)))
+		(line (pt 0 400)(pt 16 400)(line_width 3))
+	)
+	(port
+		(pt 0 416)
+		(input)
+		(text "NOTE21[4..0]" (rect 0 0 74 14)(font "Arial" (font_size 8)))
+		(text "NOTE21[4..0]" (rect 21 411 95 425)(font "Arial" (font_size 8)))
+		(line (pt 0 416)(pt 16 416)(line_width 3))
+	)
+	(port
+		(pt 0 432)
+		(input)
+		(text "NOTE22[4..0]" (rect 0 0 74 14)(font "Arial" (font_size 8)))
+		(text "NOTE22[4..0]" (rect 21 427 95 441)(font "Arial" (font_size 8)))
+		(line (pt 0 432)(pt 16 432)(line_width 3))
+	)
+	(port
+		(pt 0 448)
+		(input)
+		(text "NOTE23[4..0]" (rect 0 0 74 14)(font "Arial" (font_size 8)))
+		(text "NOTE23[4..0]" (rect 21 443 95 457)(font "Arial" (font_size 8)))
+		(line (pt 0 448)(pt 16 448)(line_width 3))
+	)
+	(port
+		(pt 0 464)
+		(input)
+		(text "NOTE24[4..0]" (rect 0 0 74 14)(font "Arial" (font_size 8)))
+		(text "NOTE24[4..0]" (rect 21 459 95 473)(font "Arial" (font_size 8)))
+		(line (pt 0 464)(pt 16 464)(line_width 3))
+	)
+	(port
+		(pt 0 480)
+		(input)
+		(text "NOTE25[4..0]" (rect 0 0 74 14)(font "Arial" (font_size 8)))
+		(text "NOTE25[4..0]" (rect 21 475 95 489)(font "Arial" (font_size 8)))
+		(line (pt 0 480)(pt 16 480)(line_width 3))
+	)
+	(port
+		(pt 0 496)
+		(input)
+		(text "NOTE26[4..0]" (rect 0 0 74 14)(font "Arial" (font_size 8)))
+		(text "NOTE26[4..0]" (rect 21 491 95 505)(font "Arial" (font_size 8)))
+		(line (pt 0 496)(pt 16 496)(line_width 3))
+	)
+	(port
+		(pt 0 512)
+		(input)
+		(text "NOTE27[4..0]" (rect 0 0 74 14)(font "Arial" (font_size 8)))
+		(text "NOTE27[4..0]" (rect 21 507 95 521)(font "Arial" (font_size 8)))
+		(line (pt 0 512)(pt 16 512)(line_width 3))
+	)
+	(port
+		(pt 0 528)
+		(input)
+		(text "NOTE28[4..0]" (rect 0 0 74 14)(font "Arial" (font_size 8)))
+		(text "NOTE28[4..0]" (rect 21 523 95 537)(font "Arial" (font_size 8)))
+		(line (pt 0 528)(pt 16 528)(line_width 3))
+	)
+	(port
+		(pt 0 544)
+		(input)
+		(text "NOTE29[4..0]" (rect 0 0 74 14)(font "Arial" (font_size 8)))
+		(text "NOTE29[4..0]" (rect 21 539 95 553)(font "Arial" (font_size 8)))
+		(line (pt 0 544)(pt 16 544)(line_width 3))
+	)
+	(port
+		(pt 0 560)
+		(input)
+		(text "NOTE30[4..0]" (rect 0 0 74 14)(font "Arial" (font_size 8)))
+		(text "NOTE30[4..0]" (rect 21 555 95 569)(font "Arial" (font_size 8)))
+		(line (pt 0 560)(pt 16 560)(line_width 3))
+	)
+	(port
+		(pt 0 576)
+		(input)
+		(text "NOTE31[4..0]" (rect 0 0 74 14)(font "Arial" (font_size 8)))
+		(text "NOTE31[4..0]" (rect 21 571 95 585)(font "Arial" (font_size 8)))
+		(line (pt 0 576)(pt 16 576)(line_width 3))
+	)
+	(port
+		(pt 184 32)
+		(output)
+		(text "Speaker" (rect 0 0 47 14)(font "Arial" (font_size 8)))
+		(text "Speaker" (rect 116 27 163 41)(font "Arial" (font_size 8)))
+		(line (pt 184 32)(pt 168 32))
+	)
+	(port
+		(pt 184 48)
+		(output)
+		(text "LED0" (rect 0 0 29 14)(font "Arial" (font_size 8)))
+		(text "LED0" (rect 134 43 163 57)(font "Arial" (font_size 8)))
+		(line (pt 184 48)(pt 168 48))
+	)
+	(port
+		(pt 184 64)
+		(output)
+		(text "LED1" (rect 0 0 29 14)(font "Arial" (font_size 8)))
+		(text "LED1" (rect 134 59 163 73)(font "Arial" (font_size 8)))
+		(line (pt 184 64)(pt 168 64))
+	)
+	(port
+		(pt 184 80)
+		(output)
+		(text "LEDS[4..0]" (rect 0 0 59 14)(font "Arial" (font_size 8)))
+		(text "LEDS[4..0]" (rect 104 75 163 89)(font "Arial" (font_size 8)))
+		(line (pt 184 80)(pt 168 80)(line_width 3))
+	)
+	(drawing
+		(rectangle (rect 16 16 168 592))
+	)
+)
