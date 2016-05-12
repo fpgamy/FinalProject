@@ -15,8 +15,8 @@
 //  
 if {[info script] != {} && [file isdirectory [file rootname [info script]]]} {
   project load [file rootname [info script]] 2011a
-} elseif { [file isdirectory C:/Users/ymh15/AppData/Local/Temp/rectangle_detect] } {
-  project load C:/Users/ymh15/AppData/Local/Temp/rectangle_detect 2011a
+} elseif { [file isdirectory C:/git/FinalProject/rectangle_detect/rectangle_detect] } {
+  project load C:/git/FinalProject/rectangle_detect/rectangle_detect 2011a
 } else {
   error {unable to locate project directory 'rectangle_detect'}
 }

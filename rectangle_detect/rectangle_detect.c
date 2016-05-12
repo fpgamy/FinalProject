@@ -43,10 +43,10 @@
 #define  COORD_WL          10
 
 #pragma hls_design top
-void get_square_intensity(ac_int<(COORD_WL+COORD_WL), false> *vga_xy,
+void rectangle_detect(ac_int<(COORD_WL+COORD_WL), false> *vga_xy,
     ac_int<PIXEL_WL, false> *video_in, ac_int<10, false> *x_top_left, ac_int<10, false> *y_top_left, 
     ac_int<10, false> *width, ac_int<10, false> *height, ac_int<PIXEL_WL, false> *video_out, 
-    ac_int<1, false> * filled)
+    ac_int<1, false> *filled, ac_int<1, false> *reset)
 {
     ac_int<10, false> i_red, i_green, i_blue;
     ac_int<10, false> o_red, o_green, o_blue;
@@ -54,6 +54,7 @@ void get_square_intensity(ac_int<(COORD_WL+COORD_WL), false> *vga_xy,
     ac_int<10, false> vga_x, vga_y;
     
     static int counter = 0;
+    static int static_fill = 0;
      
     vga_x = (*vga_xy).slc<COORD_WL>(0);
     vga_y = (*vga_xy).slc<COORD_WL>(10);
@@ -64,13 +65,13 @@ void get_square_intensity(ac_int<(COORD_WL+COORD_WL), false> *vga_xy,
     
     intensity = i_red + i_blue + i_green;
     
-    if(vga_y > 780) {
+    if(*reset == 1) {
         counter = 0;
     }
     
     if ((vga_x < *x_top_left + *width && vga_x > *x_top_left) && (vga_y < *y_top_left + *height && vga_y > *y_top_left))
     {
-         if (intensity > 1500)
+         if (intensity < 1500)
          { 
              o_red = 1023;
              o_green = 0;
@@ -91,11 +92,15 @@ void get_square_intensity(ac_int<(COORD_WL+COORD_WL), false> *vga_xy,
         o_blue = i_blue;
     }
     
-    if(counter > 399 && vga_y > *y_top_left + *height) {
-        *filled = 1;
-    } else {
-        *filled = 0;
+    if(counter > 300 && vga_y > *y_top_left + *height && vga_x > *x_top_left + *width) {
+        static_fill = 1;
+        counter = 301;
+    } else if(counter < 301 && vga_y > *y_top_left + *height && vga_x > *x_top_left + *width) {
+        static_fill = 0;
+        counter = 0;
     }
+
+    *filled = static_fill;
     
     *video_out = ((((ac_int<PIXEL_WL, false>)o_red) << 20) | (((ac_int<PIXEL_WL, false>)o_green) << 10) | (ac_int<PIXEL_WL, false>)o_blue);
 }

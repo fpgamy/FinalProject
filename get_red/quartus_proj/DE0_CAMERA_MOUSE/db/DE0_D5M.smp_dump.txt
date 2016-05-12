@@ -5,6 +5,41 @@ state.00 0 0 0
 state.01 1 0 1 
 state.10 1 1 0 
 
+State Machine - |TOP_DE0_CAMERA_MOUSE|rectangle_detect:inst10|rectangle_detect_core:rectangle_detect_core_inst|rectangle_detect_core_fsm:rectangle_detect_core_fsm_inst|state_var
+Name state_var.st_main_3 state_var.st_main_2 state_var.st_main_1 state_var.st_main 
+state_var.st_main 0 0 0 0 
+state_var.st_main_1 0 0 1 1 
+state_var.st_main_2 0 1 0 1 
+state_var.st_main_3 1 0 0 1 
+
+State Machine - |TOP_DE0_CAMERA_MOUSE|rectangle_detect:inst9|rectangle_detect_core:rectangle_detect_core_inst|rectangle_detect_core_fsm:rectangle_detect_core_fsm_inst|state_var
+Name state_var.st_main_3 state_var.st_main_2 state_var.st_main_1 state_var.st_main 
+state_var.st_main 0 0 0 0 
+state_var.st_main_1 0 0 1 1 
+state_var.st_main_2 0 1 0 1 
+state_var.st_main_3 1 0 0 1 
+
+State Machine - |TOP_DE0_CAMERA_MOUSE|rectangle_detect:inst7|rectangle_detect_core:rectangle_detect_core_inst|rectangle_detect_core_fsm:rectangle_detect_core_fsm_inst|state_var
+Name state_var.st_main_3 state_var.st_main_2 state_var.st_main_1 state_var.st_main 
+state_var.st_main 0 0 0 0 
+state_var.st_main_1 0 0 1 1 
+state_var.st_main_2 0 1 0 1 
+state_var.st_main_3 1 0 0 1 
+
+State Machine - |TOP_DE0_CAMERA_MOUSE|rectangle_detect:inst6|rectangle_detect_core:rectangle_detect_core_inst|rectangle_detect_core_fsm:rectangle_detect_core_fsm_inst|state_var
+Name state_var.st_main_3 state_var.st_main_2 state_var.st_main_1 state_var.st_main 
+state_var.st_main 0 0 0 0 
+state_var.st_main_1 0 0 1 1 
+state_var.st_main_2 0 1 0 1 
+state_var.st_main_3 1 0 0 1 
+
+State Machine - |TOP_DE0_CAMERA_MOUSE|rectangle_detect:inst5|rectangle_detect_core:rectangle_detect_core_inst|rectangle_detect_core_fsm:rectangle_detect_core_fsm_inst|state_var
+Name state_var.st_main_3 state_var.st_main_2 state_var.st_main_1 state_var.st_main 
+state_var.st_main 0 0 0 0 
+state_var.st_main_1 0 0 1 1 
+state_var.st_main_2 0 1 0 1 
+state_var.st_main_3 1 0 0 1 
+
 State Machine - |TOP_DE0_CAMERA_MOUSE|DE0_D5M:inst|I2C_CCD_Config:u8|mSetup_ST
 Name mSetup_ST.0000 mSetup_ST.0010 mSetup_ST.0001 
 mSetup_ST.0000 0 0 0 

@@ -47,23 +47,28 @@ applicable agreement for further details.
 	(port
 		(pt 192 32)
 		(output)
-		(text "fsm_output[1..0]" (rect 0 0 64 12)(font "Arial" ))
-		(text "fsm_output[1..0]" (rect 107 27 171 39)(font "Arial" ))
+		(text "fsm_output[2..0]" (rect 0 0 66 12)(font "Arial" ))
+		(text "fsm_output[2..0]" (rect 105 27 171 39)(font "Arial" ))
 		(line (pt 192 32)(pt 176 32)(line_width 3))
 	)
 	(parameter
 		"st_main"
-		"0"
+		"00"
 		""
 		(type "PARAMETER_UNSIGNED_BIN")	)
 	(parameter
 		"st_main_1"
-		"1"
+		"01"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
+		"st_main_2"
+		"10"
 		""
 		(type "PARAMETER_UNSIGNED_BIN")	)
 	(parameter
 		"state_x"
-		"0"
+		"00"
 		""
 		(type "PARAMETER_UNSIGNED_BIN")	)
 	(drawing

@@ -6,11 +6,9 @@ module Tonetest(clock_in, on_off_switch, note, clock_out);
 	reg [18:0] ctr;
 	reg [18:0] pitch;
 	reg [18:0] oldpitch;
-	reg [22:0] delay;
 	
 	initial pitch = 19'd56818; //concert A
 	initial oldpitch = 19'd56818;
-	initial delay = 23'd0;
 	initial ctr = 0;
 	initial clock_out = 0;
 	
@@ -58,16 +56,7 @@ module Tonetest(clock_in, on_off_switch, note, clock_out);
 				pitch = 19'd67569;
 			if (note == 5'd31)
 				begin
-					delay = delay + 1;
-					if (delay == 23'd400000)
-						begin
-							delay = 0;
-							pitch = oldpitch;
-						end
-					else
-						begin
-							pitch = 19'd0;
-						end
+					pitch = oldpitch;
 				end
 			else
 				oldpitch = pitch;

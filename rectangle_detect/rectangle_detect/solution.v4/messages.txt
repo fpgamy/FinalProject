@@ -1,0 +1,38 @@
+
+# Messages from "go new"
+
+Creating project directory 'C:\Users\ymh15\AppData\Local\Temp\rectangle_detect'. (PRJ-1)
+Branching solution 'solution.v2' at state 'new' (PRJ-2)
+Branching solution 'solution.v2' at state 'new' (PRJ-2)
+Branching solution 'solution.v2' at state 'new' (PRJ-2)
+Branching solution 'solution.v2' at state 'new' (PRJ-2)
+Branching solution 'solution.v2' at state 'new' (PRJ-2)
+Branching solution 'solution.v2' at state 'new' (PRJ-2)
+Branching solution 'solution.v2' at state 'new' (PRJ-2)
+Branching solution 'solution.v2' at state 'new' (PRJ-2)
+Branching solution 'solution.v3' at state 'new' (PRJ-2)
+Branching solution 'solution.v3' at state 'new' (PRJ-2)
+Branching solution 'solution.v3' at state 'new' (PRJ-2)
+Branching solution 'solution.v3' at state 'new' (PRJ-2)
+Branching solution 'solution.v3' at state 'new' (PRJ-2)
+Branching solution 'solution.v3' at state 'new' (PRJ-2)
+Branching solution 'solution.v3' at state 'new' (PRJ-2)
+Branching solution 'solution.v3' at state 'new' (PRJ-2)
+Branching solution 'solution.v3' at state 'new' (PRJ-2)
+Branching solution 'solution.v3' at state 'new' (PRJ-2)
+Branching solution 'solution.v3' at state 'new' (PRJ-2)
+Branching solution 'solution.v3' at state 'new' (PRJ-2)
+Branching solution 'solution.v4' at state 'new' (PRJ-2)
+Branching solution 'solution.v4' at state 'new' (PRJ-2)
+Branching solution 'solution.v4' at state 'new' (PRJ-2)
+Branching solution 'solution.v4' at state 'new' (PRJ-2)
+Branching solution 'solution.v4' at state 'new' (PRJ-2)
+
+# Messages from "go analyze"
+
+Front End called with arguments: -- {C:\git\FinalProject\rectangle_detect\rectangle_detect.c} (CIN-69)
+Edison Design Group C++/C Front End - Version 3.10.1 (CIN-1)
+Pragma 'hls_design<top>' detected on routine 'rectangle_detect' (CIN-6)
+Source file analysis completed (CIN-68)
+Starting transformation 'analyze' on solution 'solution.v4' (SOL-8)
+Completed transformation 'analyze' on solution 'solution.v4': elapsed time 0.47 seconds, memory usage 314168kB, peak memory usage 334960kB (SOL-9)
