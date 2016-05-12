@@ -1,5 +1,5 @@
 --a_graycounter DEVICE_FAMILY="Cyclone III" PVALUE=1 WIDTH=10 aclr clock cnt_en q
---VERSION_BEGIN 13.0 cbx_a_gray2bin 2013:06:12:18:03:43:SJ cbx_a_graycounter 2013:06:12:18:03:43:SJ cbx_cycloneii 2013:06:12:18:03:43:SJ cbx_mgl 2013:06:12:18:05:10:SJ cbx_stratix 2013:06:12:18:03:43:SJ cbx_stratixii 2013:06:12:18:03:43:SJ  VERSION_END
+--VERSION_BEGIN 13.1 cbx_a_gray2bin 2013:10:23:18:05:48:SJ cbx_a_graycounter 2013:10:23:18:05:48:SJ cbx_cycloneii 2013:10:23:18:05:48:SJ cbx_mgl 2013:10:23:18:06:54:SJ cbx_stratix 2013:10:23:18:05:48:SJ cbx_stratixii 2013:10:23:18:05:48:SJ  VERSION_END
 
 
 -- Copyright (C) 1991-2013 Altera Corporation

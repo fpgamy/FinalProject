@@ -11,6 +11,8 @@ module Tonetest(clock_in, on_off_switch, note, clock_out);
 	initial pitch = 19'd56818; //concert A
 	initial oldpitch = 19'd56818;
 	initial delay = 23'd0;
+	initial ctr = 0;
+	initial clock_out = 0;
 	
 	always @ (posedge clock_in)
 		begin
@@ -57,7 +59,7 @@ module Tonetest(clock_in, on_off_switch, note, clock_out);
 			if (note == 5'd31)
 				begin
 					delay = delay + 1;
-					if (delay == 23'd4000000)
+					if (delay == 23'd400000)
 						begin
 							delay = 0;
 							pitch = oldpitch;

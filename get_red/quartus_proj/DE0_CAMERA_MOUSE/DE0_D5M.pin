@@ -63,7 +63,7 @@
  -- Pin directions (input, output or bidir) are based on device operating in user mode.
  ---------------------------------------------------------------------------------
 
-Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Full Version
+Quartus II 64-Bit Version 13.1.0 Build 162 10/23/2013 SJ Web Edition
 CHIP  "DE0_D5M"  ASSIGNED TO AN: EP3C16F484C6
 
 Pin Name/Usage               : Location  : Dir.   : I/O Standard      : Voltage : I/O Bank  : User Assignment
@@ -124,7 +124,7 @@ GPIO_1[14]                   : AB9       : bidir  : 3.3-V LVTTL       :         
 RESERVED_INPUT_WITH_WEAK_PULLUP : AB10      :        :                   :         : 3         :                
 GPIO_1_CLKIN[0]              : AB11      : input  : 3.3-V LVTTL       :         : 3         : Y              
 GND+                         : AB12      :        :                   :         : 4         :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : AB13      :        :                   :         : 4         :                
+VGA_CLK                      : AB13      : output : 3.3-V LVTTL       :         : 4         : N              
 RESERVED_INPUT_WITH_WEAK_PULLUP : AB14      :        :                   :         : 4         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : AB15      :        :                   :         : 4         :                
 SpeakerOut                   : AB16      : output : 3.3-V LVTTL       :         : 4         : Y              
@@ -495,7 +495,7 @@ GPIO_1[30]                   : V6        : bidir  : 3.3-V LVTTL       :         
 GPIO_1[31]                   : V7        : bidir  : 3.3-V LVTTL       :         : 3         : Y              
 RESERVED_INPUT_WITH_WEAK_PULLUP : V8        :        :                   :         : 3         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : V9        :        :                   :         : 3         :                
-VGA_CLK                      : V10       : output : 3.3-V LVTTL       :         : 3         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : V10       :        :                   :         : 3         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : V11       :        :                   :         : 3         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : V12       :        :                   :         : 4         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : V13       :        :                   :         : 4         :                

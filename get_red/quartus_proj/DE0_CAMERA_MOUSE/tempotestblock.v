@@ -7,7 +7,7 @@ module tempotestblock(clock_in, tempo, clock_out);
 	
 	always @ (posedge clock_in)
 		begin
-			speed = 3000000000/(2*(tempo + 30));
+			speed = 8000/(10*(tempo + 30));
 
 			if (ctr < speed)
 			begin

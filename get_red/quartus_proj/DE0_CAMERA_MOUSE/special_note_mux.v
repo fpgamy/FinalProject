@@ -53,8 +53,6 @@ module special_note_mux(clk_in, rst, counter, x_in0, x_in1, x_in2, x_in3, x_in4,
 		end
 		else
 			begin
-				if(counter < 6'd32)
-				  begin
 					 if(counter == 6'd0) x_out = x_in0;
 					 else if(counter == 6'd1) x_out = x_in1;
 					 else if(counter == 6'd2) x_out = x_in2;
@@ -87,9 +85,8 @@ module special_note_mux(clk_in, rst, counter, x_in0, x_in1, x_in2, x_in3, x_in4,
 					 else if(counter == 6'd29) x_out = x_in29;
 					 else if(counter == 6'd30) x_out = x_in30;
 					 else if(counter == 6'd31) x_out = x_in31;
-					 counter = counter + 6'd1;
-				  end // if (counter < 32)
-				  else x_out = x_in31;
+						counter = counter + 6'd1;
+					if (counter == 6'd32) counter = 0;
 			end
 	 end
 endmodule // special_note_mux
