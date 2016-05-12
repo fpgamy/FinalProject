@@ -1,0 +1,12 @@
+
+# Messages from "go new"
+
+Creating project directory 'C:\Users\ymh15\AppData\Local\Temp\rectangle_detect'. (PRJ-1)
+
+# Messages from "go analyze"
+
+Front End called with arguments: -- {C:\git\FinalProject\rectangle_detect\rectangle_detect.c} (CIN-69)
+Edison Design Group C++/C Front End - Version 3.10.1 (CIN-1)
+Source file analysis completed (CIN-68)
+Starting transformation 'analyze' on solution 'solution.v1' (SOL-8)
+Completed transformation 'analyze' on solution 'solution.v1': elapsed time 0.02 seconds, memory usage 142560kB, peak memory usage 145016kB (SOL-9)
