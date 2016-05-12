@@ -92,10 +92,10 @@ void rectangle_detect(ac_int<(COORD_WL+COORD_WL), false> *vga_xy,
         o_blue = i_blue;
     }
     
-    if(counter > 300 && vga_y > *y_top_left + *height && vga_x > *x_top_left + *width) {
+    if(counter > 50 && vga_y > *y_top_left + *height && vga_x > *x_top_left + *width) {
         static_fill = 1;
-        counter = 301;
-    } else if(counter < 301 && vga_y > *y_top_left + *height && vga_x > *x_top_left + *width) {
+        counter = 51;
+    } else if(counter < 51 && vga_y > *y_top_left + *height && vga_x > *x_top_left + *width) {
         static_fill = 0;
         counter = 0;
     }

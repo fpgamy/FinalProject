@@ -125,7 +125,7 @@ RESERVED_INPUT_WITH_WEAK_PULLUP : AB10      :        :                   :      
 GPIO_1_CLKIN[0]              : AB11      : input  : 3.3-V LVTTL       :         : 3         : Y              
 GND+                         : AB12      :        :                   :         : 4         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : AB13      :        :                   :         : 4         :                
-VGA_CLK                      : AB14      : output : 3.3-V LVTTL       :         : 4         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : AB14      :        :                   :         : 4         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : AB15      :        :                   :         : 4         :                
 SpeakerOut                   : AB16      : output : 3.3-V LVTTL       :         : 4         : Y              
 GPIO_1[7]                    : AB17      : bidir  : 3.3-V LVTTL       :         : 4         : Y              
@@ -276,7 +276,7 @@ RESERVED_INPUT_WITH_WEAK_PULLUP : H7        :        :                   :      
 GND                          : H8        : gnd    :                   :         :           :                
 DRAM_DQ[6]                   : H9        : bidir  : 3.3-V LVTTL       :         : 8         : Y              
 DRAM_DQ[2]                   : H10       : bidir  : 3.3-V LVTTL       :         : 8         : Y              
-RESERVED_INPUT_WITH_WEAK_PULLUP : H11       :        :                   :         : 8         :                
+VGA_CLK                      : H11       : output : 3.3-V LVTTL       :         : 8         : N              
 HEX0[2]                      : H12       : output : 3.3-V LVTTL       :         : 7         : Y              
 HEX0[3]                      : H13       : output : 3.3-V LVTTL       :         : 7         : Y              
 RESERVED_INPUT_WITH_WEAK_PULLUP : H14       :        :                   :         : 7         :                

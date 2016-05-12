@@ -7,10 +7,8 @@ module Tonetest(clock_in, on_off_switch, note, clock_out);
 	reg [18:0] pitch;
 	reg [18:0] oldpitch;
 	
-	initial pitch = 19'd56818; //concert A
-	initial oldpitch = 19'd56818;
-	initial ctr = 0;
-	initial clock_out = 0;
+	initial pitch = 19'd0; //concert A
+	initial oldpitch = 19'd0;
 	
 	always @ (posedge clock_in)
 		begin
@@ -54,15 +52,11 @@ module Tonetest(clock_in, on_off_switch, note, clock_out);
 				pitch = 19'd71586;
 			else if (note == 5'd25)
 				pitch = 19'd67569;
-			if (note == 5'd31)
-				begin
-					pitch = oldpitch;
-				end
 			else
-				oldpitch = pitch;
-
+				pitch = 0;
 			if (on_off_switch == 1 && pitch > 19'd0)
 				begin
+					oldpitch = pitch;
 					if (ctr < pitch)
 						begin
 							ctr <= ctr + 19'b1;

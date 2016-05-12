@@ -14,6 +14,7 @@
 		<CBX_INST_ENTRY INSTANCE_NAME="|TOP_DE0_CAMERA_MOUSE|column_chooser:inst1|lpm_mult:Mult3|multcore:mult_core|mpar_add:padder|lpm_add_sub:adder[1]" CBX_FILE_NAME="add_sub_2eh.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|TOP_DE0_CAMERA_MOUSE|column_chooser:inst1|lpm_mult:Mult4|multcore:mult_core|mpar_add:padder|lpm_add_sub:adder[0]" CBX_FILE_NAME="add_sub_2eh.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|TOP_DE0_CAMERA_MOUSE|get_wh:inst8|lpm_mult:Mult0" CBX_FILE_NAME="mult_mft.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|TOP_DE0_CAMERA_MOUSE|tempotestblock:inst11|lpm_divide:Div0" CBX_FILE_NAME="lpm_divide_6jm.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|TOP_DE0_CAMERA_MOUSE|column_chooser:inst1|lpm_mult:Mult3|multcore:mult_core|mpar_add:padder|mpar_add:sub_par_add|lpm_add_sub:adder[0]" CBX_FILE_NAME="add_sub_dfh.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|TOP_DE0_CAMERA_MOUSE|column_chooser:inst1|lpm_mult:Mult4|multcore:mult_core|mpar_add:padder|lpm_add_sub:adder[1]" CBX_FILE_NAME="add_sub_2eh.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|TOP_DE0_CAMERA_MOUSE|column_chooser:inst1|lpm_mult:Mult5|multcore:mult_core|mpar_add:padder|lpm_add_sub:adder[0]" CBX_FILE_NAME="add_sub_2eh.tdf"/>

@@ -1,2 +1,2 @@
-Warning (10268): Verilog HDL information at Tonetest.v(15): always construct contains both blocking and non-blocking assignments
+Warning (10268): Verilog HDL information at Tonetest.v(13): always construct contains both blocking and non-blocking assignments
 Warning (10268): Verilog HDL information at tempotestblock.v(8): always construct contains both blocking and non-blocking assignments

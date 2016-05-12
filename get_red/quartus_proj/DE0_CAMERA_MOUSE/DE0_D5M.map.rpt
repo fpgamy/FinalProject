@@ -1,5 +1,5 @@
 Analysis & Synthesis report for DE0_D5M
-Thu May 12 15:32:48 2016
+Thu May 12 17:32:50 2016
 Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Full Version
 
 
@@ -106,100 +106,101 @@ Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Full Ver
  98. Parameter Settings for User Entity Instance: rectangle_detect:inst5|rectangle_detect_core:rectangle_detect_core_inst|rectangle_detect_core_fsm:rectangle_detect_core_fsm_inst
  99. Parameter Settings for User Entity Instance: get_last:inst53|mgc_in_wire:vga_xy_rsc_mgc_in_wire
 100. Parameter Settings for User Entity Instance: get_last:inst53|mgc_out_stdreg:last_pixel_rsc_mgc_out_stdreg
-101. Parameter Settings for User Entity Instance: get_red:inst18|mgc_in_wire:vga_xy_rsc_mgc_in_wire
-102. Parameter Settings for User Entity Instance: get_red:inst18|mgc_out_stdreg:red_left_x_rsc_mgc_out_stdreg
-103. Parameter Settings for User Entity Instance: get_red:inst18|mgc_out_stdreg:red_right_x_rsc_mgc_out_stdreg
-104. Parameter Settings for User Entity Instance: get_red:inst18|mgc_out_stdreg:y_red_rsc_mgc_out_stdreg
-105. Parameter Settings for User Entity Instance: get_red:inst18|mgc_in_wire:video_in_rsc_mgc_in_wire
-106. Parameter Settings for User Entity Instance: get_red:inst18|mgc_out_stdreg:video_out_rsc_mgc_out_stdreg
-107. Parameter Settings for User Entity Instance: rectangle_detect:inst6|mgc_in_wire:vga_xy_rsc_mgc_in_wire
-108. Parameter Settings for User Entity Instance: rectangle_detect:inst6|mgc_in_wire:video_in_rsc_mgc_in_wire
-109. Parameter Settings for User Entity Instance: rectangle_detect:inst6|mgc_in_wire:x_top_left_rsc_mgc_in_wire
-110. Parameter Settings for User Entity Instance: rectangle_detect:inst6|mgc_in_wire:y_top_left_rsc_mgc_in_wire
-111. Parameter Settings for User Entity Instance: rectangle_detect:inst6|mgc_in_wire:width_rsc_mgc_in_wire
-112. Parameter Settings for User Entity Instance: rectangle_detect:inst6|mgc_in_wire:height_rsc_mgc_in_wire
-113. Parameter Settings for User Entity Instance: rectangle_detect:inst6|mgc_out_stdreg:video_out_rsc_mgc_out_stdreg
-114. Parameter Settings for User Entity Instance: rectangle_detect:inst6|mgc_out_stdreg:filled_rsc_mgc_out_stdreg
-115. Parameter Settings for User Entity Instance: rectangle_detect:inst6|mgc_in_wire:reset_rsc_mgc_in_wire
-116. Parameter Settings for User Entity Instance: rectangle_detect:inst6|rectangle_detect_core:rectangle_detect_core_inst|rectangle_detect_core_fsm:rectangle_detect_core_fsm_inst
-117. Parameter Settings for User Entity Instance: rectangle_detect:inst7|mgc_in_wire:vga_xy_rsc_mgc_in_wire
-118. Parameter Settings for User Entity Instance: rectangle_detect:inst7|mgc_in_wire:video_in_rsc_mgc_in_wire
-119. Parameter Settings for User Entity Instance: rectangle_detect:inst7|mgc_in_wire:x_top_left_rsc_mgc_in_wire
-120. Parameter Settings for User Entity Instance: rectangle_detect:inst7|mgc_in_wire:y_top_left_rsc_mgc_in_wire
-121. Parameter Settings for User Entity Instance: rectangle_detect:inst7|mgc_in_wire:width_rsc_mgc_in_wire
-122. Parameter Settings for User Entity Instance: rectangle_detect:inst7|mgc_in_wire:height_rsc_mgc_in_wire
-123. Parameter Settings for User Entity Instance: rectangle_detect:inst7|mgc_out_stdreg:video_out_rsc_mgc_out_stdreg
-124. Parameter Settings for User Entity Instance: rectangle_detect:inst7|mgc_out_stdreg:filled_rsc_mgc_out_stdreg
-125. Parameter Settings for User Entity Instance: rectangle_detect:inst7|mgc_in_wire:reset_rsc_mgc_in_wire
-126. Parameter Settings for User Entity Instance: rectangle_detect:inst7|rectangle_detect_core:rectangle_detect_core_inst|rectangle_detect_core_fsm:rectangle_detect_core_fsm_inst
-127. Parameter Settings for User Entity Instance: rectangle_detect:inst9|mgc_in_wire:vga_xy_rsc_mgc_in_wire
-128. Parameter Settings for User Entity Instance: rectangle_detect:inst9|mgc_in_wire:video_in_rsc_mgc_in_wire
-129. Parameter Settings for User Entity Instance: rectangle_detect:inst9|mgc_in_wire:x_top_left_rsc_mgc_in_wire
-130. Parameter Settings for User Entity Instance: rectangle_detect:inst9|mgc_in_wire:y_top_left_rsc_mgc_in_wire
-131. Parameter Settings for User Entity Instance: rectangle_detect:inst9|mgc_in_wire:width_rsc_mgc_in_wire
-132. Parameter Settings for User Entity Instance: rectangle_detect:inst9|mgc_in_wire:height_rsc_mgc_in_wire
-133. Parameter Settings for User Entity Instance: rectangle_detect:inst9|mgc_out_stdreg:video_out_rsc_mgc_out_stdreg
-134. Parameter Settings for User Entity Instance: rectangle_detect:inst9|mgc_out_stdreg:filled_rsc_mgc_out_stdreg
-135. Parameter Settings for User Entity Instance: rectangle_detect:inst9|mgc_in_wire:reset_rsc_mgc_in_wire
-136. Parameter Settings for User Entity Instance: rectangle_detect:inst9|rectangle_detect_core:rectangle_detect_core_inst|rectangle_detect_core_fsm:rectangle_detect_core_fsm_inst
-137. Parameter Settings for User Entity Instance: rectangle_detect:inst10|mgc_in_wire:vga_xy_rsc_mgc_in_wire
-138. Parameter Settings for User Entity Instance: rectangle_detect:inst10|mgc_in_wire:video_in_rsc_mgc_in_wire
-139. Parameter Settings for User Entity Instance: rectangle_detect:inst10|mgc_in_wire:x_top_left_rsc_mgc_in_wire
-140. Parameter Settings for User Entity Instance: rectangle_detect:inst10|mgc_in_wire:y_top_left_rsc_mgc_in_wire
-141. Parameter Settings for User Entity Instance: rectangle_detect:inst10|mgc_in_wire:width_rsc_mgc_in_wire
-142. Parameter Settings for User Entity Instance: rectangle_detect:inst10|mgc_in_wire:height_rsc_mgc_in_wire
-143. Parameter Settings for User Entity Instance: rectangle_detect:inst10|mgc_out_stdreg:video_out_rsc_mgc_out_stdreg
-144. Parameter Settings for User Entity Instance: rectangle_detect:inst10|mgc_out_stdreg:filled_rsc_mgc_out_stdreg
-145. Parameter Settings for User Entity Instance: rectangle_detect:inst10|mgc_in_wire:reset_rsc_mgc_in_wire
-146. Parameter Settings for User Entity Instance: rectangle_detect:inst10|rectangle_detect_core:rectangle_detect_core_inst|rectangle_detect_core_fsm:rectangle_detect_core_fsm_inst
-147. Parameter Settings for User Entity Instance: red_detect:inst335|mgc_in_wire:vga_xy_rsc_mgc_in_wire
-148. Parameter Settings for User Entity Instance: red_detect:inst335|mgc_in_wire:video_in_rsc_mgc_in_wire
-149. Parameter Settings for User Entity Instance: red_detect:inst335|mgc_out_stdreg:video_out_rsc_mgc_out_stdreg
-150. Parameter Settings for User Entity Instance: red_detect:inst335|mgc_out_stdreg:redOut_rsc_mgc_out_stdreg
-151. Parameter Settings for User Entity Instance: red_detect:inst335|mgc_out_stdreg:endRow_rsc_mgc_out_stdreg
-152. Parameter Settings for User Entity Instance: red_detect:inst335|mgc_out_stdreg:endScreen_rsc_mgc_out_stdreg
-153. Parameter Settings for User Entity Instance: blue_detect:inst333|mgc_in_wire:vga_xy_rsc_mgc_in_wire
-154. Parameter Settings for User Entity Instance: blue_detect:inst333|mgc_out_stdreg:detected_blue_rsc_mgc_out_stdreg
-155. Parameter Settings for User Entity Instance: blue_detect:inst333|mgc_out_stdreg:x_blue_rsc_mgc_out_stdreg
-156. Parameter Settings for User Entity Instance: blue_detect:inst333|mgc_in_wire:video_in_rsc_mgc_in_wire
-157. Parameter Settings for User Entity Instance: blue_detect:inst333|mgc_out_stdreg:video_out_rsc_mgc_out_stdreg
+101. Parameter Settings for User Entity Instance: blue_detect:inst333|mgc_in_wire:vga_xy_rsc_mgc_in_wire
+102. Parameter Settings for User Entity Instance: blue_detect:inst333|mgc_out_stdreg:detected_blue_rsc_mgc_out_stdreg
+103. Parameter Settings for User Entity Instance: blue_detect:inst333|mgc_out_stdreg:x_blue_rsc_mgc_out_stdreg
+104. Parameter Settings for User Entity Instance: blue_detect:inst333|mgc_in_wire:video_in_rsc_mgc_in_wire
+105. Parameter Settings for User Entity Instance: blue_detect:inst333|mgc_out_stdreg:video_out_rsc_mgc_out_stdreg
+106. Parameter Settings for User Entity Instance: get_red:inst18|mgc_in_wire:vga_xy_rsc_mgc_in_wire
+107. Parameter Settings for User Entity Instance: get_red:inst18|mgc_out_stdreg:red_left_x_rsc_mgc_out_stdreg
+108. Parameter Settings for User Entity Instance: get_red:inst18|mgc_out_stdreg:red_right_x_rsc_mgc_out_stdreg
+109. Parameter Settings for User Entity Instance: get_red:inst18|mgc_out_stdreg:y_red_rsc_mgc_out_stdreg
+110. Parameter Settings for User Entity Instance: get_red:inst18|mgc_in_wire:video_in_rsc_mgc_in_wire
+111. Parameter Settings for User Entity Instance: get_red:inst18|mgc_out_stdreg:video_out_rsc_mgc_out_stdreg
+112. Parameter Settings for User Entity Instance: rectangle_detect:inst6|mgc_in_wire:vga_xy_rsc_mgc_in_wire
+113. Parameter Settings for User Entity Instance: rectangle_detect:inst6|mgc_in_wire:video_in_rsc_mgc_in_wire
+114. Parameter Settings for User Entity Instance: rectangle_detect:inst6|mgc_in_wire:x_top_left_rsc_mgc_in_wire
+115. Parameter Settings for User Entity Instance: rectangle_detect:inst6|mgc_in_wire:y_top_left_rsc_mgc_in_wire
+116. Parameter Settings for User Entity Instance: rectangle_detect:inst6|mgc_in_wire:width_rsc_mgc_in_wire
+117. Parameter Settings for User Entity Instance: rectangle_detect:inst6|mgc_in_wire:height_rsc_mgc_in_wire
+118. Parameter Settings for User Entity Instance: rectangle_detect:inst6|mgc_out_stdreg:video_out_rsc_mgc_out_stdreg
+119. Parameter Settings for User Entity Instance: rectangle_detect:inst6|mgc_out_stdreg:filled_rsc_mgc_out_stdreg
+120. Parameter Settings for User Entity Instance: rectangle_detect:inst6|mgc_in_wire:reset_rsc_mgc_in_wire
+121. Parameter Settings for User Entity Instance: rectangle_detect:inst6|rectangle_detect_core:rectangle_detect_core_inst|rectangle_detect_core_fsm:rectangle_detect_core_fsm_inst
+122. Parameter Settings for User Entity Instance: rectangle_detect:inst7|mgc_in_wire:vga_xy_rsc_mgc_in_wire
+123. Parameter Settings for User Entity Instance: rectangle_detect:inst7|mgc_in_wire:video_in_rsc_mgc_in_wire
+124. Parameter Settings for User Entity Instance: rectangle_detect:inst7|mgc_in_wire:x_top_left_rsc_mgc_in_wire
+125. Parameter Settings for User Entity Instance: rectangle_detect:inst7|mgc_in_wire:y_top_left_rsc_mgc_in_wire
+126. Parameter Settings for User Entity Instance: rectangle_detect:inst7|mgc_in_wire:width_rsc_mgc_in_wire
+127. Parameter Settings for User Entity Instance: rectangle_detect:inst7|mgc_in_wire:height_rsc_mgc_in_wire
+128. Parameter Settings for User Entity Instance: rectangle_detect:inst7|mgc_out_stdreg:video_out_rsc_mgc_out_stdreg
+129. Parameter Settings for User Entity Instance: rectangle_detect:inst7|mgc_out_stdreg:filled_rsc_mgc_out_stdreg
+130. Parameter Settings for User Entity Instance: rectangle_detect:inst7|mgc_in_wire:reset_rsc_mgc_in_wire
+131. Parameter Settings for User Entity Instance: rectangle_detect:inst7|rectangle_detect_core:rectangle_detect_core_inst|rectangle_detect_core_fsm:rectangle_detect_core_fsm_inst
+132. Parameter Settings for User Entity Instance: rectangle_detect:inst9|mgc_in_wire:vga_xy_rsc_mgc_in_wire
+133. Parameter Settings for User Entity Instance: rectangle_detect:inst9|mgc_in_wire:video_in_rsc_mgc_in_wire
+134. Parameter Settings for User Entity Instance: rectangle_detect:inst9|mgc_in_wire:x_top_left_rsc_mgc_in_wire
+135. Parameter Settings for User Entity Instance: rectangle_detect:inst9|mgc_in_wire:y_top_left_rsc_mgc_in_wire
+136. Parameter Settings for User Entity Instance: rectangle_detect:inst9|mgc_in_wire:width_rsc_mgc_in_wire
+137. Parameter Settings for User Entity Instance: rectangle_detect:inst9|mgc_in_wire:height_rsc_mgc_in_wire
+138. Parameter Settings for User Entity Instance: rectangle_detect:inst9|mgc_out_stdreg:video_out_rsc_mgc_out_stdreg
+139. Parameter Settings for User Entity Instance: rectangle_detect:inst9|mgc_out_stdreg:filled_rsc_mgc_out_stdreg
+140. Parameter Settings for User Entity Instance: rectangle_detect:inst9|mgc_in_wire:reset_rsc_mgc_in_wire
+141. Parameter Settings for User Entity Instance: rectangle_detect:inst9|rectangle_detect_core:rectangle_detect_core_inst|rectangle_detect_core_fsm:rectangle_detect_core_fsm_inst
+142. Parameter Settings for User Entity Instance: rectangle_detect:inst10|mgc_in_wire:vga_xy_rsc_mgc_in_wire
+143. Parameter Settings for User Entity Instance: rectangle_detect:inst10|mgc_in_wire:video_in_rsc_mgc_in_wire
+144. Parameter Settings for User Entity Instance: rectangle_detect:inst10|mgc_in_wire:x_top_left_rsc_mgc_in_wire
+145. Parameter Settings for User Entity Instance: rectangle_detect:inst10|mgc_in_wire:y_top_left_rsc_mgc_in_wire
+146. Parameter Settings for User Entity Instance: rectangle_detect:inst10|mgc_in_wire:width_rsc_mgc_in_wire
+147. Parameter Settings for User Entity Instance: rectangle_detect:inst10|mgc_in_wire:height_rsc_mgc_in_wire
+148. Parameter Settings for User Entity Instance: rectangle_detect:inst10|mgc_out_stdreg:video_out_rsc_mgc_out_stdreg
+149. Parameter Settings for User Entity Instance: rectangle_detect:inst10|mgc_out_stdreg:filled_rsc_mgc_out_stdreg
+150. Parameter Settings for User Entity Instance: rectangle_detect:inst10|mgc_in_wire:reset_rsc_mgc_in_wire
+151. Parameter Settings for User Entity Instance: rectangle_detect:inst10|rectangle_detect_core:rectangle_detect_core_inst|rectangle_detect_core_fsm:rectangle_detect_core_fsm_inst
+152. Parameter Settings for User Entity Instance: red_detect:inst335|mgc_in_wire:vga_xy_rsc_mgc_in_wire
+153. Parameter Settings for User Entity Instance: red_detect:inst335|mgc_in_wire:video_in_rsc_mgc_in_wire
+154. Parameter Settings for User Entity Instance: red_detect:inst335|mgc_out_stdreg:video_out_rsc_mgc_out_stdreg
+155. Parameter Settings for User Entity Instance: red_detect:inst335|mgc_out_stdreg:redOut_rsc_mgc_out_stdreg
+156. Parameter Settings for User Entity Instance: red_detect:inst335|mgc_out_stdreg:endRow_rsc_mgc_out_stdreg
+157. Parameter Settings for User Entity Instance: red_detect:inst335|mgc_out_stdreg:endScreen_rsc_mgc_out_stdreg
 158. Parameter Settings for Inferred Entity Instance: get_wh:inst8|lpm_mult:Mult0
 159. Parameter Settings for Inferred Entity Instance: get_wh:inst8|lpm_divide:Div0
 160. Parameter Settings for Inferred Entity Instance: row_detect:inst3|lpm_divide:Div0
 161. Parameter Settings for Inferred Entity Instance: row_detect:inst3|lpm_divide:Div1
 162. Parameter Settings for Inferred Entity Instance: row_detect:inst3|lpm_divide:Div2
 163. Parameter Settings for Inferred Entity Instance: row_detect:inst3|lpm_divide:Div3
-164. Parameter Settings for Inferred Entity Instance: column_chooser:inst1|lpm_mult:Mult1
-165. Parameter Settings for Inferred Entity Instance: column_chooser:inst1|lpm_mult:Mult0
-166. Parameter Settings for Inferred Entity Instance: column_chooser:inst1|lpm_mult:Mult2
-167. Parameter Settings for Inferred Entity Instance: column_chooser:inst1|lpm_mult:Mult3
-168. Parameter Settings for Inferred Entity Instance: column_chooser:inst1|lpm_mult:Mult5
-169. Parameter Settings for Inferred Entity Instance: column_chooser:inst1|lpm_mult:Mult8
-170. Parameter Settings for Inferred Entity Instance: column_chooser:inst1|lpm_mult:Mult9
-171. Parameter Settings for Inferred Entity Instance: column_chooser:inst1|lpm_mult:Mult6
-172. Parameter Settings for Inferred Entity Instance: column_chooser:inst1|lpm_mult:Mult7
-173. Parameter Settings for Inferred Entity Instance: column_chooser:inst1|lpm_mult:Mult4
-174. altshift_taps Parameter Settings by Entity Instance
-175. altpll Parameter Settings by Entity Instance
-176. dcfifo Parameter Settings by Entity Instance
-177. lpm_mult Parameter Settings by Entity Instance
-178. Port Connectivity Checks: "rectangle_detect:inst5|rectangle_detect_core:rectangle_detect_core_inst|rectangle_detect_core_fsm:rectangle_detect_core_fsm_inst"
-179. Port Connectivity Checks: "DE0_D5M:inst|I2C_CCD_Config:u8"
-180. Port Connectivity Checks: "DE0_D5M:inst|Sdram_Control_4Port:u7|Sdram_FIFO:read_fifo2"
-181. Port Connectivity Checks: "DE0_D5M:inst|Sdram_Control_4Port:u7|Sdram_FIFO:read_fifo1"
-182. Port Connectivity Checks: "DE0_D5M:inst|Sdram_Control_4Port:u7|Sdram_FIFO:write_fifo2"
-183. Port Connectivity Checks: "DE0_D5M:inst|Sdram_Control_4Port:u7|Sdram_FIFO:write_fifo1"
-184. Port Connectivity Checks: "DE0_D5M:inst|Sdram_Control_4Port:u7|sdr_data_path:data_path1"
-185. Port Connectivity Checks: "DE0_D5M:inst|Sdram_Control_4Port:u7|control_interface:control1"
-186. Port Connectivity Checks: "DE0_D5M:inst|Sdram_Control_4Port:u7"
-187. Port Connectivity Checks: "DE0_D5M:inst|SEG7_LUT_8:u5"
-188. Port Connectivity Checks: "DE0_D5M:inst|RAW2RGB:u4|Line_Buffer:u0"
-189. Port Connectivity Checks: "DE0_D5M:inst|RAW2RGB:u4"
-190. Port Connectivity Checks: "DE0_D5M:inst|CCD_Capture:u3"
-191. Port Connectivity Checks: "DE0_D5M:inst|VGA_Controller:u1"
-192. Elapsed Time Per Partition
-193. Analysis & Synthesis Messages
-194. Analysis & Synthesis Suppressed Messages
+164. Parameter Settings for Inferred Entity Instance: tempotestblock:inst11|lpm_divide:Div0
+165. Parameter Settings for Inferred Entity Instance: column_chooser:inst1|lpm_mult:Mult1
+166. Parameter Settings for Inferred Entity Instance: column_chooser:inst1|lpm_mult:Mult0
+167. Parameter Settings for Inferred Entity Instance: column_chooser:inst1|lpm_mult:Mult2
+168. Parameter Settings for Inferred Entity Instance: column_chooser:inst1|lpm_mult:Mult3
+169. Parameter Settings for Inferred Entity Instance: column_chooser:inst1|lpm_mult:Mult5
+170. Parameter Settings for Inferred Entity Instance: column_chooser:inst1|lpm_mult:Mult8
+171. Parameter Settings for Inferred Entity Instance: column_chooser:inst1|lpm_mult:Mult9
+172. Parameter Settings for Inferred Entity Instance: column_chooser:inst1|lpm_mult:Mult6
+173. Parameter Settings for Inferred Entity Instance: column_chooser:inst1|lpm_mult:Mult7
+174. Parameter Settings for Inferred Entity Instance: column_chooser:inst1|lpm_mult:Mult4
+175. altshift_taps Parameter Settings by Entity Instance
+176. altpll Parameter Settings by Entity Instance
+177. dcfifo Parameter Settings by Entity Instance
+178. lpm_mult Parameter Settings by Entity Instance
+179. Port Connectivity Checks: "rectangle_detect:inst5|rectangle_detect_core:rectangle_detect_core_inst|rectangle_detect_core_fsm:rectangle_detect_core_fsm_inst"
+180. Port Connectivity Checks: "DE0_D5M:inst|I2C_CCD_Config:u8"
+181. Port Connectivity Checks: "DE0_D5M:inst|Sdram_Control_4Port:u7|Sdram_FIFO:read_fifo2"
+182. Port Connectivity Checks: "DE0_D5M:inst|Sdram_Control_4Port:u7|Sdram_FIFO:read_fifo1"
+183. Port Connectivity Checks: "DE0_D5M:inst|Sdram_Control_4Port:u7|Sdram_FIFO:write_fifo2"
+184. Port Connectivity Checks: "DE0_D5M:inst|Sdram_Control_4Port:u7|Sdram_FIFO:write_fifo1"
+185. Port Connectivity Checks: "DE0_D5M:inst|Sdram_Control_4Port:u7|sdr_data_path:data_path1"
+186. Port Connectivity Checks: "DE0_D5M:inst|Sdram_Control_4Port:u7|control_interface:control1"
+187. Port Connectivity Checks: "DE0_D5M:inst|Sdram_Control_4Port:u7"
+188. Port Connectivity Checks: "DE0_D5M:inst|SEG7_LUT_8:u5"
+189. Port Connectivity Checks: "DE0_D5M:inst|RAW2RGB:u4|Line_Buffer:u0"
+190. Port Connectivity Checks: "DE0_D5M:inst|RAW2RGB:u4"
+191. Port Connectivity Checks: "DE0_D5M:inst|CCD_Capture:u3"
+192. Port Connectivity Checks: "DE0_D5M:inst|VGA_Controller:u1"
+193. Elapsed Time Per Partition
+194. Analysis & Synthesis Messages
+195. Analysis & Synthesis Suppressed Messages
 
 
 
@@ -225,15 +226,15 @@ applicable agreement for further details.
 +---------------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                          ;
 +------------------------------------+--------------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Thu May 12 15:32:48 2016            ;
+; Analysis & Synthesis Status        ; Successful - Thu May 12 17:32:50 2016            ;
 ; Quartus II 64-Bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Full Version ;
 ; Revision Name                      ; DE0_D5M                                          ;
 ; Top-level Entity Name              ; TOP_DE0_CAMERA_MOUSE                             ;
 ; Family                             ; Cyclone III                                      ;
-; Total logic elements               ; 7,665                                            ;
-;     Total combinational functions  ; 7,206                                            ;
-;     Dedicated logic registers      ; 1,783                                            ;
-; Total registers                    ; 1783                                             ;
+; Total logic elements               ; 7,976                                            ;
+;     Total combinational functions  ; 7,517                                            ;
+;     Dedicated logic registers      ; 1,808                                            ;
+; Total registers                    ; 1808                                             ;
 ; Total pins                         ; 138                                              ;
 ; Total virtual pins                 ; 0                                                ;
 ; Total memory bits                  ; 62,416                                           ;
@@ -378,6 +379,7 @@ applicable agreement for further details.
 ; pitch_out.v                               ; yes             ; User Verilog HDL File              ; C:/git/FinalProject/get_red/quartus_proj/DE0_CAMERA_MOUSE/pitch_out.v                               ;         ;
 ; blue_detect.v                             ; yes             ; User Verilog HDL File              ; C:/git/FinalProject/get_red/quartus_proj/DE0_CAMERA_MOUSE/blue_detect.v                             ;         ;
 ; Tonetest.v                                ; yes             ; User Verilog HDL File              ; C:/git/FinalProject/get_red/quartus_proj/DE0_CAMERA_MOUSE/Tonetest.v                                ;         ;
+; tempotestblock.v                          ; yes             ; User Verilog HDL File              ; C:/git/FinalProject/get_red/quartus_proj/DE0_CAMERA_MOUSE/tempotestblock.v                          ;         ;
 ; red_detect.v                              ; yes             ; User Verilog HDL File              ; C:/git/FinalProject/get_red/quartus_proj/DE0_CAMERA_MOUSE/red_detect.v                              ;         ;
 ; sequence_detect.v                         ; yes             ; User Verilog HDL File              ; C:/git/FinalProject/get_red/quartus_proj/DE0_CAMERA_MOUSE/sequence_detect.v                         ;         ;
 ; mux4.bdf                                  ; yes             ; User Block Diagram/Schematic File  ; C:/git/FinalProject/get_red/quartus_proj/DE0_CAMERA_MOUSE/mux4.bdf                                  ;         ;
@@ -441,6 +443,9 @@ applicable agreement for further details.
 ; db/lpm_divide_khm.tdf                     ; yes             ; Auto-Generated Megafunction        ; C:/git/FinalProject/get_red/quartus_proj/DE0_CAMERA_MOUSE/db/lpm_divide_khm.tdf                     ;         ;
 ; db/sign_div_unsign_llh.tdf                ; yes             ; Auto-Generated Megafunction        ; C:/git/FinalProject/get_red/quartus_proj/DE0_CAMERA_MOUSE/db/sign_div_unsign_llh.tdf                ;         ;
 ; db/alt_u_div_l5f.tdf                      ; yes             ; Auto-Generated Megafunction        ; C:/git/FinalProject/get_red/quartus_proj/DE0_CAMERA_MOUSE/db/alt_u_div_l5f.tdf                      ;         ;
+; db/lpm_divide_6jm.tdf                     ; yes             ; Auto-Generated Megafunction        ; C:/git/FinalProject/get_red/quartus_proj/DE0_CAMERA_MOUSE/db/lpm_divide_6jm.tdf                     ;         ;
+; db/sign_div_unsign_7nh.tdf                ; yes             ; Auto-Generated Megafunction        ; C:/git/FinalProject/get_red/quartus_proj/DE0_CAMERA_MOUSE/db/sign_div_unsign_7nh.tdf                ;         ;
+; db/alt_u_div_p8f.tdf                      ; yes             ; Auto-Generated Megafunction        ; C:/git/FinalProject/get_red/quartus_proj/DE0_CAMERA_MOUSE/db/alt_u_div_p8f.tdf                      ;         ;
 ; multcore.tdf                              ; yes             ; Megafunction                       ; c:/altera/13.0sp1/quartus/libraries/megafunctions/multcore.tdf                                      ;         ;
 ; csa_add.inc                               ; yes             ; Megafunction                       ; c:/altera/13.0sp1/quartus/libraries/megafunctions/csa_add.inc                                       ;         ;
 ; mpar_add.inc                              ; yes             ; Megafunction                       ; c:/altera/13.0sp1/quartus/libraries/megafunctions/mpar_add.inc                                      ;         ;
@@ -467,20 +472,20 @@ applicable agreement for further details.
 +---------------------------------------------+----------------------+
 ; Resource                                    ; Usage                ;
 +---------------------------------------------+----------------------+
-; Estimated Total logic elements              ; 7,665                ;
+; Estimated Total logic elements              ; 7,976                ;
 ;                                             ;                      ;
-; Total combinational functions               ; 7206                 ;
+; Total combinational functions               ; 7517                 ;
 ; Logic element usage by number of LUT inputs ;                      ;
-;     -- 4 input functions                    ; 1969                 ;
-;     -- 3 input functions                    ; 2276                 ;
-;     -- <=2 input functions                  ; 2961                 ;
+;     -- 4 input functions                    ; 1987                 ;
+;     -- 3 input functions                    ; 2321                 ;
+;     -- <=2 input functions                  ; 3209                 ;
 ;                                             ;                      ;
 ; Logic elements by mode                      ;                      ;
-;     -- normal mode                          ; 4240                 ;
-;     -- arithmetic mode                      ; 2966                 ;
+;     -- normal mode                          ; 4283                 ;
+;     -- arithmetic mode                      ; 3234                 ;
 ;                                             ;                      ;
-; Total registers                             ; 1783                 ;
-;     -- Dedicated logic registers            ; 1783                 ;
+; Total registers                             ; 1808                 ;
+;     -- Dedicated logic registers            ; 1808                 ;
 ;     -- I/O registers                        ; 0                    ;
 ;                                             ;                      ;
 ; I/O pins                                    ; 138                  ;
@@ -490,9 +495,9 @@ applicable agreement for further details.
 ;     -- PLLs                                 ; 1                    ;
 ;                                             ;                      ;
 ; Maximum fan-out node                        ; DE0_D5M:inst|rClk[0] ;
-; Maximum fan-out                             ; 872                  ;
-; Total fan-out                               ; 28555                ;
-; Average fan-out                             ; 3.03                 ;
+; Maximum fan-out                             ; 873                  ;
+; Total fan-out                               ; 29353                ;
+; Average fan-out                             ; 3.01                 ;
 +---------------------------------------------+----------------------+
 
 
@@ -501,8 +506,8 @@ applicable agreement for further details.
 +---------------------------------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------+
 ; Compilation Hierarchy Node                                          ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                                                                                                                  ; Library Name ;
 +---------------------------------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------+
-; |TOP_DE0_CAMERA_MOUSE                                               ; 7206 (15)         ; 1783 (13)    ; 62416       ; 14           ; 0       ; 7         ; 138  ; 0            ; |TOP_DE0_CAMERA_MOUSE                                                                                                                                                                ; work         ;
-;    |DE0_D5M:inst|                                                   ; 1156 (1)          ; 992 (15)     ; 62416       ; 0            ; 0       ; 0         ; 0    ; 0            ; |TOP_DE0_CAMERA_MOUSE|DE0_D5M:inst                                                                                                                                                   ; work         ;
+; |TOP_DE0_CAMERA_MOUSE                                               ; 7517 (3)          ; 1808 (1)     ; 62416       ; 14           ; 0       ; 7         ; 138  ; 0            ; |TOP_DE0_CAMERA_MOUSE                                                                                                                                                                ; work         ;
+;    |DE0_D5M:inst|                                                   ; 1159 (1)          ; 992 (15)     ; 62416       ; 0            ; 0       ; 0         ; 0    ; 0            ; |TOP_DE0_CAMERA_MOUSE|DE0_D5M:inst                                                                                                                                                   ; work         ;
 ;       |CCD_Capture:u3|                                              ; 40 (40)           ; 33 (33)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TOP_DE0_CAMERA_MOUSE|DE0_D5M:inst|CCD_Capture:u3                                                                                                                                    ; work         ;
 ;       |I2C_CCD_Config:u8|                                           ; 187 (119)         ; 112 (75)     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TOP_DE0_CAMERA_MOUSE|DE0_D5M:inst|I2C_CCD_Config:u8                                                                                                                                 ; work         ;
 ;          |I2C_Controller:u0|                                        ; 68 (68)           ; 37 (37)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TOP_DE0_CAMERA_MOUSE|DE0_D5M:inst|I2C_CCD_Config:u8|I2C_Controller:u0                                                                                                               ; work         ;
@@ -514,13 +519,13 @@ applicable agreement for further details.
 ;                   |cntr_cuf:cntr1|                                  ; 16 (13)           ; 11 (11)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TOP_DE0_CAMERA_MOUSE|DE0_D5M:inst|RAW2RGB:u4|Line_Buffer:u0|altshift_taps:altshift_taps_component|shift_taps_rnn:auto_generated|cntr_cuf:cntr1                                      ; work         ;
 ;                      |cmpr_vgc:cmpr4|                               ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TOP_DE0_CAMERA_MOUSE|DE0_D5M:inst|RAW2RGB:u4|Line_Buffer:u0|altshift_taps:altshift_taps_component|shift_taps_rnn:auto_generated|cntr_cuf:cntr1|cmpr_vgc:cmpr4                       ; work         ;
 ;       |Reset_Delay:u2|                                              ; 51 (51)           ; 35 (35)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TOP_DE0_CAMERA_MOUSE|DE0_D5M:inst|Reset_Delay:u2                                                                                                                                    ; work         ;
-;       |Sdram_Control_4Port:u7|                                      ; 713 (219)         ; 704 (137)    ; 31744       ; 0            ; 0       ; 0         ; 0    ; 0            ; |TOP_DE0_CAMERA_MOUSE|DE0_D5M:inst|Sdram_Control_4Port:u7                                                                                                                            ; work         ;
-;          |Sdram_FIFO:read_fifo1|                                    ; 92 (0)            ; 116 (0)      ; 7680        ; 0            ; 0       ; 0         ; 0    ; 0            ; |TOP_DE0_CAMERA_MOUSE|DE0_D5M:inst|Sdram_Control_4Port:u7|Sdram_FIFO:read_fifo1                                                                                                      ; work         ;
-;             |dcfifo:dcfifo_component|                               ; 92 (0)            ; 116 (0)      ; 7680        ; 0            ; 0       ; 0         ; 0    ; 0            ; |TOP_DE0_CAMERA_MOUSE|DE0_D5M:inst|Sdram_Control_4Port:u7|Sdram_FIFO:read_fifo1|dcfifo:dcfifo_component                                                                              ; work         ;
-;                |dcfifo_v5o1:auto_generated|                         ; 92 (15)           ; 116 (30)     ; 7680        ; 0            ; 0       ; 0         ; 0    ; 0            ; |TOP_DE0_CAMERA_MOUSE|DE0_D5M:inst|Sdram_Control_4Port:u7|Sdram_FIFO:read_fifo1|dcfifo:dcfifo_component|dcfifo_v5o1:auto_generated                                                   ; work         ;
+;       |Sdram_Control_4Port:u7|                                      ; 716 (219)         ; 704 (137)    ; 31744       ; 0            ; 0       ; 0         ; 0    ; 0            ; |TOP_DE0_CAMERA_MOUSE|DE0_D5M:inst|Sdram_Control_4Port:u7                                                                                                                            ; work         ;
+;          |Sdram_FIFO:read_fifo1|                                    ; 91 (0)            ; 116 (0)      ; 7680        ; 0            ; 0       ; 0         ; 0    ; 0            ; |TOP_DE0_CAMERA_MOUSE|DE0_D5M:inst|Sdram_Control_4Port:u7|Sdram_FIFO:read_fifo1                                                                                                      ; work         ;
+;             |dcfifo:dcfifo_component|                               ; 91 (0)            ; 116 (0)      ; 7680        ; 0            ; 0       ; 0         ; 0    ; 0            ; |TOP_DE0_CAMERA_MOUSE|DE0_D5M:inst|Sdram_Control_4Port:u7|Sdram_FIFO:read_fifo1|dcfifo:dcfifo_component                                                                              ; work         ;
+;                |dcfifo_v5o1:auto_generated|                         ; 91 (15)           ; 116 (30)     ; 7680        ; 0            ; 0       ; 0         ; 0    ; 0            ; |TOP_DE0_CAMERA_MOUSE|DE0_D5M:inst|Sdram_Control_4Port:u7|Sdram_FIFO:read_fifo1|dcfifo:dcfifo_component|dcfifo_v5o1:auto_generated                                                   ; work         ;
 ;                   |a_gray2bin_tgb:wrptr_g_gray2bin|                 ; 11 (11)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TOP_DE0_CAMERA_MOUSE|DE0_D5M:inst|Sdram_Control_4Port:u7|Sdram_FIFO:read_fifo1|dcfifo:dcfifo_component|dcfifo_v5o1:auto_generated|a_gray2bin_tgb:wrptr_g_gray2bin                   ; work         ;
 ;                   |a_gray2bin_tgb:ws_dgrp_gray2bin|                 ; 12 (12)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TOP_DE0_CAMERA_MOUSE|DE0_D5M:inst|Sdram_Control_4Port:u7|Sdram_FIFO:read_fifo1|dcfifo:dcfifo_component|dcfifo_v5o1:auto_generated|a_gray2bin_tgb:ws_dgrp_gray2bin                   ; work         ;
-;                   |a_graycounter_ojc:wrptr_g1p|                     ; 23 (23)           ; 14 (14)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TOP_DE0_CAMERA_MOUSE|DE0_D5M:inst|Sdram_Control_4Port:u7|Sdram_FIFO:read_fifo1|dcfifo:dcfifo_component|dcfifo_v5o1:auto_generated|a_graycounter_ojc:wrptr_g1p                       ; work         ;
+;                   |a_graycounter_ojc:wrptr_g1p|                     ; 22 (22)           ; 14 (14)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TOP_DE0_CAMERA_MOUSE|DE0_D5M:inst|Sdram_Control_4Port:u7|Sdram_FIFO:read_fifo1|dcfifo:dcfifo_component|dcfifo_v5o1:auto_generated|a_graycounter_ojc:wrptr_g1p                       ; work         ;
 ;                   |a_graycounter_s57:rdptr_g1p|                     ; 19 (19)           ; 14 (14)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TOP_DE0_CAMERA_MOUSE|DE0_D5M:inst|Sdram_Control_4Port:u7|Sdram_FIFO:read_fifo1|dcfifo:dcfifo_component|dcfifo_v5o1:auto_generated|a_graycounter_s57:rdptr_g1p                       ; work         ;
 ;                   |alt_synch_pipe_qld:rs_dgwp|                      ; 0 (0)             ; 20 (0)       ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TOP_DE0_CAMERA_MOUSE|DE0_D5M:inst|Sdram_Control_4Port:u7|Sdram_FIFO:read_fifo1|dcfifo:dcfifo_component|dcfifo_v5o1:auto_generated|alt_synch_pipe_qld:rs_dgwp                        ; work         ;
 ;                      |dffpipe_pe9:dffpipe13|                        ; 0 (0)             ; 20 (20)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TOP_DE0_CAMERA_MOUSE|DE0_D5M:inst|Sdram_Control_4Port:u7|Sdram_FIFO:read_fifo1|dcfifo:dcfifo_component|dcfifo_v5o1:auto_generated|alt_synch_pipe_qld:rs_dgwp|dffpipe_pe9:dffpipe13  ; work         ;
@@ -579,16 +584,16 @@ applicable agreement for further details.
 ;                   |cmpr_e66:wrfull_eq_comp|                         ; 6 (6)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TOP_DE0_CAMERA_MOUSE|DE0_D5M:inst|Sdram_Control_4Port:u7|Sdram_FIFO:write_fifo2|dcfifo:dcfifo_component|dcfifo_v5o1:auto_generated|cmpr_e66:wrfull_eq_comp                          ; work         ;
 ;                   |dffpipe_oe9:rs_brp|                              ; 0 (0)             ; 9 (9)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TOP_DE0_CAMERA_MOUSE|DE0_D5M:inst|Sdram_Control_4Port:u7|Sdram_FIFO:write_fifo2|dcfifo:dcfifo_component|dcfifo_v5o1:auto_generated|dffpipe_oe9:rs_brp                               ; work         ;
 ;                   |dffpipe_oe9:rs_bwp|                              ; 0 (0)             ; 9 (9)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TOP_DE0_CAMERA_MOUSE|DE0_D5M:inst|Sdram_Control_4Port:u7|Sdram_FIFO:write_fifo2|dcfifo:dcfifo_component|dcfifo_v5o1:auto_generated|dffpipe_oe9:rs_bwp                               ; work         ;
-;          |command:command1|                                         ; 63 (63)           ; 48 (48)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TOP_DE0_CAMERA_MOUSE|DE0_D5M:inst|Sdram_Control_4Port:u7|command:command1                                                                                                           ; work         ;
-;          |control_interface:control1|                               ; 64 (64)           ; 55 (55)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TOP_DE0_CAMERA_MOUSE|DE0_D5M:inst|Sdram_Control_4Port:u7|control_interface:control1                                                                                                 ; work         ;
+;          |command:command1|                                         ; 64 (64)           ; 48 (48)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TOP_DE0_CAMERA_MOUSE|DE0_D5M:inst|Sdram_Control_4Port:u7|command:command1                                                                                                           ; work         ;
+;          |control_interface:control1|                               ; 67 (67)           ; 55 (55)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TOP_DE0_CAMERA_MOUSE|DE0_D5M:inst|Sdram_Control_4Port:u7|control_interface:control1                                                                                                 ; work         ;
 ;       |VGA_Controller:u1|                                           ; 80 (80)           ; 27 (27)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TOP_DE0_CAMERA_MOUSE|DE0_D5M:inst|VGA_Controller:u1                                                                                                                                 ; work         ;
 ;       |sdram_pll:u6|                                                ; 0 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TOP_DE0_CAMERA_MOUSE|DE0_D5M:inst|sdram_pll:u6                                                                                                                                      ; work         ;
 ;          |altpll:altpll_component|                                  ; 0 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TOP_DE0_CAMERA_MOUSE|DE0_D5M:inst|sdram_pll:u6|altpll:altpll_component                                                                                                              ; work         ;
 ;             |altpll_9ee2:auto_generated|                            ; 0 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TOP_DE0_CAMERA_MOUSE|DE0_D5M:inst|sdram_pll:u6|altpll:altpll_component|altpll_9ee2:auto_generated                                                                                   ; work         ;
-;    |Tonetest:inst14|                                                ; 120 (120)         ; 38 (38)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TOP_DE0_CAMERA_MOUSE|Tonetest:inst14                                                                                                                                                ; work         ;
+;    |Tonetest:inst14|                                                ; 79 (79)           ; 20 (20)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TOP_DE0_CAMERA_MOUSE|Tonetest:inst14                                                                                                                                                ; work         ;
 ;    |blue_detect:inst333|                                            ; 102 (0)           ; 23 (0)       ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TOP_DE0_CAMERA_MOUSE|blue_detect:inst333                                                                                                                                            ; work         ;
 ;       |blue_detect_core:blue_detect_core_inst|                      ; 102 (102)         ; 23 (23)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TOP_DE0_CAMERA_MOUSE|blue_detect:inst333|blue_detect_core:blue_detect_core_inst                                                                                                     ; work         ;
-;    |column_chooser:inst1|                                           ; 736 (445)         ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TOP_DE0_CAMERA_MOUSE|column_chooser:inst1                                                                                                                                           ; work         ;
+;    |column_chooser:inst1|                                           ; 920 (629)         ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TOP_DE0_CAMERA_MOUSE|column_chooser:inst1                                                                                                                                           ; work         ;
 ;       |lpm_mult:Mult0|                                              ; 29 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TOP_DE0_CAMERA_MOUSE|column_chooser:inst1|lpm_mult:Mult0                                                                                                                            ; work         ;
 ;          |multcore:mult_core|                                       ; 29 (11)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TOP_DE0_CAMERA_MOUSE|column_chooser:inst1|lpm_mult:Mult0|multcore:mult_core                                                                                                         ; work         ;
 ;             |mpar_add:padder|                                       ; 18 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TOP_DE0_CAMERA_MOUSE|column_chooser:inst1|lpm_mult:Mult0|multcore:mult_core|mpar_add:padder                                                                                         ; work         ;
@@ -701,17 +706,18 @@ applicable agreement for further details.
 ;       |lpm_mult:Mult0|                                              ; 120 (0)           ; 0 (0)        ; 0           ; 14           ; 0       ; 7         ; 0    ; 0            ; |TOP_DE0_CAMERA_MOUSE|get_wh:inst8|lpm_mult:Mult0                                                                                                                                    ; work         ;
 ;          |mult_mft:auto_generated|                                  ; 120 (120)         ; 0 (0)        ; 0           ; 14           ; 0       ; 7         ; 0    ; 0            ; |TOP_DE0_CAMERA_MOUSE|get_wh:inst8|lpm_mult:Mult0|mult_mft:auto_generated                                                                                                            ; work         ;
 ;    |mux4:inst342|                                                   ; 24 (24)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TOP_DE0_CAMERA_MOUSE|mux4:inst342                                                                                                                                                   ; work         ;
-;    |rectangle_detect:inst10|                                        ; 231 (0)           ; 140 (0)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TOP_DE0_CAMERA_MOUSE|rectangle_detect:inst10                                                                                                                                        ; work         ;
-;       |rectangle_detect_core:rectangle_detect_core_inst|            ; 231 (229)         ; 140 (136)    ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TOP_DE0_CAMERA_MOUSE|rectangle_detect:inst10|rectangle_detect_core:rectangle_detect_core_inst                                                                                       ; work         ;
+;    |pitch_out:inst334|                                              ; 12 (12)           ; 3 (3)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TOP_DE0_CAMERA_MOUSE|pitch_out:inst334                                                                                                                                              ; work         ;
+;    |rectangle_detect:inst10|                                        ; 230 (0)           ; 138 (0)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TOP_DE0_CAMERA_MOUSE|rectangle_detect:inst10                                                                                                                                        ; work         ;
+;       |rectangle_detect_core:rectangle_detect_core_inst|            ; 230 (228)         ; 138 (134)    ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TOP_DE0_CAMERA_MOUSE|rectangle_detect:inst10|rectangle_detect_core:rectangle_detect_core_inst                                                                                       ; work         ;
 ;          |rectangle_detect_core_fsm:rectangle_detect_core_fsm_inst| ; 2 (2)             ; 4 (4)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TOP_DE0_CAMERA_MOUSE|rectangle_detect:inst10|rectangle_detect_core:rectangle_detect_core_inst|rectangle_detect_core_fsm:rectangle_detect_core_fsm_inst                              ; work         ;
-;    |rectangle_detect:inst5|                                         ; 362 (0)           ; 124 (0)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TOP_DE0_CAMERA_MOUSE|rectangle_detect:inst5                                                                                                                                         ; work         ;
-;       |rectangle_detect_core:rectangle_detect_core_inst|            ; 362 (362)         ; 124 (124)    ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TOP_DE0_CAMERA_MOUSE|rectangle_detect:inst5|rectangle_detect_core:rectangle_detect_core_inst                                                                                        ; work         ;
-;    |rectangle_detect:inst6|                                         ; 226 (0)           ; 100 (0)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TOP_DE0_CAMERA_MOUSE|rectangle_detect:inst6                                                                                                                                         ; work         ;
-;       |rectangle_detect_core:rectangle_detect_core_inst|            ; 226 (226)         ; 100 (100)    ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TOP_DE0_CAMERA_MOUSE|rectangle_detect:inst6|rectangle_detect_core:rectangle_detect_core_inst                                                                                        ; work         ;
-;    |rectangle_detect:inst7|                                         ; 226 (0)           ; 100 (0)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TOP_DE0_CAMERA_MOUSE|rectangle_detect:inst7                                                                                                                                         ; work         ;
-;       |rectangle_detect_core:rectangle_detect_core_inst|            ; 226 (226)         ; 100 (100)    ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TOP_DE0_CAMERA_MOUSE|rectangle_detect:inst7|rectangle_detect_core:rectangle_detect_core_inst                                                                                        ; work         ;
-;    |rectangle_detect:inst9|                                         ; 226 (0)           ; 100 (0)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TOP_DE0_CAMERA_MOUSE|rectangle_detect:inst9                                                                                                                                         ; work         ;
-;       |rectangle_detect_core:rectangle_detect_core_inst|            ; 226 (226)         ; 100 (100)    ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TOP_DE0_CAMERA_MOUSE|rectangle_detect:inst9|rectangle_detect_core:rectangle_detect_core_inst                                                                                        ; work         ;
+;    |rectangle_detect:inst5|                                         ; 361 (0)           ; 124 (0)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TOP_DE0_CAMERA_MOUSE|rectangle_detect:inst5                                                                                                                                         ; work         ;
+;       |rectangle_detect_core:rectangle_detect_core_inst|            ; 361 (361)         ; 124 (124)    ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TOP_DE0_CAMERA_MOUSE|rectangle_detect:inst5|rectangle_detect_core:rectangle_detect_core_inst                                                                                        ; work         ;
+;    |rectangle_detect:inst6|                                         ; 225 (0)           ; 100 (0)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TOP_DE0_CAMERA_MOUSE|rectangle_detect:inst6                                                                                                                                         ; work         ;
+;       |rectangle_detect_core:rectangle_detect_core_inst|            ; 225 (225)         ; 100 (100)    ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TOP_DE0_CAMERA_MOUSE|rectangle_detect:inst6|rectangle_detect_core:rectangle_detect_core_inst                                                                                        ; work         ;
+;    |rectangle_detect:inst7|                                         ; 225 (0)           ; 100 (0)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TOP_DE0_CAMERA_MOUSE|rectangle_detect:inst7                                                                                                                                         ; work         ;
+;       |rectangle_detect_core:rectangle_detect_core_inst|            ; 225 (225)         ; 100 (100)    ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TOP_DE0_CAMERA_MOUSE|rectangle_detect:inst7|rectangle_detect_core:rectangle_detect_core_inst                                                                                        ; work         ;
+;    |rectangle_detect:inst9|                                         ; 225 (0)           ; 100 (0)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TOP_DE0_CAMERA_MOUSE|rectangle_detect:inst9                                                                                                                                         ; work         ;
+;       |rectangle_detect_core:rectangle_detect_core_inst|            ; 225 (225)         ; 100 (100)    ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TOP_DE0_CAMERA_MOUSE|rectangle_detect:inst9|rectangle_detect_core:rectangle_detect_core_inst                                                                                        ; work         ;
 ;    |red_detect:inst335|                                             ; 57 (0)            ; 15 (0)       ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TOP_DE0_CAMERA_MOUSE|red_detect:inst335                                                                                                                                             ; work         ;
 ;       |red_detect_core:red_detect_core_inst|                        ; 57 (57)           ; 15 (15)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TOP_DE0_CAMERA_MOUSE|red_detect:inst335|red_detect_core:red_detect_core_inst                                                                                                        ; work         ;
 ;    |row_detect:inst3|                                               ; 420 (51)          ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TOP_DE0_CAMERA_MOUSE|row_detect:inst3                                                                                                                                               ; work         ;
@@ -733,6 +739,12 @@ applicable agreement for further details.
 ;                |alt_u_div_l5f:divider|                              ; 97 (97)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TOP_DE0_CAMERA_MOUSE|row_detect:inst3|lpm_divide:Div3|lpm_divide_khm:auto_generated|sign_div_unsign_llh:divider|alt_u_div_l5f:divider                                               ; work         ;
 ;    |sequence_detect:inst336|                                        ; 45 (45)           ; 13 (13)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TOP_DE0_CAMERA_MOUSE|sequence_detect:inst336                                                                                                                                        ; work         ;
 ;    |special_note_mux:inst353|                                       ; 228 (228)         ; 16 (16)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TOP_DE0_CAMERA_MOUSE|special_note_mux:inst353                                                                                                                                       ; work         ;
+;    |tempotestblock:inst11|                                          ; 125 (49)          ; 27 (27)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TOP_DE0_CAMERA_MOUSE|tempotestblock:inst11                                                                                                                                          ; work         ;
+;       |lpm_divide:Div0|                                             ; 76 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TOP_DE0_CAMERA_MOUSE|tempotestblock:inst11|lpm_divide:Div0                                                                                                                          ; work         ;
+;          |lpm_divide_6jm:auto_generated|                            ; 76 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TOP_DE0_CAMERA_MOUSE|tempotestblock:inst11|lpm_divide:Div0|lpm_divide_6jm:auto_generated                                                                                            ; work         ;
+;             |sign_div_unsign_7nh:divider|                           ; 76 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TOP_DE0_CAMERA_MOUSE|tempotestblock:inst11|lpm_divide:Div0|lpm_divide_6jm:auto_generated|sign_div_unsign_7nh:divider                                                                ; work         ;
+;                |alt_u_div_p8f:divider|                              ; 76 (76)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TOP_DE0_CAMERA_MOUSE|tempotestblock:inst11|lpm_divide:Div0|lpm_divide_6jm:auto_generated|sign_div_unsign_7nh:divider|alt_u_div_p8f:divider                                          ; work         ;
+;    |tempotestblock:inst13|                                          ; 45 (45)           ; 27 (27)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |TOP_DE0_CAMERA_MOUSE|tempotestblock:inst13                                                                                                                                          ; work         ;
 +---------------------------------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
@@ -911,25 +923,6 @@ Encoding Type:  One-Hot
 ; DE0_D5M:inst|Sdram_Control_4Port:u7|Sdram_FIFO:write_fifo2|dcfifo:dcfifo_component|dcfifo_v5o1:auto_generated|dffpipe_oe9:rs_brp|dffe12a[9]          ; Lost fanout                                                                                                                                                       ;
 ; DE0_D5M:inst|Sdram_Control_4Port:u7|Sdram_FIFO:write_fifo1|dcfifo:dcfifo_component|dcfifo_v5o1:auto_generated|dffpipe_oe9:rs_bwp|dffe12a[9]          ; Lost fanout                                                                                                                                                       ;
 ; DE0_D5M:inst|Sdram_Control_4Port:u7|Sdram_FIFO:write_fifo1|dcfifo:dcfifo_component|dcfifo_v5o1:auto_generated|dffpipe_oe9:rs_brp|dffe12a[9]          ; Lost fanout                                                                                                                                                       ;
-; Tonetest:inst14|pitch[0]                                                                                                                             ; Merged with Tonetest:inst14|oldpitch[0]                                                                                                                           ;
-; Tonetest:inst14|pitch[1]                                                                                                                             ; Merged with Tonetest:inst14|oldpitch[1]                                                                                                                           ;
-; Tonetest:inst14|pitch[2]                                                                                                                             ; Merged with Tonetest:inst14|oldpitch[2]                                                                                                                           ;
-; Tonetest:inst14|pitch[3]                                                                                                                             ; Merged with Tonetest:inst14|oldpitch[3]                                                                                                                           ;
-; Tonetest:inst14|pitch[4]                                                                                                                             ; Merged with Tonetest:inst14|oldpitch[4]                                                                                                                           ;
-; Tonetest:inst14|pitch[5]                                                                                                                             ; Merged with Tonetest:inst14|oldpitch[5]                                                                                                                           ;
-; Tonetest:inst14|pitch[6]                                                                                                                             ; Merged with Tonetest:inst14|oldpitch[6]                                                                                                                           ;
-; Tonetest:inst14|pitch[7]                                                                                                                             ; Merged with Tonetest:inst14|oldpitch[7]                                                                                                                           ;
-; Tonetest:inst14|pitch[8]                                                                                                                             ; Merged with Tonetest:inst14|oldpitch[8]                                                                                                                           ;
-; Tonetest:inst14|pitch[9]                                                                                                                             ; Merged with Tonetest:inst14|oldpitch[9]                                                                                                                           ;
-; Tonetest:inst14|pitch[10]                                                                                                                            ; Merged with Tonetest:inst14|oldpitch[10]                                                                                                                          ;
-; Tonetest:inst14|pitch[11]                                                                                                                            ; Merged with Tonetest:inst14|oldpitch[11]                                                                                                                          ;
-; Tonetest:inst14|pitch[12]                                                                                                                            ; Merged with Tonetest:inst14|oldpitch[12]                                                                                                                          ;
-; Tonetest:inst14|pitch[13]                                                                                                                            ; Merged with Tonetest:inst14|oldpitch[13]                                                                                                                          ;
-; Tonetest:inst14|pitch[14]                                                                                                                            ; Merged with Tonetest:inst14|oldpitch[14]                                                                                                                          ;
-; Tonetest:inst14|pitch[15]                                                                                                                            ; Merged with Tonetest:inst14|oldpitch[15]                                                                                                                          ;
-; Tonetest:inst14|pitch[16]                                                                                                                            ; Merged with Tonetest:inst14|oldpitch[16]                                                                                                                          ;
-; Tonetest:inst14|pitch[17]                                                                                                                            ; Merged with Tonetest:inst14|oldpitch[17]                                                                                                                          ;
-; Tonetest:inst14|pitch[18]                                                                                                                            ; Merged with Tonetest:inst14|oldpitch[18]                                                                                                                          ;
 ; DE0_D5M:inst|Sdram_Control_4Port:u7|rWR1_ADDR[0..6]                                                                                                  ; Merged with DE0_D5M:inst|Sdram_Control_4Port:u7|rWR1_ADDR[7]                                                                                                      ;
 ; DE0_D5M:inst|Sdram_Control_4Port:u7|rWR2_ADDR[0..6]                                                                                                  ; Merged with DE0_D5M:inst|Sdram_Control_4Port:u7|rWR2_ADDR[7]                                                                                                      ;
 ; DE0_D5M:inst|Sdram_Control_4Port:u7|rRD1_ADDR[0..6]                                                                                                  ; Merged with DE0_D5M:inst|Sdram_Control_4Port:u7|rRD1_ADDR[7]                                                                                                      ;
@@ -937,17 +930,17 @@ Encoding Type:  One-Hot
 ; DE0_D5M:inst|Sdram_Control_4Port:u7|mLENGTH[0..6]                                                                                                    ; Merged with DE0_D5M:inst|Sdram_Control_4Port:u7|mLENGTH[7]                                                                                                        ;
 ; DE0_D5M:inst|Sdram_Control_4Port:u7|mADDR[0..6]                                                                                                      ; Merged with DE0_D5M:inst|Sdram_Control_4Port:u7|mADDR[7]                                                                                                          ;
 ; DE0_D5M:inst|Sdram_Control_4Port:u7|control_interface:control1|SADDR[0..6]                                                                           ; Merged with DE0_D5M:inst|Sdram_Control_4Port:u7|control_interface:control1|SADDR[7]                                                                               ;
-; rectangle_detect:inst10|rectangle_detect_core:rectangle_detect_core_inst|slc_width_cse_sva[6..9]                                                     ; Merged with rectangle_detect:inst10|rectangle_detect_core:rectangle_detect_core_inst|slc_width_cse_sva[5]                                                         ;
+; rectangle_detect:inst10|rectangle_detect_core:rectangle_detect_core_inst|slc_width_cse_sva[4..9]                                                     ; Merged with rectangle_detect:inst10|rectangle_detect_core:rectangle_detect_core_inst|slc_width_cse_sva[3]                                                         ;
 ; rectangle_detect:inst10|rectangle_detect_core:rectangle_detect_core_inst|static_fill_1_sva                                                           ; Merged with rectangle_detect:inst10|rectangle_detect_core:rectangle_detect_core_inst|filled_rsc_mgc_out_stdreg_d                                                  ;
 ; rectangle_detect:inst9|rectangle_detect_core:rectangle_detect_core_inst|static_fill_1_sva                                                            ; Merged with rectangle_detect:inst9|rectangle_detect_core:rectangle_detect_core_inst|filled_rsc_mgc_out_stdreg_d                                                   ;
 ; rectangle_detect:inst7|rectangle_detect_core:rectangle_detect_core_inst|static_fill_1_sva                                                            ; Merged with rectangle_detect:inst7|rectangle_detect_core:rectangle_detect_core_inst|filled_rsc_mgc_out_stdreg_d                                                   ;
 ; rectangle_detect:inst6|rectangle_detect_core:rectangle_detect_core_inst|static_fill_1_sva                                                            ; Merged with rectangle_detect:inst6|rectangle_detect_core:rectangle_detect_core_inst|filled_rsc_mgc_out_stdreg_d                                                   ;
 ; rectangle_detect:inst5|rectangle_detect_core:rectangle_detect_core_inst|static_fill_1_sva                                                            ; Merged with rectangle_detect:inst5|rectangle_detect_core:rectangle_detect_core_inst|filled_rsc_mgc_out_stdreg_d                                                   ;
 ; DE0_D5M:inst|I2C_CCD_Config:u8|sensor_exposure[1..3,8,9,11..15]                                                                                      ; Merged with DE0_D5M:inst|I2C_CCD_Config:u8|sensor_exposure[0]                                                                                                     ;
-; rectangle_detect:inst9|rectangle_detect_core:rectangle_detect_core_inst|slc_width_cse_sva[6..9]                                                      ; Merged with rectangle_detect:inst9|rectangle_detect_core:rectangle_detect_core_inst|slc_width_cse_sva[5]                                                          ;
-; rectangle_detect:inst7|rectangle_detect_core:rectangle_detect_core_inst|slc_width_cse_sva[6..9]                                                      ; Merged with rectangle_detect:inst7|rectangle_detect_core:rectangle_detect_core_inst|slc_width_cse_sva[5]                                                          ;
-; rectangle_detect:inst6|rectangle_detect_core:rectangle_detect_core_inst|slc_width_cse_sva[6..9]                                                      ; Merged with rectangle_detect:inst6|rectangle_detect_core:rectangle_detect_core_inst|slc_width_cse_sva[5]                                                          ;
-; rectangle_detect:inst5|rectangle_detect_core:rectangle_detect_core_inst|slc_width_cse_sva[6..9]                                                      ; Merged with rectangle_detect:inst5|rectangle_detect_core:rectangle_detect_core_inst|slc_width_cse_sva[5]                                                          ;
+; rectangle_detect:inst9|rectangle_detect_core:rectangle_detect_core_inst|slc_width_cse_sva[4..9]                                                      ; Merged with rectangle_detect:inst9|rectangle_detect_core:rectangle_detect_core_inst|slc_width_cse_sva[3]                                                          ;
+; rectangle_detect:inst7|rectangle_detect_core:rectangle_detect_core_inst|slc_width_cse_sva[4..9]                                                      ; Merged with rectangle_detect:inst7|rectangle_detect_core:rectangle_detect_core_inst|slc_width_cse_sva[3]                                                          ;
+; rectangle_detect:inst6|rectangle_detect_core:rectangle_detect_core_inst|slc_width_cse_sva[4..9]                                                      ; Merged with rectangle_detect:inst6|rectangle_detect_core:rectangle_detect_core_inst|slc_width_cse_sva[3]                                                          ;
+; rectangle_detect:inst5|rectangle_detect_core:rectangle_detect_core_inst|slc_width_cse_sva[4..9]                                                      ; Merged with rectangle_detect:inst5|rectangle_detect_core:rectangle_detect_core_inst|slc_width_cse_sva[3]                                                          ;
 ; DE0_D5M:inst|Sdram_Control_4Port:u7|rWR1_ADDR[7]                                                                                                     ; Stuck at GND due to stuck port data_in                                                                                                                            ;
 ; DE0_D5M:inst|Sdram_Control_4Port:u7|rWR2_ADDR[7]                                                                                                     ; Stuck at GND due to stuck port data_in                                                                                                                            ;
 ; DE0_D5M:inst|Sdram_Control_4Port:u7|rRD1_ADDR[7]                                                                                                     ; Stuck at GND due to stuck port data_in                                                                                                                            ;
@@ -961,7 +954,6 @@ Encoding Type:  One-Hot
 ; DE0_D5M:inst|I2C_CCD_Config:u8|mI2C_DATA[13]                                                                                                         ; Stuck at GND due to stuck port data_in                                                                                                                            ;
 ; DE0_D5M:inst|I2C_CCD_Config:u8|I2C_Controller:u0|SD[13]                                                                                              ; Stuck at GND due to stuck port data_in                                                                                                                            ;
 ; get_red:inst18|get_red_core:get_red_core_inst|oelse_slc_svs                                                                                          ; Lost fanout                                                                                                                                                       ;
-; Tonetest:inst14|oldpitch[18]                                                                                                                         ; Stuck at GND due to stuck port data_in                                                                                                                            ;
 ; rectangle_detect:inst5|rectangle_detect_core:rectangle_detect_core_inst|aif_1_slc_svs                                                                ; Lost fanout                                                                                                                                                       ;
 ; rectangle_detect:inst6|rectangle_detect_core:rectangle_detect_core_inst|aif_1_slc_svs                                                                ; Lost fanout                                                                                                                                                       ;
 ; rectangle_detect:inst7|rectangle_detect_core:rectangle_detect_core_inst|aif_1_slc_svs                                                                ; Lost fanout                                                                                                                                                       ;
@@ -1019,14 +1011,6 @@ Encoding Type:  One-Hot
 ; rectangle_detect:inst6|rectangle_detect_core:rectangle_detect_core_inst|io_read_vga_xy_rsc_d_cse_sva[0]                                              ; Merged with rectangle_detect:inst10|rectangle_detect_core:rectangle_detect_core_inst|io_read_vga_xy_rsc_d_cse_sva[0]                                              ;
 ; rectangle_detect:inst7|rectangle_detect_core:rectangle_detect_core_inst|io_read_vga_xy_rsc_d_cse_sva[0]                                              ; Merged with rectangle_detect:inst10|rectangle_detect_core:rectangle_detect_core_inst|io_read_vga_xy_rsc_d_cse_sva[0]                                              ;
 ; rectangle_detect:inst9|rectangle_detect_core:rectangle_detect_core_inst|io_read_vga_xy_rsc_d_cse_sva[0]                                              ; Merged with rectangle_detect:inst10|rectangle_detect_core:rectangle_detect_core_inst|io_read_vga_xy_rsc_d_cse_sva[0]                                              ;
-; rectangle_detect:inst5|rectangle_detect_core:rectangle_detect_core_inst|slc_width_cse_sva[5]                                                         ; Merged with rectangle_detect:inst10|rectangle_detect_core:rectangle_detect_core_inst|slc_width_cse_sva[5]                                                         ;
-; rectangle_detect:inst6|rectangle_detect_core:rectangle_detect_core_inst|slc_width_cse_sva[5]                                                         ; Merged with rectangle_detect:inst10|rectangle_detect_core:rectangle_detect_core_inst|slc_width_cse_sva[5]                                                         ;
-; rectangle_detect:inst7|rectangle_detect_core:rectangle_detect_core_inst|slc_width_cse_sva[5]                                                         ; Merged with rectangle_detect:inst10|rectangle_detect_core:rectangle_detect_core_inst|slc_width_cse_sva[5]                                                         ;
-; rectangle_detect:inst9|rectangle_detect_core:rectangle_detect_core_inst|slc_width_cse_sva[5]                                                         ; Merged with rectangle_detect:inst10|rectangle_detect_core:rectangle_detect_core_inst|slc_width_cse_sva[5]                                                         ;
-; rectangle_detect:inst5|rectangle_detect_core:rectangle_detect_core_inst|slc_width_cse_sva[4]                                                         ; Merged with rectangle_detect:inst10|rectangle_detect_core:rectangle_detect_core_inst|slc_width_cse_sva[4]                                                         ;
-; rectangle_detect:inst6|rectangle_detect_core:rectangle_detect_core_inst|slc_width_cse_sva[4]                                                         ; Merged with rectangle_detect:inst10|rectangle_detect_core:rectangle_detect_core_inst|slc_width_cse_sva[4]                                                         ;
-; rectangle_detect:inst7|rectangle_detect_core:rectangle_detect_core_inst|slc_width_cse_sva[4]                                                         ; Merged with rectangle_detect:inst10|rectangle_detect_core:rectangle_detect_core_inst|slc_width_cse_sva[4]                                                         ;
-; rectangle_detect:inst9|rectangle_detect_core:rectangle_detect_core_inst|slc_width_cse_sva[4]                                                         ; Merged with rectangle_detect:inst10|rectangle_detect_core:rectangle_detect_core_inst|slc_width_cse_sva[4]                                                         ;
 ; rectangle_detect:inst5|rectangle_detect_core:rectangle_detect_core_inst|slc_width_cse_sva[3]                                                         ; Merged with rectangle_detect:inst10|rectangle_detect_core:rectangle_detect_core_inst|slc_width_cse_sva[3]                                                         ;
 ; rectangle_detect:inst6|rectangle_detect_core:rectangle_detect_core_inst|slc_width_cse_sva[3]                                                         ; Merged with rectangle_detect:inst10|rectangle_detect_core:rectangle_detect_core_inst|slc_width_cse_sva[3]                                                         ;
 ; rectangle_detect:inst7|rectangle_detect_core:rectangle_detect_core_inst|slc_width_cse_sva[3]                                                         ; Merged with rectangle_detect:inst10|rectangle_detect_core:rectangle_detect_core_inst|slc_width_cse_sva[3]                                                         ;
@@ -1140,7 +1124,7 @@ Encoding Type:  One-Hot
 ; rectangle_detect:inst7|rectangle_detect_core:rectangle_detect_core_inst|rectangle_detect_core_fsm:rectangle_detect_core_fsm_inst|state_var.st_main_3 ; Merged with rectangle_detect:inst10|rectangle_detect_core:rectangle_detect_core_inst|rectangle_detect_core_fsm:rectangle_detect_core_fsm_inst|state_var.st_main_3 ;
 ; rectangle_detect:inst9|rectangle_detect_core:rectangle_detect_core_inst|rectangle_detect_core_fsm:rectangle_detect_core_fsm_inst|state_var.st_main_3 ; Merged with rectangle_detect:inst10|rectangle_detect_core:rectangle_detect_core_inst|rectangle_detect_core_fsm:rectangle_detect_core_fsm_inst|state_var.st_main_3 ;
 ; DE0_D5M:inst|CCD_Capture:u3|Y_Cont[1..15]                                                                                                            ; Lost fanout                                                                                                                                                       ;
-; Total Number of Removed Registers = 381                                                                                                              ;                                                                                                                                                                   ;
+; Total Number of Removed Registers = 363                                                                                                              ;                                                                                                                                                                   ;
 +------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 
@@ -1190,12 +1174,12 @@ Encoding Type:  One-Hot
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 1783  ;
-; Number of registers using Synchronous Clear  ; 131   ;
+; Total registers                              ; 1808  ;
+; Number of registers using Synchronous Clear  ; 183   ;
 ; Number of registers using Synchronous Load   ; 67    ;
-; Number of registers using Asynchronous Clear ; 1404  ;
+; Number of registers using Asynchronous Clear ; 1402  ;
 ; Number of registers using Asynchronous Load  ; 0     ;
-; Number of registers using Clock Enable       ; 983   ;
+; Number of registers using Clock Enable       ; 989   ;
 ; Number of registers using Preset             ; 0     ;
 +----------------------------------------------+-------+
 
@@ -1205,17 +1189,6 @@ Encoding Type:  One-Hot
 +------------------------------------------------------------------------------------------------------------------------------------------------------+---------+
 ; Inverted Register                                                                                                                                    ; Fan out ;
 +------------------------------------------------------------------------------------------------------------------------------------------------------+---------+
-; Tonetest:inst14|oldpitch[15]                                                                                                                         ; 1       ;
-; Tonetest:inst14|oldpitch[14]                                                                                                                         ; 1       ;
-; Tonetest:inst14|oldpitch[12]                                                                                                                         ; 1       ;
-; Tonetest:inst14|oldpitch[11]                                                                                                                         ; 1       ;
-; Tonetest:inst14|oldpitch[10]                                                                                                                         ; 1       ;
-; Tonetest:inst14|oldpitch[8]                                                                                                                          ; 1       ;
-; Tonetest:inst14|oldpitch[7]                                                                                                                          ; 1       ;
-; Tonetest:inst14|oldpitch[6]                                                                                                                          ; 1       ;
-; Tonetest:inst14|oldpitch[5]                                                                                                                          ; 1       ;
-; Tonetest:inst14|oldpitch[4]                                                                                                                          ; 1       ;
-; Tonetest:inst14|oldpitch[1]                                                                                                                          ; 1       ;
 ; DE0_D5M:inst|Sdram_Control_4Port:u7|Sdram_FIFO:read_fifo1|dcfifo:dcfifo_component|dcfifo_v5o1:auto_generated|a_graycounter_s57:rdptr_g1p|counter5a0  ; 7       ;
 ; DE0_D5M:inst|Sdram_Control_4Port:u7|Sdram_FIFO:read_fifo2|dcfifo:dcfifo_component|dcfifo_v5o1:auto_generated|a_graycounter_s57:rdptr_g1p|counter5a0  ; 7       ;
 ; DE0_D5M:inst|I2C_CCD_Config:u8|I2C_Controller:u0|SD_COUNTER[5]                                                                                       ; 13      ;
@@ -1241,40 +1214,41 @@ Encoding Type:  One-Hot
 ; DE0_D5M:inst|I2C_CCD_Config:u8|I2C_Controller:u0|END                                                                                                 ; 5       ;
 ; DE0_D5M:inst|Sdram_Control_4Port:u7|Sdram_FIFO:write_fifo1|dcfifo:dcfifo_component|dcfifo_v5o1:auto_generated|a_graycounter_ojc:wrptr_g1p|parity9    ; 4       ;
 ; DE0_D5M:inst|Sdram_Control_4Port:u7|Sdram_FIFO:write_fifo2|dcfifo:dcfifo_component|dcfifo_v5o1:auto_generated|a_graycounter_ojc:wrptr_g1p|parity9    ; 4       ;
-; Total number of inverted registers = 36                                                                                                              ;         ;
+; Total number of inverted registers = 25                                                                                                              ;         ;
 +------------------------------------------------------------------------------------------------------------------------------------------------------+---------+
 
 
-+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                                                                              ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------------------------------------------------------------------------+
-; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                                                                    ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------------------------------------------------------------------------+
-; 3:1                ; 11 bits   ; 22 LEs        ; 22 LEs               ; 0 LEs                  ; Yes        ; |TOP_DE0_CAMERA_MOUSE|DE0_D5M:inst|Sdram_Control_4Port:u7|command:command1|SA[7]              ;
-; 3:1                ; 16 bits   ; 32 LEs        ; 32 LEs               ; 0 LEs                  ; Yes        ; |TOP_DE0_CAMERA_MOUSE|DE0_D5M:inst|Sdram_Control_4Port:u7|control_interface:control1|timer[0] ;
-; 3:1                ; 8 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; Yes        ; |TOP_DE0_CAMERA_MOUSE|DE0_D5M:inst|Sdram_Control_4Port:u7|command:command1|command_delay[1]   ;
-; 3:1                ; 6 bits    ; 12 LEs        ; 6 LEs                ; 6 LEs                  ; Yes        ; |TOP_DE0_CAMERA_MOUSE|special_note_mux:inst353|counter[1]                                     ;
-; 4:1                ; 10 bits   ; 20 LEs        ; 10 LEs               ; 10 LEs                 ; Yes        ; |TOP_DE0_CAMERA_MOUSE|DE0_D5M:inst|RAW2RGB:u4|mCCD_G[4]                                       ;
-; 4:1                ; 20 bits   ; 40 LEs        ; 40 LEs               ; 0 LEs                  ; Yes        ; |TOP_DE0_CAMERA_MOUSE|DE0_D5M:inst|RAW2RGB:u4|mCCD_R[7]                                       ;
-; 4:1                ; 16 bits   ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; Yes        ; |TOP_DE0_CAMERA_MOUSE|DE0_D5M:inst|CCD_Capture:u3|X_Cont[0]                                   ;
-; 4:1                ; 16 bits   ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; Yes        ; |TOP_DE0_CAMERA_MOUSE|DE0_D5M:inst|CCD_Capture:u3|Y_Cont[13]                                  ;
-; 4:1                ; 15 bits   ; 30 LEs        ; 15 LEs               ; 15 LEs                 ; Yes        ; |TOP_DE0_CAMERA_MOUSE|DE0_D5M:inst|Sdram_Control_4Port:u7|rRD2_ADDR[10]                       ;
-; 4:1                ; 15 bits   ; 30 LEs        ; 15 LEs               ; 15 LEs                 ; Yes        ; |TOP_DE0_CAMERA_MOUSE|DE0_D5M:inst|Sdram_Control_4Port:u7|rRD1_ADDR[10]                       ;
-; 4:1                ; 15 bits   ; 30 LEs        ; 15 LEs               ; 15 LEs                 ; Yes        ; |TOP_DE0_CAMERA_MOUSE|DE0_D5M:inst|Sdram_Control_4Port:u7|rWR2_ADDR[11]                       ;
-; 4:1                ; 15 bits   ; 30 LEs        ; 15 LEs               ; 15 LEs                 ; Yes        ; |TOP_DE0_CAMERA_MOUSE|DE0_D5M:inst|Sdram_Control_4Port:u7|rWR1_ADDR[9]                        ;
-; 5:1                ; 4 bits    ; 12 LEs        ; 8 LEs                ; 4 LEs                  ; Yes        ; |TOP_DE0_CAMERA_MOUSE|DE0_D5M:inst|Sdram_Control_4Port:u7|command:command1|rp_done            ;
-; 5:1                ; 15 bits   ; 45 LEs        ; 30 LEs               ; 15 LEs                 ; Yes        ; |TOP_DE0_CAMERA_MOUSE|DE0_D5M:inst|Sdram_Control_4Port:u7|mADDR[22]                           ;
-; 6:1                ; 2 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; Yes        ; |TOP_DE0_CAMERA_MOUSE|DE0_D5M:inst|Sdram_Control_4Port:u7|CMD[0]                              ;
-; 7:1                ; 3 bits    ; 12 LEs        ; 6 LEs                ; 6 LEs                  ; Yes        ; |TOP_DE0_CAMERA_MOUSE|DE0_D5M:inst|Sdram_Control_4Port:u7|WR_MASK[1]                          ;
-; 7:1                ; 3 bits    ; 12 LEs        ; 9 LEs                ; 3 LEs                  ; Yes        ; |TOP_DE0_CAMERA_MOUSE|DE0_D5M:inst|Sdram_Control_4Port:u7|mRD                                 ;
-; 34:1               ; 10 bits   ; 220 LEs       ; 210 LEs              ; 10 LEs                 ; Yes        ; |TOP_DE0_CAMERA_MOUSE|special_note_mux:inst353|x_out[1]                                       ;
-; 7:1                ; 10 bits   ; 40 LEs        ; 20 LEs               ; 20 LEs                 ; Yes        ; |TOP_DE0_CAMERA_MOUSE|DE0_D5M:inst|Sdram_Control_4Port:u7|ST[8]                               ;
-; 12:1               ; 9 bits    ; 72 LEs        ; 18 LEs               ; 54 LEs                 ; Yes        ; |TOP_DE0_CAMERA_MOUSE|sequence_detect:inst336|repeats[0]                                      ;
-; 3:1                ; 6 bits    ; 12 LEs        ; 6 LEs                ; 6 LEs                  ; Yes        ; |TOP_DE0_CAMERA_MOUSE|DE0_D5M:inst|I2C_CCD_Config:u8|I2C_Controller:u0|SD_COUNTER[5]          ;
-; 3:1                ; 2 bits    ; 4 LEs         ; 2 LEs                ; 2 LEs                  ; No         ; |TOP_DE0_CAMERA_MOUSE|DE0_D5M:inst|I2C_CCD_Config:u8|Mux8                                     ;
-; 32:1               ; 19 bits   ; 399 LEs       ; 266 LEs              ; 133 LEs                ; No         ; |TOP_DE0_CAMERA_MOUSE|Tonetest:inst14|pitch                                                   ;
-; 11:1               ; 2 bits    ; 14 LEs        ; 6 LEs                ; 8 LEs                  ; No         ; |TOP_DE0_CAMERA_MOUSE|sequence_detect:inst336|state                                           ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------------------------------------------------------------------------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                                                                               ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+------------------------------------------------------------------------------------------------+
+; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                                                                     ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+------------------------------------------------------------------------------------------------+
+; 3:1                ; 11 bits   ; 22 LEs        ; 22 LEs               ; 0 LEs                  ; Yes        ; |TOP_DE0_CAMERA_MOUSE|DE0_D5M:inst|Sdram_Control_4Port:u7|command:command1|SA[5]               ;
+; 3:1                ; 16 bits   ; 32 LEs        ; 32 LEs               ; 0 LEs                  ; Yes        ; |TOP_DE0_CAMERA_MOUSE|DE0_D5M:inst|Sdram_Control_4Port:u7|control_interface:control1|timer[12] ;
+; 3:1                ; 8 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; Yes        ; |TOP_DE0_CAMERA_MOUSE|DE0_D5M:inst|Sdram_Control_4Port:u7|command:command1|command_delay[3]    ;
+; 3:1                ; 6 bits    ; 12 LEs        ; 6 LEs                ; 6 LEs                  ; Yes        ; |TOP_DE0_CAMERA_MOUSE|special_note_mux:inst353|counter[1]                                      ;
+; 4:1                ; 10 bits   ; 20 LEs        ; 10 LEs               ; 10 LEs                 ; Yes        ; |TOP_DE0_CAMERA_MOUSE|DE0_D5M:inst|RAW2RGB:u4|mCCD_G[7]                                        ;
+; 4:1                ; 20 bits   ; 40 LEs        ; 40 LEs               ; 0 LEs                  ; Yes        ; |TOP_DE0_CAMERA_MOUSE|DE0_D5M:inst|RAW2RGB:u4|mCCD_R[9]                                        ;
+; 4:1                ; 16 bits   ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; Yes        ; |TOP_DE0_CAMERA_MOUSE|DE0_D5M:inst|CCD_Capture:u3|X_Cont[9]                                    ;
+; 4:1                ; 16 bits   ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; Yes        ; |TOP_DE0_CAMERA_MOUSE|DE0_D5M:inst|CCD_Capture:u3|Y_Cont[1]                                    ;
+; 4:1                ; 15 bits   ; 30 LEs        ; 15 LEs               ; 15 LEs                 ; Yes        ; |TOP_DE0_CAMERA_MOUSE|DE0_D5M:inst|Sdram_Control_4Port:u7|rRD2_ADDR[13]                        ;
+; 4:1                ; 15 bits   ; 30 LEs        ; 15 LEs               ; 15 LEs                 ; Yes        ; |TOP_DE0_CAMERA_MOUSE|DE0_D5M:inst|Sdram_Control_4Port:u7|rRD1_ADDR[20]                        ;
+; 4:1                ; 15 bits   ; 30 LEs        ; 15 LEs               ; 15 LEs                 ; Yes        ; |TOP_DE0_CAMERA_MOUSE|DE0_D5M:inst|Sdram_Control_4Port:u7|rWR2_ADDR[8]                         ;
+; 4:1                ; 15 bits   ; 30 LEs        ; 15 LEs               ; 15 LEs                 ; Yes        ; |TOP_DE0_CAMERA_MOUSE|DE0_D5M:inst|Sdram_Control_4Port:u7|rWR1_ADDR[19]                        ;
+; 5:1                ; 4 bits    ; 12 LEs        ; 8 LEs                ; 4 LEs                  ; Yes        ; |TOP_DE0_CAMERA_MOUSE|DE0_D5M:inst|Sdram_Control_4Port:u7|command:command1|rp_done             ;
+; 5:1                ; 15 bits   ; 45 LEs        ; 30 LEs               ; 15 LEs                 ; Yes        ; |TOP_DE0_CAMERA_MOUSE|DE0_D5M:inst|Sdram_Control_4Port:u7|mADDR[12]                            ;
+; 6:1                ; 2 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; Yes        ; |TOP_DE0_CAMERA_MOUSE|DE0_D5M:inst|Sdram_Control_4Port:u7|CMD[1]                               ;
+; 7:1                ; 3 bits    ; 12 LEs        ; 6 LEs                ; 6 LEs                  ; Yes        ; |TOP_DE0_CAMERA_MOUSE|DE0_D5M:inst|Sdram_Control_4Port:u7|WR_MASK[0]                           ;
+; 7:1                ; 3 bits    ; 12 LEs        ; 9 LEs                ; 3 LEs                  ; Yes        ; |TOP_DE0_CAMERA_MOUSE|DE0_D5M:inst|Sdram_Control_4Port:u7|RD_MASK[0]                           ;
+; 34:1               ; 10 bits   ; 220 LEs       ; 210 LEs              ; 10 LEs                 ; Yes        ; |TOP_DE0_CAMERA_MOUSE|special_note_mux:inst353|x_out[2]                                        ;
+; 7:1                ; 10 bits   ; 40 LEs        ; 20 LEs               ; 20 LEs                 ; Yes        ; |TOP_DE0_CAMERA_MOUSE|DE0_D5M:inst|Sdram_Control_4Port:u7|ST[7]                                ;
+; 9:1                ; 3 bits    ; 18 LEs        ; 15 LEs               ; 3 LEs                  ; Yes        ; |TOP_DE0_CAMERA_MOUSE|pitch_out:inst334|tempo[0]                                               ;
+; 12:1               ; 9 bits    ; 72 LEs        ; 18 LEs               ; 54 LEs                 ; Yes        ; |TOP_DE0_CAMERA_MOUSE|sequence_detect:inst336|repeats[0]                                       ;
+; 3:1                ; 6 bits    ; 12 LEs        ; 6 LEs                ; 6 LEs                  ; Yes        ; |TOP_DE0_CAMERA_MOUSE|DE0_D5M:inst|I2C_CCD_Config:u8|I2C_Controller:u0|SD_COUNTER[1]           ;
+; 3:1                ; 2 bits    ; 4 LEs         ; 2 LEs                ; 2 LEs                  ; No         ; |TOP_DE0_CAMERA_MOUSE|DE0_D5M:inst|I2C_CCD_Config:u8|Mux8                                      ;
+; 32:1               ; 2 bits    ; 42 LEs        ; 16 LEs               ; 26 LEs                 ; No         ; |TOP_DE0_CAMERA_MOUSE|Tonetest:inst14|pitch                                                    ;
+; 11:1               ; 2 bits    ; 14 LEs        ; 6 LEs                ; 8 LEs                  ; No         ; |TOP_DE0_CAMERA_MOUSE|sequence_detect:inst336|state                                            ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+------------------------------------------------------------------------------------------------+
 
 
 +---------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -2563,6 +2537,61 @@ Note: In order to hide this table in the UI and the text report file, please set
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
++-----------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: blue_detect:inst333|mgc_in_wire:vga_xy_rsc_mgc_in_wire ;
++----------------+-------+----------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                       ;
++----------------+-------+----------------------------------------------------------------------------+
+; rscid          ; 1     ; Signed Integer                                                             ;
+; width          ; 20    ; Signed Integer                                                             ;
++----------------+-------+----------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: blue_detect:inst333|mgc_out_stdreg:detected_blue_rsc_mgc_out_stdreg ;
++----------------+-------+-----------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                    ;
++----------------+-------+-----------------------------------------------------------------------------------------+
+; rscid          ; 2     ; Signed Integer                                                                          ;
+; width          ; 1     ; Signed Integer                                                                          ;
++----------------+-------+-----------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: blue_detect:inst333|mgc_out_stdreg:x_blue_rsc_mgc_out_stdreg ;
++----------------+-------+----------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                             ;
++----------------+-------+----------------------------------------------------------------------------------+
+; rscid          ; 3     ; Signed Integer                                                                   ;
+; width          ; 10    ; Signed Integer                                                                   ;
++----------------+-------+----------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: blue_detect:inst333|mgc_in_wire:video_in_rsc_mgc_in_wire ;
++----------------+-------+------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                         ;
++----------------+-------+------------------------------------------------------------------------------+
+; rscid          ; 4     ; Signed Integer                                                               ;
+; width          ; 30    ; Signed Integer                                                               ;
++----------------+-------+------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: blue_detect:inst333|mgc_out_stdreg:video_out_rsc_mgc_out_stdreg ;
++----------------+-------+-------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                ;
++----------------+-------+-------------------------------------------------------------------------------------+
+; rscid          ; 5     ; Signed Integer                                                                      ;
+; width          ; 30    ; Signed Integer                                                                      ;
++----------------+-------+-------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
 +------------------------------------------------------------------------------------------------+
 ; Parameter Settings for User Entity Instance: get_red:inst18|mgc_in_wire:vga_xy_rsc_mgc_in_wire ;
 +----------------+-------+-----------------------------------------------------------------------+
@@ -3147,61 +3176,6 @@ Note: In order to hide this table in the UI and the text report file, please set
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
-+-----------------------------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: blue_detect:inst333|mgc_in_wire:vga_xy_rsc_mgc_in_wire ;
-+----------------+-------+----------------------------------------------------------------------------+
-; Parameter Name ; Value ; Type                                                                       ;
-+----------------+-------+----------------------------------------------------------------------------+
-; rscid          ; 1     ; Signed Integer                                                             ;
-; width          ; 20    ; Signed Integer                                                             ;
-+----------------+-------+----------------------------------------------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+------------------------------------------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: blue_detect:inst333|mgc_out_stdreg:detected_blue_rsc_mgc_out_stdreg ;
-+----------------+-------+-----------------------------------------------------------------------------------------+
-; Parameter Name ; Value ; Type                                                                                    ;
-+----------------+-------+-----------------------------------------------------------------------------------------+
-; rscid          ; 2     ; Signed Integer                                                                          ;
-; width          ; 1     ; Signed Integer                                                                          ;
-+----------------+-------+-----------------------------------------------------------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+-----------------------------------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: blue_detect:inst333|mgc_out_stdreg:x_blue_rsc_mgc_out_stdreg ;
-+----------------+-------+----------------------------------------------------------------------------------+
-; Parameter Name ; Value ; Type                                                                             ;
-+----------------+-------+----------------------------------------------------------------------------------+
-; rscid          ; 3     ; Signed Integer                                                                   ;
-; width          ; 10    ; Signed Integer                                                                   ;
-+----------------+-------+----------------------------------------------------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+-------------------------------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: blue_detect:inst333|mgc_in_wire:video_in_rsc_mgc_in_wire ;
-+----------------+-------+------------------------------------------------------------------------------+
-; Parameter Name ; Value ; Type                                                                         ;
-+----------------+-------+------------------------------------------------------------------------------+
-; rscid          ; 4     ; Signed Integer                                                               ;
-; width          ; 30    ; Signed Integer                                                               ;
-+----------------+-------+------------------------------------------------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+--------------------------------------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: blue_detect:inst333|mgc_out_stdreg:video_out_rsc_mgc_out_stdreg ;
-+----------------+-------+-------------------------------------------------------------------------------------+
-; Parameter Name ; Value ; Type                                                                                ;
-+----------------+-------+-------------------------------------------------------------------------------------+
-; rscid          ; 5     ; Signed Integer                                                                      ;
-; width          ; 30    ; Signed Integer                                                                      ;
-+----------------+-------+-------------------------------------------------------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
 +------------------------------------------------------------------------------------+
 ; Parameter Settings for Inferred Entity Instance: get_wh:inst8|lpm_mult:Mult0       ;
 +------------------------------------------------+-------------+---------------------+
@@ -3349,6 +3323,29 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; AUTO_CASCADE_CHAINS    ; ON             ; AUTO_CASCADE                            ;
 ; IGNORE_CASCADE_BUFFERS ; OFF            ; IGNORE_CASCADE                          ;
 +------------------------+----------------+-----------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------------------+
+; Parameter Settings for Inferred Entity Instance: tempotestblock:inst11|lpm_divide:Div0 ;
++------------------------+----------------+----------------------------------------------+
+; Parameter Name         ; Value          ; Type                                         ;
++------------------------+----------------+----------------------------------------------+
+; LPM_WIDTHN             ; 13             ; Untyped                                      ;
+; LPM_WIDTHD             ; 13             ; Untyped                                      ;
+; LPM_NREPRESENTATION    ; UNSIGNED       ; Untyped                                      ;
+; LPM_DREPRESENTATION    ; UNSIGNED       ; Untyped                                      ;
+; LPM_PIPELINE           ; 0              ; Untyped                                      ;
+; LPM_REMAINDERPOSITIVE  ; TRUE           ; Untyped                                      ;
+; MAXIMIZE_SPEED         ; 5              ; Untyped                                      ;
+; CBXI_PARAMETER         ; lpm_divide_6jm ; Untyped                                      ;
+; CARRY_CHAIN            ; MANUAL         ; Untyped                                      ;
+; OPTIMIZE_FOR_SPEED     ; 5              ; Untyped                                      ;
+; AUTO_CARRY_CHAINS      ; ON             ; AUTO_CARRY                                   ;
+; IGNORE_CARRY_BUFFERS   ; OFF            ; IGNORE_CARRY                                 ;
+; AUTO_CASCADE_CHAINS    ; ON             ; AUTO_CASCADE                                 ;
+; IGNORE_CASCADE_BUFFERS ; OFF            ; IGNORE_CASCADE                               ;
++------------------------+----------------+----------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
@@ -4107,7 +4104,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:17     ;
+; Top            ; 00:00:18     ;
 +----------------+--------------+
 
 
@@ -4117,7 +4114,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Analysis & Synthesis
     Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Full Version
-    Info: Processing started: Thu May 12 15:32:26 2016
+    Info: Processing started: Thu May 12 17:32:27 2016
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off DE0_D5M -c DE0_D5M
 Info (11104): Parallel Compilation has detected 8 hyper-threaded processors. However, the extra hyper-threaded processors will not be used by default. Parallel Compilation will use 4 of the 4 physical processors detected instead.
 Info (12021): Found 2 design units, including 2 entities, in source file catapult_ip/blur3x3/rtl.v
@@ -4299,78 +4296,6 @@ Warning (275080): Converted elements in bus name "height" using legacy naming ru
     Warning (275081): Converted element name(s) from "height[9..0]" to "height9..0"
 Warning (275080): Converted elements in bus name "height0" using legacy naming rules. Make any assignments on the new names, not on the original names.
     Warning (275081): Converted element name(s) from "height0[9..0]" to "height09..0"
-Warning (275083): Bus "top_grid_x10[9..0]" found using same base name as "top_grid_x1", which might lead to a name conflict.
-Warning (275083): Bus "top_grid_x11[9..0]" found using same base name as "top_grid_x1", which might lead to a name conflict.
-Warning (275083): Bus "top_grid_x12[9..0]" found using same base name as "top_grid_x1", which might lead to a name conflict.
-Warning (275083): Bus "top_grid_x13[9..0]" found using same base name as "top_grid_x1", which might lead to a name conflict.
-Warning (275083): Bus "top_grid_x14[9..0]" found using same base name as "top_grid_x1", which might lead to a name conflict.
-Warning (275083): Bus "top_grid_x15[9..0]" found using same base name as "top_grid_x1", which might lead to a name conflict.
-Warning (275083): Bus "top_grid_x16[9..0]" found using same base name as "top_grid_x1", which might lead to a name conflict.
-Warning (275083): Bus "top_grid_x17[9..0]" found using same base name as "top_grid_x1", which might lead to a name conflict.
-Warning (275083): Bus "top_grid_x18[9..0]" found using same base name as "top_grid_x1", which might lead to a name conflict.
-Warning (275083): Bus "top_grid_x19[9..0]" found using same base name as "top_grid_x1", which might lead to a name conflict.
-Warning (275083): Bus "top_grid_x20[9..0]" found using same base name as "top_grid_x2", which might lead to a name conflict.
-Warning (275083): Bus "top_grid_x21[9..0]" found using same base name as "top_grid_x2", which might lead to a name conflict.
-Warning (275083): Bus "top_grid_x22[9..0]" found using same base name as "top_grid_x2", which might lead to a name conflict.
-Warning (275083): Bus "top_grid_x23[9..0]" found using same base name as "top_grid_x2", which might lead to a name conflict.
-Warning (275083): Bus "top_grid_x24[9..0]" found using same base name as "top_grid_x2", which might lead to a name conflict.
-Warning (275083): Bus "top_grid_x25[9..0]" found using same base name as "top_grid_x2", which might lead to a name conflict.
-Warning (275083): Bus "top_grid_x26[9..0]" found using same base name as "top_grid_x2", which might lead to a name conflict.
-Warning (275083): Bus "top_grid_x27[9..0]" found using same base name as "top_grid_x2", which might lead to a name conflict.
-Warning (275083): Bus "top_grid_x28[9..0]" found using same base name as "top_grid_x2", which might lead to a name conflict.
-Warning (275083): Bus "top_grid_x29[9..0]" found using same base name as "top_grid_x2", which might lead to a name conflict.
-Warning (275083): Bus "top_grid_x30[9..0]" found using same base name as "top_grid_x3", which might lead to a name conflict.
-Warning (275083): Bus "top_grid_x31[9..0]" found using same base name as "top_grid_x3", which might lead to a name conflict.
-Warning (275080): Converted elements in bus name "top_grid_x1" using legacy naming rules. Make any assignments on the new names, not on the original names.
-    Warning (275081): Converted element name(s) from "top_grid_x1[9..0]" to "top_grid_x19..0"
-Warning (275080): Converted elements in bus name "top_grid_x10" using legacy naming rules. Make any assignments on the new names, not on the original names.
-    Warning (275081): Converted element name(s) from "top_grid_x10[9..0]" to "top_grid_x109..0"
-Warning (275080): Converted elements in bus name "top_grid_x11" using legacy naming rules. Make any assignments on the new names, not on the original names.
-    Warning (275081): Converted element name(s) from "top_grid_x11[9..0]" to "top_grid_x119..0"
-Warning (275080): Converted elements in bus name "top_grid_x12" using legacy naming rules. Make any assignments on the new names, not on the original names.
-    Warning (275081): Converted element name(s) from "top_grid_x12[9..0]" to "top_grid_x129..0"
-Warning (275080): Converted elements in bus name "top_grid_x13" using legacy naming rules. Make any assignments on the new names, not on the original names.
-    Warning (275081): Converted element name(s) from "top_grid_x13[9..0]" to "top_grid_x139..0"
-Warning (275080): Converted elements in bus name "top_grid_x14" using legacy naming rules. Make any assignments on the new names, not on the original names.
-    Warning (275081): Converted element name(s) from "top_grid_x14[9..0]" to "top_grid_x149..0"
-Warning (275080): Converted elements in bus name "top_grid_x15" using legacy naming rules. Make any assignments on the new names, not on the original names.
-    Warning (275081): Converted element name(s) from "top_grid_x15[9..0]" to "top_grid_x159..0"
-Warning (275080): Converted elements in bus name "top_grid_x16" using legacy naming rules. Make any assignments on the new names, not on the original names.
-    Warning (275081): Converted element name(s) from "top_grid_x16[9..0]" to "top_grid_x169..0"
-Warning (275080): Converted elements in bus name "top_grid_x17" using legacy naming rules. Make any assignments on the new names, not on the original names.
-    Warning (275081): Converted element name(s) from "top_grid_x17[9..0]" to "top_grid_x179..0"
-Warning (275080): Converted elements in bus name "top_grid_x18" using legacy naming rules. Make any assignments on the new names, not on the original names.
-    Warning (275081): Converted element name(s) from "top_grid_x18[9..0]" to "top_grid_x189..0"
-Warning (275080): Converted elements in bus name "top_grid_x19" using legacy naming rules. Make any assignments on the new names, not on the original names.
-    Warning (275081): Converted element name(s) from "top_grid_x19[9..0]" to "top_grid_x199..0"
-Warning (275080): Converted elements in bus name "top_grid_x2" using legacy naming rules. Make any assignments on the new names, not on the original names.
-    Warning (275081): Converted element name(s) from "top_grid_x2[9..0]" to "top_grid_x29..0"
-Warning (275080): Converted elements in bus name "top_grid_x20" using legacy naming rules. Make any assignments on the new names, not on the original names.
-    Warning (275081): Converted element name(s) from "top_grid_x20[9..0]" to "top_grid_x209..0"
-Warning (275080): Converted elements in bus name "top_grid_x21" using legacy naming rules. Make any assignments on the new names, not on the original names.
-    Warning (275081): Converted element name(s) from "top_grid_x21[9..0]" to "top_grid_x219..0"
-Warning (275080): Converted elements in bus name "top_grid_x22" using legacy naming rules. Make any assignments on the new names, not on the original names.
-    Warning (275081): Converted element name(s) from "top_grid_x22[9..0]" to "top_grid_x229..0"
-Warning (275080): Converted elements in bus name "top_grid_x23" using legacy naming rules. Make any assignments on the new names, not on the original names.
-    Warning (275081): Converted element name(s) from "top_grid_x23[9..0]" to "top_grid_x239..0"
-Warning (275080): Converted elements in bus name "top_grid_x24" using legacy naming rules. Make any assignments on the new names, not on the original names.
-    Warning (275081): Converted element name(s) from "top_grid_x24[9..0]" to "top_grid_x249..0"
-Warning (275080): Converted elements in bus name "top_grid_x25" using legacy naming rules. Make any assignments on the new names, not on the original names.
-    Warning (275081): Converted element name(s) from "top_grid_x25[9..0]" to "top_grid_x259..0"
-Warning (275080): Converted elements in bus name "top_grid_x26" using legacy naming rules. Make any assignments on the new names, not on the original names.
-    Warning (275081): Converted element name(s) from "top_grid_x26[9..0]" to "top_grid_x269..0"
-Warning (275080): Converted elements in bus name "top_grid_x27" using legacy naming rules. Make any assignments on the new names, not on the original names.
-    Warning (275081): Converted element name(s) from "top_grid_x27[9..0]" to "top_grid_x279..0"
-Warning (275080): Converted elements in bus name "top_grid_x28" using legacy naming rules. Make any assignments on the new names, not on the original names.
-    Warning (275081): Converted element name(s) from "top_grid_x28[9..0]" to "top_grid_x289..0"
-Warning (275080): Converted elements in bus name "top_grid_x29" using legacy naming rules. Make any assignments on the new names, not on the original names.
-    Warning (275081): Converted element name(s) from "top_grid_x29[9..0]" to "top_grid_x299..0"
-Warning (275080): Converted elements in bus name "top_grid_x3" using legacy naming rules. Make any assignments on the new names, not on the original names.
-    Warning (275081): Converted element name(s) from "top_grid_x3[9..0]" to "top_grid_x39..0"
-Warning (275080): Converted elements in bus name "top_grid_x30" using legacy naming rules. Make any assignments on the new names, not on the original names.
-    Warning (275081): Converted element name(s) from "top_grid_x30[9..0]" to "top_grid_x309..0"
-Warning (275080): Converted elements in bus name "top_grid_x31" using legacy naming rules. Make any assignments on the new names, not on the original names.
-    Warning (275081): Converted element name(s) from "top_grid_x31[9..0]" to "top_grid_x319..0"
 Warning (275083): Bus "x_in10[9..0]" found using same base name as "x_in1", which might lead to a name conflict.
 Warning (275083): Bus "x_in11[9..0]" found using same base name as "x_in1", which might lead to a name conflict.
 Warning (275083): Bus "x_in12[9..0]" found using same base name as "x_in1", which might lead to a name conflict.
@@ -4443,6 +4368,78 @@ Warning (275080): Converted elements in bus name "x_in30" using legacy naming ru
     Warning (275081): Converted element name(s) from "x_in30[9..0]" to "x_in309..0"
 Warning (275080): Converted elements in bus name "x_in31" using legacy naming rules. Make any assignments on the new names, not on the original names.
     Warning (275081): Converted element name(s) from "x_in31[9..0]" to "x_in319..0"
+Warning (275083): Bus "top_grid_x10[9..0]" found using same base name as "top_grid_x1", which might lead to a name conflict.
+Warning (275083): Bus "top_grid_x11[9..0]" found using same base name as "top_grid_x1", which might lead to a name conflict.
+Warning (275083): Bus "top_grid_x12[9..0]" found using same base name as "top_grid_x1", which might lead to a name conflict.
+Warning (275083): Bus "top_grid_x13[9..0]" found using same base name as "top_grid_x1", which might lead to a name conflict.
+Warning (275083): Bus "top_grid_x14[9..0]" found using same base name as "top_grid_x1", which might lead to a name conflict.
+Warning (275083): Bus "top_grid_x15[9..0]" found using same base name as "top_grid_x1", which might lead to a name conflict.
+Warning (275083): Bus "top_grid_x16[9..0]" found using same base name as "top_grid_x1", which might lead to a name conflict.
+Warning (275083): Bus "top_grid_x17[9..0]" found using same base name as "top_grid_x1", which might lead to a name conflict.
+Warning (275083): Bus "top_grid_x18[9..0]" found using same base name as "top_grid_x1", which might lead to a name conflict.
+Warning (275083): Bus "top_grid_x19[9..0]" found using same base name as "top_grid_x1", which might lead to a name conflict.
+Warning (275083): Bus "top_grid_x20[9..0]" found using same base name as "top_grid_x2", which might lead to a name conflict.
+Warning (275083): Bus "top_grid_x21[9..0]" found using same base name as "top_grid_x2", which might lead to a name conflict.
+Warning (275083): Bus "top_grid_x22[9..0]" found using same base name as "top_grid_x2", which might lead to a name conflict.
+Warning (275083): Bus "top_grid_x23[9..0]" found using same base name as "top_grid_x2", which might lead to a name conflict.
+Warning (275083): Bus "top_grid_x24[9..0]" found using same base name as "top_grid_x2", which might lead to a name conflict.
+Warning (275083): Bus "top_grid_x25[9..0]" found using same base name as "top_grid_x2", which might lead to a name conflict.
+Warning (275083): Bus "top_grid_x26[9..0]" found using same base name as "top_grid_x2", which might lead to a name conflict.
+Warning (275083): Bus "top_grid_x27[9..0]" found using same base name as "top_grid_x2", which might lead to a name conflict.
+Warning (275083): Bus "top_grid_x28[9..0]" found using same base name as "top_grid_x2", which might lead to a name conflict.
+Warning (275083): Bus "top_grid_x29[9..0]" found using same base name as "top_grid_x2", which might lead to a name conflict.
+Warning (275083): Bus "top_grid_x30[9..0]" found using same base name as "top_grid_x3", which might lead to a name conflict.
+Warning (275083): Bus "top_grid_x31[9..0]" found using same base name as "top_grid_x3", which might lead to a name conflict.
+Warning (275080): Converted elements in bus name "top_grid_x1" using legacy naming rules. Make any assignments on the new names, not on the original names.
+    Warning (275081): Converted element name(s) from "top_grid_x1[9..0]" to "top_grid_x19..0"
+Warning (275080): Converted elements in bus name "top_grid_x10" using legacy naming rules. Make any assignments on the new names, not on the original names.
+    Warning (275081): Converted element name(s) from "top_grid_x10[9..0]" to "top_grid_x109..0"
+Warning (275080): Converted elements in bus name "top_grid_x11" using legacy naming rules. Make any assignments on the new names, not on the original names.
+    Warning (275081): Converted element name(s) from "top_grid_x11[9..0]" to "top_grid_x119..0"
+Warning (275080): Converted elements in bus name "top_grid_x12" using legacy naming rules. Make any assignments on the new names, not on the original names.
+    Warning (275081): Converted element name(s) from "top_grid_x12[9..0]" to "top_grid_x129..0"
+Warning (275080): Converted elements in bus name "top_grid_x13" using legacy naming rules. Make any assignments on the new names, not on the original names.
+    Warning (275081): Converted element name(s) from "top_grid_x13[9..0]" to "top_grid_x139..0"
+Warning (275080): Converted elements in bus name "top_grid_x14" using legacy naming rules. Make any assignments on the new names, not on the original names.
+    Warning (275081): Converted element name(s) from "top_grid_x14[9..0]" to "top_grid_x149..0"
+Warning (275080): Converted elements in bus name "top_grid_x15" using legacy naming rules. Make any assignments on the new names, not on the original names.
+    Warning (275081): Converted element name(s) from "top_grid_x15[9..0]" to "top_grid_x159..0"
+Warning (275080): Converted elements in bus name "top_grid_x16" using legacy naming rules. Make any assignments on the new names, not on the original names.
+    Warning (275081): Converted element name(s) from "top_grid_x16[9..0]" to "top_grid_x169..0"
+Warning (275080): Converted elements in bus name "top_grid_x17" using legacy naming rules. Make any assignments on the new names, not on the original names.
+    Warning (275081): Converted element name(s) from "top_grid_x17[9..0]" to "top_grid_x179..0"
+Warning (275080): Converted elements in bus name "top_grid_x18" using legacy naming rules. Make any assignments on the new names, not on the original names.
+    Warning (275081): Converted element name(s) from "top_grid_x18[9..0]" to "top_grid_x189..0"
+Warning (275080): Converted elements in bus name "top_grid_x19" using legacy naming rules. Make any assignments on the new names, not on the original names.
+    Warning (275081): Converted element name(s) from "top_grid_x19[9..0]" to "top_grid_x199..0"
+Warning (275080): Converted elements in bus name "top_grid_x2" using legacy naming rules. Make any assignments on the new names, not on the original names.
+    Warning (275081): Converted element name(s) from "top_grid_x2[9..0]" to "top_grid_x29..0"
+Warning (275080): Converted elements in bus name "top_grid_x20" using legacy naming rules. Make any assignments on the new names, not on the original names.
+    Warning (275081): Converted element name(s) from "top_grid_x20[9..0]" to "top_grid_x209..0"
+Warning (275080): Converted elements in bus name "top_grid_x21" using legacy naming rules. Make any assignments on the new names, not on the original names.
+    Warning (275081): Converted element name(s) from "top_grid_x21[9..0]" to "top_grid_x219..0"
+Warning (275080): Converted elements in bus name "top_grid_x22" using legacy naming rules. Make any assignments on the new names, not on the original names.
+    Warning (275081): Converted element name(s) from "top_grid_x22[9..0]" to "top_grid_x229..0"
+Warning (275080): Converted elements in bus name "top_grid_x23" using legacy naming rules. Make any assignments on the new names, not on the original names.
+    Warning (275081): Converted element name(s) from "top_grid_x23[9..0]" to "top_grid_x239..0"
+Warning (275080): Converted elements in bus name "top_grid_x24" using legacy naming rules. Make any assignments on the new names, not on the original names.
+    Warning (275081): Converted element name(s) from "top_grid_x24[9..0]" to "top_grid_x249..0"
+Warning (275080): Converted elements in bus name "top_grid_x25" using legacy naming rules. Make any assignments on the new names, not on the original names.
+    Warning (275081): Converted element name(s) from "top_grid_x25[9..0]" to "top_grid_x259..0"
+Warning (275080): Converted elements in bus name "top_grid_x26" using legacy naming rules. Make any assignments on the new names, not on the original names.
+    Warning (275081): Converted element name(s) from "top_grid_x26[9..0]" to "top_grid_x269..0"
+Warning (275080): Converted elements in bus name "top_grid_x27" using legacy naming rules. Make any assignments on the new names, not on the original names.
+    Warning (275081): Converted element name(s) from "top_grid_x27[9..0]" to "top_grid_x279..0"
+Warning (275080): Converted elements in bus name "top_grid_x28" using legacy naming rules. Make any assignments on the new names, not on the original names.
+    Warning (275081): Converted element name(s) from "top_grid_x28[9..0]" to "top_grid_x289..0"
+Warning (275080): Converted elements in bus name "top_grid_x29" using legacy naming rules. Make any assignments on the new names, not on the original names.
+    Warning (275081): Converted element name(s) from "top_grid_x29[9..0]" to "top_grid_x299..0"
+Warning (275080): Converted elements in bus name "top_grid_x3" using legacy naming rules. Make any assignments on the new names, not on the original names.
+    Warning (275081): Converted element name(s) from "top_grid_x3[9..0]" to "top_grid_x39..0"
+Warning (275080): Converted elements in bus name "top_grid_x30" using legacy naming rules. Make any assignments on the new names, not on the original names.
+    Warning (275081): Converted element name(s) from "top_grid_x30[9..0]" to "top_grid_x309..0"
+Warning (275080): Converted elements in bus name "top_grid_x31" using legacy naming rules. Make any assignments on the new names, not on the original names.
+    Warning (275081): Converted element name(s) from "top_grid_x31[9..0]" to "top_grid_x319..0"
 Warning (275080): Converted elements in bus name "X_1" using legacy naming rules. Make any assignments on the new names, not on the original names.
     Warning (275081): Converted element name(s) from "X_1[9..0]" to "X_19..0"
     Warning (275081): Converted element name(s) from "X_1[9..0]" to "X_19..0"
@@ -4819,9 +4816,16 @@ Info (12128): Elaborating entity "mgc_out_stdreg" for hierarchy "rectangle_detec
 Info (12128): Elaborating entity "mgc_in_wire" for hierarchy "rectangle_detect:inst5|mgc_in_wire:reset_rsc_mgc_in_wire"
 Info (12128): Elaborating entity "rectangle_detect_core" for hierarchy "rectangle_detect:inst5|rectangle_detect_core:rectangle_detect_core_inst"
 Info (12128): Elaborating entity "rectangle_detect_core_fsm" for hierarchy "rectangle_detect:inst5|rectangle_detect_core:rectangle_detect_core_inst|rectangle_detect_core_fsm:rectangle_detect_core_fsm_inst"
+Info (12128): Elaborating entity "tempotestblock" for hierarchy "tempotestblock:inst13"
 Info (12128): Elaborating entity "get_last" for hierarchy "get_last:inst53"
 Info (12128): Elaborating entity "mgc_out_stdreg" for hierarchy "get_last:inst53|mgc_out_stdreg:last_pixel_rsc_mgc_out_stdreg"
 Info (12128): Elaborating entity "get_last_core" for hierarchy "get_last:inst53|get_last_core:get_last_core_inst"
+Info (12128): Elaborating entity "pitch_out" for hierarchy "pitch_out:inst334"
+Info (12128): Elaborating entity "blue_detect" for hierarchy "blue_detect:inst333"
+Info (12128): Elaborating entity "mgc_out_stdreg" for hierarchy "blue_detect:inst333|mgc_out_stdreg:x_blue_rsc_mgc_out_stdreg"
+Info (12128): Elaborating entity "mgc_in_wire" for hierarchy "blue_detect:inst333|mgc_in_wire:video_in_rsc_mgc_in_wire"
+Info (12128): Elaborating entity "mgc_out_stdreg" for hierarchy "blue_detect:inst333|mgc_out_stdreg:video_out_rsc_mgc_out_stdreg"
+Info (12128): Elaborating entity "blue_detect_core" for hierarchy "blue_detect:inst333|blue_detect_core:blue_detect_core_inst"
 Info (12128): Elaborating entity "row_detect" for hierarchy "row_detect:inst3"
 Warning (10230): Verilog HDL assignment warning at row_detect.v(14): truncated value with size 32 to match size of target (10)
 Warning (10230): Verilog HDL assignment warning at row_detect.v(16): truncated value with size 32 to match size of target (10)
@@ -4832,7 +4836,6 @@ Info (12128): Elaborating entity "get_wh" for hierarchy "get_wh:inst8"
 Warning (10230): Verilog HDL assignment warning at get_wh.v(8): truncated value with size 32 to match size of target (10)
 Info (12128): Elaborating entity "get_red" for hierarchy "get_red:inst18"
 Info (12128): Elaborating entity "mgc_out_stdreg" for hierarchy "get_red:inst18|mgc_out_stdreg:red_left_x_rsc_mgc_out_stdreg"
-Info (12128): Elaborating entity "mgc_out_stdreg" for hierarchy "get_red:inst18|mgc_out_stdreg:red_right_x_rsc_mgc_out_stdreg"
 Info (12128): Elaborating entity "mgc_out_stdreg" for hierarchy "get_red:inst18|mgc_out_stdreg:y_red_rsc_mgc_out_stdreg"
 Info (12128): Elaborating entity "mgc_in_wire" for hierarchy "get_red:inst18|mgc_in_wire:video_in_rsc_mgc_in_wire"
 Info (12128): Elaborating entity "mgc_out_stdreg" for hierarchy "get_red:inst18|mgc_out_stdreg:video_out_rsc_mgc_out_stdreg"
@@ -4884,24 +4887,21 @@ Warning (10230): Verilog HDL assignment warning at sequence_detect.v(42): trunca
 Warning (10230): Verilog HDL assignment warning at sequence_detect.v(51): truncated value with size 32 to match size of target (9)
 Warning (10230): Verilog HDL assignment warning at sequence_detect.v(58): truncated value with size 32 to match size of target (9)
 Info (12128): Elaborating entity "Tonetest" for hierarchy "Tonetest:inst14"
+Warning (10036): Verilog HDL or VHDL warning at Tonetest.v(8): object "oldpitch" assigned a value but never read
 Info (12128): Elaborating entity "mux4" for hierarchy "mux4:inst342"
 Warning (275011): Block or symbol "NOT" of instance "inst6" overlaps another block or symbol
-Info (12128): Elaborating entity "blue_detect" for hierarchy "blue_detect:inst333"
-Info (12128): Elaborating entity "mgc_in_wire" for hierarchy "blue_detect:inst333|mgc_in_wire:video_in_rsc_mgc_in_wire"
-Info (12128): Elaborating entity "mgc_out_stdreg" for hierarchy "blue_detect:inst333|mgc_out_stdreg:video_out_rsc_mgc_out_stdreg"
-Info (12128): Elaborating entity "blue_detect_core" for hierarchy "blue_detect:inst333|blue_detect_core:blue_detect_core_inst"
-Info (12128): Elaborating entity "pitch_out" for hierarchy "pitch_out:inst334"
 Warning (14284): Synthesized away the following node(s):
     Warning (14285): Synthesized away the following RAM node(s):
         Warning (14320): Synthesized away node "DE0_D5M:inst|Sdram_Control_4Port:u7|Sdram_FIFO:read_fifo2|dcfifo:dcfifo_component|dcfifo_v5o1:auto_generated|altsyncram_de51:fifo_ram|q_b[15]"
         Warning (14320): Synthesized away node "DE0_D5M:inst|Sdram_Control_4Port:u7|Sdram_FIFO:read_fifo1|dcfifo:dcfifo_component|dcfifo_v5o1:auto_generated|altsyncram_de51:fifo_ram|q_b[15]"
-Info (278001): Inferred 16 megafunctions from design logic
+Info (278001): Inferred 17 megafunctions from design logic
     Info (278003): Inferred multiplier megafunction ("lpm_mult") from the following logic: "get_wh:inst8|Mult0"
     Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "get_wh:inst8|Div0"
     Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "row_detect:inst3|Div0"
     Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "row_detect:inst3|Div1"
     Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "row_detect:inst3|Div2"
     Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "row_detect:inst3|Div3"
+    Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "tempotestblock:inst11|Div0"
     Info (278003): Inferred multiplier megafunction ("lpm_mult") from the following logic: "column_chooser:inst1|Mult1"
     Info (278003): Inferred multiplier megafunction ("lpm_mult") from the following logic: "column_chooser:inst1|Mult0"
     Info (278003): Inferred multiplier megafunction ("lpm_mult") from the following logic: "column_chooser:inst1|Mult2"
@@ -4983,6 +4983,18 @@ Info (12133): Instantiated megafunction "row_detect:inst3|lpm_divide:Div3" with 
     Info (12134): Parameter "LPM_WIDTHD" = "3"
     Info (12134): Parameter "LPM_NREPRESENTATION" = "UNSIGNED"
     Info (12134): Parameter "LPM_DREPRESENTATION" = "UNSIGNED"
+Info (12130): Elaborated megafunction instantiation "tempotestblock:inst11|lpm_divide:Div0"
+Info (12133): Instantiated megafunction "tempotestblock:inst11|lpm_divide:Div0" with the following parameter:
+    Info (12134): Parameter "LPM_WIDTHN" = "13"
+    Info (12134): Parameter "LPM_WIDTHD" = "13"
+    Info (12134): Parameter "LPM_NREPRESENTATION" = "UNSIGNED"
+    Info (12134): Parameter "LPM_DREPRESENTATION" = "UNSIGNED"
+Info (12021): Found 1 design units, including 1 entities, in source file db/lpm_divide_6jm.tdf
+    Info (12023): Found entity 1: lpm_divide_6jm
+Info (12021): Found 1 design units, including 1 entities, in source file db/sign_div_unsign_7nh.tdf
+    Info (12023): Found entity 1: sign_div_unsign_7nh
+Info (12021): Found 1 design units, including 1 entities, in source file db/alt_u_div_p8f.tdf
+    Info (12023): Found entity 1: alt_u_div_p8f
 Info (12130): Elaborated megafunction instantiation "column_chooser:inst1|lpm_mult:Mult1"
 Info (12133): Instantiated megafunction "column_chooser:inst1|lpm_mult:Mult1" with the following parameter:
     Info (12134): Parameter "LPM_WIDTHA" = "4"
@@ -5198,25 +5210,32 @@ Warning (13024): Output pins are stuck at VCC or GND
     Warning (13410): Pin "HEX3[0]" is stuck at GND
 Info (286030): Timing-Driven Synthesis is running
 Info (17049): 43 registers lost all their fanouts during netlist optimizations.
+Info (17016): Found the following redundant logic cells in design
+    Info (17048): Logic cell "tempotestblock:inst11|lpm_divide:Div0|lpm_divide_6jm:auto_generated|sign_div_unsign_7nh:divider|alt_u_div_p8f:divider|op_10~0"
+    Info (17048): Logic cell "tempotestblock:inst11|lpm_divide:Div0|lpm_divide_6jm:auto_generated|sign_div_unsign_7nh:divider|alt_u_div_p8f:divider|op_10~2"
+    Info (17048): Logic cell "tempotestblock:inst11|lpm_divide:Div0|lpm_divide_6jm:auto_generated|sign_div_unsign_7nh:divider|alt_u_div_p8f:divider|op_10~4"
+    Info (17048): Logic cell "tempotestblock:inst11|lpm_divide:Div0|lpm_divide_6jm:auto_generated|sign_div_unsign_7nh:divider|alt_u_div_p8f:divider|op_11~14"
+    Info (17048): Logic cell "tempotestblock:inst11|lpm_divide:Div0|lpm_divide_6jm:auto_generated|sign_div_unsign_7nh:divider|alt_u_div_p8f:divider|op_1~16"
+    Info (17048): Logic cell "tempotestblock:inst11|lpm_divide:Div0|lpm_divide_6jm:auto_generated|sign_div_unsign_7nh:divider|alt_u_div_p8f:divider|op_2~18"
 Info (144001): Generated suppressed messages file C:/git/FinalProject/get_red/quartus_proj/DE0_CAMERA_MOUSE/DE0_D5M.map.smsg
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 1 node(s), including 0 DDIO, 1 PLL, 0 transceiver and 0 LCELL
 Warning (21074): Design contains 2 input pin(s) that do not drive logic
     Warning (15610): No output dependent on input pin "GPIO_1_CLKIN[1]"
     Warning (15610): No output dependent on input pin "SW[2]"
-Info (21057): Implemented 8150 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 8453 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 10 input pins
     Info (21059): Implemented 78 output pins
     Info (21060): Implemented 50 bidirectional pins
-    Info (21061): Implemented 7911 logic cells
+    Info (21061): Implemented 8214 logic cells
     Info (21064): Implemented 86 RAM segments
     Info (21065): Implemented 1 PLLs
     Info (21062): Implemented 14 DSP elements
-Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 452 warnings
-    Info: Peak virtual memory: 623 megabytes
-    Info: Processing ended: Thu May 12 15:32:48 2016
-    Info: Elapsed time: 00:00:22
-    Info: Total CPU time (on all processors): 00:00:22
+Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 453 warnings
+    Info: Peak virtual memory: 626 megabytes
+    Info: Processing ended: Thu May 12 17:32:50 2016
+    Info: Elapsed time: 00:00:23
+    Info: Total CPU time (on all processors): 00:00:23
 
 
 +------------------------------------------+
