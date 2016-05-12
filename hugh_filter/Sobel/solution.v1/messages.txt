@@ -1,6 +1,0 @@
-
-# Messages from "go new"
-
-Creating project directory '\\icnas3.cc.ic.ac.uk\mg3115\EIE1 FPGA\Sobel Filter Catapult\Sobel'. (PRJ-1)
-Branching solution 'solution.v1' at state 'new' (PRJ-2)
-Branching solution 'solution.v1' at state 'new' (PRJ-2)

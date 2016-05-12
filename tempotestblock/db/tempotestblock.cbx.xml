@@ -1,6 +1,0 @@
-<?xml version="1.0" ?>
-<LOG_ROOT>
-	<PROJECT NAME="tempotestblock">
-		<CBX_INST_ENTRY INSTANCE_NAME="|tempotestblock|lpm_divide:Div0" CBX_FILE_NAME="lpm_divide_4jm.tdf"/>
-	</PROJECT>
-</LOG_ROOT>

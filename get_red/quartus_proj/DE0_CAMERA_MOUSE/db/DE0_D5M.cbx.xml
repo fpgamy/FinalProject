@@ -22,7 +22,6 @@
 		<CBX_INST_ENTRY INSTANCE_NAME="|TOP_DE0_CAMERA_MOUSE|column_chooser:inst1|lpm_mult:Mult5|multcore:mult_core|mpar_add:padder|lpm_add_sub:adder[1]" CBX_FILE_NAME="add_sub_2eh.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|TOP_DE0_CAMERA_MOUSE|column_chooser:inst1|lpm_mult:Mult6|multcore:mult_core|mpar_add:padder|lpm_add_sub:adder[0]" CBX_FILE_NAME="add_sub_2eh.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|TOP_DE0_CAMERA_MOUSE|row_detect:inst3|lpm_divide:Div1" CBX_FILE_NAME="lpm_divide_jhm.tdf"/>
-		<CBX_INST_ENTRY INSTANCE_NAME="|TOP_DE0_CAMERA_MOUSE|tempotestblock:inst13|lpm_divide:Div0" CBX_FILE_NAME="lpm_divide_6jm.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|TOP_DE0_CAMERA_MOUSE|column_chooser:inst1|lpm_mult:Mult5|multcore:mult_core|mpar_add:padder|mpar_add:sub_par_add|lpm_add_sub:adder[0]" CBX_FILE_NAME="add_sub_dfh.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|TOP_DE0_CAMERA_MOUSE|column_chooser:inst1|lpm_mult:Mult6|multcore:mult_core|mpar_add:padder|lpm_add_sub:adder[1]" CBX_FILE_NAME="add_sub_2eh.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|TOP_DE0_CAMERA_MOUSE|column_chooser:inst1|lpm_mult:Mult7|multcore:mult_core|mpar_add:padder|lpm_add_sub:adder[0]" CBX_FILE_NAME="add_sub_2eh.tdf"/>
@@ -40,6 +39,7 @@
 		<CBX_INST_ENTRY INSTANCE_NAME="|TOP_DE0_CAMERA_MOUSE|column_chooser:inst1|lpm_mult:Mult7|multcore:mult_core|mpar_add:padder|mpar_add:sub_par_add|lpm_add_sub:adder[0]" CBX_FILE_NAME="add_sub_dfh.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|TOP_DE0_CAMERA_MOUSE|column_chooser:inst1|lpm_mult:Mult8|multcore:mult_core|mpar_add:padder|lpm_add_sub:adder[1]" CBX_FILE_NAME="add_sub_2eh.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|TOP_DE0_CAMERA_MOUSE|column_chooser:inst1|lpm_mult:Mult9|multcore:mult_core|mpar_add:padder|lpm_add_sub:adder[0]" CBX_FILE_NAME="add_sub_2eh.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|TOP_DE0_CAMERA_MOUSE|tempotestblock:inst16|lpm_divide:Div0" CBX_FILE_NAME="lpm_divide_6jm.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|TOP_DE0_CAMERA_MOUSE|DE0_D5M:inst|Sdram_Control_4Port:u7|Sdram_FIFO:read_fifo2|dcfifo:dcfifo_component" CBX_FILE_NAME="dcfifo_v5o1.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|TOP_DE0_CAMERA_MOUSE|column_chooser:inst1|lpm_mult:Mult8|multcore:mult_core|mpar_add:padder|mpar_add:sub_par_add|lpm_add_sub:adder[0]" CBX_FILE_NAME="add_sub_dfh.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|TOP_DE0_CAMERA_MOUSE|column_chooser:inst1|lpm_mult:Mult9|multcore:mult_core|mpar_add:padder|lpm_add_sub:adder[1]" CBX_FILE_NAME="add_sub_2eh.tdf"/>
