@@ -80,7 +80,7 @@ void vga_mouse_square(ac_int<(COORD_WL+COORD_WL), false> * vga_xy, ac_int<10, fa
         o_red = 1023;
         o_blue = 1023;
         o_green = 0;
-    } else if(i_red > 600 && i_blue < 350 && i_green < 350) {
+    } else if(i_red > 3 * i_blue && i_red > 3*i_green) {
         o_red = 0;
         o_blue = 1023;
         o_green = 1023;
