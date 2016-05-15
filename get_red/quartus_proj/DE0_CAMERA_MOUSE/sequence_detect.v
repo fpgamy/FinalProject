@@ -32,7 +32,7 @@ module sequence_detect(clk, rst, stream_in, sequence_out);
 								end
 							else if (stream_in == 0 && repeats > 0)
 								begin
-									repeats = repeats - 1;
+									repeats = repeats - 2;
 								end
 						end
 					else if (state == 1)
@@ -48,7 +48,12 @@ module sequence_detect(clk, rst, stream_in, sequence_out);
 								end
 							else if (stream_in == 1 && repeats > 1)
 								begin
-									repeats = repeats - 1;
+									repeats = repeats - 2;
+								end
+							else
+								begin
+									state = 2'd0;
+									repeats = 0;
 								end
 						end
 					else if (state == 2)
@@ -65,7 +70,12 @@ module sequence_detect(clk, rst, stream_in, sequence_out);
 								end
 							else if (stream_in == 0 && repeats > 0)
 								begin
-									state = 2'd1;
+									repeats = repeats - 2;
+								end
+							else
+								begin
+									state = 2'd0;
+									repeats = 0;
 								end
 						end
 				end
