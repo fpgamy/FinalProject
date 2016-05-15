@@ -22,7 +22,7 @@ void orientation_detect(ac_int<PIXEL_WL*KERNEL_WIDTH,false> vin[NUM_PIXELS], ac_
     static shift_class<ac_int<PIXEL_WL*KERNEL_WIDTH,true>, KERNEL_WIDTH> regs;
     // Loop through to find the red intensity in the same square
 
-    if (i_red > 800 && i_blue < 400 && i_green < 400) {
+    if (i_red > 2*i_blue && i_red > 2*i_green) {
 	//If boolen initial check is previously true then LED is turned on
         *redOut = 1;
         o_red = 1023;
