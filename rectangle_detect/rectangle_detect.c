@@ -69,7 +69,7 @@ void rectangle_detect(ac_int<(COORD_WL+COORD_WL), false> *vga_xy,
         counter = 0;
     }
     
-    if ((vga_x < *x_top_left + *width && vga_x > *x_top_left) && (vga_y < *y_top_left + *height && vga_y > *y_top_left))
+    else if ((vga_x < *x_top_left + *width && vga_x > *x_top_left) && (vga_y < *y_top_left + *height && vga_y > *y_top_left))
     {
          if (intensity < 1500)
          { 
